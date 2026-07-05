@@ -1,0 +1,58 @@
+name: Daily AI Intel Report
+
+on:
+  schedule:
+    # 每天 UTC 22:00 = 北京时间次日 06:00
+    - cron: "0 22 * * *"
+  workflow_dispatch:   # 支持手动触发
+    inputs:
+      dry_run:
+        description: "Dry run (no email send)？"
+        type: boolean
+        default: false
+
+jobs:
+  fetch-and-send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run AI Intel Tracker
+        env:
+          AIPING_API_KEY: ${{ secrets.AIPING_API_KEY }}
+          AIPING_BASE_URL: ${{ secrets.AIPING_BASE_URL }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            python fetch_news.py --dry-run
+          else
+            python fetch_news.py
+          fi
+
+      - name: Commit sent history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sent_history.json output/
+          git diff --staged --quiet || git commit -m "📡 Update daily report $(date +%Y-%m-%d)"
+          git push

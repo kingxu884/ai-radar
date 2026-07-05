@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual env
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Sensitive
+.env
+*.env
+
+# Runtime data (history is pushed for GitHub Actions)
+data/
+
+# Output (committed by GitHub Actions)
+output/

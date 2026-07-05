@@ -1,0 +1,268 @@
+# ╔══════════════════════════════════════════════════════════════╗
+# ║  AI Intel Tracker — 配置文件                                   ║
+# ║  基于 AI Dispatch 架构，面向 AI 前沿全景追踪                    ║
+# ╚══════════════════════════════════════════════════════════════╝
+#
+# 核心关注方向：
+#   1. Agent / Harness Engineering（崔添翼、DeepSeek Harness、MCP、Multi-Agent）
+#   2. AI for Science（生物/生态/药物发现/材料/气象）
+#   3. 大模型前沿（LLM、多模态、推理、Infra）
+#   4. 国内厂商动态（DeepSeek、智谱、月之暗面、深势科技等）
+#   5. 求职机会（产品/评测/Agent 方向）
+
+
+# ──────────────────────────────────────────────
+#  STEP 1 · 关注领域
+# ──────────────────────────────────────────────
+topics:
+  - AI Agent 与 Harness 工程（上下文管理、工具调用、记忆、Multi-Agent、MCP、Subagent）
+  - AI for Science（生物学、生态学、药物发现、蛋白质设计、材料科学、气象预测）
+  - 大模型前沿（LLM 架构、推理能力、多模态、Post-training、Scaling Law）
+  - 国内 AI 厂商动态（DeepSeek、智谱、月之暗面、百川、深势科技、面壁智能）
+  - AI 产品与开发者工具（Claude Code、Cursor、Copilot、Agent 产品化）
+  - AI 人才市场（招聘趋势、热门岗位、薪资变化）
+
+
+# ──────────────────────────────────────────────
+#  STEP 2 · 新闻 RSS 源
+# ──────────────────────────────────────────────
+news_feeds:
+  # ── 国际 ──
+  OpenAI Blog:              https://openai.com/blog/rss.xml
+  Anthropic Blog:           https://www.anthropic.com/blog/rss.xml
+  Google DeepMind:          https://deepmind.google/discover/blog/rss.xml
+  Hugging Face:             https://huggingface.co/blog/feed.xml
+  MIT Tech Review AI:       https://www.technologyreview.com/topic/artificial-intelligence/feed
+  VentureBeat AI:           https://venturebeat.com/category/ai/feed/
+  TechCrunch AI:            https://techcrunch.com/category/artificial-intelligence/feed/
+  The Verge AI:             https://www.theverge.com/ai-artificial-intelligence/rss/index.xml
+  NVIDIA AI Blog:           https://developer.nvidia.com/blog/feed/
+  Meta AI Blog:             https://ai.meta.com/blog/feed.xml
+  Microsoft Research AI:    https://www.microsoft.com/en-us/research/feed/
+
+  # ── 论文 ──
+  arxiv cs.AI:              https://rss.arxiv.org/rss/cs.AI
+  arxiv cs.CL:              https://rss.arxiv.org/rss/cs.CL
+  arxiv cs.LG:              https://rss.arxiv.org/rss/cs.LG
+  arxiv q-bio:              https://rss.arxiv.org/rss/q-bio
+
+  # ── 国内 AI 媒体 ──
+  机器之心:                  https://jiqizhixin.com/rss
+  量子位:                    https://www.qbitai.com/feed
+  36氪 AI:                  https://36kr.com/feed
+
+
+# ──────────────────────────────────────────────
+#  STEP 3 · KOL 博客 / 个人站点
+# ──────────────────────────────────────────────
+blog_feeds:
+  # ── 国际 KOL ──
+  Lilian Weng (OpenAI Agent):           https://lilianweng.github.io/index.xml
+  Sebastian Raschka (LLM Research):     https://magazine.sebastianraschka.com/feed
+  Nathan Lambert (RLHF/Post-training):  https://www.interconnects.ai/feed
+  Jack Clark (Import AI):               https://importai.substack.com/feed
+  The Gradient:                         https://thegradient.pub/rss/
+  Ethan Mollick (One Useful Thing):     https://www.oneusefulthing.org/feed
+  AI Snake Oil:                         https://aisnakeoil.substack.com/feed
+  Last Week in AI:                      https://lastweekin.ai/feed
+  Andrej Karpathy:                      https://karpathy.bearblog.dev/feed/
+  Simon Willison (AI Engineering):      https://simonwillison.net/atom/everything/
+  Jim Fan (NVIDIA):                     https://jimfan.substack.com/feed
+
+
+# ──────────────────────────────────────────────
+#  STEP 4 · 经典文章（不限时间，永不重复推送）
+# ──────────────────────────────────────────────
+classics:
+  - title: "The Bitter Lesson"
+    url: http://www.incompleteideas.net/IncIdeas/BitterLesson.html
+    author: Rich Sutton
+    type: essay
+    year: 2019
+    note: 算力与规模胜过人类先验知识——深度学习成功的底层逻辑
+
+  - title: "Software 2.0"
+    url: https://karpathy.medium.com/software-2-0-a64152b37c35
+    author: Andrej Karpathy
+    type: blog
+    year: 2017
+    note: AI 重新定义软件开发范式
+
+  - title: "Situational Awareness: The Decade Ahead"
+    url: https://situational-awareness.ai
+    author: Leopold Aschenbrenner
+    type: essay
+    year: 2024
+    note: 前 OpenAI 研究员对 AGI 时间线和国家竞争的深度分析
+
+  - title: "LLM Powered Autonomous Agents"
+    url: https://lilianweng.github.io/posts/2023-06-23-agent/
+    author: Lilian Weng
+    type: blog
+    year: 2023
+    note: Agent 系统架构的经典综述：规划、记忆、工具使用
+
+  - title: "Computing Machinery and Intelligence"
+    url: https://academic.oup.com/mind/article/LIX/236/433/986238
+    author: Alan Turing
+    type: essay
+    year: 1950
+    note: 图灵测试原始论文——AI 领域的思想起点
+
+  - title: "Scaling Laws for Neural Language Models"
+    url: https://arxiv.org/abs/2001.08361
+    author: Kaplan et al. (OpenAI)
+    type: paper
+    year: 2020
+    note: 奠定 LLM Scaling Law 的经典论文
+
+  - title: "Training language models to follow instructions with human feedback"
+    url: https://arxiv.org/abs/2203.02155
+    author: Ouyang et al. (OpenAI)
+    type: paper
+    year: 2022
+    note: InstructGPT / RLHF 奠基性工作
+
+  - title: "DeepSeek-V3 Technical Report"
+    url: https://arxiv.org/abs/2412.19437
+    author: DeepSeek-AI
+    type: paper
+    year: 2024
+    note: MoE 架构、多头潜注意力(MLA)、极低训练成本的超大模型
+
+  - title: "Harness 的思考：Model + Harness = Agent"
+    url: https://zhuanlan.zhihu.com/p/1898130003112345600
+    author: 崔添翼 (DeepSeek Harness)
+    type: blog
+    year: 2026
+    note: DeepSeek Harness 负责人的核心产品理念
+
+
+# ──────────────────────────────────────────────
+#  STEP 5 · Tavily 搜索（补充 RSS 覆盖不到的动态）
+#  每天自动搜索这些关键词，结果汇入日报
+# ──────────────────────────────────────────────
+tavily_searches:
+  # Agent / Harness
+  - query: "AI agent harness engineering latest developments 2026"
+    topic: "Agent 工程"
+  - query: "multi-agent system MCP protocol tool use 2026"
+    topic: "Agent 架构"
+
+  # AI for Science
+  - query: "AI for Science biology ecology drug discovery breakthrough 2026"
+    topic: "AI for Science"
+
+  # 国内厂商
+  - query: "DeepSeek 深度求索 最新动态 招聘 2026"
+    topic: "DeepSeek"
+  - query: "智谱AI 月之暗面 百川智能 面壁智能 最新动态 2026"
+    topic: "国内厂商"
+  - query: "深势科技 百图生科 AI for Science 最新进展"
+    topic: "国内 AI4S"
+
+  # 求职
+  - query: "AI agent 产品经理 评测 招聘 2026 北京 杭州"
+    topic: "求职机会"
+
+  # KOL 动态
+  - query: "崔添翼 DeepSeek Harness agent 2026"
+    topic: "KOL 动态"
+  - query: "梁文锋 DeepSeek AGI 2026"
+    topic: "KOL 动态"
+
+
+# ──────────────────────────────────────────────
+#  STEP 6 · LLM 配置
+# ──────────────────────────────────────────────
+llm:
+  provider: openai_compatible      # aiping.cn 提供 OpenAI 兼容接口
+  model: DeepSeek-V4-Pro           # 默认模型
+  max_tokens: 8000
+  temperature: 0.3
+  output_language: 中文             # 日报输出语言
+
+
+# ──────────────────────────────────────────────
+#  STEP 7 · 邮件配置
+# ──────────────────────────────────────────────
+email:
+  smtp_server: smtp.gmail.com
+  smtp_port: 465
+  # GMAIL_USER 和 GMAIL_APP_PASSWORD 从 ~/.ai-config/.env 读取
+  # 如果你用其他邮箱，改这里的 SMTP 配置即可
+
+  # 发送时间（UTC），GitHub Actions 在此时间附近触发
+  # 22 UTC = 北京时间次日早上 6:00
+  send_hour_utc: 22
+
+
+# ──────────────────────────────────────────────
+#  STEP 8（可选）· 高级参数
+# ──────────────────────────────────────────────
+digest:
+  news_hours: 24              # 新闻回溯窗口（小时）
+  blog_days: 90               # 博客回溯窗口（天）
+  news_per_source: 30         # 每个新闻源最多抓取条数
+  blog_per_source: 15         # 每个博客最多抓取条数
+  tavily_max_results: 5       # 每个 Tavily 搜索返回条数
+
+# arxiv 过滤关键词（标题或摘要命中才保留）
+arxiv_keywords:
+  - agent
+  - agentic
+  - multi-agent
+  - autonomous
+  - reasoning
+  - planning
+  - tool use
+  - function call
+  - memory
+  - context
+  - harness
+  # LLM
+  - llm
+  - language model
+  - transformer
+  - attention
+  - scaling
+  - alignment
+  - rlhf
+  - fine-tun
+  - pre-train
+  - post-train
+  # 模型名
+  - gpt
+  - claude
+  - gemini
+  - qwen
+  - deepseek
+  - llama
+  - mistral
+  - kimi
+  - yi-
+  # 多模态
+  - multimodal
+  - vision
+  - image
+  - video
+  # AI for Science
+  - protein
+  - drug
+  - molecular
+  - biology
+  - genomics
+  - ecology
+  - climate
+  - weather
+  - material
+  - chemistry
+  - scientific
+  - discovery
+  # 通用前沿
+  - diffusion
+  - reinforcement
+  - self-improve
+  - synthetic data
+  - benchmark
+  - evaluation
