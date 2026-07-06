@@ -59,184 +59,160 @@ a { color: #4f46e5; }
 <body>
 <div class="wrapper">
   <div class="header">
-    <h1>🧠 AI Intel Tracker</h1>
-    <div class="subtitle">2026年07月06日 · 新闻 35 条 · 博客 19 篇 · 搜索 22 条</div>
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年07月06日 · 新闻 34 条 · 博客 0 篇 · 搜索 12 条</div>
   </div>
   <div class="body"><div class="section-title">🔥 今日必读</div>
 
 <div class="item">
-<strong>1. DeepSeek 正式组建 Agent Harness 团队，对标 Claude Code</strong><br>
-发生了什么：多方信源确认，DeepSeek 于5月下旬内部成立 Harness 团队，专注代码 Agent 产品，前 Jane Street 量化工程师崔天怡已于3月加入，资深研究员陈德立公开确认并负责招聘。招聘 JD 中明确提出公式：<strong>Model + Harness = Agent</strong>。<br>
-为什么重要：这是 DeepSeek 在 V4 发布节奏放缓、人才外流压力下的一次战略转向——从"卷参数"到"卷工具链"。Harness 层的定义（上下文管理、工具调用、记忆、多 Agent 编排）正在从工程实践上升为组织架构。结合近期融资动态，DeepSeek 显然意识到，仅有基础模型无法赢得 Agent 时代的入口之争。<br>
-关联动态：与 Anthropic 的 Claude Code、OpenAI 的 Codex CLI 形成直接对标。国内方面，美团 LongCat-2.0 今日开源、千问 Fun-ASR-Realtime 升级，均指向"模型能力需要 Harness 层才能产品化"这一共识。
+<strong>DeepSeek Harness 团队高调扩张，Agent 工程化进入“拼图”阶段</strong><br>
+发生了什么：DeepSeek 新成立的 Agent Harness 团队负责人崔添翼（与梁文锋为浙大校友）在社交平台“贴小广告”疯狂招人，明确了研究员、工程师、产品经理三大岗位，核心公式为 <code>Model + Harness = Agent</code>。<br>
+为什么重要：这标志着 DeepSeek 正将重心从单纯的模型能力（V4 等）转向模型落地的“最后一公里”——让 Agent 真正稳定、可靠地执行任务。Harness 工程将是下一阶段的竞争壁垒，关注的是上下文管理、工具调用稳定性和长程任务编排，这已不是模型能力强就能解决的问题。<br>
+与其他动态的关联：结合 DeepSeek 正在进行 500 亿规模融资，巨额资金的首要投向除了算力，就是招聘顶尖的 Agent 工程人才，将实验室能力产品化。
 </div>
 
 <div class="item">
-<strong>2. WAIC 2026 核心论断：后 Scaling 时代范式重构，迈入"智能体生产力时代"</strong><br>
-发生了什么：WAIC 2026 论坛上，关于世界模型与 VLA 的激辩达成一个关键共识——"答案不在 VLA 或世界模型，而在智能体系统的工程整合"。会议明确提出"后 Scaling 时代"的判断。<br>
-为什么重要：这意味着行业顶层话语体系正在切换。Scaling Law 的边际收益递减已被广泛承认，问题的核心不再是"模型能做多少"，而是"Agent 系统能在多长上下文中可靠执行多步任务"。这与 DeepSeek 的 Harness 战略形成呼应——战场正在从 Pre-training 转向 Harness 工程 + Post-training 的耦合优化。<br>
-关联动态：华为同日更新韬定律论文，系统性阐述通过"逻辑折叠"降低时间常数 τ 来延续半导体演进——这是硬件层的 Scaling 替代路径。软硬件两条线都在寻找"后 Scaling"的出路。
+<strong>MCP vs A2A 协议之争尘埃落定：三层 Agent 堆栈成型</strong><br>
+发生了什么：开发者社区正迅速收敛共识，将 MCP（模型上下文协议）定义为“给 Agent 双手（连接工具与数据）”，A2A（Agent-to-Agent 协议）定义为“给 Agent 同事（多 Agent 协作）”，加上 WebMCP 构成三层标准架构。<br>
+为什么重要：这终结了长久以来关于“选用哪个协议”的无谓争论。从业者现在可以清晰地行动：单 Agent 工具扩展，用成熟的 MCP 生态；跨 Agent 任务委派与协作，上 A2A 协议。协议层的标准化将大幅降低 Agent 开发的门槛和集成成本。<br>
+与其他动态的关联：这与全球及国内各大厂（包括 DeepSeek Harness 团队）发力 Agent 工程化的趋势完全同步，标准统一是生态爆发的前提。
 </div>
 
 <div class="item">
-<strong>3. 36氪深度：AI 砍掉的第一批大厂人——高薪、高绩效、高P</strong><br>
-发生了什么：36氪调查显示，携程、多家互联网大厂已出现因 AI Coding 工具提效而直接削减初级程序员岗位的案例。月薪2.5万的初级后端工程师在"630减员"中被裁，斯坦福研究显示22-25岁软件开发者就业较2022年底峰值下降近20%。<br>
-为什么重要：这不是预测，而是正在发生的结构性替代。关键信号是"高绩效也保不住工作"——被裁的不只是边缘人，而是 AI 能直接覆盖其产出的岗位。对从业者而言，纯执行层的编码能力正在快速贬值，需要向上迁移到系统设计、Agent 编排和业务理解层。<br>
-关联动态：DeepSeek 招聘的 Agent 数据产品经理、后训练研究员等岗位，要求的恰恰是这种"高于模型调用"的能力。AI 在消灭一批岗位的同时，正在创造对 Harness 工程、Agent 评测、RLHF 数据设计等新岗位的饥渴需求。
+<strong>国产模型“代码+Agent”激战：月之暗面 K2.6 主攻不间断编码 13 小时</strong><br>
+发生了什么：月之暗面在 4 月发布 Kimi K2.6 模型，核心卖点是长程代码生成（13小时/4000行代码）和 Agent 集群协同能力，直接对标 GPT-5.4、Claude Opus 4.6 等国际顶尖闭源模型。<br>
+为什么重要：这不仅是评测基准的比拼，更明确了国内头部厂商的产品化路径：代码能力是 Agent 规划与执行的基础，长程任务是衡量 Agent 稳定性的核心标尺。谁能做出能扛得住长时间工作、不出错的 Agent，谁就能率先进入企业核心生产流程。<br>
+与其他动态的关联：字节 Seedance 用 AI 占领好莱坞、智谱 GLM-5 擅长复杂系统工程，都指向同一个趋势：大模型竞争正从“聊天能力”全面转向交付复杂、长链、可衡量的任务结果。
 </div>
 
 <div class="item">
-<strong>4. 美团 LongCat-2.0 正式开源，华为昇腾、摩尔线程、沐曦集体适配</strong><br>
-发生了什么：美团宣布开源 LongCat-2.0 全部模型权重、推理引擎与核心技术文档。同日，华为昇腾、摩尔线程、沐曦等国产芯片厂商集体宣布完成对该模型的推理适配。<br>
-为什么重要：这不是一次普通的模型开源，而是一个生态信号——"国产模型 + 国产芯片"的推理闭环正在加速形成。LongCat-2.0 作为美团在长上下文理解方向的重要模型，其开源意味着国内 Agent 场景对长上下文处理的底层能力有了国产替代选项。三家芯片厂商同日官宣适配，显示出上下游协作的默契正在提升。<br>
-关联动态：华为 Mate90 系列计划搭载基于韬定律的新麒麟芯片，采用"逻辑折叠"技术。从模型到芯片，国内 AI 基础设施正在形成一条独立于 CUDA 生态的备选路径。
+<strong>字节 Seedance “占领好莱坞”与蔚来世界模型 OTA：AI 与传统产业的深度融合加速</strong><br>
+发生了什么：字节跳动旗下的 Seedance 视频生成模型正被好莱坞电影人采用，理由是“好东西不问出处”。同时，蔚来汽车向其 70 万用户 OTA 推送了全新的世界模型，强调“把世界模型用活了”。<br>
+为什么重要：这两个事件释放了同一个信号：AI 的应用正在穿透传统行业的核心壁垒。在创意产业，工具的可用性已超过意识形态壁垒；在自动驾驶，世界模型不再是论文，而是直面消费者的安全与体验。这预示着 AI 原生思维正成为产品设计的默认项。
 </div>
 
 <div class="item">
-<strong>5. MCP v2 Beta 发布：Multi-Agent 通信协议的重大重构</strong><br>
-发生了什么：@ai-sdk/mcp v2.0.0-beta.3 于3月落地，包含对 Multi-Agent 系统中工具发现与调用机制的破坏性变更。新版本重新设计了 Agent 间通信的协议层。<br>
-为什么重要：MCP 正在从"Agent 调用单个工具的协议"演变为"多 Agent 系统的通信基础设施"。这次重构的 breaking changes 影响到所有基于 Vercel AI SDK 构建多 Agent 系统的团队。对于正在搭建 Agent Harness 的团队（包括 DeepSeek），MCP v2 的设计选择将直接影响架构决策——是跟进协议还是自建标准，这将是接下来半年 Harness 层的核心分歧之一。<br>
-关联动态：Tavily 搜索显示，Multi-Agent System with MCP 的完整架构指南和课程在2026年集中涌现，说明行业正在寻求统一的多 Agent 通信标准。
+<strong>Hugging Face LeRobot 0.6.0 发布：机器人学习进入“想象-评估-改进”闭环</strong><br>
+发生了什么：Hugging Face 发布机器人学习框架 LeRobot v0.6.0，其核心理念是 Imagine（想象）, Evaluate（评估）, Improve（改进）。<br>
+为什么重要：这表明机器人与具身智能的开发范式正在向大模型的范式靠拢，即通过生成、评估、自我反思的闭环实现数据飞轮。LeRobot 正试图通过统一的框架降低机器人策略学习的门槛，类似当年 Transformers 库对 NLP 领域的催化作用。
 </div>
 
 <div class="item">
-<strong>6. AI for Science 双重信号：AI 发现新型超导体 + 深势科技构建"AI 科学家"闭环</strong><br>
-发生了什么：芬兰阿尔托大学团队利用 AI 发现两种新型超导体；深势科技"玻尔·科研空间站"已服务全球超1000所高校、300万科学家，完成"读-算-做-智"的科研闭环构建。<br>
-为什么重要：AI for Science 正在从单点工具（如 AlphaFold）走向系统性科研基础设施。深势科技覆盖了从文献阅读（科学导航）、计算模拟（勒贝格智算）、实验设计（赛博实验室）到科学智能体（SciMaster）的完整链路，且已获得超8亿 C 轮融资和北京国资的新一轮注资。这表明 AI for Science 的商业模式正在被验证——不是卖模型，而是卖"可组合的科学研发基础设施"。<br>
-关联动态：Ardigen 2026 年药物发现趋势报告指出，AI 的影响将取决于"模型是否嵌入可解释、可审计的可靠工作流"，而非孤立的技术指标。这与 Harness 工程在通用 AI 领域的逻辑完全一致。
-</div>
-
-<div class="item">
-<strong>7. 野村证券：算力过剩担忧过度，存储芯片仍处严重短缺</strong><br>
-发生了什么：野村证券分析师指出，市场对"算力过剩"的担忧可能过度，由于厂商优先生产 HBM，普通 DRAM 和 NAND 供应受限。韩国芯片巨头的宣布项目在数年内难以转化为实际产能。<br>
-为什么重要：这对 AI 从业者的信号是：推理成本短期内不会崩溃式下降。Agent 系统的大量 Token 消耗（递归调用、长上下文管理）仍将是真实成本约束。在 Harness 设计中，Token 效率优化不是"锦上添花"，而是决定 Agent 能否规模化部署的关键工程指标。<br>
-关联动态：Simon Willison 今日博客提到，GPT-5.6 系列定价按模型规模分层（Sol/Terra/Luna），说明模型厂商也在通过产品分层来管理推理成本。做 Agent 系统的团队需要建立 Token 预算意识。
+<strong>阿里清华联手“极简方案”刷新扩散模型推理纪录，入选 ICML 杰出论文</strong><br>
+发生了什么：阿里和清华联合团队的论文凭借一个“极简方案”，刷新了扩散模型的推理效率纪录，并入选 ICML 杰出论文。<br>
+为什么重要：当前多模态生成模型（视频、图像、3D）的核心瓶颈之一就是推理成本和速度。任何能够“四两拨千斤”式降低推理门槛的工作，都对产品落地和算力消耗有重大意义。这对于追逐 Seedance 等视频生成产品的厂商来说，是至关重要的底层创新。
 </div>
 
 <div class="section-title">📈 趋势分析</div>
 
 <div class="trend">
-<strong>趋势一："Model + Harness = Agent" 从技术公式变为组织架构</strong><br>
-证据链：DeepSeek 内部成立 Harness 团队（2026年5月）→ WAIC 2026 宣布迈入"智能体生产力时代"→ Phil Schmid 发表《The importance of Agent Harness in 2026》→ Anthropic 发布 2026 Agentic Coding Trends Report 强调多 Agent 协作团队。<br>
-预判：2026年下半年，更多国内大模型厂商会效仿 DeepSeek，将 Harness 工程从模型团队中独立出来成为一级部门。Harness 工程师（专注上下文管理、MCP 协议、Agent Loop 设计）将成为与模型训练研究员并列的核心岗位。框架之争（LangChain vs 自研 vs MCP 生态）将在年底前趋于收敛。
+<strong>趋势一：“Harness”成为新共识，Agent 从“炼模型”进入“拼工程”时代</strong><br>
+<strong>证据：</strong>DeepSeek 专门成立“Harness”部门并将之定义为 Agent 的核心公式之一；月之暗面 K2.6 强调 13 小时不间断编码的长程任务能力；美团、xTool 等众多公司高薪招聘“AI产品经理（Agent方向）”。<br>
+<strong>判断：</strong>大模型的能力差距在缩小，如何通过工程化手段（上下文管理、记忆、工作流编排、多Agent协作）将模型能力转化为可靠、稳定、可监控的生产力，将是下一阶段的分水岭。“Harness工程”将成为一个独立的、价值巨大的技术栈和岗位方向。
 </div>
 
 <div class="trend">
-<strong>趋势二：AI 对就业的替代效应从"传闻"进入"裁员名单"</strong><br>
-证据链：携程等大厂因 AI Coding 工具直接削减初级程序员编制 → 斯坦福论文显示22-25岁软件开发者就业下降近20% → 保时捷计划再裁4000个行政和管理岗位 → Amazon 停止接受 Mechanical Turk 新客户（传统数据标注众包被 AI 替代）。<br>
-预判：2026年Q3季度财报季，AI 提效带来的"人效比提升"将首次被互联网公司作为正面指标写入财报。这将引发更大规模的岗位结构调整。初级编程、基础数据标注、初级行政岗的招聘需求将断崖式下降；Agent 产品经理、Harness 工程师、RLHF 数据设计师的需求将井喷。薪资曲线会出现明显的"K型分化"。
+<strong>趋势二：“模型即产品”降温，“模型+场景”的产品经理价值凸显</strong><br>
+<strong>证据：</strong>阿里巴巴、美团、长鑫存储等巨头批量放出“AI产品经理”岗位，并要求深入理解LLM、Agent、RAG等，薪资高达70k/16薪；APTSell等初创公司直接定位为“AI版首席销售官”，用组合式Agent解决完整业务流程。<br>
+<strong>判断：</strong>市场正在意识到，模型不是护城河，护城河在于如何将模型能力深度嵌入具体业务流并创造商业价值。具备“业务深度+AI技术理解”的复合型人才将成为最稀缺的资源，“AI产品经理”岗位的需求将持续井喷。
 </div>
 
 <div class="trend">
-<strong>趋势三：国产 AI 生态加速形成"模型-芯片-协议"的独立闭环</strong><br>
-证据链：美团 LongCat-2.0 开源 + 三家国产芯片同日适配 → 华为韬定律论文 + Mate90 新麒麟芯片 → 千问 Fun-ASR-Realtime 升级（流式语音识别，百毫秒延迟）→ DeepSeek Harness 团队招聘 Rust 工程师（暗示高性能系统级开发）。<br>
-预判：国内 AI 基础设施正在围绕"国产芯片 + 国产模型 + 国产协议（MCP 衍生或自研）"形成三条并行的生态链。最大的不确定性在于 MCP 协议层——如果 Anthropic 主导的 MCP v2 成为全球标准，国内厂商是否跟进还是另起炉灶，将是2026下半年最重要的技术路线选择之一。
+<strong>趋势三：AI云服务市场格局明朗，国内厂商开启IPO竞速</strong><br>
+<strong>证据：</strong>沙利文报告显示阿里云以40.1%市场份额占据中国全栈AI云服务第一；智谱、MiniMax已率先启动IPO，其营收结构和毛利率数据已公开，标志着“AI六小虎”叙事成为过去式。<br>
+<strong>判断：</strong>AI竞赛的下半场是关于商业化能力和造血能力的竞赛。通过上市获取资金和品牌信誉，将加速头部玩家的算力建设、人才招募和市场开拓，未来 12-18 个月将出现明显的挤出效应。
 </div>
 
 <div class="section-title">🔬 值得深挖的论文/报告</div>
 
 <div class="deep-read">
-<strong>1. Anthropic — 《2026 Agentic Coding Trends Report》</strong><br>
-核心贡献：系统梳理了2026年 Agentic Coding 的六大趋势，包括单 Agent 向多 Agent 协作团队的演进、Agent 从代码生成向全生命周期管理的扩展。报告引用了 Augment Code 案例——一个 CTO 预估4-8个月的项目，使用 Claude 驱动的 Agent 后仅用2周完成。<br>
-为什么值得读：这是 Anthropic 作为 Claude Code 的出品方，对 Agent 工程方向的官方定调。尤其值得关注其关于"早期采用者与晚期采用者差距扩大"的判断——这暗示 Agent 能力正在形成新的技术鸿沟。
+<strong>1. [阿里 & 清华] 极简方案刷新扩散模型推理纪录 (ICML 杰出论文)</strong><br>
+<strong>核心贡献：</strong>提出一种极简的高效扩散模型推理方案，大幅降低计算开销。<br>
+<strong>为什么读：</strong>如果你是从事多模态生成、特别是追求实时交互或大规模部署的工程师，这篇论文提供了直接可落地的优化思路，值得仔细研究其“极简”背后的设计哲学。
 </div>
 
 <div class="deep-read">
-<strong>2. Phil Schmid — 《The importance of Agent Harness in 2026》</strong><br>
-核心贡献：提出了 Harness 层的核心设计原则——"你必须构建能够随时替换'智能'逻辑的 Harness。如果过度设计控制流，下一次模型更新就会破坏你的系统。" 首次将"模型漂移"（Model Drift）定义为 Harness 工程的核心挑战。<br>
-为什么值得读：这篇文章直接呼应了 DeepSeek 的 Harness 战略和 WAIC 2026 的共识。Phil Schmid 提出的"训练与推理环境正在融合"以及"上下文耐久性成为新瓶颈"的判断，对正在设计 Agent 系统的架构师具有直接的工程指导意义。
+<strong>2. [Dev.to] MCP vs A2A: The Complete Guide to AI Agent Protocols in 2026</strong><br>
+<strong>核心贡献：</strong>清晰定义了MCP和A2A的协同关系与三层协议堆栈架构，给出了明确的应用场景判断和常见错误分析。<br>
+<strong>为什么读：</strong>对于正在或即将构建 Agent 系统的架构师和开发者，这是一份绝佳的决策地图，能够避免在协议选择上走弯路，可以直接指导工程实践。
 </div>
 
 <div class="deep-read">
-<strong>3. Context Studios — 《MCP v2 Beta: What Changes in Multi-Agent Communication》</strong><br>
-核心贡献：详细分解了 MCP v2 的破坏性变更，包括工具发现机制、Agent 间通信协议重构，以及为什么 MCP 需要这次重新设计。分析了变更对使用 Vercel AI SDK 构建多 Agent 系统的团队的影响。<br>
-为什么值得读：如果你正在或计划构建 Multi-Agent 系统，MCP v2 的 breaking changes 将直接影响你的架构选型。这篇文章是理解当前 Agent 通信标准演进的最佳切入点。
+<strong>3. [Hugging Face] LeRobot v0.6.0: Imagine, Evaluate, Improve</strong><br>
+<strong>核心贡献：</strong>将扩散策略与大模型的自我反思范式结合，构建了一个统一的机器人学习飞轮框架。<br>
+<strong>为什么读：</strong>对具身智能和机器人学习领域的从业者，读懂 LeRobot 的设计思路就是把握了未来 AI 向物理世界迁移的主流范式。
 </div>
 
 <div class="section-title">📖 今日推荐深度阅读</div>
 
 <div class="blog-pick">
-<strong>推荐：Phil Schmid — 《The importance of Agent Harness in 2026》</strong><br>
-为什么今天推荐：今天的三条独立信源（DeepSeek Harness 团队成立、WAIC 2026 宣布 Agent 生产力时代、美团 LongCat-2.0 开源 + 国产芯片适配）都指向同一个主题：2026年中，AI 行业的主战场正在从"训练更大的模型"切换到"构建更可靠的 Agent 系统"。Phil Schmid 的这篇文章是目前对 Harness 工程最清晰、最具操作性的阐述，在今天这个节点读，相当于拿到了一张 Agent 时代的地图。<br><br>
-<strong>三个核心观点：</strong><br>
-1. Harness 的核心设计原则是"为模型的可替换性而设计"——不要把智能逻辑硬编码进控制流，否则每次模型更新都会成为系统崩溃的风险点。<br>
-2. "上下文耐久性"（Context Durability）正在成为新瓶颈——模型在长任务中（超过100步）会"疲劳"，Harness 层需要检测模型何时开始偏离指令或推理质量下降，并将这些数据反馈给训练环节。<br>
-3. 训练环境与推理环境正在融合——未来的模型会针对特定 Harness 的数据反馈进行 Post-training 优化，形成"Harness 反馈 → 模型微调 → Harness 适配"的闭环。<br><br>
-<strong>适合谁读：</strong>Agent 系统架构师、Harness 工程师、AI 产品经理、任何正在设计或优化 Agent 产品的团队负责人。<br>
-<strong>阅读时间：</strong>约12分钟（英文原文），值得逐段精读。
+<strong>推荐文章：</strong>《MCP vs A2A: The Complete Guide to AI Agent Protocols in 2026》及《MCP vs A2A: Compare Single-Agent & Multi-Agent Protocols》<br>
+<strong>为什么今天推荐：</strong>正值 DeepSeek 等头部玩家高调组建 Harness 团队、产业界全面转向 Agent 工程化之际，社区已对协议层的标准选择达成共识。这篇内容能帮助从业者立即消除架构决策困惑，立刻行动。<br>
+<strong>3个核心观点：</strong>
+<ul>
+<li><strong>终止竞争叙事：</strong>MCP和A2A不是竞品，而是Agent架构中垂直协作的两个不同层面。</li>
+<li><strong>清晰的决策树：</strong>单Agent用工具/数据源 → MCP；多Agent间发现、委派、协作 → A2A。切勿错位使用。</li>
+<li><strong>生态成熟度：</strong>MCP生态已相对成熟，拥有大量预置服务器；A2A正在快速演进，是构建复杂Agent集群的关键。</li>
+</ul>
+<strong>适合谁读：</strong>所有正在构建或规划AI Agent系统的工程师、架构师和技术负责人。<br>
+<strong>大致阅读时间：</strong>15 分钟
 </div>
 
 <div class="section-title">🏢 国内厂商动态</div>
 
 <div class="item">
-<strong>DeepSeek：Harness 战略 + 大规模招聘 + 融资后扩张</strong><br>
-- 内部组建 Agent Harness 团队，对标 Claude Code，核心岗位包括 Agent Harness 研发工程师（要求 Rust/系统级开发经验）、通用 Agent 数据产品经理（办公/生活/搜索方向）、后训练研究员（数据/算法方向）、情感智能数据产品经理。<br>
-- 招聘 JD 明确提出 "Model + Harness = Agent" 公式，显示 Harness 已被提升为与模型训练并列的一级战略。<br>
-- 6月底完成融资后，估值达4000亿，募集约50亿，资金主要用于人才保留、基础设施和 AGI 研发。这意味着接下来会有更大规模的招聘动作。<br>
-- 但风险同样存在：V4 发布一再延迟，人才流失问题（钛媒体报道），需要在 Harness 产品上快速证明执行力。
+<strong>DeepSeek：</strong>启动500亿融资，新设 Agent Harness 部门，由90后量化背景的崔添翼带队，正以“Model+Harness=Agent”为核心理念，高薪疯狂招聘研究员、工程师和产品经理。核心人才流动（如郭达雅加入字节，罗福莉加入小米）的同时，也在强力补充新鲜血液。V4新模型即将发布，从“免费”走向“付费”与商业化，工程稳定性面临大考。
 </div>
 
 <div class="item">
-<strong>华为：韬定律 + 新麒麟芯片 + Mate90</strong><br>
-- 更新韬定律论文，系统性阐述通过"逻辑折叠"降低时间常数 τ 来延续半导体演进，且明确说明了放弃的路线。<br>
-- Mate90 系列计划搭载基于韬定律的新麒麟芯片，2026年秋季发布。这是韬定律从理论到工程落地的关键一步。
+<strong>月之暗面：</strong>发布并开源 Kimi K2.6 模型，主攻长程代码与 Agent 协同，在 SWE-Bench Pro 等权威评测中追平或超越国际顶尖闭源模型。已从“文本助手”明确转向交付复杂工程任务的 Agent 平台。
 </div>
 
 <div class="item">
-<strong>美团：LongCat-2.0 开源</strong><br>
-- 正式开源 LongCat-2.0 全部模型权重、推理引擎和技术文档。华为昇腾、摩尔线程、沐曦同日宣布适配完成。这是国内大厂在长上下文模型方向的重要开源贡献。
+<strong>智谱：</strong>发布 GLM-5 旗舰模型，号称擅长复杂系统工程和智能代理。其面向全球开发者的模型 API 服务 ARR 已超 1 亿元，并已启动 IPO 进程，营收结构向云端部署倾斜。
 </div>
 
 <div class="item">
-<strong>千问（阿里）：Fun-ASR-Realtime 升级</strong><br>
-- 流式语音识别模型升级，首字延迟控制在百毫秒级别，支持16种方言和30种语言。这是 Agent 语音交互基础设施的重要进展，低延迟流式 ASR 是语音 Agent 的关键组件。
+<strong>字节跳动：</strong>旗下 Seedance 视频生成模型被好莱坞采用，正在占领创意生产工具高地。豆包大模型日均Tokens调用量达50万亿，并通过高薪挖角（如前 DeepSeek 核心成员郭达雅）持续强化人才储备。
 </div>
 
 <div class="item">
-<strong>月之暗面：Kimi 月活3600万，多模态模型内测中</strong><br>
-- 杨植麟确认 Kimi 月均活跃用户3600万，多模态模型正在内测。此前的 K2.5 开源模型评测成绩对标 GPT-5.2。<br>
-- 市场出现假借月之暗面名义的不实融资信息，公司已发声明澄清。
+<strong>阿里 & 清华：</strong>联合团队的 ICML 杰出论文在扩散模型推理效率上作出突破性贡献，这直接支撑了阿里云作为国内最大 AI 云服务商的底层技术能力，并可能对通义系列多模态模型带来影响。
 </div>
 
 <div class="item">
-<strong>深势科技：AI for Science 基础设施闭环</strong><br>
-- "玻尔·科研空间站"已服务全球1000+高校、300万+科学家，构建"读-算-做-智"完整科研闭环。C轮融资超8亿，北京国资持续注资。
+<strong>千问 (阿里)：</strong>升级实时语音识别模型 Fun-ASR-Realtime，将首字延迟压至百毫秒级，标志着语音交互实时性正逼近离线水平，对需要语音交互的 Agent 产品是重大利好。
 </div>
 
 <div class="section-title">💼 求职机会与信号</div>
 
 <div class="item">
-<strong>1. Agent Harness 工程师成为全新岗位类别</strong><br>
-DeepSeek 的招聘 JD 代表了行业方向：要求 Rust/Python + 系统编程能力 + MCP 协议理解 + Agent Loop 设计经验。这不是传统的"后端工程师"或"AI 工程师"，而是一个全新的复合型岗位。预计2026年下半年，更多厂商会跟进设立类似岗位。
+<strong>新增岗位类型：</strong>“AI Agent 产品经理”、“Harness 工程师/研究员”、“Prompt 工程师”等高度垂直细分的岗位成为热点。这表明产业正从通用模型研究进入到面向特定业务流的 Agent 开发与部署阶段。
 </div>
 
 <div class="item">
-<strong>2. Agent 数据产品经理需求井喷</strong><br>
-DeepSeek 同时招聘"通用 Agent 数据产品经理（办公/生活/搜索）"、"情感智能数据产品经理"和"AI 创作数据产品经理"。这说明 Agent 产品化需要专门的 PM 角色——不是设计功能，而是设计 Agent 的行为数据、评测体系和用户交互模式。
+<strong>技能需求变化：</strong>
+<ul>
+<li><strong>从“AI+业务”到“Agent+业务”：</strong>招聘不再笼统要求“AI经验”，而是具体要求掌握 LLM API、KV Cache、Agent 工作流编排、MCP/A2A 协议等工程细节。</li>
+<li><strong>复合型产品经理受追捧：</strong>阿里巴巴、美团等大厂的 AI 产品经理岗明确要求懂 LLM、多模态、Agent、RAG，并需具备数据分析能力（SQL/Python），薪资最高可达 70k/16薪，这一角色正成为连接模型能力和商业价值的核心桥梁。</li>
+<li><strong>中文能力成为工具属性：</strong>DeepSeek Harness 团队招聘明确要求“良好的中文沟通能力”，并被负责人解释为工作需要，类比于美国公司要求英语，这意味着中文作为工作语言在国际化竞争中开始具备工具属性。</li>
+</ul>
 </div>
 
 <div class="item">
-<strong>3. 初级程序员岗位加速收缩</strong><br>
-36氪报道确认，AI Coding 工具已直接导致携程等大厂削减初级程序员编制。斯坦福研究显示22-25岁软件开发者就业下降近20%。如果你处于这个阶段，尽快向上迁移到 Agent 编排、系统架构或垂直领域专业知识的结合点。
+<strong>薪资信号：</strong>市场愿意为顶尖的 Agent 产品与工程人才支付顶级薪酬。DeepSeek Harness 岗位虽未标明价格，但结合其500亿融资背景和人才竞争态势，必然极富竞争力。其他大厂中高级 AI 产品经理的年薪中位数已普遍达到 60-100 万区间。
 </div>
 
 <div class="item">
-<strong>4. AI for Science 赛道持续吸纳人才</strong><br>
-深势科技的招聘和融资动态表明，"科学智能体"（SciMaster）和"AI 驱动的实验设计"是新兴方向。需要既懂 AI 又懂具体科学领域（计算化学、生物信息学、材料模拟）的交叉人才。薪资水平对标 AI 行业而非传统科研机构。
+<strong>机会方向推断：</strong>如果你是有经验的软件工程师或产品经理，现在是用代码/项目经验表明自己是“Agent Heavy User”甚至打造过一个 Agent 原型的最佳时机，这将成为进入 DeepSeek Harness 这类前沿团队最有力的简历。
 </div>
-
-<div class="item">
-<strong>5. 北京成为脑机接口融资中心</strong><br>
-上半年上海脑机接口融资事件数量占全国近60%，企业数量占全国1/3。这是 AI 与神经科学交叉的另一个高增长方向，值得关注。
-</div>
-
-<div class="section-title">⚡ 今日信号</div>
 
 <div class="closing">
-<strong>Harness 层正在从工程实践升级为行业共识，从共识升级为组织架构。DeepSeek 的 "Model + Harness = Agent" 不止是一句招聘文案，而是2026下半年的竞争公式。如果你的团队还在只关注模型能力而忽视 Harness 工程，你已经在为"模型更新就崩系统"埋下隐患。今天开始，把 Harness 当作独立的一层来设计，而不是模型的附属品。</strong>
+<strong>⚡ 今日信号</strong><br>
+立刻学习并实践 MCP/A2A 协议栈，它们是 Agent 时代的 HTTP/TCP。现在动手构建一个能调用外部工具、并尝试与另一个 Agent 协作的 Demo，这是对即将到来的招聘热潮的最佳准备。
 </div></div>
   <div class="footer">
-    AI Intel Tracker · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
     每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
   </div>
 </div>
