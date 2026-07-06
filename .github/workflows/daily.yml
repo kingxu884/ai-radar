@@ -34,7 +34,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run AI Intel Tracker
+      - name: Run AI Radar
         env:
           AIPING_API_KEY: ${{ secrets.AIPING_API_KEY }}
           AIPING_BASE_URL: ${{ secrets.AIPING_BASE_URL }}

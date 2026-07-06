@@ -55,8 +55,8 @@
 ### 1. Fork → Clone → 装依赖
 
 ```bash
-git clone https://github.com/kingxu884/ai-intel-tracker.git
-cd ai-intel-tracker
+git clone https://github.com/kingxu884/ai-radar.git
+cd ai-radar
 pip install -r requirements.txt
 ```
 
