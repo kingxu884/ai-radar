@@ -1,90 +1,148 @@
-# 🧠 AI Intel Tracker
+<p align="center">
+  <img src="https://img.shields.io/badge/AI_Radar-前沿情报-black?style=for-the-badge" alt="AI Radar">
+  <br>
+  <img src="https://img.shields.io/badge/license-MIT-blue" alt="License">
+  <img src="https://img.shields.io/badge/python-3.11+-green" alt="Python">
+  <img src="https://img.shields.io/badge/LLM-DeepSeek_V4_Pro-purple" alt="LLM">
+  <img src="https://img.shields.io/badge/自动推送-每天_9:00-orange" alt="Schedule">
+</p>
 
-**每日 AI 前沿情报日报** — 自动抓取、智能摘要、邮件推送。
-
-聚焦：**Agent/Harness 工程 · AI for Science · 大模型前沿 · 国内厂商动态 · 求职机会**
+<h3 align="center">每天早上 9 点，一份 AI 前沿日报准时到达你的邮箱。</h3>
 
 ---
 
-## 架构
+## 🎯 什么能帮你做到
+
+- **信息过载** → 每天 7 板块精选日报，5 分钟读完
+- **信源分散** → 25+ 中英文信源聚合，不用一个一个刷
+- **错过信号** → 趋势分析 + 今日信号，帮你抓住关键动向
+- **没人帮你盯着** → 全自动运行，每天 9:00 准时到，零人工
+
+## 📡 数据管道
 
 ```
-RSS 源 (25+)  ─┐
-KOL 博客 (11)  ─┤
-Tavily 搜索 (10)─┤
-经典文章        ─┤
-                ▼
-         DeepSeek-V4-Pro
-         (via aiping.cn)
-                │
-                ▼
-         📧 邮件日报 (HTML)
-         📄 本地存档 (output/)
+                    ┌──────────────────┐
+   25+ RSS 源  ──→  │                  │
+   11 个 KOL   ──→  │   DeepSeek V4    │  ──→  📧 邮件日报
+   10 个搜索词 ──→  │   (via aiping)   │  ──→  📄 HTML 存档
+   经典文章    ──→  │                  │
+                    └──────────────────┘
 ```
 
-## 快速开始
+| 层 | 技术 | 做什么 |
+|----|------|--------|
+| 采集 | feedparser + Tavily API | 抓 RSS、实时搜索、去重 |
+| 分析 | DeepSeek-V4-Pro | 按 7 板块模板生成结构化日报 |
+| 推送 | Gmail SMTP | HTML 邮件，适配桌面/移动端 |
+| 运维 | GitHub Actions | 每天 9:00 触发，全自动 |
+
+## 📬 日报内容
+
+每天包含 **7 个板块**：
+
+```
+🔥 今日必读      — 5-8 条最值得关注的，含判断和关联分析
+📈 趋势分析      — 2-3 个值得关注的趋势信号
+🔬 值得深挖      — 论文/报告推荐
+📖 深度阅读      — 今日推荐博客/经典文章
+🏢 厂商动态      — 国内 AI 公司最新动向
+💼 求职机会      — 招聘趋势与岗位信号
+⚡ 今日信号      — 一句话关键判断
+```
+
+## 🚀 5 分钟部署
+
+### 1. Fork → Clone → 装依赖
 
 ```bash
-# 1. 安装
-bash setup.sh
-
-# 2. 确保 ~/.ai-config/.env 已配置 API Keys
-#    (AIPING_API_KEY, TAVILY_API_KEY, GMAIL_USER, GMAIL_APP_PASSWORD)
-
-# 3. 运行
-python fetch_news.py              # 完整运行：抓取 → 摘要 → 发邮件
-python fetch_news.py --no-email   # 不发邮件，保存 HTML 到本地
-python fetch_news.py --dry-run    # 预览模式，输出到终端
+git clone https://github.com/kingxu884/ai-intel-tracker.git
+cd ai-intel-tracker
+pip install -r requirements.txt
 ```
 
-## 自动推送 (GitHub Actions)
+### 2. 配置 API Keys
 
-1. 推送仓库到 GitHub
-2. Settings → Secrets and variables → Actions → 添加以下 Secrets：
-   - `AIPING_API_KEY`
-   - `AIPING_BASE_URL`
-   - `TAVILY_API_KEY`
-   - `GMAIL_USER`
-   - `GMAIL_APP_PASSWORD`
-   - `RECIPIENT_EMAIL`
-3. GitHub Actions 每天 UTC 22:00（北京时间 06:00）自动运行
+```bash
+# ~/.ai-config/.env
+AIPING_API_KEY=你的_aiping_key
+AIPING_BASE_URL=https://www.aiping.cn/api/v1
+TAVILY_API_KEY=你的_tavily_key
+GMAIL_USER=你的邮箱@gmail.com
+GMAIL_APP_PASSWORD=你的_gmail_app密码
+RECIPIENT_EMAIL=接收日报的邮箱
+```
 
-## 项目结构
+### 3. 本地测试
+
+```bash
+python fetch_news.py --dry-run    # 预览不发送
+python fetch_news.py --no-email   # 生成 HTML 不发邮件
+python fetch_news.py              # 完整运行
+```
+
+### 4. 自动推送（GitHub Actions）
+
+1. 推送到你的 GitHub 仓库
+2. Settings → Actions → Workflow permissions → **Read and write**
+3. Settings → Secrets → 添加上面的 6 个环境变量
+4. 完成。每天早上 9:00 自动推送。
+
+## 📁 项目结构
 
 ```
-ai-intel-tracker/
-├── config.yml          # 所有配置：信源、关键词、LLM、邮件
-├── fetch_news.py       # 核心引擎（单文件）
-├── requirements.txt    # Python 依赖
-├── setup.sh            # 一键初始化
+.
+├── config.yml              # 核心配置：信源、话题、搜索词、LLM
+├── fetch_news.py           # 主引擎 (~400 行单文件)
+├── requirements.txt        # feedparser, openai, tavily, pyyaml
+├── setup.sh                # 一键初始化
 ├── .github/workflows/
-│   └── daily.yml       # GitHub Actions 定时任务
-├── output/daily/       # 日报 HTML 存档
-├── sent_history.json   # 已推送记录（自动去重）
-└── README.md
+│   └── daily.yml           # GitHub Actions 定时触发
+├── output/daily/           # 日报 HTML 存档
+└── sent_history.json       # 推送历史 (自动去重)
 ```
 
-## 信源覆盖
-
-| 类别 | 数量 | 来源 |
-|------|------|------|
-| 国际 AI 新闻 | 11 | OpenAI, Anthropic, DeepMind, HuggingFace, MIT TR, VB, TC, The Verge, NVIDIA, Meta, MSR |
-| 论文 | 4 | arXiv cs.AI, cs.CL, cs.LG, q-bio |
-| 国内 AI 媒体 | 3 | 机器之心, 量子位, 36氪 |
-| KOL 博客 | 11 | Lilian Weng, S. Raschka, N. Lambert, J. Clark, Karpathy, Jim Fan 等 |
-| 经典文章 | 9 | The Bitter Lesson, Software 2.0, DeepSeek-V3 等 |
-| Tavily 搜索 | 10 | Agent 工程, AI4S, 国内厂商, 求职, KOL 动态 |
-
-## 自定义
+## ⚙️ 自定义
 
 只需编辑 `config.yml`：
 
-- 添加/删除 RSS 源：修改 `news_feeds`
-- 调整关注方向：修改 `topics`
-- 更换 LLM：修改 `llm.provider` 和 `llm.model`（任何 OpenAI 兼容 API）
-- 调整推送时间：修改 `email.send_hour_utc`
-- 添加追踪关键词：修改 `tavily_searches`
+```yaml
+# 你关注什么？
+topics:
+  - AI Agent 与 Harness 工程
+  - AI for Science
+  - ...
 
-## 致谢
+# 想加 RSS 源？
+news_feeds:
+  新源名称: https://example.com/rss
 
-基于 [AI Dispatch](https://github.com/Yifannnnnnnnw/ai-dispatch) 架构，感谢原作者。
+# 想搜什么关键词？（Tavily 实时搜索）
+tavily_searches:
+  - query: "你的搜索关键词"
+    topic: "分类标签"
+
+# 换模型？
+llm:
+  model: Kimi-K2.7-Code    # 改成任何 aiping 支持的模型
+```
+
+## 🧠 信源覆盖
+
+| 类型 | 数量 | 来源 |
+|------|------|------|
+| 国际新闻 | 11 | OpenAI, Anthropic, DeepMind, HuggingFace, MIT TR, VB, TC, The Verge, NVIDIA, Meta, MSR |
+| 学术论文 | 4 | arXiv (cs.AI, cs.CL, cs.LG, q-bio) |
+| 国内媒体 | 3 | 机器之心, 量子位, 36氪 |
+| KOL 博客 | 11 | Lilian Weng, S. Raschka, N. Lambert, J. Clark, Karpathy, Jim Fan 等 |
+| 实时搜索 | 10 | Tavily — Agent 工程, AI4S, 国内厂商, 求职, KOL 动态 |
+| 经典文献 | 9 | Bitter Lesson, Software 2.0, DeepSeek-V3 等 |
+
+## 📄 License
+
+MIT © 2026 — 基于 [AI Dispatch](https://github.com/Yifannnnnnnnw/ai-dispatch) 架构改造。
+
+---
+
+<p align="center">
+  <sub>每天早上 9:00 · 准时见 ☕</sub>
+</p>

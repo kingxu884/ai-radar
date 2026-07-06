@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ───────────────────────────────────────────────────
-# AI Intel Tracker — 一键初始化脚本
+# AI Radar — 一键初始化脚本
 # 用法: bash setup.sh
 # ───────────────────────────────────────────────────
 set -euo pipefail
@@ -9,7 +9,7 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$SCRIPT_DIR"
 
 echo "╔════════════════════════════════════════════╗"
-echo "║  🧠 AI Intel Tracker — 初始化              ║"
+echo "║  🧠 AI Radar — 初始化              ║"
 echo "╚════════════════════════════════════════════╝"
 echo ""
 

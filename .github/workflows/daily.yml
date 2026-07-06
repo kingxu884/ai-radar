@@ -1,4 +1,4 @@
-name: Daily AI Intel Report
+name: Daily AI Radar
 
 on:
   schedule:

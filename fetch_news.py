@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-AI Intel Tracker — 每日 AI 前沿情报日报
+AI Radar — 每日 AI 前沿情报日报
 
 基于 AI Dispatch 架构，改造为：
 - 支持 aiping.cn (OpenAI 兼容 API) 做 LLM 摘要
@@ -113,7 +113,7 @@ def _fetch_feeds(feeds: dict, hours: int, per_source: int,
         try:
             feed = feedparser.parse(
                 url,
-                request_headers={"User-Agent": "Mozilla/5.0 (compatible; AI-Intel-Tracker/1.0)"}
+                request_headers={"User-Agent": "Mozilla/5.0 (compatible; AI-Radar/1.0)"}
             )
             if feed.bozo and not feed.entries:
                 print(f"❌ 解析失败")
@@ -324,7 +324,7 @@ def build_prompt(news: list[dict], blogs: list[dict], tavily_results: list[dict]
         for t in tavily_results
     ) if tavily_results else "（今日无搜索结果）"
 
-    prompt = f"""你是 AI Intel Tracker 的主编，为 AI 领域从业者撰写每日深度情报简报。
+    prompt = f"""你是 AI Radar 的主编，为 AI 领域从业者撰写每日深度情报简报。
 读者是熟悉 AI 领域的专业人士（工程师、产品经理、研究员），他们不需要基础概念解释，
 需要的是**洞察、判断和可操作的信号**。
 
@@ -504,12 +504,12 @@ def build_email_html(html_body: str, content: dict) -> str:
 <body>
 <div class="wrapper">
   <div class="header">
-    <h1>🧠 AI Intel Tracker</h1>
+    <h1>🧠 AI Radar</h1>
     <div class="subtitle">{today} · 新闻 {news_count} 条 · 博客 {blog_count} 篇 · 搜索 {tavily_count} 条</div>
   </div>
   <div class="body">{html_body}</div>
   <div class="footer">
-    AI Intel Tracker · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
     每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
   </div>
 </div>
@@ -529,7 +529,7 @@ def send_email(html_body: str, content: dict) -> None:
         return
 
     today = datetime.now().strftime("%m/%d")
-    subject = f"🧠 AI Intel Tracker · {today}"
+    subject = f"🧠 AI Radar · {today}"
 
     full_html = build_email_html(html_body, content)
     msg = MIMEMultipart("alternative")
@@ -565,7 +565,7 @@ def main():
     no_email = "--no-email" in sys.argv
 
     print("=" * 60)
-    print("🧠 AI Intel Tracker — 每日 AI 前沿情报")
+    print("🧠 AI Radar — 每日 AI 前沿情报")
     print("=" * 60)
 
     # 加载配置和历史
