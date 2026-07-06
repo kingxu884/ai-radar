@@ -19,5 +19,4 @@ venv/
 # Runtime data (history is pushed for GitHub Actions)
 data/
 
-# Output (committed by GitHub Actions)
-output/
+# Output is committed by GitHub Actions for daily report archive
