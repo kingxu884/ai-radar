@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年07月07日 · 新闻 171 条 · 博客 2 篇 · 搜索 14 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+    <strong>📐 Vercel CEO 提出“模型与 Agent 分离”架构</strong>
+    <p><strong>发生了什么：</strong>Vercel CEO Guillermo Rauch 在访谈中强调，生产环境中应严格区分模型层（价格/性能优化）和 Agent 层（逻辑与编排）。</p>
+    <p><strong>为什么重要：</strong>这标志着 Harness 工程思想正在进入主流前端与部署领域。它将 Agent 的可靠性从模型能力中解耦，为工具调用、上下文管理和 MCP 的标准化提供了产业落地的哲学基础。</p>
+    <p><strong>关联信号：</strong>这与今日 arXiv 上关于 Subagent（SwarmResearch, ASK+）和多智能体协作的论文形成呼应——架构上的“分而治之”是解决复杂任务收敛性的关键。</p>
+</div>
+
+<div class="item">
+    <strong>🧠 DeepSeek 成立“Harness 团队”，急招人才</strong>
+    <p><strong>发生了什么：</strong>DeepSeek Harness 团队负责人崔添翼公开表示，团队目标宏大，急缺人才，每天都在面试。固定开放 Harness 研究员、工程师、产品经理三大岗位。该团队承载对标 Claude Code 的目标。</p>
+    <p><strong>为什么重要：</strong>这是国内大模型厂商首次明确设立并扩招专门的 Agent Harness 团队，标志着竞争已从基座模型转向 Agent 工程落地。DeepSeek 意图建立能约束、验证、纠错智能体的可靠工程外壳。</p>
+    <p><strong>关联信号：</strong>结合 DeepSeek 刚完成 510 亿元 A 轮融资，梁文锋坚持押注 AGI。Harness 团队的组建是其商业化落地的关键工程布局。</p>
+</div>
+
+<div class="item">
+    <strong>🤖 Agent 研究爆发：从单一长链路到多分支协作的范式转移</strong>
+    <p><strong>发生了什么：</strong>两篇新论文展示了 Agent 架构的进化：<em>SwarmResearch</em> 提出“牧羊人-搜索者”架构，用全局上下文引导多个具有本地上下文的子 Agent 分支探索；<em>PivoARL</em> 提出在失败轨迹中识别关键错误并仅从关键状态重试，降低交互成本。</p>
+    <p><strong>为什么重要：</strong>这解决了当前编码 Agent 易陷入局部最优或全量重试代价高的问题。Harness 层面的设计（利用 Git 分支状态隔离、关键状态重放）成为提升 Agent 探索效率的新杠杆，这远比单纯依赖模型推理能力提升更具工程可操作性。</p>
+</div>
+
+<div class="item">
+    <strong>🧬 OpenDDE：一个开放的“共折叠”生物分子基础模型</strong>
+    <p><strong>发生了什么：</strong>开源社区发布了 OpenDDE，一个全原子生物分子基础模型，不仅预测复合物结构，更将此作为“结构推理层”，服务于结合亲和力估算、从头设计、结构条件优化等下游任务。</p>
+    <p><strong>为什么重要：</strong>这标志着“AI for Science”从单点预测模型向一体化药物发现引擎的跨越。它将结构预测作为推理底座，而非终点，直接切入了药物研发的核心瓶颈——分子相互作用。</p>
+    <p><strong>关联信号：</strong>与国内华源智因的细胞扰动预测创业思路异曲同工，都试图将 AI 能力从“找药”延伸到“判断药效”，降低临床试验失败率。</p>
+</div>
+
+<div class="item">
+    <strong>👥 Microsoft 再裁员近 5,000 人，AI 替换阴影加重</strong>
+    <p><strong>发生了什么：</strong>微软周一大裁员，涉及 Xbox 和商业销售部门，约 4,800 人，是近期大型科技公司中明确点名因 AI 进行结构调整的又一例。</p>
+    <p><strong>为什么重要：</strong>这不仅仅是成本优化，而是企业对人才技能需求的根本性重构。同时，Vercel、DeepSeek 等公司正在疯狂招聘 Agent 工程师，两极分化严重。</p>
+    <p><strong>关联信号：</strong>技术从业者需要关注“Harness 工程”、“Agent 产品化”等新兴热门岗位，从被 AI 替代的职能向构建 AI 系统的职能迁移。</p>
+</div>
+
+<div class="item">
+    <strong>🔭 蚂蚁灵波开源空间原生视觉基模</strong>
+    <p><strong>发生了什么：</strong>蚂蚁灵波发布了首个开源的空间原生具身视觉基础模型 LingBot-Depth 2.0，让机器人更好地理解三维世界。</p>
+    <p><strong>为什么重要：</strong>具身智能的核心瓶颈之一在于空间感知。开源此类模型能极大降低机器人研发的门槛，促进整个生态发展，这与 iFLYTEK 等提出的“具身操作者”模块化思路一致。</p>
+    <p><strong>关联信号：</strong>从多模态 LLM 到具身智能体，整个技术栈正在被快速模块化和开源化。</p>
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+    <strong>趋势 1: Harness 工程成为独立核心职能</strong>
+    <p><strong>证据：</strong>DeepSeek 成立专门的 Harness 团队并大面积招聘；arXiv 论文大量关注 Agent 架构设计（如 SwarmResearch 的分支隔离、ASK+ 的上下文增强）；Vercel CEO 强调模型与 Agent 分离论。</p>
+    <p><strong>预判：</strong>“Harness 工程师/研究员”将迅速成为 AI 领域最热门的职位之一。这一职能不再仅仅是 prompt engineering，而是涉及 OS 级别（进程级隔离、Git 分支）、分布式系统（多智能体协作、状态同步）和传统软件工程（CI/CD、可观测性）的交叉学科。AI 工具链的下一步不再是训练更大的模型，而是为模型构建更坚固的“外骨骼”。</p>
+</div>
+
+<div class="trend">
+    <strong>趋势 2: AI for Science 进入“推理层”构建阶段</strong>
+    <p><strong>证据：</strong>OpenDDE 提出的“结构推理层”；<em>PRECEDE</em> 将药物重设计定义为基于证据的推理过程；深势科技等公司在构建跨尺度模拟平台。</p>
+    <p><strong>预判：</strong>第一代 AI4S 工具提供了预测（如 AlphaFold 预测结构），第二代将提供“推理”（预测+解释+反事实推演）。这意味着科学 AI 模型需要内化物理原理、化学法则，结合 LLM 的推理能力，形成可审计的科学闭环。</p>
+</div>
+
+<div class="trend">
+    <strong>趋势 3: Agent 的“内存/上下文”管理成为性能核心战场</strong>
+    <p><strong>证据：</strong><em>PraMem</em> 论文提出将长历史序列视为可挖掘的资源而非负担，用于行为预测；<em>Organizational Memory</em> 论文提出企业级 Agent 需要共享的、可治理的组织记忆；<em>Object-Centric Environment Modeling</em> 通过执行环境代码来组织经验。</p>
+    <p><strong>预判：</strong>单个 Agent 的上下文窗口已不是最大障碍。真正的瓶颈是如何在多智能体、跨会话、跨任务的复杂系统中，构建可查询、可更新、可回滚的结构化记忆。这将是 Harness 工程和 MCP 落地的核心挑战。</p>
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+    <strong>1. SwarmResearch: Orchestrating Coding Agents for Open-Ended Discovery</strong>
+    <p><strong>核心贡献：</strong>提出“牧羊者-搜索者”架构解决 Agent 探索时收敛于局部单一方法的问题。利用 Git 分支为每个搜索者 Agent 提供隔离的本地上下文，有效避免了长程任务的上下文污染和低效编辑。</p>
+    <p><strong>为什么值得读：</strong>此方案完美地将传统软件工程工具（Git）用作 Agent 的上下文隔离机制，是 Harness 工程实践的绝佳范例。它为构建多 Agent 编码系统提供了清晰、可落地的设计蓝图。</p>
+</div>
+<div class="deep-read">
+    <strong>2. PraMem: Practice-derived Experiential Memory for Long-horizon Behavior Prediction</strong>
+    <p><strong>核心贡献：</strong>提出从用户使用 LLM 的实践历史中，直接推导出结构化的“实践经验记忆”，以解决 LLM 在长程行为预测中对潜在模式归纳不足和认知偏差的问题。</p>
+    <p><strong>为什么值得读：</strong>它将记忆管理从“压缩”范式转向“萃取”范式，是解决 Agent 个性化与长期可靠性的关键思路。对于任何做 Agent 产品化的团队，如何利用用户数据提升体验，这篇提供了一种高效路径。</p>
+</div>
+<div class="deep-read">
+    <strong>3. Gemma 4 Technical Report</strong>
+    <p><strong>核心贡献：</strong>谷歌发布的开放权重多模态模型系列，包含 Dense 和 MoE 架构，最高 31B 参数，提出了一种统一的、无编码器的原生多模态架构，并整合了“思考模式”。</p>
+    <p><strong>为什么值得读：</strong>关注其“无编码器”架构和将推理能力整合进多模态基座的方法。这对于理解多模态模型如何在没有视觉/音频编码器的情况下直接处理原始信号，并实现端到端可训练的推理，具有前沿指导意义。</p>
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+    <strong>Lilian Weng: Harness Engineering for Self-Improvement</strong>
+    <p><strong>为什么今天推荐：</strong>在 DeepSeek 成立 Harness 团队、Vercel CEO 强调模型与 Agent 分离的今天，Lilian Weng 这篇对递归自我改进（RSI）的深度技术剖析来得正是时候。它系统地阐述了 AI 系统如何通过改进其训练和部署的“脚手架（Harness）”来实现自我进化，而不是仅仅修改模型权重。这篇博客是理解当前 AI 领域为何从关注模型“大脑”转向关注其“工程骨架”的绝佳纲领性读物。</p>
+    
+    <p><strong>3 个核心观点：</strong></p>
+    <ul>
+        <li><strong>RSI 的现代化定义：</strong>现代 AI 的自我改进更多指系统改进其<strong>训练管线</strong>和<strong>部署系统</strong>，这个外部系统（Harness）间接提升了后续模型的智能。</li>
+        <li><strong>Harness 的五大关键组件：</strong>(1) 沙盒与环境 (2) 错误检测与验证循环 (3) 奖励定义与分配 (4) 长期记忆与知识库 (5) 工具使用与 API 集成。</li>
+        <li><strong>从概念到实践：</strong>举例说明了 Anthropic、OpenAI 等前沿实验室如何将这种 Harness 工程思想（如 constitutional AI、RLHF iterated）应用于实际模型训练，形成了智能提升的飞轮。</li>
+    </ul>
+
+    <p><strong>适合谁读：</strong>AI Agent 工程师、研究员、产品经理，尤其是正在构建或设计能自我迭代的 AI 系统的从业者。这篇能帮助你将日常的工程决策（如如何做验证、如何设计工具）提升到系统演化的战略高度。</p>
+    <p><strong>预计阅读时间：</strong>25 分钟</p>
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+    <strong>🚀 DeepSeek：全面扩招，成立 Harness 核心团队</strong>
+    <p>DeepSeek 正在进行 A 轮融资后的急剧扩张。所有部门规模计划扩大至少一倍。除基础研究外，<strong>新成立的 Harness 团队成为本日焦点</strong>，公开招募 Harness 研究员、工程师、产品经理，目标直指打造国产顶级代码智能体。创始人梁文锋强调继续押注 AGI 研究而非短期商业化。</p>
+</div>
+<div class="item">
+    <strong>📉 智谱：基石投资者看好长期持有</strong>
+    <p>智谱在基石投资者解禁日前，获得近七成基石投资者表态长期持有，显示资本市场对其长期价值的认可。稳定了上市后的股价预期。</p>
+</div>
+<div class="item">
+    <strong>📱 字节跳动：Seedance 2.0 成功源于技术坚持</strong>
+    <p>深度报道揭示，字节 Seed 团队研究员曾妍因坚持做大尺寸（200B-300B）的 Seedance 视频生成模型，最终使其性能实现口碑逆转，证明在关键方向上大胆投入资源的重要性。</p>
+</div>
+<div class="item">
+    <strong>🤖 蚂蚁灵波：开源具身智能基础模型</strong>
+    <p>蚂蚁旗下机器人公司发布并开源了“空间原生”的视觉基座模型 LingBot-Depth 2.0，为机器人提供三维深度感知能力，发力具身智能生态。</p>
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+    <strong>🔥 超新星岗位：Harness 工程师 (Harness Engineer)</strong>
+    <p><strong>需求背景：</strong>DeepSeek Harness 团队的正式亮相，标志着“Harness 工程”从一种技术思想变为具体的招聘方向。其职责围绕 Agent 的可靠性、约束、验证、纠错、多任务编排（MCP/Subagent）构建工程系统。</p>
+    <p><strong>洞察：</strong>该岗位融合了传统 SRE、软件工程和最新的 AI 应用技能，目前人才极度稀缺。对于熟悉 Claude Code、Cursor 等工具底层原理，或有复杂分布式系统、进程隔离经验的工程师，是巨大的机会窗口。</p>
+</div>
+<div class="item">
+    <strong>📈 大厂就业两极化：传统岗裁员，AI 岗扩张</strong>
+    <p><strong>信号：</strong>微软裁撤近 5,000 人（销售、游戏），而阿里巴巴（淘天）2027 届实习岗位中，<strong>95% 为 AI 相关岗位</strong>，并新增“AI Agent 产品经理”。30 万+年薪的应届生争夺战已打响。</p>
+    <p><strong>行动信号：</strong>软件工程师、产品经理、销售等传统岗位从业者需加快技能转型。学习如何构建、调试、评估 AI Agent，将成为 2026-2027 年求职的关键技能。</p>
+</div>
+<div class="item">
+    <strong>💡 新兴主题：“组织记忆”工程师</strong>
+    <p><strong>来源：</strong>今日论文 <em>Organizational Memory for Agentic Business Process Execution</em> 指出，企业需要管理 Agent 共享知识体系的人。</p>
+    <p><strong>机会：</strong>在银行、保险、医疗等强流程行业，未来将需要能设计和维护“企业级 Agent 知识图谱和记忆系统”的架构师，这是知识工程与 Agent 的交叉地带。</p>
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+    <p><strong>Harness 工程的岗位元年已至。</strong>如果仍在苦恼大模型岗卷无可卷，立刻扎进 Agent 可靠性、多智能体编排和结构化记忆的设计中，这是当前技术落地与技术壁垒的最大交汇点。</p>
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
