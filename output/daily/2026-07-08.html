@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年07月08日 · 新闻 160 条 · 博客 5 篇 · 搜索 8 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<b>翁荔提出“自进化从Harness开始”，获DeepSeek核心成员转发</b><br>
+发生了什么：前OpenAI对齐负责人翁荔发布新博客，核心观点是AI的自进化不应仅聚焦于模型权重，应首先从更易设计、测试和迭代的“Harness”（上下文管理、工具调用、记忆编排等工程框架）开始。此观点被DeepSeek数学推理团队负责人崔添翼转发并附议“这个方向很容易出成果”。<br>
+为什么重要：这标志着“Harness Engineering”正式从草根工程实践中升华，成为顶尖研究者和一线厂商共同认可的系统性科学问题与产品创新的核心战场。它明确了从“炼更强模型”到“搭更好脚手架”的范式转移，Harness正在从胶水代码演变为决定Agent能力上限的关键架构。<br>
+关联：与DeepSeek秘密组建Harness团队、大量关于Multi-Agent记忆、工具调用控制的arXiv论文（如Memory in the Loop、StateFuse等）形成强烈信号共振，预示着Harness将成为下半年最关键的创新和人才争夺高地。
+</div>
+
+<div class="item">
+<b>DeepSeek秘密造芯，专攻推理，已与供应链接洽</b><br>
+发生了什么：据量子位独家报道，DeepSeek已在一-年前秘密启动自研推理芯片项目，招聘全程未公开，目前已与芯片设计公司、晶圆代工厂和存储器供应商展开接洽。<br>
+为什么重要：这比单纯做模型更深层地暴露了DeepSeek的商业化和技术壁垒构建意图。在推理成本控制和高并发服务稳定性上，自研芯片是必经之路。这也解释了为何其需要年化30亿美元级别的营收预期来支撑资本开支。<br>
+关联：结合DeepSeek大规模招聘（包括被吐槽HR不专业，急需扩招）和组建Harness团队的信号，其正在从纯研究机构向“模型+芯片+产品”垂直整合巨头全速进化，这对国内其他只做模型层的厂商（智谱、月之暗面等）构成降维打击威胁。
+</div>
+
+<div class="item">
+<b>Anthropic Claude Cowork 扩展至移动端与网页，开启Agent跨端协同</b><br>
+发生了什么：Claude Cowork发布了重大更新，用户现可在桌面端开启任务后，通过手机端接收状态更新并获取最终产出，即使笔记本电脑合上，任务也将在云端继续运行。<br>
+为什么重要：这是AI Agent从“编码工具”进化为“异步办公伙伴”的关键一步。它解决了长耗时Agent任务（如自动化测试、深度调研）必须束缚用户于终端前的痛点。跨端同步和云端持久化执行，实质上定义了下一代“智能体操作系统”的雏形。<br>
+关联：这与国内厂商正在构建的Harness层（如深度智联的地产模数通CoWork AI工作平台）在体验上形成对标。Claude在ToC产品化上的激进迭代，给所有试图将Agent产品化的厂商树立了新体验标准。
+</div>
+
+<div class="item">
+<b>NVIDIA发布Vera CPU，专门为加速Agentic工作负载设计</b><br>
+发生了什么：NVIDIA发布针对AI工厂的新款CPU Vera，主打为多步骤推理、工具调用、检索增强等Agentic工作流提供高吞吐量支持。<br>
+为什么重要：硬件巨头已官方定调“Agentic Workloads”为下一代核心算力需求。不同于GPU加速单次推理，Vera CPU瞄准的是复杂的Harness编排开销，证明Agent的"胶水层"执行开销已大到需要从指令集层面做优化，这是基础设施的重大转向信号。<br>
+关联：从Harness软件架构到Harness专用芯片（如DeepSeek推理芯片），整个Agent计算栈正在经历重构，对云原生架构和异构计算人才的需求将激增。
+</div>
+
+<div class="item">
+<b>深度智联发布“地产模数通”一体机，行业Agent落地进入深水区</b><br>
+发生了什么：易居旗下深度智联发布地产行业专属大模型一体机，集成模型、企业知识库与CoWork AI工作平台，覆盖拿地可研、工程造价等16类不动产核心业务场景。<br>
+为什么重要：这已不是通用对话机器人，而是从底层模型路由、企业知识增强到顶层多智能体编排的全栈私有化交付。其“数据不出域、专家陪跑”的模式，代表着垂类Agent从SaaS走向软硬一体机的商业化闭环。这是Agent产品化最重的打法，也是壁垒最高、利润最丰厚的路径。<br>
+关联：此模式可与德睿智药（AI生物制药）、量感智能（量子传感AI）的垂直落地并观，表明“垂类深度数据+专有流程Agent+一体机/私有云”已成为传统行业数字化转型的主流付费逻辑。
+</div>
+
+<div class="item">
+<b>arXiv前沿：从被动检索到主动记忆导航，Multi-Agent记忆状态管理实现工程化突破</b><br>
+发生了什么：今日arXiv涌现多篇Agent记忆关键论文：《Memory in the Loop》通过100us级进程内存储将检索延迟降低三个数量级；《From Passive Retrieval to Active Memory Navigation》让Agent学会像导航地图一样主动在多层记忆金字塔里寻找证据；《StateFuse》则解决了多Agent分支间冲突信息的保存与修正问题。<br>
+为什么重要：这三篇论文分别在工程时延、认知架构和数据一致性三个维度上，系统性解决了Multi-Agent系统目前最核心的记忆贫困问题。它们共同指明：Agent的记忆不应是被动的数据库查询，而应是内化于推理循环、结构化、冲突可追踪的主动检索与更新体系。<br>
+关联：这些理论与翁荔、DeepSeek Harness团队的工程重点完全对齐。将这类论文中的思想落地到生产级Harness架构（如MCP的进化版），将是顶级Harness工程师的必备技能。
+</div>
+
+<div class="item">
+<b>AI制药持续吸金：德睿智药获5200万美元B轮，AI设计的减肥药已进III期临床</b><br>
+发生了什么：德睿智药完成5200万美元B轮融资，其核心产品是AI设计的小分子GLP-1减肥药MDR-001，目前已推进至III期临床，公司同时升级多智能体协同的AI制药引擎MAP。<br>
+为什么重要：这是AI for Science从“论文指标”迈向“临床/市场指标”的标杆案例。进入III期临床意味着AI设计的药物首次可能在人类身上大规模验证效果并产生巨大商业回报，这将彻底改变制药行业对AI的信任度和投资逻辑。<br>
+关联：对比今日另一篇融资新闻中仅靠概念就获高估值的AI公司，以及《FirstResearch》等论文追求的可审计科研质量，真正有价值的AI科学应用正聚焦于那些能经受最严苛物理/临床世界验证的赛道。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<b>趋势一：Harness Engineering 正式登堂入室，成为AI下一代基础架构</b><br>
+<b>证据：</b>翁荔的博客定义了这个领域的理论基础，DeepSeek的组建团队是其产业化的标志，《Memory in the Loop》《StateFuse》等论文是其技术内核的深化，而NVIDIA Vera CPU的发布则是其硬件底座的确立。<br>
+<b>预判：</b>未来一年，“Harness工程师”将取代“提示词工程师”成为最热门的AI新岗位，其技能集涵盖分布式系统、多Agent编排、记忆架构设计和状态冲突解决。能够设计和实现可进化的Harness框架，比微调模型本身更具商业价值，Harness将成为AI公司的软件护城河。
+</div>
+
+<div class="trend">
+<b>趋势二：从“模型即产品”到“芯片+模型+Harness”垂直一体化</b><br>
+<b>证据：</b>DeepSeek秘密造芯，专攻推理；Apple折叠屏量产，端侧算力升级；SambaNova获得10亿美金巨额融资，估值飙升至110亿；微软开始更多依赖自家小模型以降低成本。<br>
+<b>预判：</b>前沿AI竞争已升级为系统级工程战。单纯训练最强基座模型的战略价值正在被快速稀释，胜利的天平倾向于掌控“高效推理芯片+强大模型+优秀Agent产品”完整价值链的玩家。这将加速行业洗牌，无法分担高昂推理成本和提供极致用户体验的纯模型公司将面临巨大生存压力。
+</div>
+
+<div class="trend">
+<b>趋势三：AI for Science 进入“临床/物理验证”的变现期</b><br>
+<b>证据：</b>德睿智药AI药物进III期临床；阿里达摩院的超导材料AI和具身智能平台获联合国奖；《Design-CP》用并行计算实现超大蛋白质纳米颗粒设计。这些成果的共同点是都在解决具体、可验证的现实世界问题，并取得了实质性进展。<br>
+<b>预判：</b>资本对仅基于历史数据做预测性分析的AI for Science项目的耐心正在耗尽，下一个投资风口将属于能将AI预测通过自动化实验室（干湿实验闭环）、临床试验或工业仿真进行严格验证并形成数据闭环的平台，例如德睿智药的MAP引擎模式。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<b>1. Memory in the Loop: In-Process Retrieval as Extended Working Memory for Language Agents</b><br>
+<b>核心贡献：</b>提出了颠覆性的Agent记忆范式。不将记忆视为回合间查询一次的被动数据库，而是将其作为每个推理步骤都可实时读写、延迟仅~100us的进程内扩展内存。它将端到端延迟从83倍降低到与无检索几乎持平的水平。<br>
+<b>精读理由：</b>这是Harness工程在时延优化上的“硬核”解决方案，直接挑战了当前主流的客户端-服务器式向量数据库架构。如果你正在设计需要高频、低延迟进行记忆操作的Agent系统，这篇论文的实现思路可能是决定产品体验生死的关键。
+</div>
+
+<div class="deep-read">
+<b>2. From Passive Retrieval to Active Memory Navigation: Learning to Use Memory as a Structured Action Space</b><br>
+<b>核心贡献：</b>提出了NapMem框架，将用户长期记忆组织为多层金字塔结构，并让Agent学会使用专门的“寻路工具”主动导航不同的记忆粒度，而非被动接受一个由相似度排序出的文本块列表。<br>
+<b>精读理由：</b>这为解决“大海捞针”问题提供了认知架构层面的思路。它赋予Agent类似人类的元记忆能力——知道自己知道什么，以及去哪里找。对于构建个性化、长周期的Agent伴侣至关重要。
+</div>
+
+<div class="deep-read">
+<b>3. StateFuse: Deterministic Conflict-Preserving Memory for Multi-Agent Systems</b><br>
+<b>核心贡献：</b>首次系统性地处理了Multi-Agent系统中因分支、重试、复制产生的冲突记忆。它不允许任何一条有冲突的信息被静默覆盖，而是创建一个显式的、可查询的冲突对象，并提供了语义修正的接口。<br>
+<b>精读理由：</b>解决了多Agent协作生产中的事实一致性和可审计性问题。这是将Agent从用于玩玩的Demo推进到用于金融、医疗等严肃生产环境所必需的基础设施。StateFuse的设计哲学对构建可靠的企业级Agent平台有深远启发。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<b>翁荔新博客：《自进化先从Harness开始》</b> <br>
+<b>为什么今天推荐：</b>当前正值业界对Self-evolving Agent的实现路径感到迷茫的时期，翁荔的这篇博客如同一剂清醒剂。她没有去追捧参数自变异等不切实际的技术幻想，而是务实且深刻地指出：更可控、可解释、风险更低的进化起点，是Agent与外部世界交互的工程框架（Harness）。这直接呼应了DeepSeek的产业布局和今日涌现的大量记忆/工具调用论文，为我们思考AI系统如何安全有效地自我改进提供了极具可操作性的顶层指导。<br>
+<b>3个核心观点：</b>
+1.  模型的权重是“本能”，Harness（上下文、记忆、工具流）是“思维方法”，改变后者比改变前者更安全高效。
+2.  自进化的第一步不是自动改写代码，而是利用Agent在失败任务中的轨迹数据，自动优化Harness层中的工具描述、提示词模板和记忆检索逻辑。
+3.  通过监控Harness层的性能指标（如工具选择准确率、记忆召回率），可以建立一个清晰、可解释的Agent进化评估体系，而非仅仅看最终任务成功率。<br>
+<b>适合谁读：</b>所有AI Agent开发者和产品经理、希望理解DeepSeek等前沿公司下一步动向的研究员、以及任何对构建真实可进化AI系统感兴趣的人。<br>
+<b>大致阅读时间：</b>约15分钟。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<b>DeepSeek</b>：成为全场焦点。被曝秘密启动自研推理芯片项目；组建Harness团队引发行业对产品化转型的集体猜想；因“华为天才少年”吐槽其面试流程不专业，反而暴露了其正在超大规模、急迫招人的事实（承诺所有部门规模翻倍）。
+</div>
+<div class="item">
+<b>蚂蚁集团</b>：其子公司灵波开源了LingBot-VLA 2.0，一款使用60000小时数据训练，可支持17家机器人厂商、20多种构型的视觉-语言-动作基础模型。这是国内具身智能领域底层能力平台化的强烈信号。
+</div>
+<div class="item">
+<b>阿里达摩院</b>：两项成果获联合国AI for Good优秀案例奖，分别是具身智能平台RynnBot和超导材料发现AI智能体ElementsClaw，证明其在AI for Science和机器人领域的科研实力。
+</div>
+<div class="item">
+<b>高德</b>：发布Phys AI Data一站式空间数据基座，为物理AI训练提供基础设施级支持，是其在自动驾驶乃至机器人领域数据垄断地位的延伸。
+</div>
+<div class="item">
+<b>深度智联（易居）</b>：推出地产行业专用大模型一体机，展示了Agent在产品化和垂直行业落地上一种很“重”但可能很有效的商业模式。
+</div>
+<div class="item">
+<b>德睿智药 & 量感智能</b>：分别完成大额融资，表明虽然通用大模型赛道趋冷，但AI在制药和量子传感等硬科技领域的应用仍是资本追逐的热点。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<b>“Harness 工程师”岗即将爆火：</b>翁荔的理论背书、DeepSeek的团队组建、以及解决Memory/Tool调用等核心痛点的论文密集出现，共同指向Harness将成为独立且核心的岗位，不再附属于“后端开发”。预计掌握MCP/A2A协议、熟练使用LangGraph/CrewAI等编排框架，并有分布式系统设计经验的人才将遭到哄抢。
+</div>
+<div class="item">
+<b>AI 硬件/芯片人才需求激增：</b>DeepSeek秘密造芯+SambaNova巨额融资+NVIDIA Vera发布，预示AI芯片领域战况升级。具备AI算法理解能力的芯片设计、编译器开发、系统软件人才将成为新的稀缺资源。
+</div>
+<div class="item">
+<b>垂直领域 AI 落地岗薪资看涨：</b>深度智联地产一体机、德睿智药临床三期、量感智能订单交付等案例显示，能将AI技术与垂直行业知识结合，并跑通完整商业化闭环的人才（如AI制药产品经理、工业Agent架构师）价值快速凸显，薪资水平将远超通用AI岗位。
+</div>
+<div class="item">
+<b>面试体验成为雇主品牌：</b>前华为天才少年吐槽DeepSeek面试的负面事件提醒所有公司，在争夺顶尖人才的“卖方市场”，专业、尊重的招聘流程本身就是核心竞争力。DeepSeek高调宣布扩招，必然会在压力下优化其招聘体验。
+</div>
+
+<div class="closing">
+<b>⚡ 今日信号：Harness即壁垒。</b>
+放下幻想，不要再执迷于用更多数据炼更强的通用基座模型。Agent能力的下一个十倍级提升，将来源于对记忆、工具调用、多智能体协同这些“工程脚手架”的极致打磨。无论是个人技能栈还是公司战略，重心应立即、果断地从“模型权重”转向“编排架构”。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
