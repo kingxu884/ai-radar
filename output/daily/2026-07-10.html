@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年07月10日 · 新闻 136 条 · 博客 5 篇 · 搜索 10 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>GPT-5.6 正式发布，OpenAI 推出 Luna/Terra/Sol 三款模型</strong><br>
+发生了什么：OpenAI 发布 GPT-5.6 系列，包含三个尺寸（Luna $1/$6、Terra $2.50/$15、Sol $5/$30 每百万 token），全部支持 100 万 token 上下文窗口和 12.8 万最大输出 token。<br>
+为什么重要：三款模型在长期 Agent 任务基准上均超越 Claude Fable 5，标志着 OpenAI 重新夺回 Agent 性能制高点。值得注意的是，价格战逻辑正在失效——推理 token 数量因模型而异，单纯比较单价已无意义。<br>
+关联信号：GPT-5.6 已被指定为 Microsoft 365 Copilot 的"首选模型"，说明企业级 Agent 工作流的底层引擎正在统一。同时 OpenAI 宣布关闭 AI 浏览器 Atlas，将 Agent 浏览能力整合进桌面应用——产品收敛的信号很明确。
+</div>
+
+<div class="item">
+<strong>DeepSeek 组建 Harness 团队，前 ACM 金牌得主崔添翼带队研发对标 Claude Code 产品</strong><br>
+发生了什么：前 TSY Capital 联合创始人崔添翼已于 3 月加盟 DeepSeek，出任 Harness 团队负责人，核心目标是将 DeepSeek 模型能力转化为能真正干活的 Agent 产品。<br>
+为什么重要：DeepSeek 内部已将产品路径定义为 "Model + Harness = Agent"，把上下文管理、工具调用、文件读写、终端执行、测试反馈等模型之外的工程动作全部归入 Harness 范畴。这标志着 DeepSeek 从"模型优先"转向"交付能力优先"，直接对标 Anthropic 的 Claude Code。<br>
+关联信号：同一时间，DeepSeek 宣布所有部门规模扩招至少一倍，并开放"AI 跨界技术人才"特别岗位——不设专业背景限制，加分项包括"不走寻常路"。招聘力度罕见。
+</div>
+
+<div class="item">
+<strong>Anthropic 发现 Claude 内部存在"思考空间"，可解释性研究取得突破</strong><br>
+发生了什么：Anthropic 开发了一种名为 Jacobian Lens 的技术工具，能够窥探 LLM 在回答问题时的内部活动，发现 Claude 会在隐藏空间中"思考"概念。<br>
+为什么重要：这是 LLM 可解释性领域近期最重要的进展之一。理解模型如何在内部表征和操作概念，直接影响到安全性对齐、幻觉检测和推理能力评估。MIT Tech Review 评价其为"迄今最清晰的内部视角"。<br>
+关联信号：这一发现与 Anthropic 同日推出的 Claude Reflect 仪表盘形成呼应——前者揭示模型"怎么想"，后者展示用户"怎么用"，Anthropic 正在从技术透明度和用户行为分析两个维度构建护城河。
+</div>
+
+<div class="item">
+<strong>Meta 发布 Muse Spark 1.1，正式加入 AI 编程工具大战</strong><br>
+发生了什么：Meta 推出 Muse Spark 1.1，声称在 Agent 工具调用和计算机使用能力上有显著提升，主打大型代码迁移、bug 修复和企业级自动化工作负载。<br>
+为什么重要：AI 编程工具市场已从 GitHub Copilot 和 Cursor 的二人转演变为混战——Anthropic 的 Claude Code、OpenAI 的 Codex Agent、Meta 的 Spark、以及 DeepSeek 即将推出的 Harness 产品，竞争正在从模型能力延伸到工程体系的完备性。<br>
+关键细节：Muse Spark 1.1 首次开放 API，开发者可通过 llm-meta-ai 插件直接在命令行调用。这降低了企业将其嵌入工作流的门槛。
+</div>
+
+<div class="item">
+<strong>Aurora 1.5 发布：微软开源天气基础模型新增 22 个变量和概率集成预测</strong><br>
+发生了什么：微软研究院将 Aurora 天气基础模型升级到 1.5 版本，新增 22 个地球系统变量、小时级时间分辨率和概率集成预报能力。<br>
+为什么重要：这是 AI for Science 领域从"模型炫技"走向"实际可用"的标志性事件。气象预测是 AI 基础模型最具现实影响力的应用场景之一，Aurora 1.5 的开放策略可能加速全球气象机构的技术升级。<br>
+关联信号：NVIDIA 同日发布分子动力学模拟的 GPU 通信实践指南，AI+计算科学的基础设施层正在快速成熟。
+</div>
+
+<div class="item">
+<strong>Ollama 获 6500 万美元融资，用户逼近 900 万</strong><br>
+发生了什么：开源 AI 开发者工具 Ollama 宣布完成 6500 万美元融资，由 Benchmark 支持，GitHub 星标达 17.6 万。<br>
+为什么重要：Ollama 的增长验证了一个关键趋势——本地化 AI 推理正在从极客玩具变为主流需求。近 900 万用户意味着大量开发者已将"在自己的机器上跑模型"作为日常工作流的一部分。<br>
+关联信号：这与 Meta 定制 AI 芯片将于 9 月投产的消息相呼应——端侧推理的硬件和软件生态正在同步成熟。
+</div>
+
+<div class="item">
+<strong>AI Agent 初创公司 Lyzr 用自己的 Agent 完成了 1 亿美元融资</strong><br>
+发生了什么：Lyzr 声称其 AI Agent 自主完成了 1 亿美元融资轮的全部流程，公司将其作为产品能力的"活证据"。<br>
+为什么重要：这是 Agent 产品化最激进的一次自我验证。虽然具体细节有待核实，但这种"吃自己的狗粮"到极致的做法，标志着 Agent 创业公司正在寻找超越传统 demo 的差异化叙事方式。<br>
+值得追问：这轮融资的真实自主程度如何？投资者与 Agent 的交互流程是否可复现？这些问题将决定该案例是里程碑还是营销噱头。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Harness Engineering 正在成为独立学科，人才争夺战已经打响</strong><br>
+证据链：DeepSeek 成立独立 Harness 团队并大规模招聘 → OpenAI 在 GPT-5.6 发布中强调"长期 Agent 任务"基准 → Meta Spark 1.1 主打"大型 Agent 工作负载" → 行业对 Harness Engineering 的定义正在收敛为：上下文管理 + 工具调用 + 记忆系统 + 多 Agent 编排 + 错误恢复。<br>
+预判：未来 6 个月内，"Harness Engineer"将成为独立职位出现在招聘市场，薪资水平可能与传统 MLE 持平或更高。核心技能组合将从"会调 prompt"升级为"能设计多 Agent 系统的工程架构师"。
+</div>
+
+<div class="trend">
+<strong>趋势二：AI 编程工具的竞争从"模型能力"转向"工程完整度"</strong><br>
+证据链：GPT-5.6 三款模型全部强化 Agent 性能 → Meta 加入编程工具战局 → Ollama 900 万用户验证本地推理需求 → DeepSeek 从模型研发延伸至终端产品。<br>
+预判：AI 编程工具的胜负手不再是单一代码生成准确率，而是：能否管理超大代码库的上下文、能否可靠执行多步骤操作（文件读写、终端命令、git 操作）、能否在失败时自动恢复。Cursor 和 Claude Code 的先发优势正在被模型厂商的垂直整合策略侵蚀。
+</div>
+
+<div class="trend">
+<strong>趋势三：AI for Science 进入"工程化交付"阶段</strong><br>
+证据链：Aurora 1.5 新增 22 个变量和概率预报 → NVIDIA 发布分子动力学 GPU 通信指南 → DrugGen 2 引入疾病感知的药物生成 → 全球草地实验揭示干扰如何重塑植物群落 → 深势科技持续融资。<br>
+预判：2026 年下半年，AI for Science 的叙事将从"模型在某个数据集上达到 SOTA"转变为"模型已嵌入实际科研或生产流程"。气象预测、药物发现、材料设计三个方向最接近工程化临界点。中国深势科技、他山科技（触觉仿真）等公司在这个趋势中占据有利位置。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>DeepSearch-World: Self-Distillation for Deep Search Agents in a Verifiable Environment</strong><br>
+核心贡献：构建了一个包含 42 万条多跳 QA 任务的可验证环境，Agent 能在其中进行自我蒸馏学习——包括进度验证、有根据的反思和失败恢复。这解决了 Agent 训练中"稀疏奖励"的核心难题。<br>
+为什么值得读：如果你正在构建需要多步推理和工具调用的 Agent 系统，这篇论文提供了可复现的训练框架。可验证环境的设计思路可以直接迁移到企业级 Agent 的质量保障体系。
+</div>
+
+<div class="deep-read">
+<strong>Hidden Decoding at Scale: Latent Computation Scaling for Large Language Models</strong><br>
+核心贡献：提出 Hidden Decoding 方法，通过在序列长度维度增加计算量来扩展模型能力，而非扩大 Transformer 骨干网络。额外计算只是更长的输入，与标准大模型训练兼容。<br>
+为什么值得读：这提供了一种"不重新预训练就能让现有模型更强"的可能路径。论文讨论的"深度循环 Transformer 难以规模化"问题是当前架构研究的核心痛点，该方法绕开了这个难题。
+</div>
+
+<div class="deep-read">
+<strong>DrugGen 2: A disease-aware language model for enhancing drug discovery</strong><br>
+核心贡献：以疾病本体和靶蛋白序列为条件生成小分子药物，采用 SFT + GRPO 两阶段训练策略，优化类药性和合成可达性。<br>
+为什么值得读：将疾病上下文纳入药物生成是 AI 药物发现的关键进化方向。论文的 RL 调优策略（GRPO）与 LLM 对齐技术同源，代表了 AI for Science 与 LLM 方法论的深度融合趋势。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>Simon Willison: The new GPT-5.6 family — Luna, Terra, Sol</strong><br>
+为什么今天推荐这篇：GPT-5.6 是 7 月 9 日最重要的发布，Simon 的分析不局限于基准数字，而是抓取了定价策略、上下文窗口、与 Claude Fable 5 的实质对比等关键细节。在当前 AI 圈对模型发布产生"疲劳感"的背景下，这篇简评帮助从业者在 5 分钟内抓住真正重要的变化。<br><br>
+三个核心观点：<br>
+• 每百万 token 定价比较已失效——不同模型在相同任务上消耗的推理 token 数量差异巨大，实际成本需要端到端测量<br>
+• 三款模型全部在长期 Agent 基准上超越 Fable 5，但知识截止日期（2026 年 2 月 16 日）和上下文窗口（100 万 token）完全一致，差异化可能在推理深度而非知识广度<br>
+• OpenAI 官方博客强调了一个关键声明："我们训练 GPT-5.6 变得更实用"——暗示性能提升的来源可能是 RLHF/post-training 优化，而非纯规模扩展<br><br>
+适合谁读：需要快速判断是否切换底层模型的 AI 产品经理和工程师<br>
+阅读时间：约 5 分钟
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek：组织扩张与战略转型并行</strong><br>
+• 正式组建 Harness 独立业务线，团队负责人崔添翼（前 TSY Capital 联创，6 次 ACM 亚洲区金牌）已于 3 月入职<br>
+• 发布 Harness 研究员、Harness 工程师、Harness 产品经理三类岗位，要求应聘者是 Agent 重度用户<br>
+• 6 月 25 日宣布所有部门规模扩招至少一倍，开放"AI 跨界技术人才"特别岗位（不设专业背景限制）<br>
+• A 轮融资落地：总额 500 亿元，投后估值约 4000 亿元，腾讯出资 100 亿元为最大外部投资者<br>
+• 核心公式明确为 "Model + Harness = Agent"，产品方向直接对标 Anthropic Claude Code<br>
+• 2025 年下半年至今，至少 5 名核心研发成员离职转投字节、腾讯、小米
+</div>
+
+<div class="item">
+<strong>其他厂商动态速览</strong><br>
+• <strong>蚂蚁灵波</strong>：发布全球首个"具身原生"预训练模型 LingBot-VA 2.0，开源策略，从物理世界出发为机器人构建基础模型<br>
+• <strong>字节跳动</strong>：发布十亿参数 AI 华语歌生成模型，号称"告别机器味"，AI 音乐生成赛道国内玩家逐步浮出水面<br>
+• <strong>百度</strong>："搭子"产品日均提问量暴增 20 倍，发布企业版，全面押注 Agent 产品化<br>
+• <strong>原力灵机</strong>：发布 DM0.5 模型，15 万小时数据训练，Zero-Shot 能力提升 31%，声称"已经出现泛化涌现"<br>
+• <strong>他山科技</strong>：获数亿元 B 轮融资，英伟达全球首家触觉仿真合作伙伴，具身智能触觉赛道升温<br>
+• <strong>深势科技</strong>：持续深耕 AI+分子模拟，AI for Science 方向保持融资和人才吸引力<br>
+• <strong>腾讯</strong>：成立沃克巴迪智能科技公司（注册资本 100 万），全国首个 WorkBuddy OPC 合作社区落地成都，AI 智能工作台生态布局
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>Harness Engineer / Agent Engineer 成为新兴岗位</strong><br>
+DeepSeek 的招聘信号最为明确：Harness 研究员、Harness 工程师、Harness 产品经理三类岗位同时开放。技能要求包括：熟练掌握 Agent 工具开发、LLM 基础原理理解、极强的学习能力、必须是 Agent 重度用户。这预示着一个新的细分职业方向正在形成——不同于传统 MLE 聚焦模型训练，也不同于传统 SWE 聚焦业务逻辑，Harness Engineer 的核心能力是将模型能力工程化为可靠的 Agent 产品。<br><br>
+行业趋势佐证：Meta Spark 1.1 强调"大型 Agent 工作负载"、OpenAI GPT-5.6 专门优化长期 Agent 性能、Anthropic Claude Code 引领的 Agent 编程范式——都指向同一个结论：Agent 工程化人才将是 2026 年下半年最紧缺的资源。
+</div>
+
+<div class="item">
+<strong>DeepSeek 大规模扩招：人才争夺战进入新阶段</strong><br>
+DeepSeek 宣布所有部门规模扩招至少一倍，覆盖 7 大类 33 个岗位，工作地点包括北京和杭州，所有岗位接受实习。特别值得关注的是"AI 跨界技术人才"岗位——不限专业背景，根据个人兴趣和能力匹配团队。同时，脉脉报告显示 2026 年 1-4 月 AI 岗位量同比增长 8.7 倍，占新经济岗位比重从 2.78% 跃升至 22.03%。<br>
+薪资信号：DeepSeek 估值 4000 亿元，A 轮融资 500 亿元，有足够的资本支撑有竞争力的薪酬。行业整体 AI 人才供需比持续恶化，顶尖人才的议价能力仍在上升。
+</div>
+
+<div class="item">
+<strong>具身智能：国内厂商加大人才储备</strong><br>
+蚂蚁灵波发布具身原生预训练模型、他山科技获数亿元融资（触觉传感器方向）、英伟达与 Hugging Face 合作开发机器人开源模型、加速进化发布 Booster T2 开发平台——具身智能赛道正在经历从"demo 阶段"到"工程化落地"的跨越。对具备机器人学 + 深度学习双重背景的人才需求将持续增长。
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+<strong>Harness 工程人才将成为下一阶段 AI 竞争的核心变量。</strong>DeepSeek 的动作已经证明：模型能力正在趋同，谁能把模型"装进"可靠、可扩展的 Agent 产品框架，谁就能赢得企业市场。如果你正在规划职业方向，现在学习 Agent 架构设计、MCP 协议、多 Agent 编排，就是 2015 年学习深度学习框架。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
