@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年07月11日 · 新闻 65 条 · 博客 1 篇 · 搜索 6 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>DeepSeek 组建 Harness 工程团队，中国 AI 正式进入“产品化”深水区</strong><br>
+发生了什么：多方信源证实 DeepSeek 正组建 Harness（代码智能体工程）团队，目标直指 Claude Code，核心路径定义为 Model + Harness = Agent。<br>
+为什么重要：这标志着中国头部大模型公司从“秀参数”向“做产品”的战略级转身。Harness 工程（上下文管理、工具调用、沙箱执行）是闭源产品真正的护城河，DeepSeek 的入局将重塑国内开发者工具格局，并可能引发对顶尖 Harness 工程师的抢人大战。<br>
+关联动态：与 Tavily 搜索到的“A2A vs MCP”架构讨论及 arXiv 论文《Harness Engineering for Auditable Enterprise LLM Agents》形成呼应，表明 Agent 工程化正从开源协议争论进入企业级落地深水区。
+</div>
+
+<div class="item">
+<strong>GPT-5.6 驾驭 64 个子 Agent 解开 50 年数学猜想</strong><br>
+发生了什么：量子位报道，GPT-5.6 仅通过 700 词 Prompt 协调 64 个子 Agent，在 1 小时内解决了困扰数学界 50 年的猜想。<br>
+为什么重要：这是 Multi-Agent 架构与超长上下文推理能力的顶峰展示。验证了 Subagent 分解-协调范式的可行性，且证明极简的 Prompt 工程就能驾驭复杂 Agent 集群。对于关注 Scaling Law 和 Agent 架构的研究员而言，这是“推理时计算”与“Agentic 系统”结合的里程碑。<br>
+关联动态：与 arXiv 论文《Agentic Neural Architecture Search》中“LLM 设计架构，NAS 搜索空间”的思路异曲同工，均展示了 LLM 作为顶级调度器（Orchestrator）的潜力。
+</div>
+
+<div class="item">
+<strong>NVIDIA 发布 BioNeMo Agent Toolkit，加速药物研发“端到端共折叠”</strong><br>
+发生了什么：NVIDIA 推出 BioNeMo Agent Toolkit，旨在加速基于 OpenFold3 等模型的生物分子结构预测与共折叠大规模工作负载。<br>
+为什么重要：AI for Science 正从单点预测转向 Agent 驱动的“假设-验证-迭代”自动化闭环。BioNeMo 将 Agent 范式引入药物发现，直接对接千亿级市场需求，是 AI 在科学计算领域产品化的关键信号。<br>
+关联动态：与国内分子之心许锦波团队开放的 MoleculeOS（AI 生物研发操作系统）形成中美共振，均指向用 AI Agent 重新组织科研流程。
+</div>
+
+<div class="item">
+<strong>arXiv 论文提出“Context Graphs”，让企业 Agent 从被动响应转向主动出击</strong><br>
+发生了什么：论文《Context Graphs for Proactive Enterprise Agents》提出了一种实时关系数据结构，让 Agent 能在人类提问前主动推送洞察。<br>
+为什么重要：这解决了当前 RAG 和 Agent 系统“被动等待查询”的根本缺陷，是 Agent 记忆与上下文管理的高级形态。如果落地，将把 Agent 从工具变为真正的“智能同事”，极大提升企业生产力。<br>
+关联动态：与 DeepSeek 的 Harness 工程招聘要求中强调的“上下文管理”高度相关，是支撑下一代 Agent 产品的核心架构。
+</div>
+
+<div class="item">
+<strong>中国首个十万卡集群落成，全国产算力迎接 FP64 到 INT8 全精度覆盖</strong><br>
+发生了什么：量子位报道，中国首个十万卡集群正式落成，完全由国产算力支撑。<br>
+为什么重要：十万卡集群是训练下一代万亿参数大模型的基础设施门槛。全精度覆盖意味着该集群不仅可用于大模型预训练，还适用于科学计算（AI for Science）所需的高精度计算。这为国内 DeepSeek、智谱等厂商在 Scaling Law 上的军备竞赛提供了底盘支撑。<br>
+关联动态：与 SK Hynix 美股上市及 NVIDIA 内存优化技术形成对照，显示中美在算力供应链各环节的激烈竞速。
+</div>
+
+<div class="item">
+<strong>Apple 起诉 OpenAI 窃取商业机密，AI 巨头间数据护城河争夺升级</strong><br>
+发生了什么：Apple 指控 OpenAI 在开发过程中由高管指示不当获取其硬件商业机密。<br>
+为什么重要：这不仅是两家公司的纠纷，更揭示了 AI 竞争中“边缘侧数据”与“云端模型”的价值冲突。Apple 试图守住硬件交互数据不做训练集，而 OpenAI 需要一切数据来推进多模态模型，这类冲突将成为常态。
+</div>
+
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：从“多智能体辩论”到“Harness 工程化”，Agent 正式步入 DevOps 时代</strong><br>
+证据链：DeepSeek 组建 Harness 团队、arXiv 论文《Harness Engineering for Auditable Enterprise LLM Agents》提出将确定性行为移至代码层、Tavily 资讯显示 A2A 与 MCP 协议在实际部署中产生约 10 倍成本惩罚。<br>
+预判：未来 6 个月，Agent 开发的核心矛盾将从“如何让模型更聪明”转向“如何让 Agent 集群可靠、可审计、低成本运行”。Harness 工程师（擅长上下文管理、沙箱环境、工具调用链）将成为比 Prompt 工程师更抢手的岗位。
+</div>
+
+<div class="trend">
+<strong>趋势二：AI for Science 全面进入“操作系统”时代，Agent 成为科研自动化核心</strong><br>
+证据链：NVIDIA BioNeMo Agent Toolkit 发布、分子之心 MoleculeOS 开放、arXiv 论文《A safety-oriented hypothetico-deductive framework for AI-assisted differential diagnosis》展示 Agent 在复杂医疗诊断中的推理闭环。<br>
+预判：AI 不再只是科学家手中的“计算器”，而是开始扮演“实验设计者”和“决策者”角色。能够整合文献检索、实验模拟、湿实验调度、结果分析的 Agent 框架，将成为生物医药企业的标配基础设施。
+</div>
+
+<div class="trend">
+<strong>趋势三：开源模型的“私有化”部署浪潮已至，企业正放弃“租用”转向“自建”</strong><br>
+证据链：Hugging Face CEO 在 TechCrunch 访谈中明确表示“企业正停止租用 AI 模型，转向基于开源模型的自建方案”，并指出超半数财富 500 强已在使用 HF 开源模型。<br>
+预判：DeepSeek 等公司提供的强开源模型，配合上述 Harness 工程趋势，将催生巨大的企业级私有化 Agent 部署市场。这不仅是技术选择，更是出于数据安全（如 Apple 诉讼所示）和长期成本控制的考量。
+</div>
+
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>《Context Graphs for Proactive Enterprise Agents》</strong><br>
+核心贡献：抛弃了传统的“查询-检索-回答”被动范式，构建了基于实时关系图谱的 Delta Detection Engine 和 Proactivity Scorer，让 Agent 具备主动推送时机判断能力。<br>
+为什么值得读：这是 Agent 记忆管理的突破性方向。如果你在构建企业级 AI 助手，这篇论文提供了从“记事本”到“主动助理”的架构蓝图，是衔接上下文工程与产品价值的关键拼图。
+</div>
+
+<div class="deep-read">
+<strong>《Harness Engineering for Auditable Enterprise LLM Agents》</strong><br>
+核心贡献：将 Harness 工程提升为可审计的架构方法论，主张将确定性行为（路由、合约、验证）下沉到代码和 Manifest 文件中，仅保留源支持的事实声明由 LLM 动态生成。<br>
+为什么值得读：这篇论文直接回应了 DeepSeek Harness 团队招聘中提到的“Model + Harness = Agent”的工程哲学。对于正在产品化 Agent 的工程师，它提供了一套清晰的、可追溯的架构设计模式。
+</div>
+
+<div class="deep-read">
+<strong>《Agentic Neural Architecture Search》</strong><br>
+核心贡献：利用 LLM 生成高质量种子架构，并自动分解为“插槽式架构”以定义搜索空间，再由传统 NAS 算法在限定空间内搜索。<br>
+为什么值得读：解决了一个核心痛点：如何让 LLM 的创造力与底层优化算法的确定性互补。这个范式可推广到超参数调优、代码重构等任何需要“高层设计+底层搜索”的场景，对 AI 研究员和 AutoML 工程师极具启发。
+</div>
+
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>Simon Willison 引用 Nilay Patel 关于 AR 眼镜隐私的论述</strong><br>
+为什么今天推荐这篇：在 Meta 因隐私争议移除 AI 功能、Apple 起诉 OpenAI 的数据大背景下，Nilay 的论断——“造 AR 眼镜必须持续录像并上传云端，因此必然侵犯隐私”——一针见血。这不仅是产品道德问题，更直接决定了多模态 AI 的数据来源合法性边界，影响所有试图在边缘设备上部署 AI 的厂商。<br><br>
+核心观点：
+• 当前物理限制决定了混合现实设备必须依赖云端处理，没有本地隐私保护的可能性。
+• 这意味着硬件厂商与用户、监管机构之间关于隐私的冲突是不可调和的，类似 Meta 的“缺失”功能只是开始。
+• 开发者应在设计 AI 应用时，默认将边缘设备数据视为“受污染”或不可信，避免因合规问题导致产品下架。
+<br><br>
+适合谁读：AI 产品经理、硬件工程师、关注 AI 伦理与合规的研究员。<br>
+阅读时间：约 10 分钟。
+</div>
+
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek（深度求索）</strong><br>
+• 战略转向信号明确：内部组建 Harness 工程团队，招聘产品经理与研发工程师，目标打造桌面端 Agent 产品，直接对标 Claude Code。<br>
+• 招聘要求极高，被网友称为寻找“超能力者”，暗示团队将走精英化小团队路线，创始人梁文锋此前已表态“专注基础研究”，本次转向意义重大。<br>
+• 融资动态：已完成首轮融资，创始人梁文锋个人出资约 200 亿元，资金储备雄厚。
+</div>
+
+<div class="item">
+<strong>分子之心 / 许锦波团队</strong><br>
+• MoleculeOS 正式开放，定位为“AI 生物研发操作系统”，用 AI 组织研发流程，属于 AI for Science 领域的 Agent 化先行者。<br>
+• 与 NVIDIA BioNeMo 形成竞合态势，国内在 AI 蛋白质设计领域生态进一步完善。
+</div>
+
+<div class="item">
+<strong>鹰瞰智翼（上交大团队）</strong><br>
+• 三个月内完成三轮融资，专注于具身智能仿生扑翼机器人，自研流体仿真引擎 Vortrix，通过强化学习训练后零样本迁移至物理样机。<br>
+• 代表了 AI 在物理世界仿真与流体力学方向的前沿探索，是具身智能与 AI for Science 的交叉点。
+</div>
+
+<div class="item">
+<strong>蚂蚁集团</strong><br>
+• 第三届 InTech 奖申报即将截止，由图灵奖得主坐镇评审，表明其在基础科研与 AI 理论领域的持续投入。
+</div>
+
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>Harness 工程师成为超级热门岗位</strong><br>
+信号：DeepSeek 高调招聘 Harness 产品经理与研发工程师，招聘描述中明确要求“上下文管理、工具调用、文件读写、终端执行与测试反馈”等工程能力。<br>
+推断：随着更多大模型公司从“炼丹”走向“做产品”，具备 Agent 工程化能力（而非单纯 Prompt 调优）的工程师将迎来薪资溢价。技能栈需求从“懂 Python + 模型”扩展为“懂系统设计 + 沙箱安全 + 工具链编排 + 评测体系搭建”。
+</div>
+
+<div class="item">
+<strong>AI for Science 领域人才需求爆发</strong><br>
+信号：分子之心开放 MoleculeOS，NVIDIA 推出 BioNeMo Agent 工具包，且鹰瞰智翼等交叉学科团队获资本追捧。<br>
+推断：学界与业界对“懂 AI 又懂垂直科学（生物、化学、材料、流体力学）”的复合型人才需求井喷。能在 AI 与科学计算之间架起桥梁的工程师，将拿到极高的 Offer。
+</div>
+
+<div class="item">
+<strong>具身智能仿真方向持续火热</strong><br>
+信号：鹰瞰智翼 A 轮融资数千万元，三个月融三轮，核心团队来自上海交大、大疆、华为。<br>
+推断：机器人领域的“流体仿真引擎”与“系统级仿真平台”成为新壁垒，强化学习、仿真环境构建、Sim2Real 迁移等方向的工程师是下一波抢人目标。
+</div>
+
+
+<div class="closing">
+⚡ 今日信号：<strong>即刻升级你的 Agent 架构图。如果 Harness 层（上下文管理、工具调用、沙箱执行）仍是 Prompt 中的自然语言，而非工程代码，你的产品将在 6 个月内被 DeepSeek 等新入局者用“模型+硬工程”组合拳碾压。</strong>
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
