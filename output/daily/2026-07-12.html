@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年07月12日 · 新闻 31 条 · 博客 1 篇 · 搜索 10 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<b>▶ Anthropic 官方揭秘：Claude Code “变笨” 的真凶是 Effort 设置而非模型</b><br>
+发生了什么：Anthropic 发布长文澄清，此前用户抱怨 Claude Code 能力大幅下降，根本原因不是模型退化，而是官方在 3 月 4 日为了降低延迟，将默认的“努力度（Effort）”从 high 降到了 medium。<br>
+为什么重要：<b>这标志着 AI 工程已进入“Harness 工程”深水区。</b> 模型能力不再等同于系统表现，上下文管理、资源调度（如思考预算）成为决定 Agent 可靠性的核心。AMD AI 负责人实测思考量暴跌 67% 并直言“Claude 已无法信任”，这为所有 Coding Agent 产品（Cursor、Copilot）敲响警钟——粗暴调整底层参数足以摧毁开发者信任。<br>
+关联：这条新闻与智谱押注 Coding 形成对比。智谱在“模型端”追平甚至超越 Claude，但 Anthropic 遭遇的信任危机提醒：<b>Coding 产品的护城河不仅是模型能力，更是 Agent 系统的工程稳定性。</b>
+</div>
+
+<div class="item">
+<b>▶ 智谱“GLM 时刻”：市值破万亿港元，唐杰内部信强调 Coding 赌注成功</b><br>
+发生了什么：2026 年 7 月 11 日，智谱创始人唐杰发布内部信，宣布智谱市值较半年前涨 10 倍，跻身“万亿港元俱乐部”，核心原因是 2025 年初对 Coding 能力的押注，其开源模型 GLM-5.2 多项指标追平甚至超越 Claude Opus 4.8 和 GPT-5。<br>
+为什么重要：<b>后 DeepSeek 时代，Coding 正取代 Chat 成为模型能力的新标尺。</b> 唐杰明确指出“Bet on Coding and Reasoning”，这与 Anthropic 年化收入从 8700 万暴涨至 470 亿美元的逻辑一致——<b>代码生成是离商业闭环最近的大模型场景。</b><br>
+关联：南向资金上周净买入智谱超 137 亿港元，显示国际资本正将智谱视为中国 AI 的明确领跑者。这不仅是一家公司的成功，更验证了国内企业从“跟跑”到“并驾齐驱”的路径。
+</div>
+
+<div class="item">
+<b>▶ DeepSeek 全员扩招至少一倍，重点攻坚 Agent Harness 团队</b><br>
+发生了什么：DeepSeek 宣布招聘 33 个岗位，涵盖全栈开发、AI 核心系统、Agent Harness 等七大方向，目标将各部门规模扩充至少一倍，预计从 300 人扩张至 600 人以上。<br>
+为什么重要：<b>这标志着 DeepSeek 从小而精的研究型团队转向全链路工程化扩张。</b> 最值得关注的是“Agent Harness 团队”的设立，直接对标本文前述的 Harness 工程趋势——DeepSeek 不再满足于发布惊艳的模型权重，而是要构建能落地的 Agent 可靠性体系。结合其刚刚完成 510 亿融资、梁文锋自掏 200 亿，这是资本与技术逻辑的明确转向：<b>AGI 的下半场拼的是工程化 Agent 的能力。</b><br>
+关联：直接线索来自媒体爆料——Anthropic 的 Claude Mythos 展现出的 Stacking Scaling 让梁文锋感受到“国家规模级”的算力竞赛压力，促使他对外融资并内部扩张。
+</div>
+
+<div class="item">
+<b>▶ 国产算力里程碑：中国首个全国产十万卡集群落成</b><br>
+发生了什么：中国首个十万卡集群正式落成，已跑通 300 余项应用，实现了全国产算力支撑。<br>
+为什么重要：<b>“十万卡时代”不仅是算力量的突破，更是分布式训练、超高带宽互联、故障自愈等“算力 Harness”能力的极限考验。</b> 在国内海外高端 GPU 受限的背景下，这套全国产集群的成功运行，意味着 Scaling Law 的物理底座在国内已初步筑牢，为百川、月之暗面等厂商进行千亿甚至万亿参数模型的预训练提供了现实基础。<br>
+关联：结合 36 氪报道的赛意信息分阶段推进国产算力布局，以及 HBM4 下半年可能涨至 5 美元/千比特的消息，算力成本与供应依然是核心博弈点。
+</div>
+
+<div class="item">
+<b>▶ 具身智能数据“淘金热”：一年融资 44.7 亿，近百玩家涌入</b><br>
+发生了什么：量子位统计了 97 家国内具身数据玩家，去年 7 月至今，15 家独立数据服务商融资 44.7 亿元。商业模式花样百出：有的将移动营业厅挂牌“数据采集 5S 店”，有的推出“采集换免费保洁”。<br>
+为什么重要：<b>“卖数据”正在成为机器人产业的基础设施生意。</b> “无本体采集”、“仿真合成”等路线的拥挤，反映了行业共识：具身智能缺的从来不是模型架构，而是高质量、可泛化的物理交互数据。这与 AI for Science（如深势科技的 DeePMD）依赖高质量多模态科学数据的逻辑如出一辙——<b>数据壁垒就是最坚实的商业壁垒。</b><br>
+关联：NVIDIA 同日发布的博客探讨如何评估通用机器人策略，与国内“卖数据”的热潮构成了“算法评估”与“数据供给”的完美呼应。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<b>趋势一：AI Coding 的竞争焦点，正从 Model Scaling 转为 Harness Tuning</b><br>
+<b>信号：</b> 全网怒骂 Claude Code “变笨”的强大舆论风暴，与 Anthropic 澄清只是“Effort 默认值调整”形成巨大戏剧反差。同期，智谱宣布 Coding 模型能力追平 Claude，但市场更关心的是模型在 IDE 中的实际稳定表现。<br>
+<b>预判：</b> 未来 6 个月，AI 编程工具的核心参数（如温度、思考预算、上下文策略、工具调用频率）将像超参数一样被精细化管理。Coding Agent 的产品经理需要懂“非模型侧的 RLHF”（即通过调整 Harness 让用户感觉更聪明）。能做好这种隐性的“体验工程”的公司，将真正留住开发者。
+</div>
+
+<div class="trend">
+<b>趋势二：国内 AI 厂商进入“组织力”扩张期，从“天才团队”转向“军团作战”</b><br>
+<b>信号：</b> DeepSeek 全员扩招一倍并设立专门的 Agent Harness 团队；智谱因 Coding 押注成功跃升万亿港元市值；赛意信息宣布 AI 战略“分三阶段走”。<br>
+<b>预判：</b> 行业已度过靠几个顶会论文撑起估值的时期。如今的胜负手在于：<b>能否高效管理 500 人以上的 AI 工程化团队，并围绕 Agent 产品线建立合理的组织架构。</b> DeepSeek 招聘“AI 跨界技术人才”且不限背景，表明其对“构建 AGI 所需的全栈工程素养”的需求，已超越对传统“纯科研帽”的迷信。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<b>1. [隐含信号] 拆解 Anthropic “Effort” 机制的内部算法逻辑</b><br>
+虽非传统论文，但 Anthropic 官方关于 Effort 机制的澄清文章值得视作一份“工程报告”来精读。它实质上揭示了：在高复杂度编程任务中，AI 代理的<b>“思考预算-执行行为-开发体验”三角关系</b>。<br>
+<b>核心贡献：</b> 首次从厂商视角量化了“延迟 vs. 思考深度”的取舍过程，间接证明了 Test-time Compute 在此类 Harness 工程中已进入精细裁剪阶段，核心机制与 OpenAI o 系列的底层资源调度策略高度呼应。<br>
+<b>为什么值得读：</b> 这可能是第一份公开讨论“降低默认推理深度导致用户恐慌”的实战复盘，对产品经理和 AI 系统工程师的设计警觉性具有警示意义。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<b>《Claude Code “变笨” 官方复盘 | 为什么坑你的不是模型，而是设置》</b><br>
+<b>为什么今天推荐：</b> 这篇文章不仅是昨天的热点澄清，更是当下 AI 工程领域的真实缩影。它发生在 DeepSeek、智谱全力冲刺 Coding 能力的背景下，而 Coding 领域的核心痛点恰恰在于：<b>幻觉（模型智力）与误操作（Harness 稳定性）正变得越来越难以区分。</b><br>
+<b>3 个核心观点：</b><br>
+• <b>“调参等于换脑”的幻灭：</b> 开发者习惯于将一切输出质量归因于模型，从而忽略了“任务管理（即 Effort）”这种 Harness 组件对输出精度的毁灭性影响。<br>
+• <b>产品信任的脆弱性：</b> AMD AI 负责人列出详细的数据日志来证明工具“变笨”，这说明开发者正在建立一套对 AI 代理的外部评估经验，这种经验一旦形成“变笨”的共识，修复信任需要 10 倍的努力。<br>
+• <b>Harness 治理的必要性：</b> 软件工程正向“AI 代理治理”演进，未来需要提供更透明的任务执行状态（比如思考深度、上下文重置点），而不是黑箱操作。<br>
+<b>适合谁读：</b> 正在使用或计划使用 AI Coding 工具的<b>开发者、产品经理、DevOps 负责人</b>。<br>
+<b>大致阅读时间：</b> 12 分钟（精读官网长文 + 对应讨论帖）。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<b>• 智谱 AI：</b> 创始人唐杰发内部信，市值破万亿港元。商业化巨大成功主要押注 Coding 赛道，GLM-5.2 多指标追平 Claude。信号：<b>Coding 能力已上升为国产模型的绝对核心竞争力。</b><br>
+<b>• DeepSeek：</b> 梁文锋自掏 200 亿进行 AGI 豪赌，公司全员扩招一倍（300 人→600 人），并<b>首次明确设立 Agent Harness 专项团队。</b> 招聘“AI 跨界技术人才”，不设专业限制，暗示全力投入工程化落地。<br>
+<b>• 腾讯：</b> 重仓半导体与 DPU 赛道——通过云豹智能冲刺创业板，并成为其最大股东。布局“CPU+DPU+GPU”三芯战略，加固 AI 算力底座。<br>
+<b>• 深势科技（AI4S）：</b> 虽无直接今日新闻，但 Tavily 数据显示其已获 2024 年北京市 AI 产业基金投资，主打“科学大模型 + 药物设计 + 材料模拟”，是 AI for Science 国产代表。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<b>1. 岗位类型剧变：</b> 从纯“研究”变为“工程 + 研究”。DeepSeek 明确设立<b>“Agent Harness 团队”</b>，聚焦代码智能体产品研发，这可能是国内最前沿的 Agent 系统设计岗，需要具备强化学习（RL）、系统工程和产品思维的复合背景。<br>
+<b>2. 跨界人才吃香：</b> DeepSeek 新设“AI 跨界技术人才”岗，不限专业。信号：顶级 AGI 公司极度渴望具备物理、数学、逻辑甚至人文世界模型的非传统 CS 人才，来补全“World Model”拼图。<br>
+<b>3. 具身智能数据是新蓝海：</b> 国内近百家数据服务商涌入，15 家一年融资 44.7 亿。<b>“具身数据采集员”、“仿真实习生”、“3D 场景标注”</b> 等新式工种大量涌现，但这更类似基础数据设施建设，需注意职业天花板。<br>
+<b>4. 智谱概念带动的产业需求：</b> 随着智谱万亿市值光环，围绕其生态的开发者关系（DevRel）、模型安全对齐（Alignment）、以及基于 GLM 的行业模型微调岗位，会迎来一波红利期。
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+<b>“2026 是 Harness 之年”——别再只盯着模型榜单的 SOTA 博眼球。</b> Claude Code“降档”事件清晰揭示：<b>当下 AI 产品的护城河，已从模型的智力边界，转移到了对 Agent 运行时行为、状态和预算的精细调控上。</b> 关注那些在 Agent Harness（上下文管理、工具链稳定性、推理算力调度）上具备隐性工程优势的团队，他们将是下一批市值暴增的隐形冠军。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
