@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年07月13日 · 新闻 149 条 · 博客 5 篇 · 搜索 13 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<b>Agent 上下文工程有了"图谱化"解法。</b> 论文提出 GRACE 框架，将 Agent 的持久化指令维护为带类型的语义图谱，而非混沌增长的扁平文本。这解决了长期部署 Agent 时上下文膨胀、指令冲突且难以验证的核心痛点，为 Agent 从"新奇 demo"走向"生产级可靠性"提供了可操作的控制面。
+</div>
+
+<div class="item">
+<b>Multi-Agent 推理成本被 KV-Cache 共享技术击穿。</b> KV-PRM 论文揭示：现有 PRM 在长序列评估中存在二次方计算瓶颈。新方案通过直接复用 LLM 生成的 KV cache 来做过程奖励，极大降低了长程 Multi-Agent 轨迹的评分代价。这对所有依赖 Tree Search 或复杂反思链的 Agent 框架都是直接的效率增益，是工程落地的关键信号。
+</div>
+
+<div class="item">
+<b>DeepSeek 人才战略大转向，但内外承压。</b> 最新动态显示 DeepSeek 正在大规模扩招，计划将各部门规模扩大一倍，新增 Agent Harness 等关键团队（招聘信息已公开），同时传出 100 亿美元融资信号。然而，字节、腾讯等大厂以 500-600 万年薪的"上不封顶"策略持续挖角，核心成员时有流失。对从业者而言，这是顶尖 AI 人才定价权持续攀升的明确印证，也标志着 DeepSeek 从"小而精"进入组织力竞争阶段。
+</div>
+
+<div class="item">
+<b>AI4S 突破：AI 科学家不止于曲线拟合，需要"可审计"的实验闭环。</b> Hypothesis Evolution Protocol (HEP) 和深势科技的最新实践共同指向：AI 驱动的科学发现进步瓶颈不在模型，而在于"读文献-做计算-做实验"的自动化全链路闭环。HEP 的贡献在于让 LLM 提出假设、测试、修正的过程可审计——这是 AI 在严肃科研中获得信任的前提。
+</div>
+
+<div class="item">
+<b>大模型推理基础设施层"被忽视的偏见"被修正。</b> 一篇关于 Signed Symmetric Quantization 的工作指出，当前标准对称量化存在正负不对称的剪刀差问题，且对 4-bit 精度有显著影响。这不是学术雕花，而是在边缘/CPU 推理（如 llama.cpp）吞吐量提升 2.45x 的真实杠杆——任何在做模型落地压缩的团队应立即评估。
+</div>
+
+<div class="item">
+<b>阶跃星辰发布首款"大模型原生智能体手机"。</b> 这是一个重要的产品化信号：Agent 不再局限于聊天窗或 IDE 插件，开始抢占硬件系统级入口。Step AOS 将 Amoo 智能体内置为系统灵魂，验证"模型即 OS"的商业化路径。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<b>趋势一：Agent 可观测性/可验证性成为下一步基建。</b>
+从 GRACE（Agent 指令图谱化）、Scoped Verification（长程上下文演化验证）、到 TrustX Agent Risk Classification Framework（12 维度风险评分），多个来源同时在解决同一个问题：Agent 在生产环境的黑箱失控。这不再是"调 prompt"的问题，而需要结构性的上下文管理、版本控制和运行时验证机制。
+<b>预判：</b> 工具层会出现针对 Agent 上下文的专用监控与治理平台，类似 API 网关之于微服务。
+</div>
+
+<div class="trend">
+<b>趋势二：MoE 推理"上下车"开销从忍耐变为主动优化。</b>
+StickyMoE（粘性专家路由）、Director（专家放置优化）、BlockServe（扩散 LLM 连续批处理）——这些工作不再接受 Token 级专家频繁切换的性能损耗，转而从训练阶段正则化（StickyMoE）、部署阶段主动调度和稀疏计算优化多个层面协同改进。
+<b>预判：</b> MoE 大模型在端侧和边缘设备的高效部署将显著加速，成为 2026 下半年推理优化的主战场。
+</div>
+
+<div class="trend">
+<b>趋势三：中国 AI 人才市场进入"硬核溢价"高峰期。</b>
+字节校招突破 600 万、DeepSeek 扩招一倍、AI 岗位量增长 8.7 倍（脉脉数据），且渗透率升至 22%。与此同时，DeepSeek 和华为天才少年的冲突案例显示，有 AGI 信仰的技术理想主义者与资源充沛的大厂之间正展开人才"拔河"。核心信号：Agent 工程、底层系统（超算/算子）、AI4S 方向岗位的薪资涨幅远超传统算法岗。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<b>1. KV-PRM: Efficient Process Reward Modeling via KV-Cache Transfer for Multi-Agent Test-Time Scaling</b>
+<b>核心贡献：</b> 用 LLM 生成时自然产生的 KV cache 替代重编码文本，把 PRM 计算的二次方复杂度降下来，直接打通了 Multi-Agent 长程推理在工程上规模化部署的瓶颈。
+<b>为什么值得读：</b> 它是 Agent 效率问题的一个"优雅偷懒"——不做加法（不访问外部模块）而是"就地取材"。掌握这项技术可以显著降低你 Agent 框架的响应延迟和计算开销。
+</div>
+
+<div class="deep-read">
+<b>2. GATS: Graph-Augmented Tree Search with Layered World Models for Efficient Agent Planning</b>
+<b>核心贡献：</b> 规划阶段完全消除 LLM 调用，用三层世界模型（符号匹配+统计+LLM 兜底） + UCB1 树搜索产出更优规划，LLM 只在离线构建世界模型时使用。
+<b>为什么值得读：</b> 重新定义 LLM 与经典规划算法的分工边界。如果你的 Agent 面对重复性、规则明确的任务，这类架构可能比盲目堆 LLM 调用的方案更稳定、更经济。
+</div>
+
+<div class="deep-read">
+<b>3. Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents</b>
+<b>核心贡献：</b> 在材料科学场景下实现假设生成-测试-修正的可审计闭环，非黑箱输出，而是结构化的科学推理日志。
+<b>为什么值得读：</b> AI4S 落地最根本的阻碍不是模型不够强，而是科学家不敢信。这份工作给出了一套在"人机协作科学发现"中建立信任的技术协议，是所有做 AI 辅助科研产品的人应该关注的范式。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<b>📝 Nathan Lambert: 6 months to live for open models</b><br>
+<b>链接：</b> <a href="https://www.interconnects.ai/p/6-months-to-live-for-open-models">https://www.interconnects.ai/p/6-months-to-live-for-open-models</a><br>
+<b>为什么今天推荐：</b> 在 DeepSeek 融资百亿、OpenAI 发布 GPT-5.6、Anthropic 不断延长 Claude Fable 5 试用期的当下，开源模型的生存空间正在被前所未有的压力测试。Lambert 的声音直击核心：这不仅是技术竞赛，更是资本叙事和生态锁定之争。理解他的分析框架，对判断国内"开源对标"团队的长期风险至关重要。
+<br>
+<b>3 个核心观点：</b><br>
+· 开源模型面临的是"6 个月窗口"——若不能在此期间证明差异性生态价值（而不仅是性能对标），资金和关注度将急速枯竭。<br>
+· 真正的护城河不是权重，而是围绕模型建立的工具链、数据飞轮和开发者心智。<br>
+· 企业定价策略（Anthropic 的赠用延期）暴露了闭源厂商对算力峰值需求的焦虑，开源方需利用此间歇期强化垂域能力。<br>
+<b>适合谁读：</b> AI 创业者、技术战略官、开源社区维护者、投资机构分析师。<br>
+<b>阅读时间：</b> 约 15 分钟。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<b>DeepSeek：</b> 罕见启动大规模扩招，成立 Agent Harness 等新团队，V4 系列大幅降价（输入价格降至原四分之一的四分之下），同时首次主动进行约 100 亿美元融资（估值约 450 亿），梁文锋个人跟投 40% 以宣示 AGI 决心。
+</div>
+
+<div class="item">
+<b>智谱（Zhipu AI）：</b> 完成 H 股配售，融资约 314 亿港元（约 40 亿美元），进一步夯实其在国产大模型第一梯队的资本实力。
+</div>
+
+<div class="item">
+<b>字节跳动（ByteDance）：</b> Seed 团队（周畅负责的世界模型方向）正探索自动驾驶（尤其无人物流），多模态/世界模型技术路线向物理 AI 落地延伸。在人才端以 600 万年薪+的顶级校招方案持续虹吸行业头部人才。
+</div>
+
+<div class="item">
+<b>阶跃星辰：</b> 发布全球首款"大模型原生智能体手机"，内置 Step AOS 系统及 Amoo 智能体，将 Agent 能力嵌入硬件系统层。
+</div>
+
+<div class="item">
+<b>阿里/蚂蚁集团：</b> 蚂蚁集团开放 AI Agent 产品专家招聘（北京/杭州 35-65k/15薪）。阿里巴巴公布 AI Agent 优化工程师实习岗位（北京/杭州），专攻推理、应用数据构建与评测。
+</div>
+
+<div class="item">
+<b>网易：</b> 旗下黑科技工作室（Joker）七年之作《遗忘之海》公测，全平台预约破 3600 万——展示了国内游戏厂商对 AAA 内容+AI 技术融合的深度押注。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<b>核心信号：Agent 方向职位爆发。</b> 百度、阿里、蚂蚁、DeepSeek 几乎同时开放 Agent 相关工程师与产品岗位。岗位描述强调"Agent Harness""Multi-Agent 协调""数据闭环"而非单纯 Prompt Engineering。
+</div>
+
+<div class="item">
+<b>薪资锚定：500 万+年薪的校招已确立为新常态。</b> 字节 Top Seed 计划核心岗突破 600 万，阿里星、腾讯青云计划"不设上限"。AI 人才薪资已从高薪区进入脱离其他行业的独立定价体系。
+</div>
+
+<div class="item">
+<b>两大"新贵"方向：</b> 1) AI4S——深势科技、晶泰科技等持续扩招"AI+物理/化学/生物"交叉人才，门槛极高（顶会论文+领域 PhD）但供给极度稀缺。2) Agent 基础设施——围绕 MCP 协议安全（OWASP MCP Top 10）、Agent 可观测性工具开发，安全与工具链岗位增量明显。
+</div>
+
+<div class="item">
+<b>避雷提示：</b> 纯"Prompt 工程师"岗位热度明显降温，企业更看重候选人是否具备 ML systems、分布式推理、编译器优化等硬实现能力。Agent 产品经理需同时懂 LLM 能力边界、用户任务建模和产品体验设计，纯"套壳"无竞争力。
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+<b>Agent 的"记忆"与"上下文工程"到了必须被结构化治理的时刻。</b> GRACE 的语义图谱、KV-PRM 的缓存复用、GATS 的世界模型分层——都指向同一件事：不能再靠堆 Prompt 和 Token 来维护 Agent 的长期状态。现在就该把 Agent 上线前的上下文管理方案升级为可验证、可溯源的工程系统，否则上线即负债。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
