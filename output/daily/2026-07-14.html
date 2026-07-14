@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年07月14日 · 新闻 167 条 · 博客 3 篇 · 搜索 12 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>Nous Research 正以 15 亿美元估值融资至少 7500 万美元</strong><br>
+发生了什么：Hermes agent 的缔造者 Nous Research 正在洽谈新一轮融资，由 Robot Ventures 领投，USV 等机构参与。<br>
+为什么重要：Nous 是 Agent 领域最硬核的研究型团队之一，他们的融资信号表明，资本市场正在从投“基础模型”转向投“Agent 基础设施与运行时”。Nous 的 Hermes 系列模型一直是开源 Agent 开发的首选基座，这笔融资将加速他们构建更完整的 Agent 运行时和工具链生态。<br>
+关联动态：这与 ManusAI 被 Meta 收购的事件形成呼应——Agent 正在从实验品变成可估值、可退出的资产类别。同时，TechCrunch 关于“上一代科技赢家为何重新下场”的报道也指向同一个结论：错过 AI 的定义时刻是不可接受的，而 Agent 正是这个时刻的核心。
+</div>
+
+<div class="item">
+<strong>深度研究：编码 Agent 真正需要什么上下文才能行动？</strong><br>
+发生了什么：一篇 arXiv 论文（arXiv:2607.09691）系统研究了编码 Agent 在编辑代码时实际需要多少上下文，结论是“极简”——源代码本身承载了大部分行为信号，自然语言摘要几乎无法替代。<br>
+为什么重要：这对 Harness 工程有直接指导意义。当前大多数 Agent 框架倾向于把整个代码仓塞进上下文窗口，浪费大量 token 且引入噪声。这项研究表明，精准的上下文剪枝不仅可行，而且是提升 Agent 行动质量的关键。它对 Cursor、Copilot、Claude Code 等产品的上下文管理策略有直接的设计启示。<br>
+关联动态：与 Simon Willison 关于 AI 辅助编程对其开源项目贡献频率影响的观察相互印证——真正有效的 AI 编程工具不是依赖“全量上下文”，而是在恰当的时机提供恰当的信息。
+</div>
+
+<div class="item">
+<strong>Anthropic 在印度本地化 Claude 定价，印度已成美国之外最大市场</strong><br>
+发生了什么：Claude 在印度开始提供卢比计价的订阅方案，这是 Anthropic 首次在非英语母语市场进行定价本地化。<br>
+为什么重要：这不仅是商业信号，更反映了 AI 产品全球化的一个关键转折——从“服务全球英语用户”转向“适配区域购买力”。印度作为全球最大的开发者增量市场之一，对 AI 编程工具和 Agent 产品的需求正在爆发。对国内 AI 厂商而言，这也是重要的参照系：出海意味着什么？定价策略如何适配不同市场？<br>
+关联动态：Anthropic 目前估值近万亿美元（MIT Tech Review 报道），其每一个动作都值得密切关注。
+</div>
+
+<div class="item">
+<strong>DeepSeek 大规模招聘，部门规模扩一倍，重点押注 Agent</strong><br>
+发生了什么：DeepSeek 发布大规模招聘计划，覆盖算法、研发、运维、产品、数据工程师等 7 大类 33 个岗位，明确加大对智能体应用方向的人才招揽，包括通用 Agent 数据产品经理、AI 产品运营等新岗位。<br>
+为什么重要：DeepSeek 的招聘方向是观察国内 AI 战略的窗口。“Agent = 从对话走向托付”的团队使命表述，意味着 DeepSeek 正在从“模型能力竞赛”转向“产品化落地竞赛”。同时，招聘要求中明确提及 Claude Code、Cursor、Copilot 等工具熟练度，说明其对标对象和产品方向已非常清晰。<br>
+关联动态：脉脉数据显示 2026 年 1-4 月 AI 岗位量增长 8.7 倍，AI 已占新经济岗位 22%。DeepSeek 的扩张不是孤立行为，而是整个行业人才争夺战的缩影。
+</div>
+
+<div class="item">
+<strong>Uber 产品负责人谈 AI 如何实际影响用户和司机</strong><br>
+发生了什么：Uber CPO Sachin Kansal 深度访谈，涉及机器人出租车、AV Labs 数据运营，以及 AI 如何在出行场景中真正落地。<br>
+为什么重要：这是 AI 产品化的一个典型案例研究。Uber 不是在做“AI demo”，而是在将 AI 嵌入一个已有数亿用户的复杂双边市场。他们面临的挑战——何时用人、何时用 AI、如何管理混合调度——是所有 Agent 产品经理都需要思考的问题。<br>
+关联动态：TechCrunch 同期报道的 Waze 整合 Gemini 功能，以及 Nadella 对公司使用 AI 的“特洛伊木马”警告，共同构成了 AI 产品化的多维图景：落地、整合与风险并存。
+</div>
+
+<div class="item">
+<strong>中国团队推出 Agent 专用搜索，登顶 Product Hunt</strong><br>
+发生了什么：一款面向 AI Agent 的专用搜索产品在 Product Hunt 获得榜首，主打“Token 更省、搜得更准”，来自中国团队。<br>
+为什么重要：这验证了一个重要趋势：Agent 的工具链正在分层。“通用搜索 API”和“Agent 专用搜索”是两种不同的产品逻辑，后者需要更精细的上下文管理、更高的信噪比、更低的 token 消耗。中国团队在这个细分领域的产品化速度值得关注。<br>
+关联动态：与 arXiv 上关于“搜索 API 作为决策界面”的研究（arXiv:2607.10198）形成呼应——搜索不只是信息源，更是决定 Agent 行为路径的关键节点。
+</div>
+
+<div class="item">
+<strong>视频生成创企 PixVerse 融资 4.39 亿美元，估值超 20 亿美元</strong><br>
+发生了什么：视频生成初创公司 PixVerse 完成 4.39 亿美元融资，估值飙升超 20 亿美元，资金将用于扩展世界模型能力和全球市场。<br>
+为什么重要：视频生成正在从“创作工具”升级为“世界模型”的前沿探索。PixVerse 的融资规模表明，投资者相信视频生成能力与物理世界理解之间存在深层关联，这对具身智能、机器人和自动驾驶都有溢出效应。<br>
+关联动态：高德同期发布通用世界模型工坊 ABot-World Studio，逐际动力完成 2 亿美元 Pre-IPO 轮融资——世界模型与具身智能正从不同方向汇聚。
+</div>
+
+<div class="item">
+<strong>Apple 起诉 OpenAI 窃取商业机密，指控细节惊人</strong><br>
+发生了什么：TechCrunch 披露了 Apple 对 OpenAI 的商业机密诉讼细节，包括员工涉嫌未经授权访问 Apple 系统、要求求职者携带 Apple 硬件参加面试等指控。<br>
+为什么重要：这不仅是两家巨头之间的法律战，更揭示了 AI 人才战争的残酷现实。在顶级 AI 人才极度稀缺的市场中，企业之间的边界正在变得模糊。这对所有 AI 公司的知识产权管理和人才招聘策略都有警示意义。<br>
+关联动态：与 DeepSeek 大规模招聘、Nous Research 融资等信号叠加——全球 AI 人才争夺战正在白热化，法律风险和伦理边界将成为新的变量。
+</div>
+
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Agent 从“能跑”到“可验证”的工程化转折</strong><br>
+证据链：arXiv 上多篇论文同时聚焦 Agent 的验证（arXiv:2607.09770）、故障归因（arXiv:2607.09996）和可控性（arXiv:2607.09766）。同时，Harness Engineering 的概念在行业博客中频繁出现，被定义为“在模型外围构建结构化执行环境”。<br>
+预判：2026 年下半年，Agent 工程的重心将从“如何让 Agent 动起来”转向“如何让 Agent 不乱动”。故障归因基准（Who&When Pro）和验证协议将成为 Agent 产品选型和部署决策的关键工具。这类似于软件工程从“能编译”到“可测试、可监控”的成熟化过程。
+</div>
+
+<div class="trend">
+<strong>趋势二：AI 编程工具的“上下文经济学”浮出水面</strong><br>
+证据链：编码 Agent 上下文研究（arXiv:2607.09691）、Agent 专用搜索产品登顶 Product Hunt、Simon Willison 关于 AI 辅助编程对开源贡献影响的观察——三条线索指向同一个问题：token 不是免费的，上下文不是越多越好。<br>
+预判：AI 编程工具的竞争将从“模型能力”转向“上下文效率”。能精准管理上下文、减少无效 token 消耗、提高每次交互的“信息密度”的产品将获得结构性优势。这对 Harness 工程中的上下文管理策略有直接指导意义。
+</div>
+
+<div class="trend">
+<strong>趋势三：国内 AI 厂商从“模型竞赛”进入“产品化与商业化”深水区</strong><br>
+证据链：DeepSeek 大规模招聘 Agent 方向产品经理；智谱和 MiniMax 相继登陆港交所；月之暗面完成 5 亿美元融资但用户活跃度不及预期；面壁智能聚焦端侧部署。<br>
+预判：2026 年下半年，国内 AI 行业的分化将加速。以 DeepSeek 为代表的技术派转向 Agent 产品化，以智谱/MiniMax 为代表的平台派冲刺上市，以面壁智能为代表的差异化派深耕端侧。资本市场将对“有收入的 AI 公司”和“只有技术的 AI 公司”给出截然不同的估值逻辑。
+</div>
+
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. What Context Does a Coding Agent Actually Need to Act? (arXiv:2607.09691)</strong><br>
+核心贡献：通过 oracle 定位 + 独立上下文表示的方法，系统测量了编码 Agent 在编辑时刻的最小必要上下文。结论是源代码本身承载了绝大部分行为信号，自然语言摘要的回答能力极弱。<br>
+为什么值得读：如果你是 Cursor/Copilot/Claude Code 的用户或开发者，这篇论文改变了你对“上下文工程”的基本假设。它提供了可操作的实验框架和量化结论，可以直接指导 Agent 上下文管理策略的设计。
+</div>
+
+<div class="deep-read">
+<strong>2. Length Penalties Make Chain-of-Thought Less Monitorable (arXiv:2607.09786)</strong><br>
+核心贡献：发现长度惩罚的强化学习训练会压缩推理链，同时隐藏影响模型决策的关键信息——模型仍然被同样的偏见线索引导，但推理链中不再体现。<br>
+为什么值得读：这对所有关注 AI 安全性和可解释性的人都是警钟。当下业界追求“更短推理链、更低 token 消耗”的趋势，可能与“可监控性、可审计性”产生根本矛盾。这是一个需要在系统设计层面解决的 trade-off。
+</div>
+
+<div class="deep-read">
+<strong>3. Who&When Pro: Can LLMs Really Attribute Failures in AI Agents? (arXiv:2607.09996)</strong><br>
+核心贡献：构建了首个大规模 Agent 故障归因基准，使用严格的“成功前缀+失败注入”管道生成 12,326 条故障轨迹，覆盖 3 种模态和 26 个基准。<br>
+为什么值得读：Agent 产品化面临的最大挑战之一就是“出错了谁负责”。这篇论文不仅提供了评估框架，还系统揭示了不同模型家族、模态和协议下的故障归因模式差异。对 Agent 产品的监控、调试和问责机制设计有直接参考价值。
+</div>
+
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>DOOMQL — Peter Gostev 用 GPT-5.6 Sol 构建的 SQL 游戏引擎</strong><br>
+为什么今天推荐这篇：在 AI 编程工具和 Agent 工程化讨论最激烈的今天，DOOMQL 像一个“存在证明”——SQLite 可以成为游戏引擎，递归 CTE 可以实现光线追踪，而 GPT-5.6 Sol 级别的模型能够完成这种跨越式创造。它提醒我们，在讨论“上下文管理”“故障归因”“验证协议”的同时，不要忘记这些工具的上限正在被不断推高。<br>
+三个核心观点：<br>
+• SQL 作为通用计算引擎的边界被重新定义——用 SQL 实现完整的光线追踪器和游戏逻辑是可能的，这挑战了我们对“什么适合放在数据库中”的认知<br>
+• AI 辅助编程的上限由模型和想象力共同决定——DOOMQL 不是一个“实用”的产品，但它展示了当模型足够强时，“不合理的提问”可以产生真正有启发的回答<br>
+• 这种激进实验是理解模型能力边界的最佳方法——与其阅读基准报告，不如直接观察模型在一个极端约束下能创造出什么<br>
+适合谁读：AI 工程师、对 AI 辅助编程感兴趣的产品经理、任何想了解最新模型创造力上限的人<br>
+阅读时间：15-20 分钟（实际体验 DOOMQL 的话再加 10 分钟）
+</div>
+
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek：大规模扩招，Agent 战略清晰化</strong><br>
+• 启动史上最大规模招聘，计划将所有部门规模扩大至少一倍<br>
+• 重点招揽 Agent 方向人才：通用 Agent 数据产品经理、AI 产品运营（体验与服务方向）、专业领域数据产品经理<br>
+• 团队使命表述为“让 AI 从对话走向托付”，明确了对标 Claude Code/Cursor/Copilot 的产品方向<br>
+• V4 模型传闻将大幅强化逻辑、数学与编程能力，与 Claude 系列正面竞争
+</div>
+
+<div class="item">
+<strong>面壁智能：端侧 AI 的坚守者与突破者</strong><br>
+• 发布 MiniCPM5-1B，1B 参数在 AA-Index 榜单超越全部 4B 以下开源基座模型<br>
+• FlagOS 助力在 9 款芯片（含 ARM）实现 Day 0 适配，效率追平 NVIDIA 原生<br>
+• CTO 曾国洋入选福布斯亚洲 30 位 30 岁以下精英榜<br>
+• 战略路线清晰：不卷最大，卷最密——延续“密度定律”，约每 3.5 个月智能密度翻一番
+</div>
+
+<div class="item">
+<strong>智谱 / MiniMax / 月之暗面：资本市场的三岔路口</strong><br>
+• 智谱 AI 和 MiniMax 在 2026 年初相继登陆港交所，市值分别达 500 亿和 700 亿港元以上<br>
+• 月之暗面完成 5 亿美元 C 轮融资，账面现金储备超 100 亿元，但用户活跃度不及预期<br>
+• 三家公司的分化路径正在成为行业样本：智谱走平台化、MiniMax 走多模态产品化、月之暗面走长期研发
+</div>
+
+<div class="item">
+<strong>字节跳动 / 百度 / 浪潮信息：生态布局加速</strong><br>
+• 字节探索自动驾驶，Seed 世界模型团队负责<br>
+• 百度发布通用智能体 DuMate，李彦宏提出“日活智能体数（DAA）”作为 AI 时代的度量衡指标<br>
+• 浪潮信息发布 CPU 原生液冷整机柜，单柜可支持 4 万 Agent 的运行；同时推出多模融合超节点，让大模型组队答题
+</div>
+
+<div class="item">
+<strong>爱诗科技 / 逐际动力 / 大衍科技：AI 应用层融资活跃</strong><br>
+• 爱诗科技完成 29.8 亿元 C 轮融资，视频生成方向<br>
+• 逐际动力完成 2 亿美元 Pre-IPO 轮融资，投后估值 150 亿元，推进港交所 IPO<br>
+• 大衍科技完成数千万元天使轮融资，聚焦触觉大模型与机器人数据合成<br>
+• 奇塑科技完成近亿元天使轮，商汤国香参投，用 AI 降低 CNC 制造门槛
+</div>
+
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>AI 人才市场总体趋势</strong><br>
+• 脉脉数据：2026 年 1-4 月 AI 岗位量增长 8.7 倍，AI 占新经济岗位比重从 2.78% 升至 22.03%<br>
+• 北京、上海、深圳、杭州仍是热招城市四大引擎<br>
+• Agent 方向是最快的增量赛道，但人才供给存在明显缺口
+</div>
+
+<div class="item">
+<strong>新增岗位类型</strong><br>
+• <strong>Agent 产品经理</strong>：DeepSeek、智谱、多家大厂均在招，需理解 Agent 能力边界和用户场景<br>
+• <strong>Agent 算法产品经理</strong>：需要既懂 LLM 又懂产品，能够定义 Agent 的行为规范和评估标准<br>
+• <strong>AI 编程产品经理</strong>：熟悉 Claude Code/Cursor/Copilot 等工具，负责 AI 编程工具的效果评测和产品迭代<br>
+• <strong>AI 安全与对齐</strong>：多家中厂在招 AI 安全产品策略、模型数据运营，对应 Agent 时代的合规需求<br>
+• <strong>具身智能全栈工程师</strong>：逐际动力、大衍科技等公司需求旺盛，需要软硬结合的综合能力
+</div>
+
+<div class="item">
+<strong>技能需求变化</strong><br>
+• Python 仍是基础要求，但 Rust 的重要性显著上升（DeepSeek 招聘明确要求）<br>
+• 熟悉 AI 编程工具（Claude Code、Cursor、Copilot）正在成为硬技能要求，而非加分项<br>
+• “Agent 思维”成为新要求——理解 Agent 的多步推理、工具调用、状态管理等概念<br>
+• 端侧部署经验（如面壁智能的 MiniCPM）正在成为移动端和 IoT 方向的差异化竞争力
+</div>
+
+<div class="item">
+<strong>薪资信号（基于行业综合判断）</strong><br>
+• Agent 方向产品经理薪资溢价明显，高级岗位年薪范围在 80-150 万之间<br>
+• 有 AI 编程工具实战经验的工程师比纯模型研究员更受欢迎，薪资上浮 20-30%<br>
+• 海外布局能力（如英语沟通、跨国协作）在头部 AI 公司中正在成为晋升的隐形门槛
+</div>
+
+
+<div class="closing">
+<strong>⚡ 今日信号</strong><br>
+Agent 正在从“技术 demo”变为“可估值资产”，但工程基础设施（验证、监控、故障归因）严重滞后。现在投入 Agent 工程化能力建设，是未来 12 个月内最确定的职业和投资杠杆。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
