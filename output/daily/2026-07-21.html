@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年07月21日 · 新闻 167 条 · 博客 8 篇 · 搜索 19 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>1. DeepSeek 系统性扩招：Agent Harness 团队全线出击</strong><br>
+发生了什么：DeepSeek 启动成立以来最大规模公开招聘，覆盖 7 大类 33 个岗位，计划将所有部门规模扩大至少一倍。其中最引人注目的是 3 月新成立的 Agent Harness 团队，由梁文锋浙大校友崔添翼负责，明确提出“Model+Harness=Agent”产品思路，对标 Anthropic 的 Claude Code，要做“DeepSeek Code Harness”。<br>
+为什么重要：<br>
+• 这是 DeepSeek 从“模型研究驱动”转向“Agent 产品化”的分水岭信号。招聘要求中明确将“重度使用 Claude Code、Cursor、Copilot”列为加分项，说明其目标不是再造一个基础模型，而是构建 Agent 工程基础设施。<br>
+• Harness Engineering 正在成为 2026 年 AI 工程化的核心范式——将模型能力包装为可操作、可记忆、可纠错的执行环境，而非单纯依赖模型本身变聪明。DeepSeek 这一布局直接对标 Anthropic 的 MCP 生态。<br>
+关联动态：与今日 MCP 协议转向“无状态”架构的新闻高度联动——Agent 基础设施层的标准化竞赛正在加速。
+</div>
+
+<div class="item">
+<strong>2. MCP 协议重大更新：转向无状态架构，降低 Agent 集成门槛</strong><br>
+发生了什么：TechCrunch 报道，AI 领域“最重要的协议”Model Context Protocol (MCP) 正在向更宽松的“无状态”架构演进，服务端对 Session ID 的处理方式将变得更像普通网站。<br>
+为什么重要：<br>
+• MCP 创始人直言 2025 年是验证协议必要性的一年，2026 年则是让 MCP 真正支撑 Agent 系统投产的一年。从有状态到无状态的转变，本质上是降低 Agent 工具生态的集成摩擦，让更多企业能将 Agent 系统推向生产环境。<br>
+• 这一变化直接利好 Multi-Agent 系统中的工具共享和 Subagent 编排，减少了状态管理的复杂度。<br>
+关联动态：与 arXiv 今日发表的 Agent 确定性重放工具 agrepl（arXiv:2607.16200）和 MCP 多 Agent 工具共享模式形成呼应——Agent 基础设施正在从“能跑起来”走向“可观测、可复现、可投产”。
+</div>
+
+<div class="item">
+<strong>3. Kimi 算力紧缺：暂停 C 端新用户订阅</strong><br>
+发生了什么：月之暗面 Kimi 发布公告，过去 48 小时用户请求量大幅超出预估，逼近现有集群承载极限，即日起暂停 C 端新用户订阅，同时全速推进算力扩容。后续还将拆分 Kimi 主权益与 Kimi Code 权益。<br>
+为什么重要：<br>
+• 这是继 DeepSeek 估值暴涨、启动大规模融资后，国内头部 AI 厂商算力瓶颈的又一次公开暴露。算力紧缺正在从“幕后成本”变成“前台产品危机”。<br>
+• Kimi 选择拆分 Code 权益，暗示编程场景的算力消耗已大到需要独立计费——Agent/Code 产品的推理成本远高于普通对话，正在倒逼商业模式变革。<br>
+关联动态：与 DeepSeek V4.1 定档 6 月、梁文锋个人出资 200 亿参与首轮融资的消息形成对照——国内 AI 头部玩家正在进入算力军备竞赛的深水区。
+</div>
+
+<div class="item">
+<strong>4. PlanFlip：Multi-Agent 系统的规划阶段注入攻击</strong><br>
+发生了什么：arXiv 论文 PlanFlip (arXiv:2607.16199) 揭示了 Multi-Agent LLM 系统的关键攻击面——通过向 Planner Agent 注入恶意提示，可实现攻击级联放大，一次性污染所有下游 Executor 和 Critic Agent 的子任务。<br>
+为什么重要：<br>
+• 研究测试了 9 款前沿 LLM 在 3479 个攻击场景下的表现，发现越强的模型反而越脆弱——GPT-5 级别的模型更容易被利用。<br>
+• 这对正在大规模部署 Multi-Agent 架构的企业（包括 DeepSeek 的 Agent Harness 团队）是直接的安全警告：Planner 的输入验证和上下文隔离必须成为架构设计的核心考量。<br>
+关联动态：与 OpenAI 同日发布的长程模型安全对齐实践形成鲜明对照——产业界在推 Agent 能力边界，学术界则在揭示新攻击面，安全与能力的赛跑仍在继续。
+</div>
+
+<div class="item">
+<strong>5. Anthropic 15 亿美元版权和解获批：训练数据使用版权的分水岭</strong><br>
+发生了什么：TechCrunch 报道，Anthropic 与版权方的 15 亿美元和解协议获得法院最终批准，但这一和解并未解决“使用版权作品训练 AI 模型是否合规”的根本性问题。<br>
+为什么重要：<br>
+• 这是 AI 行业迄今最大规模的版权和解案，但它是一个“个案解决”而非“规则确立”。后续其他模型厂商仍面临类似诉讼风险。<br>
+• Simon Willison 同日推荐的文章指出，美国应考虑立法明确“数据收集属于合理使用”并禁止通过服务条款阻止蒸馏（Distillation）——这直接关系到开源模型生态的合法性基础。<br>
+关联动态：与 OpenAI 对开源权重模型的担忧、以及中国开源模型在海外引发的“反向代购”现象形成全球版权与开源博弈的多线叙事。
+</div>
+
+<div class="item">
+<strong>6. MOSAIC：面向 LLM Agent 的冲突感知结构化长期记忆框架</strong><br>
+发生了什么：arXiv 论文 MOSAIC (arXiv:2607.16211) 提出了一种结构化、冲突感知的 Agent 长期记忆框架，核心创新在于实体类型图存储、语义分类检索和矛盾检测机制。<br>
+为什么重要：<br>
+• 当前 LLM Agent 的记忆系统普遍存在“扁平存储丢失关系语境”和“静默积累矛盾”两大痛点。MOSAIC 引入矛盾检测意味着记忆不再是简单累积，而是需要主动验证和维护。<br>
+• 这直接关系到 Agent 在长程任务中的可靠性——如果记忆会自我污染，再强的推理能力也会随时间衰减。<br>
+关联动态：与另一篇 arXiv 论文 MSCE（记忆-技能共演化框架，arXiv:2607.16621）形成互补——前者解决“记什么”，后者解决“怎么把记忆变成可执行技能”。
+</div>
+
+<div class="item">
+<strong>7. RLHF 标注者状态偏差审计：偏好数据中的结构化污染</strong><br>
+发生了什么：arXiv 论文 (arXiv:2607.16195) 识别出 RLHF 偏好数据中一类此前被忽视的结构化偏差——标注者在持续压力或痛苦条件下，偏好会随时间发生系统性漂移，这种偏差不同于普通的标注分歧或随机噪声。<br>
+为什么重要：<br>
+• 这意味着 RLHF 训练的奖励模型可能学到的不只是“哪个输出更好”，还包括“标注者在什么状态下更可能选这个”。这种偏差会在强化学习优化中被放大传播。<br>
+• 对于正在大规模使用 RLHF/RLVR 进行 Post-training 的团队（DeepSeek、智谱等），这一发现提示需要对标注数据的时序结构进行审计，而非仅关注标注一致性指标。<br>
+关联动态：与同日 arXiv 论文中关于 DPO 过度优化隐式奖励模型的分析 (arXiv:2607.16240) 和 GRPO 零优势锁死问题的发现 (arXiv:2607.16244) 共同指向——当前的偏好对齐方法存在系统性盲点，需要方法论层面的修正。
+</div>
+
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Agent Harness Engineering 从概念走向岗位化和产品化</strong><br>
+证据链：<br>
+• DeepSeek 正式成立 Agent Harness 团队，明确提出“Model+Harness=Agent”产品公式，招聘岗位覆盖研究员、工程师、产品经理全链条。<br>
+• TechCrunch 报道 MCP 协议向无状态架构演进，降低 Agent 工具集成门槛。<br>
+• arXiv 上同一天出现多篇 Agent 基础设施论文：确定性重放工具 agrepl、Multi-Agent 攻击面研究 PlanFlip、长期记忆框架 MOSAIC、记忆-技能共演化 MSCE。<br>
+• 业界已形成共识公式：Agent = Model + Harness。Harness 不是胶水代码，而是包含上下文管理、工具调用、记忆、安全护栏、可观测性的工程系统。<br>
+预判：2026 年下半年，“Agent Harness Engineer”将成为独立岗位出现在更多公司的招聘需求中，不再只是“后端工程师顺便做一下”。Harness 层的标准化（MCP 演进）与差异化（各厂商自研）将同时加速。
+</div>
+
+<div class="trend">
+<strong>趋势二：国内 AI 厂商算力危机从“隐性约束”升级为“显性产品中断”</strong><br>
+证据链：<br>
+• Kimi 因算力紧缺暂停 C 端新用户订阅，是国产头部 AI 产品首次因算力问题直接中断用户增长。<br>
+• DeepSeek 首轮融资 500 亿、梁文锋个人出资 200 亿，大量资金指向算力基础设施（内蒙古乌兰察布数据中心运维岗位同步招聘）。<br>
+• DeepSeek V4 系列据传已从英伟达 CUDA 迁移至华为昇腾 CANN 框架，这不仅是技术选择，更是供应链安全策略。<br>
+• 36氪报道 WAIC 上光电融合芯片宣称可让 Token 成本降 50%，说明算力成本和供给仍是行业核心焦虑。<br>
+预判：算力将取代模型能力成为 2026 年下半年国内 AI 竞争的第一约束变量。拥有自主算力基础设施的厂商（如深度绑定华为昇腾生态的）将获得结构性优势。“算力即产品”的认知将从 B 端传导至 C 端用户。
+</div>
+
+<div class="trend">
+<strong>趋势三：偏好对齐方法的“方法论危机”正在浮现</strong><br>
+证据链：<br>
+• 同日 arXiv 上至少 4 篇论文从不同角度揭示了当前 RLHF/DPO/GRPO 的系统性问题：标注者状态偏差 (arXiv:2607.16195)、DPO 概率收缩 (arXiv:2607.16240)、GRPO 零优势锁死 (arXiv:2607.16244)、弱到强探索瓶颈 (arXiv:2607.16205)。<br>
+• 这些不是孤立 bug，而是方法设计层面的结构性缺陷——当模型训练中所有采样都落入同一“推理盆地”时，奖励信号消失，优化停滞。<br>
+• 工业界正在大规模使用这些方法进行 Post-training，但方法本身的可解释性和鲁棒性尚未得到充分验证。<br>
+预判：RLHF 的下一代范式将不得不引入外部多样性注入机制（如弱模型辅助探索）和时序偏差审计。单纯依赖更大的模型和更多的人类偏好数据不足以解决这些结构性问题。
+</div>
+
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. PlanFlip: Attacking Multi-Agent LLM Systems via Planning-Phase Prompt Injection</strong> (arXiv:2607.16199)<br>
+核心贡献：首次系统性地将 Multi-Agent 系统的 Planner 识别为关键攻击面，提出四种注入攻击策略（目标替换、优先级反转、上下文污染、角色混淆），并在 9 款前沿模型上验证了“能力越强越脆弱”的反直觉结论。<br>
+为什么值得读：如果你正在设计或部署 Multi-Agent 架构，这篇论文提供了可直接用于安全审计的攻击分类法和评估框架。Planner 的输入净化不应是事后补丁，而应成为架构设计的第一性原理。
+</div>
+
+<div class="deep-read">
+<strong>2. Rater State Bias in RLHF Preference Data: An Audit Framework</strong> (arXiv:2607.16195)<br>
+核心贡献：识别了 RLHF 中一类新的结构化混淆变量——标注者状态漂移。提出了可检验的偏差审计框架，证明这种偏差可在标注者之间共享并通过奖励模型传播到策略优化。<br>
+为什么值得读：对正在做 Post-training 的团队是直接可操作的诊断工具。论文给出的审计方法可以集成到现有的数据质量 pipeline 中，无需重新标注数据。
+</div>
+
+<div class="deep-read">
+<strong>3. Deterministic Replay for AI Agent Systems (agrepl)</strong> (arXiv:2607.16200)<br>
+核心贡献：提出 Agent 执行的确定性重放框架，通过在传输层截获所有外部交互并序列化为结构化执行轨迹，实现零网络依赖的隔离重放。<br>
+为什么值得读：Agent 系统的调试和审计一直是黑箱。agrepl 提供了一个类似数据库 WAL（预写日志）的机制，让 Agent 行为可复现、可审查。这对企业级 Agent 部署的合规性和可靠性至关重要。
+</div>
+
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>Nathan Lambert: Kimi K3 - The Open-Weights Escalation</strong><br>
+链接：https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation<br>
+<strong>为什么今天推荐：</strong>正值 Kimi 因算力紧缺暂停新用户订阅的节点，Lambert 这篇分析提供了更长的时间线视角——Kimi K3 的开源权重策略正在改变全球 AI 生态的权力格局。结合今天 DeepSeek 的 Agent Harness 布局和国内开源模型的“反向代购”现象，这篇文章能帮助理解中国开源模型从“追赶者”到“生态定义者”的转变逻辑。<br>
+<strong>三个核心观点：</strong><br>
+• Kimi K3 的开源权重发布不是孤立事件，而是中国 AI 实验室集体性的战略转向——通过开源建立全球开发者生态来对冲算力和地缘政治风险。<br>
+• 开放权重模型的能力阈值正在逼近闭源前沿，这改变了“蒸馏禁令”的博弈逻辑——当开源模型本身就足够强时，蒸馏的价值递减。<br>
+• 全球 AI 生态正在从“模型能力的单极竞争”转向“生态系统的多极竞争”——模型权重、Harness 工具链、开发者社区和算力基础设施共同构成竞争壁垒。<br>
+<strong>适合谁读：</strong>AI 战略决策者、开源模型开发者、关注中美 AI 竞争格局的研究员<br>
+<strong>阅读时间：</strong>约 15 分钟
+</div>
+
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek（深度求索）：</strong><br>
+• <strong>大规模招聘：</strong>6 月 25 日发布 7 大类 33 个岗位，所有部门规模扩大至少一倍。Agent Harness 团队（崔添翼负责）持续招人，覆盖研究员、工程师、产品经理。工作地点北京、杭州，数据中心岗位在内蒙古乌兰察布。<br>
+• <strong>融资进展：</strong>首轮融资约 500 亿元，梁文锋个人出资最高 200 亿（占 40%），投后估值达 3500 亿元。腾讯和宁德时代为最大外部投资者。国家大基金曾洽谈领投。<br>
+• <strong>技术路线：</strong>V4 系列据传已从英伟达 CUDA 迁移至华为昇腾 CANN 框架，V4.1 定档 6 月。至少还有两款基于国产芯片训练的大模型处于同步推进阶段。<br>
+• <strong>招聘信号：</strong>多个岗位将“重度使用 Claude Code、Cursor、Copilot”列为加分项，全栈开发岗明确提到“Vibe Coding 重度用户”，显示其 Agent 产品方向对标 Anthropic 生态。
+</div>
+
+<div class="item">
+<strong>月之暗面（Moonshot AI / Kimi）：</strong><br>
+• <strong>算力危机：</strong>7 月 19 日公告称过去 48 小时请求量大幅超出预估，暂停 C 端新用户订阅。将拆分 Kimi 主权益和 Kimi Code 权益。<br>
+• <strong>海外影响力：</strong>Nathan Lambert 在 Interconnects 博客中将 Kimi K3 称为“开放权重升级”，智谱 GLM 系列被其评价为“开放 Agent 的阶跃变化”。<br>
+• <strong>开源战略：</strong>杨植麟在中关村论坛强调“开源让每个企业低门槛获取智能”，GLM-5.1 在海外引发编程套餐“反向代购”现象。
+</div>
+
+<div class="item">
+<strong>智谱 AI：</strong><br>
+• 智谱在港股一度涨超 25%。GLM-5.1 编程套餐海外热销，中国市场定价仅为海外一半，引发海外用户“反向代购”。<br>
+• Nathan Lambert 6 月 22 日博文称 GLM-5.2 是“开放 Agent 的阶跃变化”，这是他一直在密切关注的能力阈值。<br>
+• 智谱已与超 400 万中小企业及开发者共建生态，覆盖全球 218 个国家和地区。
+</div>
+
+<div class="item">
+<strong>深势科技：</strong><br>
+• 公司定位“全球 AI for Science 领导者”，以深势·宇知科学发现智能引擎为基座，构建“读文献、做计算、做实验”的智能科学工具矩阵。<br>
+• 产品体系包括 Hermite 药物计算平台、RiDYMO 高质量 Hit 发现平台、Piloteye 等，覆盖生命科学与物质科学。<br>
+• 与复宏汉霖达成 AI 辅助药物研发战略合作。玻尔科研云平台与阿里云合作实现云原生分层存储加速。
+</div>
+
+<div class="item">
+<strong>瑞莱智慧（RealAI）：</strong><br>
+• 连续完成合计数亿元规模的 B1 轮和 B2 轮融资，投资方包括星连资本、招商局集团旗下数字贸易基金、卓源亚洲等。资金将用于安全可信大模型系统的研发与产业落地。<br>
+• 作为 AI 安全赛道标的，在多 Agent 系统攻击面研究（如 PlanFlip）日益受到关注的背景下，这一融资信号值得重视。
+</div>
+
+<div class="item">
+<strong>速腾聚创（RoboSense）：</strong><br>
+• WAIC 2026 发布基于自研“孔雀”SPAD-SoC 芯片的第二代全固态感知平台 E2，定位为物理 AI 数据入口。最高精度是前代 3 倍。
+</div>
+
+<div class="item">
+<strong>月泉仿生：</strong><br>
+• 完成数亿元 Pre-A+ 轮融资，依托仿生拉压体机器人理论，构建“大脑-身体-环境”一体化的仿生具身智能体系。灵巧手已实现万台量产、订单过亿。
+</div>
+
+<div class="item">
+<strong>北京 AI 产业集群：</strong><br>
+• 北京已备案大模型 259 家，2025 年 AI 产业规模超 4500 亿元，核心企业超 2500 家。智谱、月之暗面、面壁智能、深言科技形成创新方阵。
+</div>
+
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>岗位类型变化：</strong><br>
+• <strong>Agent Harness 工程师/研究员成为新岗位类别：</strong>DeepSeek 单独设立 Agent Harness 团队招聘，表明这不是传统的后端或 ML 工程师岗位，而是需要同时理解模型能力边界、工具调用协议（MCP）、记忆系统和安全护栏的复合型角色。<br>
+• <strong>“Vibe Coding 重度用户”成为加分项：</strong>DeepSeek 全栈开发岗位明确要求候选人是 AI 辅助编程的重度用户，这意味着“会写代码”还不够，需要“善于用 AI 写代码”。<br>
+• <strong>Agent 产品经理需求涌现：</strong>DeepSeek 招聘“通用 Agent 数据产品经理”，蚂蚁集团招聘“AI 产品经理（智能体方向）”，阿里招聘“AI 产品专家”含 Agent 方向。
+</div>
+
+<div class="item">
+<strong>技能需求变化：</strong><br>
+• Claude Code / Cursor / Copilot 使用经验从“个人偏好”变成“招聘要求”。<br>
+• MCP 协议理解正在成为 Agent 工程师的基础技能要求。YouTube 上已出现 LangGraph + MCP Multi-Agent 系统构建教程。<br>
+• Post-training / RLHF 相关岗位将需要掌握偏差审计和多样性注入等新方法论（今日 arXiv 论文趋势预示）。<br>
+• 算力基础设施（超算集群、高性能计算编译器、数据中心运维）岗位增长明显——DeepSeek 在乌兰察布招聘数据中心运维人员。
+</div>
+
+<div class="item">
+<strong>薪资信号：</strong><br>
+• 阿里 AI 创新事业群产品专家岗位薪资 35-65k·16 薪；字节大模型平台产品经理 40-70k·18 薪；蚂蚁 AI 产品专家 26-55k·15 薪。<br>
+• DeepSeek 虽未公开薪资，但其融资后估值 3500 亿、全员扩招的背景下，薪酬竞争力预计将处于行业顶部。<br>
+• 瑞莱智慧完成数亿元 B 轮融资，AI 安全赛道资金充裕，相关岗位薪资有望上涨。
+</div>
+
+<div class="item">
+<strong>机会方向预判：</strong><br>
+• Agent 基础设施层（MCP 工具开发、Agent 可观测性平台、执行重放/调试工具）将是下一个创业和就业热点。<br>
+• AI 安全（对抗攻击防御、对齐审计、偏差检测）赛道正在获得独立融资（瑞莱智慧），不再只是大厂的附属功能。<br>
+• 国产芯片适配（华为昇腾 CANN、国产 GPU 集群运维）将成为“稀缺技能”——DeepSeek 从 CUDA 迁移至 CANN 需要大量底层优化人才。
+</div>
+
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+<strong>Agent 不是模型能力的延伸，而是工程能力的测试场。</strong><br>
+DeepSeek 用“Harness 团队独立建制 + 专职产品经理”的组织结构说明了一切：能做模型的公司很多，能把模型封装为可靠 Agent 的公司极少。Harness Engineering 是 2026 年下半年最值得投入的技能方向——不是因为技术有多难，而是因为很少有人真正理解 Agent 在生产环境中的失败模式。
+</div>
+
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
