@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年07月24日 · 新闻 159 条 · 博客 7 篇 · 搜索 12 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>DeepSeek 启动成立以来最大规模扩招，Harness 部门急缺三类人才</strong><br>
+发生了什么：DeepSeek 正式发布 33 类岗位招聘计划，目标将所有部门人员规模扩充至少一倍，Harness 部门负责人崔添翼亲自下场直聘研究员、工程师、产品经理三类岗位。<br>
+为什么重要：这是 DeepSeek 首次以组织化方式大规模吸纳 Agent 工程人才，标志着 Harness（上下文管理、工具调用、记忆体系）从内部实验走向产品化基建。招聘要求强调"真实项目、动手能力"，拒绝学术花瓶——这一信号表明 Agent 工程正从研究驱动转向工程驱动，对实操型工程师的需求将急剧攀升。<br>
+关联：与 DeepSeek 今年已增资 65% 的资本动作形成呼应，资金正快速转化为人才储备。
+</div>
+
+<div class="item">
+<strong>Kimi K3 发布，专家否认其通过蒸馏 Anthropic Fable 获得能力</strong><br>
+发生了什么：月之暗面发布 2.8 万亿参数 Kimi K3 模型，社区对其能力来源产生争议。多位专家对 TechCrunch 表示，"不可能仅通过蒸馏 Fable 在如此短时间内获得如此强模型"。<br>
+为什么重要：如果 Kimi K3 确实代表了独立的研究突破，意味着国内团队在 Post-training 和推理能力路线上取得了实质性进展，而非单纯跟随 Anthropic 的路径。这将对"中国 AI 只能靠蒸馏追赶"的叙事形成有力反驳。<br>
+关联：Nathan Lambert 在博客中也对 Kimi K3 和开放模型进行了专门分析，关注开放-封闭模型能力差距的收窄趋势。
+</div>
+
+<div class="item">
+<strong>新晋菲尔兹奖得主当天宣布加入 OpenAI</strong><br>
+发生了什么：中国数学家王虹（北大 07 级）和邓煜在费城国际数学家大会获菲尔兹奖，其中一人当天宣布加入 OpenAI。其学生刚用 Fable 5 推翻 87 年悬案（雅可比猜想被 AI 证伪）。<br>
+为什么重要：这不仅是"数学家流向 AI 公司"的又一例证，更直接关联到 AI for Math / AI for Science 的前沿方向。顶级数学直觉与 LLM 推理能力的结合，可能加速科学发现范式的根本转变。<br>
+关联：OpenAI 持续从数学界吸纳顶尖人才，与 DeepMind 的 AlphaFold 路线形成差异化竞争。
+</div>
+
+<div class="item">
+<strong>腾讯混元多模态理解负责人胡瀚离职创业，原团队聚焦世界模型</strong><br>
+发生了什么：前微软亚研首席研究员、混元多模态理解负责人胡瀚离职，大语言模型部负责人姚顺雨正在密集梳理团队，原研究组将聚焦世界模型前沿。<br>
+为什么重要：继 AI Lab 裁撤后，混元再次调整组织结构，将算力、人才集中到大语言模型基座和世界模型方向。姚顺雨"比高层更急"的态度，折射出腾讯对追赶第一梯队的焦虑和资源聚焦策略。<br>
+关联：字节田永龙（前 OpenAI）接替胡瀚负责 VLM 方向，国内大厂之间的人才争夺战进一步白热化。
+</div>
+
+<div class="item">
+<strong>阿里真武 M890 超节点成功适配 Qwen3.8，国内首个运行超 2 万亿参数大模型的超节点</strong><br>
+发生了什么：阿里云自研芯片真武 M890 超节点完成对 Qwen3.8 的适配，上线百炼平台提供推理服务。<br>
+为什么重要：2 万亿参数级别的国产芯片推理落地，意味着国内在"自研芯片 + 超大模型"路线上取得了系统性验证。这不仅是硬件突破，更是对 NVIDIA 依赖的战略性对冲信号。<br>
+关联：同日 AMD 推出 Helios 挑战 NVIDIA、Etched 估值破 103 亿美元，算力基础设施的多元竞争正在加速。
+</div>
+
+<div class="item">
+<strong>Etched 估值飙至 103 亿美元，AI 芯片创业热度不减</strong><br>
+发生了什么：三位哈佛辍学生创立的 AI 芯片公司 Etched 宣称无需 GPU 即可加速任意模型推理，获得大牌投资者支持，估值达 103 亿美元。<br>
+为什么重要：在 NVIDIA 几乎垄断的市场中，专用推理芯片的估值膨胀说明资本仍在押注"后 GPU 时代"。核心叙事是：未来推理成本将成为瓶颈，专用芯片有结构性机会。<br>
+关联：NVIDIA 同时宣布向月球发送 GPU（象征性事件），似乎是在回应"GPU 无处不在"的统治力叙事。
+</div>
+
+<div class="item">
+<strong>36氪 WAIC 总结：AI 叙事从模型竞速转向场景交付，猎头 Agent 首次发布</strong><br>
+发生了什么：2026 WAIC 大会落下帷幕，核心信号是"技术展示退居幕后，真实场景、系统交付与商业价值被推到台前"。禾蛙平台发布猎头行业 Agent——Domi。<br>
+为什么重要：垂直行业 Agent 开始从概念走向交付，招聘猎头场景成为首个被完整拆解的案例。这意味着 Agent 产品化进入了"找 PMF"而非"炫技"的阶段。<br>
+关联：与 Ethan Mollick 今日发布的"AI 使用指南 Summer 2026 Edition"形成呼应——AI 正在从"能用"走向"好用"。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Agent 工程人才缺口爆发式扩大</strong><br>
+证据：DeepSeek Harness 部门罕见公开急招三类岗位；崔添翼称"每天都在面试，在各种地方贴小广告"；猎聘、淘宝招聘平台显示阿里、蚂蚁、字节均在大量招募 Agent 开发工程师。<br>
+预判：Agent 工程将成为一个独立且有壁垒的职业方向，不同于传统后端或 ML 工程师。Harness 工程（上下文管理、工具调用协议、多 Agent 协调）会成为 2026 年下半年最抢手技能之一。建议关注 MCP/A2A 协议栈经验、长程记忆系统设计、Agent 运行时安全三个子方向。
+</div>
+
+<div class="trend">
+<strong>趋势二：国内大厂 AI 组织进入"聚焦"与"出清"阶段</strong><br>
+证据：腾讯裁撤 AI Lab、混元聚焦世界模型和大语言模型；月之暗面推出 Kimi K3 证明独立研发能力；字节在中卫成立 24 亿注册资本科技公司；DeepSeek 增资 65% 并大规模扩招。<br>
+预判：行业正从"百花齐放"转向"头部聚焦"——资源和人才向少数方向收敛（大语言模型基座、世界模型、Agent 工程），非核心方向的人员将加速流动。2026 年下半年可能出现更多"明星研究员离职创业"事件（胡瀚模式），这与资本回暖形成双向驱动。
+</div>
+
+<div class="trend">
+<strong>趋势三：多 Agent 系统架构从研究走向工程落地</strong><br>
+证据：arXiv 论文 Autonomous Topology Mutation (ATM) 提出多 Agent 运行时拓扑重组机制；OPTScientist 用多 Agent 发现优化器程序；StabilityBench 关注 LLM 在多轮对话中的行为不稳定性。<br>
+预判：多 Agent 系统正在从"固定编排"走向"自适应拓扑"，这意味着 Agent 框架需要支持动态的 Agent 创建、销毁和角色切换。这对现有的 LangChain/CrewAI 等静态编排范式构成挑战，可能出现新一代 Agent 编排框架。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. Autonomous Topology Mutation: Safe Runtime Restructuring for Multi-Agent LLM Systems</strong><br>
+核心贡献：提出 ATM 机制，允许多 Agent 系统在运行时自动检测瓶颈（队列深度、上下文混乱度、工具错误率等六维信号），并在保持能力单调性、状态路由完整性和影子验证的前提下动态重组 Agent 拓扑。这是首次将多 Agent 系统的"弹性伸缩"问题提升到架构层面。<br>
+为什么值得读：如果你正在设计或使用多 Agent 系统（如 AutoGPT、MetaGPT 类框架），这篇论文提供了一套可落地的动态编排方法论，直接回应当前 Multi-Agent 系统在高负载下崩溃的痛点。
+</div>
+
+<div class="deep-read">
+<strong>2. Unifying Six Scientific Branches: Monkey King Bang (MKB) Multimodal Foundation Model</strong><br>
+核心贡献：提出覆盖 DNA、RNA、蛋白质、小分子、晶体材料和科学文献六大分支的统一科学多模态基础模型，用单一 Transformer 骨干加模态专用编解码器实现跨科学领域的理解与生成。<br>
+为什么值得读：这是 AI4S 从"一个领域一个模型"走向"统一基础模型"的重要尝试，与 DeepMind 的 AlphaFold 单点突破路线形成对比，适合关注科学 AI 基础设施的研究者和投资人。
+</div>
+
+<div class="deep-read">
+<strong>3. Codec-Gauge: Learning Compression-Friendly Gauges for Transformer KV Caches</strong><br>
+核心贡献：提出后训练的 KV Cache 压缩方法，通过学习小型正交通道变换对 KV 向量做频域重排，再结合现有压缩后端实现更高效的存储。核心洞见是"KV Cache 的通道基选择对压缩效率有显著影响"。<br>
+为什么值得读：长上下文推理的成本瓶颈在 KV Cache 而非计算，这篇论文提供了一种训练成本极低（后训练）的优化路径，适合做推理加速和成本优化的工程师。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>Ethan Mollick: An opinionated guide to which AI to use to do stuff (Summer 2026 Edition)</strong><br>
+为什么今天推荐：WAIC 2026 刚落幕，AI 产品化正从"炫技"走向"交付"，从业者面临的核心问题已从"AI 能不能做 X"变为"该用哪个 AI 做 X"。这篇指南恰好提供了基于实际使用体验的工具推荐框架。<br>
+三个核心观点：(1) AI 工具选择应从任务类型出发（写作、编程、分析、创作），而非盲目追新模型；(2) 不同模型在特定任务上有明显的"个性差异"，用户应建立自己的工具矩阵；(3) Agent 类产品正在模糊工具边界，但可靠性仍是最大瓶颈。<br>
+适合谁读：产品经理、创业者、以及需要在实际工作中选型 AI 工具的工程师。<br>
+⚠️ 阅读时间：约 25 分钟
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek</strong>：启动成立以来最大规模扩招，覆盖 33 类岗位，计划全体部门人数翻倍。Harness 部门崔添翼直聘研究员、工程师、产品经理三类岗位，称"每天都在面试"。公司今年已两次增资，注册资本增至约 1645 万元。梁文锋在闭门会上明确"只有一条主线，即通往 AGI"。招聘不唯学历，看重真实项目和动手能力。
+</div>
+
+<div class="item">
+<strong>月之暗面</strong>：发布 Kimi K3（2.8 万亿参数，原生多模态，百万 token 上下文），专家认为其能力不来自对 Anthropic Fable 的蒸馏。同时发布 PerceptionBench 评测。
+</div>
+
+<div class="item">
+<strong>腾讯混元</strong>：胡瀚（多模态理解负责人）离职创业，姚顺雨密集梳理团队。前 OpenAI/字节田永龙接替 VLM 方向。原团队聚焦世界模型前沿研究。姚顺雨持续向高层争取更多算力资源。
+</div>
+
+<div class="item">
+<strong>阿里云</strong>：真武 M890 超节点成功适配 Qwen3.8（2 万亿+参数），上线百炼平台提供推理服务，系国内首个。
+</div>
+
+<div class="item">
+<strong>字节跳动</strong>：在中卫成立朔方星河科技公司，注册资本 24 亿人民币，经营范围涵盖信息技术咨询、软件开发等。
+</div>
+
+<div class="item">
+<strong>深势科技</strong>：持续推进 OpenLAM 大原子模型开放社区平台，近期发布材料与工艺智能优化工具 SimpFine 并落地多家企业。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>最热门岗位：AI Agent/Harness 工程师</strong><br>
+- DeepSeek Harness 部门急招三类岗位（研究员、工程师、产品经理），实习生也可直接参与 Agent 核心业务<br>
+- 猎聘平台显示阿里、蚂蚁、字节均在大量招募 Agent 开发工程师，薪资范围 35-70K
+</div>
+
+<div class="item">
+<strong>新兴岗位类型：Agentic RL 工程技术研发专家</strong><br>
+- 蚂蚁集团在北京/杭州招聘该岗位，15 薪，薪资 35-65K<br>
+- 这标志着强化学习与 Agent 系统的融合正在催生新的专业方向
+</div>
+
+<div class="item">
+<strong>技能需求变化信号</strong><br>
+- MCP/A2A 协议栈经验正在成为 Agent 岗位的加分项，多协议（MCP + A2A + ACP/UCP）架构理解将成为竞争优势<br>
+- 大模型评测产品专家需求上升，反映企业客户对模型可靠性、成本的关注已进入产品化阶段<br>
+- 具身智能赛道正在从"参数竞赛"进入"架构竞赛"，1B 参数模型可登顶榜单，说明算法创新而非算力堆砌的价值被重新认可
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+<strong>Agent 工程正式进入"抢人时代"。</strong> DeepSeek Harness 部门罕见的公开急招信号叠加各大厂 Agent 岗位的集中释放，表明 2026 年下半年 Agent 工程人才将出现供不应求的结构性缺口。如果你在考虑转型，现在是最好的窗口期。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
