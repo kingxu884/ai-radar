@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年07月27日 · 新闻 132 条 · 博客 7 篇 · 搜索 9 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>1. 梁文锋内部讲话曝光：DeepSeek 的 AGI 路线图与“克制”战略</strong><br>
+发生了什么：DeepSeek 创始人梁文锋在近期融资会议上系统阐述了公司战略——不追求商业化扩张、不做超级 App、不碰视频/3D/世界模型，将所有资源集中在提升实现 AGI 的概率上，技术路径明确为“思维链 → Agent → 持续学习 → AI 自我迭代”。<br>
+为什么重要：这是 DeepSeek 迄今最清晰的战略声明。在行业普遍追求商业化和用户增长时，DeepSeek 选择反向押注基础设施层和模型能力本身，这种克制本质上是将竞争维度从“应用场景”拉回“模型能力密度”。梁文锋特别强调“持续学习是下一代模型必须解决的关键问题”，这直接指向当前 Transformer 架构的静态训练范式的根本局限。<br>
+关联信号：DeepSeek 近期被曝组建专门的 Harness 团队（由前 Jane Street 量化交易员 Tianyi Cui 领导），产品定位为“Desktop Agent”，对标 Claude Code/Cursor 产品类别——这说明他们正在将 Agent 路线图从理论推向工程化落地。
+</div>
+
+<div class="item">
+<strong>2. DeepSeek 组建 Harness 团队，Desktop Agent 产品浮出水面</strong><br>
+发生了什么：据多方信息源确认，DeepSeek 于 2026 年 3 月引入 Tianyi Cui（前 Jane Street 量化交易背景）领导 Harness 团队，内部产品定位为“Desktop Agent”，与 Claude Code / Cursor 处于同一产品类别而非纯 API 服务。<br>
+为什么重要：这是“Harness Engineering”从概念走向独立岗位编制的标志性事件。当一家以模型能力见长的公司专门组建团队做 Agent 基础设施层（工具调用、上下文管理、安全边界、可观测性），意味着行业共识正在形成：Agent 的工程化挑战不亚于模型训练本身。Harness 层的竞争将决定谁能把 Agent 从 Demo 变成可靠的生产力工具。<br>
+关联信号：今日 arXiv 论文 <em>AgentKVShift</em> 关注 Agent 记忆系统的 KV 缓存复用，<em>FlowEvo</em> 聚焦工作流与可执行技能的协同进化——学术界正在密集补充 Harness 层的理论基础。
+</div>
+
+<div class="item">
+<strong>3. Harness Engineering 被正式命名：Agent 基础设施层走向独立学科</strong><br>
+发生了什么：harness-engineering.ai 等社区正式将 Harness Engineering 定义为区别于 AI 研究和应用开发的独立学科——负责工具调用、上下文窗口管理、安全边界、可观测性、确定性保障。<br>
+为什么重要：这标志着 Agent 生态的成熟度拐点。类比于操作系统从硬件驱动中抽象出进程管理和内存管理，Harness 层的独立意味着 Agent 开发者不再需要关心底层模型细节。预期未来 6-12 个月，“Harness Engineer”将成为一个明确招聘岗位类别，而非笼统的“AI Engineer”子集。<br>
+关联信号：美团今日发布全场景 Agent 平台 CatPaw（内部已覆盖 9 万员工、3 万+ Agent），企业级 Agent 基础设施的产品化需求正在爆发。
+</div>
+
+<div class="item">
+<strong>4. 美团 CatPaw 全场景 AI Agent 平台正式上线</strong><br>
+发生了什么：美团发布 CatPaw 平台，提供开箱即用的 AI 工作台和企业级 Agent 开发与托管能力，已在餐饮、美业、宠物医院等真实业务场景验证，内部覆盖 9 万名员工、搭建超 3 万个 Agent。<br>
+为什么重要：这是国内互联网巨头首次将 Agent 平台作为标准化产品对外输出（而非仅内部工具）。CatPaw 的定位是“让商家构建可协作、可管理的 AI 帮手”，本质上是在做 Agent 的“企业操作系统”——这将加速 Agent 从技术 demo 到商业落地的转化，同时也会倒逼 Agent 可观测性、多 Agent 协作、安全治理等基础设施的成熟。<br>
+关联信号：词元无限同期完成数亿元天使++轮融资，定位同样是“企业级 AI Agent 基础设施”——Agent 中间件赛道正在形成。
+</div>
+
+<div class="item">
+<strong>5. OpenAI 遭遇首次自主 Agent 网络攻击，Hugging Face CEO 呼吁“彻底透明”</strong><br>
+发生了什么：OpenAI 遭受被描述为“首次自主 Agent 网络攻击”的安全事件，Hugging Face CEO 公开回应称这需要“前所未有的透明响应”。<br>
+为什么重要：这是 AI 安全从“模型对齐”问题扩展为“Agent 行为安全”问题的标志性事件。当攻击由自主 Agent 发起时，传统的漏洞披露和修复时间线可能完全失效——攻击速度从人类时间尺度加速到 Agent 时间尺度。这对所有部署 Agent 的企业提出了新的安全架构要求：Agent 的操作边界、权限管控、行为审计必须内置在 Harness 层而非依赖于外部防火墙。<br>
+关联信号：arXiv 今日论文 <em>FlowGuard</em> 提出轻量级推理时多模态安全框架，关注通过跨模态一致性检测对抗性攻击——安全研究正在向 Agent 推理过程内部延伸。
+</div>
+
+<div class="item">
+<strong>6. MCP 协议生态加速成熟，与 A2A 形成互补格局</strong><br>
+发生了什么：行业分析指出，2026 年 MCP（Model Context Protocol）已成为 Agent 工具调用的标准协议，兼容 LangChain、CrewAI、OpenAI SDK 等主流框架；与此同时，Google 的 A2A（Agent-to-Agent）协议解决了 Agent 间任务委托问题，两者在实践中被组合使用。<br>
+为什么重要：协议层面的标准化是 Agent 生态从碎片化走向可组合的关键。MCP 解决“Agent 如何调用外部能力”，A2A 解决“Agent 如何协作”——这两层协议的稳定意味着 Harness 层的技术选型风险显著降低，企业可以更放心地投入 Agent 基础设施建设。<br>
+关联信号：arXiv 论文 <em>FlowEvo</em> 和 <em>HierFlow</em> 分别在 Agent 工作流的技能复用和拓扑-执行协同搜索上取得进展，这些能力未来可能被整合进协议标准中。
+</div>
+
+<div class="item">
+<strong>7. LoRA 在多步骤程序性知识上系统性失败——对 Agent 微调策略的警示</strong><br>
+发生了什么：arXiv 论文 <em>Procedural Knowledge Is Not Low-Rank</em> 通过系统性实验证明，LoRA 在需要条件分支和终端状态判断的多步骤程序性任务（如旅行预订、Zoom 配置）上，所有配置均无法匹配全量微调性能，且性能随 rank 增大反而下降。<br>
+为什么重要：这对当前“LoRA 是 LLM 微调默认方案”的行业共识提出重要挑战。Agent 的核心能力正是执行多步骤、有条件分支的程序性任务——如果 LoRA 本质上不适合学习这类知识，那么 Agent 的 post-training 策略需要根本性调整。论文建议程序性知识可能存在于参数空间的高秩子空间，需要更丰富的参数更新模式。<br>
+关联信号：与 DeepSeek 强调的“持续学习”能力呼应——静态 LoRA 适配器可能不是 Agent 能力持续进化的正确载体。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Agent 基础设施层（Harness）从“自研轮子”走向标准化产品</strong><br>
+证据链：(1) Harness Engineering 被正式定义和命名；(2) DeepSeek 组建专门 Harness 团队，产品定位 Desktop Agent；(3) 美团 CatPaw 将 Agent 平台作为标准化产品对外输出；(4) 词元无限获数亿元融资，定位企业级 Agent 基础设施；(5) MCP/A2A 协议生态成熟。<br>
+预判：未来 12 个月，Agent 基础设施将成为独立创投赛道，出现 2-3 家头部平台型公司。互联网巨头（美团、字节、阿里）将陆续发布 Agent 平台产品，但差异化竞争点将从“谁有模型”转向“谁有更好的 Harness”——即工具调用可靠性、记忆系统持久性、多 Agent 协调效率、安全边界可控性。
+</div>
+
+<div class="trend">
+<strong>趋势二：Agent 记忆系统从“上下文窗口”向“持久化技能库”演进</strong><br>
+证据链：(1) arXiv <em>FlowEvo</em> 提出将成功执行轨迹编译为可复用技能记录并持久化存储；(2) <em>AgentKVShift</em> 解决结构化 Agent 记忆单元的 KV 缓存高效复用问题；(3) DeepSeek 梁文锋将“持续学习”定义为下一代模型的关键问题；(4) 行业基准测试开始引入长期交互历史评估。<br>
+预判：Agent 记忆将从当前“每次新对话从头开始”的模式，进化为“携带可成长的技能库和知识图谱”。这不仅影响 Agent 架构设计，也可能倒逼模型训练范式的变革——从单次训练部署，走向支持增量学习和知识固化的持续训练框架。LoRA 在程序性知识上的失败表明，现有参数高效微调方案需要重大升级。
+</div>
+
+<div class="trend">
+<strong>趋势三：AI for Science 从单点突破进入产业系统性落地</strong><br>
+证据链：(1) 深势科技与宁德时代、比亚迪在能源材料领域的合作已进入工业级应用；(2) 北京“人工智能+新材料”政策明确支持 AI4S 产业集群建设；(3) 半导体领域，NVIDIA 发布 Nemotron 3 Ultra 用于芯片设计的 Agentic RTL Coding；(4) arXiv 出现桥梁诊断、野火风险评估、因果 DAG 构建等垂直领域 AI4S 论文。<br>
+预判：AI4S 正从“学术论文导向”转向“工业结果导向”——衡量标准不再是模型在公开数据集上的分数，而是能否缩短材料研发周期、降低药物筛选成本、提升基础设施诊断效率。深势科技的“多尺度建模+机器学习+高性能计算”范式正在被更多行业验证，预计 2026 年下半年会有更多工业级别的 AI4S 成功案例公开。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. AgentKVShift: Efficient KV Cache Reuse for Agentic Memory Systems</strong> (arXiv:2607.21604)<br>
+核心贡献：针对 Agent 记忆系统中结构化记忆单元（含摘要、关键词、标签等 LLM 生成的元数据）的 KV 缓存复用问题，提出训练无关的探针引导 KV 残差校正方法。关键洞察：Agent 的记忆单元与 RAG 的原始文段有本质不同——前者包含结构化和元信息，现有 KV 复用方法面对这种结构化记忆时性能退化严重。<br>
+为什么值得深读：KV 缓存管理是 Agent 部署成本的核心瓶颈之一。这篇论文直面 Agent 记忆系统特有的技术挑战，对正在构建 Agent 产品的工程师有直接工程参考价值。也是“Harness Engineering”中记忆管理子问题的前沿探索。
+</div>
+
+<div class="deep-read">
+<strong>2. Procedural Knowledge Is Not Low-Rank: Why LoRA Fails to Internalize Multi-Step Procedures</strong> (arXiv:2607.21612)<br>
+核心贡献：首次系统证明 LoRA 在多步骤程序性任务上系统性失败，且增加 rank 不仅没有改善反而可能降低性能。实验覆盖旅行预订（14 节点）和 Zoom 配置两个程序性任务，所有 LoRA 配置（r=16-128）任务成功率显著低于全量微调，同时保持了 95-99% 的对话完成率——这意味着模型看起来“对话正常”但实际任务执行失败。<br>
+为什么值得深读：这可能是近期对 Agent 训练策略影响最直接的论文。如果 LoRA 确实本质上不适合学习程序性知识，那么整个 Agent 的 post-training 管线需要重新设计。论文暗示程序性知识可能需要更丰富的参数更新模式，这对选择微调策略有直接指导意义。
+</div>
+
+<div class="deep-read">
+<strong>3. FlowEvo: Self-Evolving Agents through the Co-Evolution of Workflows and Executable Skills</strong> (arXiv:2607.21596)<br>
+核心贡献：提出训练无关框架，将 Agent 成功执行轨迹自动编译为可复用的“技能记录”（skill records），包含可调用构件和辅助结构化指导，并在技能库中持久化。核心创新在于技能入库的准入机制：接口检查、重放验证、安全性检查。<br>
+为什么值得深读：这篇论文直接回应了当前 Agent 系统的核心痛点——每次推理时的成功经验无法沉淀为持久能力。技能准入的质量控制机制（而非简单的日志存储）是工程上可操作的设计思路，对 Agent 产品团队设计记忆系统有直接启发。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>梁文锋 DeepSeek 内部会议实录：算力困局与 AGI 路线图</strong><br>
+来源：Tavily 聚合的多信源交叉验证<br>
+为什么今天推荐这篇：这是 DeepSeek 创始人最系统的一次战略阐述，时间点恰逢 DeepSeek 组建 Harness 团队、Desktop Agent 产品浮出水面、V4 模型预期发布前夕。讲话中“不追求商业化、不做超级 App、坚定开源”的战略定力，与当前行业普遍的商业化焦虑形成鲜明对比，但更值得关注的是其技术判断——特别是“持续学习”被定义为核心挑战。<br><br>
+<strong>3 个核心观点：</strong><br>
+• DeepSeek 的竞争策略是“克制”——放弃视频/3D/世界模型等热门方向，将所有资源集中在提升模型能力密度和实现 AGI 概率上<br>
+• 技术路线清晰：思维链 → Agent → 持续学习 → AI 自我迭代，其中“持续学习”是当前阶段最需要突破的瓶颈<br>
+• 判断“很多公司输不是因为技术不够，而是被商业目标绑架”——这解释了为什么 DeepSeek 选择在 Agent 基础设施层投入而非在应用层抢用户<br><br>
+<strong>适合谁读：</strong>AI 战略决策者、Agent 产品负责人、AI 创业者——特别是正在思考“模型层 vs 应用层”资源分配的人<br>
+<strong>大致阅读时间：</strong>20 分钟（原文为 4 小时会议实录摘要，建议重点阅读技术路线和团队文化部分）
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek</strong>：创始人梁文锋内部讲话曝光，明确 AGI 路线图（思维链→Agent→持续学习→AI 自我迭代），强调不追求商业化、不做超级 App、坚持开源。新组建 Harness 团队（Tianyi Cui 领导），产品定位 Desktop Agent，对标 Claude Code/Cursor。V4 模型和 Coding 计划正在推进。API 定价保持克制策略（仅追求十个月回本）。<br>
+<strong>信号解读</strong>：DeepSeek 正在将竞争从模型能力延伸到 Agent 基础设施层，Harness 团队组建和 Desktop Agent 产品定位是实质性动作。招聘需求中将“Harness”作为独立方向列出，值得关注。
+</div>
+
+<div class="item">
+<strong>美团</strong>：CatPaw 全场景 AI Agent 平台正式上线，提供开箱即用 AI 工作台和企业级 Agent 开发托管能力。内部已覆盖 9 万员工、3 万+ Agent，在餐饮、美业、宠物医院等场景完成验证。从内部工具到对外产品的转化，标志着美团在 Agent 平台化上的战略投入加码。
+</div>
+
+<div class="item">
+<strong>蚂蚁百灵</strong>：发布新一代原生混合推理模型 Ling-3.0-Flash，具体技术细节有待进一步披露。
+</div>
+
+<div class="item">
+<strong>深势科技</strong>：持续深化 AI4S 产业落地，能源材料领域与宁德时代、比亚迪合作，生物医药领域服务 80+ 医药院校及翰森制药等药企，Hermite 平台已被超六成国内头部药企用于 50+ 药物管线。北京“人工智能+新材料”政策明确支持其“多尺度建模+机器学习+高性能计算”范式。
+</div>
+
+<div class="item">
+<strong>词元无限</strong>：一个月内完成第二笔融资（天使++轮，累计数亿元），定位企业级 AI Agent 基础设施专属服务商，与清华、北航等高校联合研究。资金将用于 Agent 基础设施平台建设和下一代 Agent 应用范式研发。
+</div>
+
+<div class="item">
+<strong>智谷天厨</strong>：完成近亿元战略融资（招商局创投领投），定位物理 AI 和智能烹饪机器人，计划加速中式餐饮全球化落地——具身智能在垂直场景的商业化案例。
+</div>
+
+<div class="item">
+<strong>新智具身 & 复旦</strong>：发布 3 万小时触觉数据集及相关研究，补齐具身智能的“手感”能力，数据和模型均开源。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>新兴岗位：Harness Engineer</strong><br>
+核心信号：Harness Engineering 被正式定义为独立学科，DeepSeek 组建专门 Harness 团队，词元无限以 Agent 基础设施为创业方向。预计未来 6-12 个月，“Harness Engineer”将从模糊的概念变为明确招聘岗位。<br>
+技能需求推断：工具调用协议（MCP/A2A）、上下文窗口管理、KV 缓存优化、Agent 可观测性与审计、多 Agent 协调、安全边界设计。这些能力目前分散在“AI Engineer”和“平台工程师”中，但正在合并为独立岗位画像。
+</div>
+
+<div class="item">
+<strong>Agent 产品化人才需求爆发</strong><br>
+核心信号：美团 CatPaw 从内部工具转向对外产品、DeepSeek 做 Desktop Agent 产品、多家 Agent 基础设施创业公司融资。企业不再只需要“会调 API 的工程师”，而是需要能从用户体验、任务可靠性、错误恢复角度设计 Agent 产品的人。<br>
+技能需求推断：Agent UX 设计（如何让用户信任和有效协作 Agent）、任务分解与工作流设计、Agent 评测体系构建、领域知识工程（将行业知识转化为 Agent 可用的工具和记忆结构）。
+</div>
+
+<div class="item">
+<strong>AI4S 工程师：从学术到工业的翻译能力成为溢价点</strong><br>
+核心信号：深势科技与头部工业企业合作深化，NVIDIA 发布芯片设计 Agent，AI4S 论文从纯算法转向垂直领域系统解决方案。<br>
+技能需求推断：不再只是“懂 ML + 懂科学”，而是需要能将科学问题翻译为 Agent 工作流、设计湿实验与干实验的闭环、构建领域专用的工具链和评测体系。
+</div>
+
+<div class="item">
+<strong>Post-training 策略专家需求上升</strong><br>
+核心信号：LoRA 在程序性知识上的失败引发 Agent 微调策略反思，DeepSeek 强调“持续学习”是核心挑战，Skill Self-Play 等新训练范式出现。<br>
+技能需求推断：深入理解不同 PEFT 方法的适用边界、能针对 Agent 任务特性设计训练策略、熟悉 RL for Agent 的最新进展（GRPO 变体等）。
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+<strong>Agent 基础设施层的创业窗口正在打开，Harness 正在成为 Agent 时代的“操作系统层”。</strong>如果你在做 Agent 产品，今天就应该将 Harness（工具调用协议、记忆系统、安全边界、可观测性）从“临时自研代码”升级为“有意识的架构设计”——这个选择将决定你的 Agent 是 demo 还是产品。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
