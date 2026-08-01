@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年08月01日 · 新闻 50 条 · 博客 12 篇 · 搜索 14 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>1. MCP 2.0 重塑 Agent 架构：Simon Willison 重燃对 MCP 的兴趣</strong>
+发生了什么：Simon Willison 在其博客详细解读了 MCP 2.0（即 2026-07-28 规范），其中“无状态 MCP (Stateless MCP)”的引入解决了过去版本的最大痛点，并催生了 mcp-explorer 和 datasette-mcp 等新工具。<br>
+为什么重要：这是 MCP 协议发布以来最重大的一次变革。它标志着 Agent 工具调用正从“面向连接”的复杂工程，转向更轻量、更易部署的“无状态”范式。这直接回应了之前业界认为 Agent 用 `curl` 就能替代 MCP 的质疑，重新确立了 MCP 在多工具、多 Agent 系统架构中的核心地位。<br>
+关联动态：此动态与昨日的 DeepSeek 组建 Harness 团队、以及 Anthropic 模型安全事件紧密相关，反映了 Agent 工程化（Harness 工程）正成为继模型能力之后的下一个关键战场。
+</div>
+
+<div class="item">
+<strong>2. DeepSeek 深夜开源 V4-Flash-0731：剑指 Agent 能力，重塑“智能性价比”</strong>
+发生了什么：DeepSeek 发布了 V4 家族新模型 DeepSeek-V4-Flash-0731，拥有 3040 亿参数，被描述为“具有大幅增强的 Agent 能力”。该模型在 Artificial Analysis 的智能指数对比中，以更具竞争力的价格超越了 MiniMax M3。<br>
+为什么重要：这不仅是模型发布，更是对即将组建的 Harness 团队的呼应。模型本身强化了 Agent 能力，为 DeepSeek 从“开源模型作坊”转型为“产品公司”提供了模型层基础。其定价策略（$0.14/$0.27 每百万 Token）可能将进一步拉低行业基准，冲击以 GPT-5.6、Grok 4.5 为代表的高端付费模型市场。<br>
+关联动态：结合梁文锋的“克制”战略与 Harness 团队的招聘信号，DeepSeek 正在清晰执行“强模型+深工程+低价格”的 AGI 突围路径。
+</div>
+
+<div class="item">
+<strong>3. 米哈游蔡浩宇 AI 创业生变：All-in Agent，路在何方？</strong>
+发生了什么：据量子位报道，米哈游创始人蔡浩宇的 AI 初创公司 Anuttacon 进行了重大战略调整，暂停了多个项目，将九成资源押向 Agent 方向。<br>
+为什么重要：这是一个极其强烈的产业信号。当顶尖游戏制作人资源大幅倾斜 Agent 时，意味着 AI 创业的估值核心正在从“基座模型”转向“智能体产品”。此举与 DeepSeek 组建 Harness 团队、B站招募 AI 视频生成负责人（曾为 Anuttacon 员工）等动态，共同勾勒出国内“大厂高管+超级资源”全力押注 Agent 的图景。
+</div>
+
+<div class="item">
+<strong>4. 姚顺雨招兵买马：手握 50 年数学难题成绩单，进军 AI for Science</strong>
+发生了什么：姚顺雨团队基于其在解决长期悬而未决的数学难题上取得的成果，公开启动招聘，目标是 AI for Science 方向。<br>
+为什么重要：这标志着 AI 在基础科学领域的价值从“模拟预测”迈向了“定理证明与发现”。此举将吸引全球顶尖的数学与 AI 交叉学科人才，并可能引发 AI for Science 领域新一轮的人才争夺战。它能大幅提升学术界和产业界对 AI 解决根本科学问题的信心。
+</div>
+
+<div class="item">
+<strong>5. 实时声纹模型新晋独角兽：Smallest.ai 意图打造“图灵测试级”语音</strong>
+发生了什么：语音 AI 初创公司 Smallest.ai 获得 1300 万美元融资，目标是构建超快速、听起来像真人的语音模型，使 AI 电话通话能通过图灵测试。<br>
+为什么重要：语音交互是 Agent 落地的关键一环。当 Agent 需要自主拨打电话、进行客户服务时，语音的自然度、延迟和情感表达成为核心用户体验。这项融资表明，资本市场正在为 Agent 的“交互层”能力付费，而不仅仅是模型层。
+</div>
+
+<div class="item">
+<strong>6. 丘脑智能完成千万级融资：押注多模态长记忆，欲构建独立的记忆基础设施</strong>
+发生了什么：国内初创公司“丘脑智能”完成数千万元种子轮融资，推出原生多模态记忆基座，旨在解决不同基座模型带来的“记忆孤岛”问题。<br>
+为什么重要：这是“Memory 作为独立中间层”理念的一次重要验证。随着用户在多模型间切换，独立的、以用户为中心的第三方记忆层需求凸显。这为 Agent 实现“个性化”和“主动智能”提供了除模型层、工具层之外的第三个关键组件。
+</div>
+
+<div class="item">
+<strong>7. Anthropic 新模型安全报告泄露：代码未动，安全先行？</strong>
+发生了什么：Simon Willison 引用 Boris Cherny 的观点指出，尽管其他跑分很重要，但 Claude Opus 5 可能是“迄今为止最不易被提示注入”的模型。<br>
+为什么重要：在 OpenAI 被曝其 Agent 再次“失控”的同一天，Anthropic 模型在安全性上的进步显得格外突出。当 Agent 被赋予浏览器操控等高级权限时，抵御提示注入的鲁棒性成为产品能否安全交付的决定性因素。安全性正从“功能指标”变为“产品准入资格证”。
+</div>
+
+---
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：AI Agent 工程范式大迁移：从“MCP vs. 脚本”回归到“状态 vs. 无状态”的架构之争</strong><br>
+<strong>证据：</strong>Simon Willison 在博客中明确指出，之前业界因 Agent 可通过 `curl` 和终端灵活调用 API 而对 MCP 兴趣降温。然而，MCP 2.0 带来的 `Stateless MCP` 解决了状态管理的复杂性，使他重燃兴趣。同时，DeepSeek 组建 Harness 团队直指“模型到产品的最后一公里”，美团、乐其集团等招聘 JD 中明确要求 MCP 经验。<br>
+<strong>预判：</strong>Agent 工程将出现分化。简单任务会继续采用脚本化工具调用（Skills），而需要跨工具、跨代理复杂编排的生产级系统，将加速采用 MCP/A2A 等标准协议。无状态架构将因其低成本部署和冷启动能力，成为 Agent 工具集成的主流模式。
+</div>
+
+<div class="trend">
+<strong>趋势二：中国 AI 赛道进入“All-in Agent”时刻，产品化能力成为估值分水岭</strong><br>
+<strong>证据：</strong>米哈游蔡浩宇将九成资源转向 Agent；DeepSeek 为 Harness 工程专门组建“超能力者”团队；月之暗面完成超 35 亿美元融资并将 IPO 提前，其在 `Kimi K3` 等产品上的探索是估值支撑；B站、美团等厂商在招聘中明确将 AI Agent 经历作为核心技能。<br>
+<strong>预判：</strong>国内 AI 竞争将从“秀参数榜”彻底转入“做产品赛”。未来 12 个月，具备自研模型能力并能快速推出现象级 Agent 应用的公司，将获得资本市场的绝对溢价。纯粹的基础模型厂商若无法证明其产品化路径，估值将面临挑战。
+</div>
+
+---
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. NVIDIA: Co-Designing AI Model Attention for Fast, Interactive Long-Context Inference</strong><br>
+<strong>核心贡献：</strong>探讨了在 Agent 和长上下文工作负载成为常态的背景下，如何通过协同设计注意力机制来加速推理。随着上下文窗口动辄百万 Token，注意力计算已成为推理成本与时延的最大瓶颈。<br>
+<strong>为什么值得深读：</strong>这是一份来自硬件厂商的软件层优化指南，对任何试图将长上下文 Agent 推向生产环境的工程师都至关重要。它揭示了如何在不牺牲过多性能的前提下，让 Agent 的“长记忆”变得经济实惠且响应迅速，直击当前 Harness 工程的痛点。
+</div>
+
+<div class="deep-read">
+<strong>2. 梁文锋 118 问闭门会实录（全网传播内容）</strong><br>
+<strong>核心贡献：</strong>虽非传统论文，但这份泄露的实录系统性地阐述了 DeepSeek 为何“不做应用巨头，只攻克 AGI 本源”，以及其“十个月折旧法”的定价逻辑、保持核心团队稳定的组织哲学。<br>
+<strong>为什么值得深读：</strong>这是理解 DeepSeek 所有反常行为（低价、开源、不追求商业化）的“源代码”。它为 AI 从业者提供了一个极端“长期主义”的战略范本，对于思考公司战略、技术路径选择和人才管理极具启发。
+</div>
+
+---
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>博客：Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp)</strong><br>
+<strong>作者：</strong>Simon Willison (AI Engineering 领域高产布道者)<br>
+<strong>为什么今天推荐这篇：</strong>在 Agent 工具调用协议混乱、MCP 备受质疑之际，本文是理解下一代 MCP 架构（无状态）的权威解读。它直接关联今天的 DeepSeek Harness 动态和国内 Agent 招聘热潮，帮助你理解工程团队到底在“忙什么”。<br>
+<strong>3 个核心观点：</strong>
+1.  <strong>无状态是协议的生命线：</strong>MCP 2.0 通过去掉对持久化连接的要求，解决了部署和扩展的复杂性，这是它重新赢得开发者兴趣的根本原因。
+2.  <strong>协议与脚本竞合：</strong>MCP 不会替代 `curl` 和 Skills，而是与之互补。简单任务用脚本，复杂的、需标准化的工具集群用 MCP。
+3.  <strong>开发者工具淘金热：</strong>新协议催生了新的开发工具需求，作者开发的 `mcp-explorer` 等工具，代表了一波新的开发者工具创业机会。<br>
+<strong>适合谁读：</strong>AI 产品经理、后端架构师、任何正在或即将搭建 Agent 工程框架的开发者。<br>
+<strong>阅读时间：</strong>15-20 分钟
+</div>
+
+---
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>1. DeepSeek (深度求索)</strong>
+<ul>
+<li><strong>模型发布：</strong>开源 DeepSeek-V4-Flash-0731，强化 Agent 能力，性价比极高。</li>
+<li><strong>组织与战略：</strong>组建顶级 Harness 团队，被解读为从模型公司向产品公司转型的关键一步。梁文锋闭门会实录全网流传，强调长期主义、不追求应用层盈利、以 AGI 为首要目标。</li>
+<li><strong>人才信号：</strong>Harness 团队招聘标准极高，寻找“超能力者”，意在打通从模型到产品的最后一公里。</li>
+</ul>
+</div>
+
+<div class="item">
+<strong>2. 月之暗面 (Moonshot AI)</strong>
+<ul>
+<li><strong>资本与估值：</strong>完成超 35 亿美元 F 轮融资，估值升至 350 亿美元。因认购火爆提前关闭，Pre-IPO 轮已提前启动，投前估值高达 500 亿美元。年内估值呈陡峭上升曲线。</li>
+<li><strong>产品信号：</strong>Kimi K3 已验证开源模型可与领先闭源模型抗衡，其在 AI Coding 等 Agent 产品上的体验是资本故事的重要支撑。</li>
+</ul>
+</div>
+
+<div class="item">
+<strong>3. 字节跳动</strong>
+<ul>
+<li><strong>AI 视频创作：</strong>发布即梦 Seedance 2.5，支持 30s 视频原生直出，在行业独树一帜。B站、米哈游前核心人员曾爱玲曾参与其竞争对手（MiniMax, Anuttacon）的关键项目，侧面反映了该赛道人才争夺的激烈程度。</li>
+</ul>
+</div>
+
+<div class="item">
+<strong>4. 深势科技</strong>
+<ul>
+<li><strong>AI for Science 商业落地：</strong>C 轮融资超 8 亿元后，持续发布材料与工艺优化工具 SimpFine，并提名开发候选药物 DPT0415。其创始人目标是在 2030 年打造“AI 科学家”，覆盖科研全流程。</li>
+<li><strong>生态建设：</strong>通过投资“深度原理”、“催化剂加”等初创企业以及拓展与高校的合作，构建 AI4S 生态壁垒。</li>
+</ul>
+</div>
+
+<div class="item">
+<strong>5. B站 (哔哩哔哩)</strong>
+<ul>
+<li><strong>人才引进：</strong>独家报道称，米哈游前人才曾爱玲入职B站，担任 AI 视频生成业务负责人，直接向 CEO 陈睿汇报。B站密集推出 AI 视频创作平台 updream 及各类创作赛事，发力 AI 辅助创作的战略意图明确。</li>
+</ul>
+</div>
+
+---
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>1. 明确的 Agent 工程岗位</strong><br>
+<strong>信号来源：</strong>乐其集团、美团等公司的社会招聘与校园招聘。
+<ul>
+<li><strong>岗位名称：</strong>AI Agent 交付产品经理、AI 智能产品经理（支付平台）。</li>
+<li><strong>核心技能要求：</strong>深刻理解 Agent 架构（Profile, Planning, Memory, Tool Calling），具备 MCP 经验，掌握 Prompt Engineering 和 LLM Agent 任务流编排。美团甚至将“推动从‘人驱动流程’到‘AI 驱动流程’的范式转变”写入了 JD。</li>
+<li><strong>薪资与趋势：</strong>这表明非 AI 原生的科技公司和垂直行业公司（电商、金融）正在大规模将 Agent 能力引入具体业务。具备 Agent 工程化落地能力的复合型产品/工程人才极度稀缺。</li>
+</ul>
+</div>
+
+<div class="item">
+<strong>2. 基础研究与应用落地型岗位火热</strong><br>
+<strong>信号来源：</strong>姚顺雨团队、DeepSeek、上海人工智能实验室（SIGGRAPH 时间检验奖获奖团队）。
+<ul>
+<li><strong>岗位方向：</strong>AI for Science (数学、生物、材料)，具身智能（物理AI）。</li>
+<li><strong>核心技能要求：</strong>扎实的数学/物理/化学背景加卓越的 AI 研发能力。获奖团队 GitHub 狂揽 8000+ Star，说明学术界/工业界对能落地并开源的研究有极高认可度。</li>
+<li><strong>薪资与趋势：</strong>这些职位更看重顶级科研成果，薪酬上限极高，是学术大牛的首选去向。</li>
+</ul>
+</div>
+
+<div class="item">
+<strong>3. AI 视频生成赛道人才争夺白热化</strong><br>
+<strong>信号来源：</strong>B站、字节跳动、MiniMax、米哈游 Anuttacon。
+<ul>
+<li><strong>现象：</strong>核心人才在巨头和明星初创间频繁流动。</li>
+<li><strong>趋势：</strong>拥有多模态模型（特别是视频/3D）研发和工程化经验的人才，是下一波最热门的招聘对象。</li>
+</ul>
+</div>
+
+---
+
+<div class="closing">
+<strong>⚡ 今日信号：押注 Agent 工程化。</strong>MCP 2.0 的发布和 DeepSeek 的 All-in Agent 战略，宣告了 Agent 开发将从个人编程“手艺”走向团队工程协作。立刻组织团队学习 Stateless MCP，这是未来 6 个月构建可扩展 Agent 系统的分水岭技术。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
