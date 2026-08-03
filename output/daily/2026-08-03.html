@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年08月03日 · 新闻 133 条 · 博客 3 篇 · 搜索 9 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>DeepSeek Harness 正式开启内测招募，Agent 工程化进入“密级”阶段</strong><br>
+发生了什么：DeepSeek Harness 团队负责人崔添翼通过 X 平台宣布面向全球 Agent/Harness 相关开源贡献者启动内测，采用“社群定向提名+技术委员会背书”双轨机制，入选者需签署保密协议。<br>
+为什么重要：这是 DeepSeek 从“模型效率”转向“执行可靠性”的关键信号。Harness 被定位为 Agent 的“交易系统”——上下文管理、工具调用、权限控制、失败回滚，正是量化交易中对稳定性的极致要求。崔添翼的 Jane Street 背景意味着这套系统将带有金融级风控基因。<br>
+关联动态：结合 DeepSeek 近期大规模扩招（计划部门规模翻倍）和 V4-Flash 正式版 API 上线国家超算互联网，形成“模型→API→Harness”三级火箭。
+</div>
+
+<div class="item">
+<strong>阿里发布 Qwen3.8（2.4 万亿参数）并同步推出 Agent 产品“千问办公”</strong><br>
+发生了什么：阿里巴巴正式发布新一代基座大模型 Qwen3.8，总参数量 2.4 万亿，编程和专业办公能力大幅提升；同步开启企业级 Agent 产品“千问办公”公测。<br>
+为什么重要：Qwen3.8 在 Arena 榜单排名仅次于 Claude 系列，标志着国内模型已进入“追赶 Gemini/Claude”的实质阶段。而“千问办公”直接把最新模型能力以 Agent 形态落地，是模型→产品的关键验证。<br>
+关联动态：Qwen3.8-Max 预计下周开源，届时将再次引发开源社区生态竞争。
+</div>
+
+<div class="item">
+<strong>OpenAI 下一代模型 Astra 曝光：2000 美元算力破解十项数学难题</strong><br>
+发生了什么：OpenAI 发布由其下一代模型 Astra 内部版本解决的十项数学和理论计算机科学突破，按 Sol API 费率计算成本仅约 2000 美元。<br>
+为什么重要：这不仅是能力展示，更是一次“AI 科学家”概念的可信性证明——涵盖高维球体堆积、量子并行重复定理、拉姆齐数等硬核问题。如果成本数字真实，意味着顶级数学研究门槛正在崩塌。<br>
+关联动态：与 arxiv 上多篇 AI 自动科学研究基准论文形成呼应，AI for Science 正从辅助工具走向独立发现。
+</div>
+
+<div class="item">
+<strong>清华博士创立“奇点逃逸”获千万融资，打造 AI 原生团队协作操作系统</strong><br>
+发生了什么：奇点逃逸完成千万级种子轮融资，正在研发 Agent 原生协作操作系统 Nexus——让人、Agent、任务、知识基于同一份组织状态持续协作。<br>
+为什么重要：这触及当前 Agent 落地的核心痛点：Agent 能力很强但仍是“单人助手”，上下文分散在各自会话中，无法形成组织级知识积累。Nexus 的思路是将 Agent 协作从“对话”升级为“组织操作系统”。<br>
+关联动态：与 MerchantBench（电商长程 Agent 连贯性评估）、Anthropic 的 Multi-Agent 方向构成同一趋势的不同侧面。
+</div>
+
+<div class="item">
+<strong>MiniMax H3 正式开源：统一多模态生成系统，2K 视频+原生音频</strong><br>
+发生了什么：MiniMax 开源新一代通用视频模型 H3，支持文本/图像/视频/音频统一理解和生成，可输出 2K 分辨率 15 秒带原生立体声的视频。<br>
+为什么重要：这是国内首个开源的全模态生成模型，对标 OpenAI Sora 和 Google Veo 等闭源方案。开源策略将加速国内视频生成应用的爆发。<br>
+关联动态：摩尔线程已率先完成 H3 在国产 GPU 上的适配，显示软硬件协同在加速。
+</div>
+
+<div class="item">
+<strong>DeepSeek 启动大规模扩招：部门规模翻倍，Agent 岗位成重点</strong><br>
+发生了什么：DeepSeek 宣布计划将所有部门规模扩大至少一倍，共开放 33 个岗位，重点招揽 Agent 数据产品经理、AI 产品运营等应用层人才。<br>
+为什么重要：这标志着 DeepSeek 从“纯研究驱动”转向“工程+产品驱动”。Harness 团队负责人崔添翼称“每天都在面试”，三核心岗位（研究员/工程师/产品经理）持续开放。<br>
+关联动态：脉脉数据显示 2026 年 1-4 月 AI 岗位量增长 8.7 倍，北京新发岗位 AI 渗透率达 30.17%。
+</div>
+
+<div class="item">
+<strong>AI Agent 安全新发现：工具规范格式是安全退化的重要源头</strong><br>
+发生了什么：arxiv 论文（2607.29254）通过白盒表征分析发现，schema 格式的工具规范会削弱模型内部拒绝信号，导致 Agent 安全性显著下降。研究者提出 SafeKeep 解耦安全判断和工具执行。<br>
+为什么重要：这直接回应了 Agent 大规模部署的核心安全焦虑。工具规范（如 JSON Schema）在提升调用准确性的同时，可能意外绕过安全对齐。SafeKeep 提供了一种即时可用的推理时防御方案。<br>
+关联动态：与另一篇 Agent 安全基准审计论文（2607.28685）形成补充——该文发现“总是 positive”策略能在某些基准上击败 5 个真实模型。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Agent Harness 从“胶水代码”升级为“独立工程栈”</strong><br>
+证据：DeepSeek 单独成立 Harness 团队并由量化交易背景的技术领袖带队；arxiv 论文（2607.28802）提出交互中心失败分类学，区分模型/Harness/环境/基准的责任归属；工具规范安全性论文揭示 schema 层的安全问题。<br>
+预判：Harness 将像编译器一样成为独立的基础设施层。未来 6-12 个月，会出现专门的 Harness 工程师岗位和开源竞品（类似 LangChain 但更底层），MCP 协议可能在标准化进程中扮演关键角色。
+</div>
+
+<div class="trend">
+<strong>趋势二：AI Agent 从“单兵作战”转向“组织级协作”</strong><br>
+证据：奇点逃逸获投做 Agent 原生协作系统；DeepSeek 招聘通用 Agent 数据产品经理（办公/生活/搜索）强调“从对话走向托付”；MerchantBench 评估 Agent 长程连贯性。<br>
+预判：下一波 Agent 创业将从“做一个能调用工具的 Agent”转向“让多个 Agent 共享上下文和记忆协同工作”。组织级 Agent 系统需要解决记忆共享、权限传递、冲突解决等新问题，可能催生“Agent OS”品类。
+</div>
+
+<div class="trend">
+<strong>趋势三：AI for Science 进入“可验证的自主发现”阶段</strong><br>
+证据：OpenAI Astra 以 2000 美元成本解决十项数学难题；SciDisco 论文提出带过程验证的科学发现环境；arxiv（2607.28631）用自动多模型评审评估 AI 科学家的论文质量。<br>
+预判：科学发现正从“AI 辅助”到“AI 自主”跨越，关键瓶颈不再是模型能力而是评估体系。过程可验证性和独立评审机制将成为 AI Scientist 系统的必备组件。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. Model or Harness? An Interaction-Centric Taxonomy for Localizing Agent Failures</strong> (arxiv: 2607.28802)<br>
+核心贡献：提出以“交互”为中心的 Agent 失败分类学，将故障精确定位到模型、Harness、用户、工具、记忆或环境的具体交互环节，而非笼统归结为系统级结果。<br>
+为什么值得读：这是目前最系统的 Agent 故障定位框架，直接解决“模型不行还是工程不行”的核心争论。对 Agent 产品经理和工程师有直接实操价值。
+</div>
+
+<div class="deep-read">
+<strong>2. Tool Specifications Matter: Uncovering and Mitigating Safety Risks in AI Agents</strong> (arxiv: 2607.29254)<br>
+核心贡献：首次通过白盒表征分析证明 schema 格式的工具规范会削弱 LLM 的内部拒绝信号，并提出 SafeKeep 推理时安全解耦方案。<br>
+为什么值得读：如果做 Agent 产品化，这篇论文发现的“工具规范降低安全性”是必须理解的风险机制。SafeKeep 方案不需要重新训练，工程落地门槛低。
+</div>
+
+<div class="deep-read">
+<strong>3. ThinkReset: Learnable Intermediate Interface Construction for Bounded-Context Long-Horizon Reasoning</strong> (arxiv: 2607.28642)<br>
+核心贡献：识别出长链推理的核心瓶颈不是压缩而是缺少可复用的“中间接口”，并指出奖励驱动的长链 RL 在上下文窗口耗尽前会鼓励“过早猜测”而非继续推理。<br>
+为什么值得读：对做 Agent 记忆和长程推理的团队有直接启示——不应只关注压缩历史，而应设计可跨回合复用的状态接口。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>Nathan Lambert: Latest open artifacts (#23)</strong><br>
+链接：https://www.interconnects.ai/p/latest-open-artifacts-23-laguna-s21<br>
+为什么今天推荐：正值 Qwen3.8 下周四即将开源、DeepSeek V4 系列已全量开源、MiniMax H3 刚刚开源——开放模型正进入“多强争霸”阶段。Lambert 的评论提供了理解这场开源竞赛的分析框架。<br>
+三个核心观点：<br>
+• 开放模型的训练能力正在扩散，Laguna S2.1、Inkling、Kimi K3 等证明“强模型”不再是少数实验室的特权<br>
+• 开源模型正逼近闭源的 Pareto 前沿，差异化竞争将从能力转向生态、工具链和部署便利性<br>
+• 评估体系的碎片化是当前主要瓶颈，需要更统一的基准来比较开放模型的真实能力<br>
+适合谁读：关注开源模型生态和竞争格局的研究员、产品经理<br>
+阅读时间：约 12 分钟
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek：</strong>V4-Flash 正式版 API 上线国家超算互联网；Harness 团队内测招募中，负责人崔添翼称“每天都在面试”，固定开放研究员/工程师/产品经理三岗位；公司级大规模扩招，部门规模计划翻倍，覆盖 7 大类 33 个岗位；梁文锋此前承诺继续开源并追求 AGI。<br>
+<strong>阿里巴巴：</strong>发布 Qwen3.8（2.4 万亿参数），编程和办公能力大幅提升，Arena 排名国内仅次于 Claude；同步公测“千问办公”企业级 Agent 产品；Qwen3.8-Max 和 27B 版本预计下周开源。<br>
+<strong>MiniMax：</strong>正式开源全模态生成模型 H3，支持 2K 视频+原生音频，摩尔线程已适配。<br>
+<strong>蚂蚁集团：</strong>旗下具身智能企业“蚂蚁灵波科技”将开启独立融资。<br>
+<strong>上海：</strong>累计已完成 211 款生成式 AI 服务登记，监管基础设施在加速完善。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>核心信号：Agent Harness 人才成为最稀缺资源</strong><br>
+DeepSeek Harness 团队负责人明确表示“急缺人才”，三大核心岗位（研究员/工程师/产品经理）持续开放。这预示着一个全新岗位类型的诞生——Harness 工程师，需要同时掌握 LLM 原理、系统设计、安全工程。<br><br>
+<strong>市场数据支撑：</strong><br>
+• 脉脉报告：2026 年 1-4 月 AI 岗位量增长 8.7 倍，占新经济岗位比重从 2.78% 飙升至 22.03%<br>
+• 北京新发岗位 AI 渗透率 30.17%，即每 10 个新岗位中有 3 个是 AI 相关<br>
+• 字节跳动、大疆、小红书、腾讯、美团、蚂蚁集团位列热招前茅<br>
+• 长亭科技、月之暗面等独角兽均开放 AI 产品经理岗位<br><br>
+<strong>技能需求变化推断：</strong><br>
+• Agent 产品经理要求从“会写 prompt”升级为“理解上下文管理、工具调用协议、记忆架构”<br>
+• Harness 工程师需要量化交易式的可靠性思维（沙盒、重试、权限控制、审计日志）<br>
+• 开源贡献记录正成为比学历更重要的筛选标准（DeepSeek Harness 只看 GitHub + 代表作）
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+<strong>Agent Harness 正在成为独立赛道。</strong>DeepSeek 用金融量化的标准做 Agent 工程外壳，这意味着 Harness 不再是 Demo 的附属品，而是决定 Agent 能否进入生产环境的根本。关注“Harness 工程师”这个新岗位的出现——它会像 DevOps 一样重新定义行业分工。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
