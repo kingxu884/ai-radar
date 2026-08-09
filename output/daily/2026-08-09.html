@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年08月09日 · 新闻 6 条 · 博客 10 篇 · 搜索 13 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>DeepSeek Harness 内测引爆开源 Agent 社区</strong><br>
+发生了什么：DeepSeek 新成立的 Harness 部门发起内测，712 个项目报名，聚焦记忆、安全、工具调用三大技术瓶颈。<br>
+为什么重要：量化交易背景的崔添翼带队，其高可靠性、低延迟、多步骤决策的工程经验直接映射到 Agent 系统需求。记忆与推理一体化的讨论触及 Agent 架构的根本问题——状态管理究竟该用文件、数据库还是知识图谱？<br>
+关联：与 Simon Willison 今天发布的 Claude Code auto mode 默认化形成呼应，行业正从“模型能力”转向“工程化落地”。
+</div>
+
+<div class="item">
+<strong>Claude Code 将 Auto Mode 设为默认</strong><br>
+发生了什么：Anthropic 宣布 8 月 14 日起，Claude Code 在 Pro/Max/Team 计划中默认开启 auto mode。<br>
+为什么重要：这意味着 Anthropic 对 prompt injection 防护有足够信心，内部已全员使用。Auto mode 本质是让 Agent 自主执行多步骤操作，这是 Agent 产品化的关键一步——用户不再需要逐步确认。<br>
+关联：与 DeepSeek Harness 的安全瓶颈讨论直接相关，Anthropic 的实践可能成为行业安全标准参考。
+</div>
+
+<div class="item">
+<strong>中国 EverMind 交出全栈自进化首份答卷</strong><br>
+发生了什么：EverMind 发布 3 篇论文，展示全栈自进化能力，海外 NeoLab 浪潮加速。<br>
+为什么重要：自进化（Self-evolving）是超越静态训练的下一代范式，如果模型能在部署后持续学习，将根本改变模型维护和迭代的经济模型。国内团队在这一方向的进展值得持续跟踪。<br>
+关联：与 DeepSeek 的开源生态策略、面壁智能的高效模型路线共同构成中国 AI 的差异化竞争路径。
+</div>
+
+<div class="item">
+<strong>Jeff Dean 创业 BP 曝光，杨植麟参与</strong><br>
+发生了什么：Google 传奇人物 Jeff Dean 的创业计划书曝光，月之暗面创始人杨植麟出现在名单中，硅谷 VC 争相投资。<br>
+为什么重要：Jeff Dean 级别的技术领袖创业，标志着 AI 人才从大厂向创业生态的又一次重大迁移。杨植麟的参与暗示中美 AI 人才流动的新模式。<br>
+关联：结合 DeepSeek 梁文锋强调“本土人才培养”的言论，全球 AI 人才格局正在重塑。
+</div>
+
+<div class="item">
+<strong>OpenAI 收购演示文稿初创公司 NextSlide</strong><br>
+发生了什么：OpenAI 收购 NextSlide，团队加入 ChatGPT 项目。<br>
+为什么重要：这不是一次技术收购，而是产品能力补全——ChatGPT 正在从对话界面走向完整的办公生产力工具。演示文稿是信息传递和决策的关键场景，Agent 的下一个战场是会议室。<br>
+关联：与 Ethan Mollick 博客中“聊天机器人的黄昏”观点呼应，AI 产品形态正在从 chatbot 进化为工作流集成平台。
+</div>
+
+<div class="item">
+<strong>MCP 2026-07-28 规范发布</strong><br>
+发生了什么：Model Context Protocol 发布新规范，支持无状态、可缓存、可路由的 Agent 基础设施。<br>
+为什么重要：Cloudflare 已从 day zero 支持，Sentry 和 Linear 等客户直接采用。MCP 正在成为 Agent 工具调用的标准化协议，这意味着工具生态将迎来互操作性爆发。<br>
+关联：与 DeepSeek Harness 的工具调用方向、Simon Willison 的 llm-anthropic 插件中 AnthropicMCP 工具支持形成生态共振。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Agent 工程从“模型驱动”转向“系统驱动”</strong><br>
+证据：DeepSeek 新设 Harness 部门并由量化交易专家带队；Claude Code 将 auto mode 设为默认；MCP 规范向无状态架构演进。<br>
+判断：2026 下半年，Agent 的竞争焦点不再是模型能力（推理、多模态），而是上下文管理、记忆持久化、工具调用的可靠性和安全性。具备分布式系统经验的工程师将成为稀缺资源。
+</div>
+
+<div class="trend">
+<strong>趋势二：AI 产品形态从 Chatbot 向工作流集成平台演进</strong><br>
+证据：OpenAI 收购 NextSlide 补全办公套件；Ethan Mollick 撰文讨论“聊天机器人的黄昏”；Claude Code 默认 auto mode 减少人工干预。<br>
+判断：纯对话界面正在被“Agent 主动执行”模式取代。产品经理需要重新思考用户交互范式——用户不再“使用”AI，而是“委托”AI 完成任务。
+</div>
+
+<div class="trend">
+<strong>趋势三：中国 AI 人才战略从“跟随”转向“原创”</strong><br>
+证据：梁文锋公开表态“中国 AI 不能永远做跟随者”；EverMind 全栈自进化论文；DeepSeek 从量化金融跨界招募 Agent 人才。<br>
+判断：国内厂商正在构建差异化技术路线（自进化、高效模型、Agent 工程），对具备跨学科背景（金融系统、分布式架构）的顶级人才需求激增。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. 中国数据研究中心《2026中国AI大模型竞争力TOP20》</strong><br>
+核心贡献：首次构建技术、商业、生态、潜力四维评估体系，揭示行业从“参数规模”转向“效率与ROI”的拐点。<br>
+为什么值得读：榜单前三名（豆包、通义千问、DeepSeek）的竞争格局分析，可帮助判断国内大模型的投资和合作方向。
+</div>
+
+<div class="deep-read">
+<strong>2. Benchling《2026 Biotech AI Report》</strong><br>
+核心贡献：生物科技 AI 进入“构建者”阶段，60% 团队购买商业组件，55% 自研或微调，形成“构建差异化，购买规模化”的混合模式。<br>
+为什么值得读：AI for Science 的落地路径清晰化，对深势科技、药物研发团队的策略制定有直接参考价值。
+</div>
+
+<div class="deep-read">
+<strong>3. EverMind 全栈自进化 3 篇论文（关注 arXiv 发布）</strong><br>
+核心贡献：展示模型在部署后持续学习的技术路径，可能涉及在线学习、记忆更新、灾难性遗忘缓解等关键问题。<br>
+为什么值得读：自进化是 Agent 长期自主运行的理论基础，如果突破，将改变模型更新和运维的整个范式。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>推荐：Ethan Mollick —《The twilight of the chatbots》（聊天机器人的黄昏）</strong><br>
+为什么今天推荐：OpenAI 收购 NextSlide、Claude Code 默认 auto mode、DeepSeek Harness 内测——三件事共同指向一个信号：chatbot 形态正在被取代。Mollick 这篇文章讨论工作如何沿指数曲线变化，恰逢其时。<br>
+三个核心观点：
+• 用户与 AI 的交互正在从“对话”转向“委托”，AI 不再被动响应而是主动执行
+• 工作流将被重新设计，人类角色从操作者变为监督者和决策者
+• 产品设计需要从“如何让用户输入更好的 prompt”转向“如何让 AI 理解用户意图并自主完成”
+适合谁读：AI 产品经理、Agent 工程师、关注人机交互演进的研究者<br>
+阅读时间：约 15 分钟
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek：Harness 部门正式浮出水面</strong><br>
+崔添翼（浙大背景 + Jane Street 9 年量化交易经验）带队，部门目标“非常远大”。内测吸引 712 个项目报名，记忆、安全、工具调用是三大技术焦点。招聘信号：需要具备分布式系统、高可靠性工程背景的人才，不限于传统 NLP 背景。
+</div>
+
+<div class="item">
+<strong>深势科技：与复宏汉霖达成 AI 辅助药物研发战略合作</strong><br>
+深势科技“宇知”AI for Science 大模型体系在生物医药领域落地，从“实验试错”到“预训练模型时代”的转型正在加速。这是 AI4S 从论文到管线的重要信号。
+</div>
+
+<div class="item">
+<strong>智谱 AI：港股上市后生态扩张</strong><br>
+作为“全球大模型第一股”，市值突破 578 亿港元。三七互娱作为早期股东获利，显示国内大模型投资已进入回报期。招聘方向可能从研发向商业化、生态建设倾斜。
+</div>
+
+<div class="item">
+<strong>阿里云：大规模 AI Agent 产品经理招聘</strong><br>
+岗位涵盖 AI Agent 产品经理、AI 解决方案产品经理（Agent/AIGC/CV/多模态/LLM 方向），薪资 20-50k·16 薪。要求熟悉 Workflow 编排、Prompt 设计、RAG 等，显示 Agent 产品化已进入规模化阶段。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>新增岗位类型：AI Agent 交付产品经理</strong><br>
+乐其集团 2026 春招明确要求 Prompt Engineering、RAG、SFT、PPO/GRPO 等技能，这是 Agent 从实验到交付的岗位化信号。<br>
+薪资信号：杭州 AI 数据智能产品经理 30-55k，蚂蚁具身智能数据产品经理 35-60k·15 薪，AI 产品经理薪资持续走高。
+</div>
+
+<div class="item">
+<strong>技能需求变化：Workflow 编排 + Prompt 设计成为产品经理标配</strong><br>
+阿里 2027 实习生招聘明确要求“工作流编排及 Prompt 设计”，传统产品经理需快速补课 Agent 工程基础。<br>
+趋势推断：具备“系统设计 + AI 理解”复合背景的人才将获得溢价，纯算法或纯产品背景的竞争力下降。
+</div>
+
+<div class="item">
+<strong>人才流动信号：量化金融 → AI Agent 工程</strong><br>
+DeepSeek 崔添翼的路径（Jane Street → DeepSeek Harness）可能开启一个新趋势：量化交易系统中积累的可靠性工程、多步骤决策、实时工具整合经验，正成为 Agent 工程的核心竞争力。
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+<strong>Agent 工程化落地已过临界点。</strong> DeepSeek 从量化交易跨界招聘、Claude Code 默认自动执行、MCP 协议标准化三件事同步发生——这不是巧合，是范式转换。如果你的团队还在讨论“要不要做 Agent”，你已经落后了半年。现在的问题是：你的上下文管理架构、工具调用安全策略、记忆持久化方案选好了吗？
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
