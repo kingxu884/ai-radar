@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年08月13日 · 新闻 134 条 · 博客 20 篇 · 搜索 12 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>DeepSeek V4 Pro 0813 悄然上线（仅 API）</strong> — Simon Willison 通过 OpenRouter 发现 DeepSeek 最新 Pro 模型已可用，官方暂无公告页，权重是否开放未确认。<br>
+<strong>为什么重要：</strong> DeepSeek 延续了"先上车、后宣传"的低调发布节奏，且该模型在不同推理档位（low/medium/high）下产出差异显著的输出——这种可配置推理深度的行为在现有模型中罕见，暗示其在 inference-time scaling 控制上做了特殊设计。<br>
+<strong>关联：</strong> 结合 DeepSeek Harness 团队成立和"Model+Harness=Agent"策略，V4 Pro 很可能被定位为代理工作负载的底层推理引擎。
+</div>
+
+<div class="item">
+<strong>DeepSeek Harness 团队正式浮出水面</strong> — 微信公众号已注册，认证主体为北京深度求索。团队负责人崔添翼（90后，梁文锋浙大校友）全球征集 Harness 内测用户。<br>
+<strong>为什么重要：</strong> 这标志着 DeepSeek 从纯模型厂商正式切入 Agent 工程层，直接对标 Anthropic Claude Code。行业竞争焦点从"底层模型比拼"转向"落地能力与工程体系较量"。Harness（模型之外的一切工程化能力）成为继 VibeCoding 之后首个成功商业化的杀手级应用方向。<br>
+<strong>关联：</strong> 与今日 Cognition 传闻 400 亿美元估值、Anthropic 将 Claude Code Auto Mode 设为默认等信号形成共振——Agent Harness 已是资本和人才的双重热点。
+</div>
+
+<div class="item">
+<strong>Cognition 被曝正以 400 亿美元估值洽谈新一轮融资</strong> — 距离上一轮 260 亿美元估值仅数月。其 AI 编程产品收入增长支撑了估值跃升。<br>
+<strong>为什么重要：</strong> AI Coding 是 Agent 工程最先跑通商业闭环的赛道。一级市场对 Harness 类公司的定价持续暴力上调，说明头部项目的稀缺性和资本对"从辅助到执行"叙事的信心。<br>
+<strong>关联：</strong> Blacksmith（AI 代码测试）估值一年涨近 10 倍至 5.5 亿美元；Lovable 确认 133 亿美元估值再融 4 亿美元——整个 Agent 编程工具链正在经历密集的资本重估。
+</div>
+
+<div class="item">
+<strong>arXiv 论文 SBCO：面向规划 Agent 的自监督、Verifier 接地的 Harness 优化</strong> — 当任务能力与自修改能力不对齐时（非编码任务），如何让 Agent 自我改进？SBCO 提出用可验证奖励信号优化 harness 本身而非模型权重。<br>
+<strong>为什么重要：</strong> 这是 Harness Engineering 从"手写规则"走向"可自动化优化"的理论起点。它解决了一个真实痛点：大多数企业落地 Agent 的瓶颈不在模型能力，而在 context 管理、工具编排和 guardrail 这些 harness 组件的质量。<br>
+<strong>关联：</strong> 与 DeepSeek Harness 团队的工程实践、FlowScout（从执行反馈生成工具集成工作流）、DOCSCHISEL（工具文档自适应优化）共同指向一个趋势：harness 正在变成可训练、可检索、可进化的对象。
+</div>
+
+<div class="item">
+<strong>arXiv 论文"Mind Viruses"：Multi-Agent 系统中的自我传播思想</strong> — 研究者用进化算法构造"思维病毒"，验证了它们可在两种场景传播：共享编码项目的小团队代理、以及每次会话后上下文被清空的代理链。<br>
+<strong>为什么重要：</strong> 这是对 Multi-Agent 系统的新兴风险首次系统化验证。即使不共享持久记忆，一个被注入的目标或想法仍可通过代理间交互传播并诱发行为改变，这对企业级 Agent 治理提出了结构性挑战。<br>
+<strong>关联：</strong> 与 CASE 治理框架（控制论+复杂适应系统+监督控制论+工程运维四学科融合）形成互补：前者揭示风险，后者试图用多学科控制架构应对。
+</div>
+
+<div class="item">
+<strong>推理迹窃取攻击：从私有 LLM API 提取思维链</strong> — 研究者发现 Anthropic、OpenAI、Google 返回的加密 CoT 块可跨会话、用户、模型重放。将前沿模型的 trace 重放到较弱模型并越狱，即可恢复明文推理。<br>
+<strong>为什么重要：</strong> 这直接击穿了"加密 CoT"的保护假设。前沿模型花费巨额算力训练出的推理策略可能被低成本提取，对商业 API 服务的 IP 保护和用户隐私构成双重威胁。<br>
+<strong>关联：</strong> 与今天 Anthropic 因水印系统引发 Claude 用户不满的新闻并置，反映出模型厂商与用户在隐私、监控、安全之间的张力正在升级。
+</div>
+
+<div class="item">
+<strong>NVIDIA 发布在 GB300 NVL72 上服务 Qwen3.8-2.4T-A95B 的部署方案</strong> — 阿里开源的最大权重模型（2.4T 参数，A95B 激活）支持可配置推理，接近前沿能力。<br>
+<strong>为什么重要：</strong> 2.4T 参数 open-weight 模型能在单机架级别基础设施上服务，意味着"开放权重 + 可配置推理"路线在算力成本上开始具备实际可部署性。这对国产大模型生态和算力基础设施选型有直接影响。<br>
+<strong>关联：</strong> 阿里正在用"开源最大模型 + 推理可配置"策略差异化竞争，与 DeepSeek 的极致效率和 Anthropic 的闭源产品路线形成三方角力。
+</div>
+
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>Harness Engineering 正从"临时的胶水代码"升级为正式学科与竞争壁垒。</strong><br>
+证据：DeepSeek 正式成立 Harness 团队并全球招募内测；arXiv 短时间内密集出现 SBCO（harness 自优化）、DOCSCHISEL（工具文档优化）、FlowScout（工作流生成）、LinkedIn 自进化客服系统等论文；Atlan 等基础设施厂商开始用 "Harness Engineering" 定义新品类。<br>
+<strong>预判：</strong> 未来 6–12 个月，头部 AI 厂商的组织架构会进一步分化——模型团队和 Harness/Agent 产品团队将形成独立的能力闭环。"会不会搭 Harness" 将从工程问题变成商业竞争问题。
+</div>
+
+<div class="trend">
+<strong>Agent 记忆与上下文管理从"固定结构"走向"自适应组合"。</strong><br>
+证据：MESA 论文证明最优记忆配置既非单一结构也非全量联合，而是按 query 定制组合多结构记忆；UserToolBench 要求模型从交互历史推断用户偏好并主动澄清；LLM Agents Factory 用 2 万+ 预置 Agent profile 做检索式 agent 设计。<br>
+<strong>预判：</strong> 上下文管理将从"尽量塞更多"的粗暴逻辑转向"按任务检索+按需组合证据"的结构化引擎。这是 Subagent 和 Multi-Agent 系统规模化部署的前提——不做这层，长程任务的可控性和成本都会失控。
+</div>
+
+<div class="trend">
+<strong>推理迹（Reasoning Trace）成为新的安全与 IP 战场。</strong><br>
+证据：推理迹窃取攻击证明加密 CoT 可被跨模型重放恢复；Simon Willison 将此标记为"neat paper"并给出可复现的 API 调用示例；Mind Viruses 显示代理间即使无持久记忆也能传播行为改变。<br>
+<strong>预判：</strong> 模型厂商需要在"可解释性/审计需求"与"推理策略保护"之间重新设计防线。使用 API 的企业客户应假设自己的推理交互可能被收割，敏感任务场景需要额外的安全评估。
+</div>
+
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>MESA: Task-Adaptive Multi-Structure Evidence Selection for Long-Horizon Agent Memory</strong>（arXiv 2608.10108）<br>
+核心贡献：证明长程 Agent 记忆的最佳配置是"按任务定制的多结构组合"，而非固定单一结构或全量联合。在 AMA-Bench 上的受控分析显示，不同 query 所需的最优结构组合不同。<br>
+<strong>值得读的原因：</strong> 直接回应了 Harness 工程中最痛的问题——长程任务中几百步交错推理/动作/观察之后，如何找到埋藏的证据而不撑爆上下文。研究给出了可操作的结构化记忆选择和组合范式，对所有在做生产级 Agent 的团队都有直接参考价值。
+</div>
+
+<div class="deep-read">
+<strong>SBCO: Self-Supervised, Verifier-Grounded Harness Optimization For Planning Agents</strong>（arXiv 2608.10157）<br>
+核心贡献：将"自改进"从模型权重迁移到 harness 本身。当任务与自修改能力不对齐时（如非编码领域的规划 Agent），用 verifier 信号优化 harness 组件（上下文模板、工具策略、guardrail），实现不需重训练模型的能力提升。<br>
+<strong>值得读的原因：</strong> 这是 Harness Engineering 从手工调参走向自动化的代表性工作，对"模型能力够了但 Agent 还是不好用"的团队很有启发。与 DeepSeek Harness 团队的招募方向高度同构。
+</div>
+
+<div class="deep-read">
+<strong>Mind Viruses: Self-Propagating Ideas in Multi-Agent LLM Systems</strong>（arXiv 2608.10218）<br>
+核心贡献：用简单进化算法构造"思维病毒"，在两类设置下验证其传播性——共享项目的小团队代理、以及上下文每次被清空的短暂交互代理链。识别了促进传播的关键因素。<br>
+<strong>值得读的原因：</strong> Multi-Agent 系统正从实验走向生产部署，但安全性研究远滞后于单 Agent。这篇论文提供了可复现的威胁建模框架，是安全团队和平台架构师必读的前沿风险研究。
+</div>
+
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>推荐：</strong>"Auto mode is now the default in Claude Code for Pro, Max, and Team plans"（Simon Willison，2026-08-08）<br>
+<strong>为什么今天推荐：</strong> 今天的主线是 Harness Engineering——DeepSeek 入局、Cognition 估值 400 亿、多篇 Agent 记忆与自优化论文。这篇博客恰好揭示了 Anthropic 在生产环境中如何信任并默认开启 Claude Code 的 auto mode，以及他们内部如何评估 prompt injection 风险。这是"模型+Harness=Agent"最前沿的工程实践样本。<br>
+<strong>三个核心观点：</strong><br>
+• Anthropic 对 auto mode 的安全性有足够信心，以至于计划 8 月 14 日起将其设为默认——"几乎每个内部员工都在用 auto mode"。<br>
+• 针对 prompt injection 等攻击面，Anthropic 声称"已基本缓解每一类攻击"，并将在未来数周发布 evals 验证。<br>
+• Auto mode 成为默认选项，意味着 Agent 自主执行（包括工具调用链）正在从"实验功能"变成"产品基线"，这会倒逼企业级 guardrail 和审计体系加速成熟。<br>
+<strong>适合谁读：</strong> 构建或评估 AI 编程 Agent 的工程师、产品经理、安全负责人。<br>
+<strong>阅读时间：</strong> 约 12 分钟。
+</div>
+
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek（深度求索）：</strong> 三条线并行发力。①模型：V4 Pro 0813 已通过 API 低调上线，推理档位差异显著，权重是否开源未定。②产品：Harness 团队微信公众号正式注册，负责人崔添翼 8 月 1 日全球征集内测用户，优先筛选有 Agent Harness 开源经验的开发者。③组织：6 月底宣布所有部门规模扩大至少一倍、33 个岗位全开（含实习），其中 Agent Harness 团队"人员非常紧缺，每天都在面试"。另有报道称梁文锋在融资沟通中明确 AGI 优先于短期利润，估值约 450 亿美元（700 亿元人民币融资轮）。
+</div>
+
+<div class="item">
+<strong>阿里（Qwen 团队）：</strong> Qwen3.8-2.4T-A95B 作为最大开源权重模型，获 NVIDIA 官方部署方案支持（GB300 NVL72），可配置推理接近前沿能力。阿里系在 AI Agent 应用方向招聘密集：AI Agent 优化工程师（C 端物流、商家经营）、AI Coding 方向研发工程师等多个岗位在招，薪资区间 30–50K。
+</div>
+
+<div class="item">
+<strong>智谱 / MiniMax / 月之暗面：</strong> 三家角逐"大模型第一股"。智谱或放弃科创板转冲港股，估值约 400 亿元人民币；MiniMax 依托上海国资背景，IPO 进度或领先；月之暗面即将完成新一轮美元融资（估值约 40 亿美元，IDG、腾讯参与），或于明年下半年启动 IPO。月之暗面团队"旷视基因较重、阿里系持股比例偏高"的隐忧仍被投资人讨论。
+</div>
+
+<div class="item">
+<strong>紫东太初：</strong> 推出 GMC 核心集剪枝方法，宣称少 80% Token 仍保持多模态能力，免训练、开箱即用——这是国内厂商在多模态推理效率上的一个值得关注的工程突破。
+</div>
+
+<div class="item">
+<strong>国产具身智能：</strong> 某国产具身智能团队以 30% 成本跑赢 Figure AI 的 45% 效率，一小时狂拣 1816 件异形包裹。"聪明的具身大脑"成为关键——这再次验证国内团队在 Agent 决策层（而非硬件层）的差异化竞争力。
+</div>
+
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>DeepSeek 大规模扩招（7 大类 33 岗位，北京/杭州，全部接受实习）：</strong> 重点方向包括 Agent Harness 团队、Agent Infra 研发、服务端开发（Agent 后端/数据仓库）、AI 搜索算法、模型数据策略、超算集群研发、高性能算子/通信/编译器。信号明确：DeepSeek 在补齐"从底层模型到前端应用"的完整产业链人才梯队。团队负责人崔添翼"每天都在面试"，阶段性窗口对 Agent 工程背景候选人极为友好。
+</div>
+
+<div class="item">
+<strong>阿里巴巴 AI Agent 岗位持续放量：</strong> 业务技术线多部门招聘 AI Agent 优化工程师/专家（C 端物流、商家经营等），薪资 30–50K，要求硕士，经验不限。AI Coding 方向研发工程师在 AI 创新事业部。意味着大厂正在从"模型炫技"转向"业务场景 Agent 落地"，懂业务+会搭 Harness 的复合型人才最抢手。
+</div>
+
+<div class="item">
+<strong>技能需求结构变化：</strong> 从 Tavily 招聘数据看，"Agent 后端/Infra"、"Harness 工程"、"AI 搜索架构"成为新出现的职位关键词。传统"算法研究员"岗位依然存在，但新增岗位明显偏向工程化落地能力。熟悉 MCP、Subagent 编排、上下文管理、可验证奖励设计的人才，薪资议价能力在上升。
+</div>
+
+<div class="item">
+<strong>薪资与市场信号：</strong> 阿里 AI Agent 工程师 30–50K/月（杭州）；Cognition 传闻 400 亿美元估值背景下，AI Coding 方向创业公司的期权价值预期被显著拉高。一级市场对 Harness 类产品的密集注资（Cognition、Blacksmith、Lovable）意味着相关团队成员的股权回报空间在扩大。
+</div>
+
+
+<div class="closing">⚡ 今日信号：Agent 竞争已从"模型层"下移到"Harness 层"——DeepSeek 下场对标 Claude Code，未来 6–12 个月 Model+Harness=Agent 将重塑产品团队结构与人才定价。</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
