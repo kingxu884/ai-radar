@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年08月15日 · 新闻 85 条 · 博客 9 篇 · 搜索 19 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>智谱发布 GLM-5.3：Coding 能力逼近 Fable 5，顺手拿下最强开源安全模型</strong><br>
+发生了什么：智谱发布 GLM-5.3，据称 Coding 能力已接近 Fable 5，并同时登顶开源安全模型榜单。<br>
+为什么重要：Nathan Lambert 在 Interconnects 上明确指出这"不是一个蒸馏故事"。如果属实，意味着中国实验室在 Post-training 和 RLHF 层面已找到独立于美国闭源模型的 scaling 路径，而非依赖 API 蒸馏。这对评估中美模型差距的实质、以及对开源生态的定价权都有直接影响。<br>
+关联动态：与同日 Qwen3.8-27B 开源形成共振——中国开源梯队在同一天释放两个重量级模型，且都强调"家用显卡可跑"，正在用开放权重策略挤压闭源模型的商业空间。
+</div>
+
+<div class="item">
+<strong>DeepSeek Harness 团队官方公众号落地，系首次为单一业务线设立独立阵地</strong><br>
+发生了什么：DeepSeek Harness 微信公众号完成注册，主体为北京深度求索公司。团队由前 Jane Street 量化工程师崔添翼负责，5 月立项，8 月 2 日起面向全球征集内测用户。<br>
+为什么重要：这是 DeepSeek 首次将"Harness"作为独立产品线运作，直接对标 Claude Code。结合梁文锋"从 CoT 到 Agent 再到持续学习"的 AGI 路线图，Harness 被定位为从模型到智能体的关键工程层。崔添翼的量化背景暗示 DeepSeek 可能将系统化的上下文调度、状态管理和工具调用可靠性作为差异化壁垒。<br>
+关联动态：DeepSeek 同时宣布所有部门扩招一倍，Harness 团队"每天都在面试"。这与 Anthropic 将 Claude Code 作为商业化引擎的路径形成镜像——模型公司正在向 Agent 基础设施层下沉。
+</div>
+
+<div class="item">
+<strong>arXiv 重磅论文：Agent 排行榜衡量的是"专精"而非"能力"——主效应方差不足 3%</strong><br>
+发生了什么：论文对 TheAgentCompany、τ²-bench、AppWorld 三个基准做 Generalizability Theory 方差分解，发现 agent 主效应仅占不到 3% 的总方差，而 agent×task 交互占 7-23%。<br>
+为什么重要：这意味着当前企业选型 Agent 时看排行榜的做法基本失效。排行榜排的是"哪个 Agent 恰好擅长这些任务"，而非"哪个 Agent 整体更强"。对企业采购和内部 Agent 评估框架的设计是根本性挑战——需要转向任务级可靠性评估，而非单一 leaderboard 分数。<br>
+关联动态：同日另一篇论文 Harness-IF 提出"Against-Prior Accuracy"指标来区分"真正遵守规则"和"本来就会这么做"，同样指向当前 Agent 评估方法的深层缺陷。
+</div>
+
+<div class="item">
+<strong>谷歌开始"肢解"DeepMind：数个团队划归总部，布林亲自下场督战</strong><br>
+发生了什么：Google 将 DeepMind 多个团队划归总部直接管理，谢尔盖·布林亲自介入。<br>
+为什么重要：这是 Google AI 组织结构的一次实质性权力再分配。DeepMind 的独立性和研究自主权被削弱，暗示 Google 正从"研究驱动"向"产品交付驱动"转型。对 AI 人才市场的影响不可忽视——DeepMind 的人才外流可能加速，而这些人才正是 Agent、多模态、RL 领域的顶级研究者。<br>
+关联动态：与 Meta 同日发布 Glimmer（开放权重）形成对比——两大巨头在 AI 组织策略上背道而驰：Google 收权集权，Meta 强调开放分权。
+</div>
+
+<div class="item">
+<strong>阿里开源 Qwen3.8-27B：家用显卡可跑的 27B 模型</strong><br>
+发生了什么：Qwen3.8-27B 开源，所有人可免费下载、部署及商用，强调家用显卡可运行。<br>
+为什么重要：27B 参数是一个关键生态位——刚好卡在消费级 GPU（如 4090/5090）可推理的上限，同时又具备远超 7B/14B 的实用能力。这一定位直接服务于本地化 Agent 部署和隐私敏感场景，与 DeepSeek 的 Harness 策略（需要本地可跑的底层模型）形成互补。<br>
+关联动态：结合 GLM-5.3 同日发布，中国开源模型正在形成"小模型+Harness"的组合策略，狙击云端 API 商业模式的边缘地带。
+</div>
+
+<div class="item">
+<strong>Harness-IF 论文：现有评测无法区分"遵守规则"与"碰巧做对"</strong><br>
+发生了什么：论文提出 Harness-IF 基准，用 60 个多轮编码任务、642 条规则库、256 条可判定规则，分布在 Agent 读取的 5 个配置表面上。<br>
+为什么重要：引入 Against-Prior Accuracy（AP-Acc）指标，只给"与模型默认行为相悖的规则"打分——这是第一次系统性地把 instruction following 从 task success 中分离出来。对正在构建生产级 Coding Agent 的团队（尤其是 DeepSeek Harness、Claude Code 竞品）来说，这个框架提供了一个可操作的规则放置策略：规则放在哪里比规则写什么更重要。<br>
+关联动态：与"Agent Skills Can Be Harmful"论文形成呼应——有些 skills 不仅不提升成功率，反而增加 token 消耗和失败率。Harness 设计的核心问题正在从"如何加功能"转向"如何不添乱"。
+</div>
+
+<div class="item">
+<strong>7 亿年薪留不住：余家辉离职 Meta 创业，仅待了一年</strong><br>
+发生了什么：据量子位报道，余家辉以约 7 亿年薪加入 Meta 后仅一年即离职，选择创业。<br>
+为什么重要：这是 AI 人才市场的一个极端信号——顶级人才的决策驱动力已不是薪酬，而是自主权和方向感。在大厂内部，顶尖 AI 研究者面临的组织摩擦（审批、对齐、产品周期）正在加速人才向创业生态流动。对企业和投资人来说，这意味着"高薪留人"策略的边际效用急剧下降。<br>
+关联动态：与 Google"肢解"DeepMind 的新闻叠加，暗示大厂 AI 组织正在经历一轮结构性动荡，可能催生一波新的 AI 创业潮。
+</div>
+
+<div class="item">
+<strong>法国初创 Kog：GPU 不适合 Agentic Workload 是误解</strong><br>
+发生了什么：Kog 声称正在"更深入"地挖掘 GPU 推理效率，挑战"GPU 不适合 Agentic Workflow"的普遍认知。<br>
+为什么重要：如果 Kog 的技术路线成立，将动摇当前 Agent 推理基础设施的算力成本假设。Agentic 工作负载的特征是短 burst、高并发、上下文密集，与批处理训练和长生成推理截然不同。优化这一层级的 GPU 利用率，可能比等待下一代芯片更直接地降低 Agent 部署成本。<br>
+关联动态：与自然气价格可能翻三倍的新闻形成对冲——数据中心能源成本上升的压力，迫使行业重新审视"用更多算力换智能"的路径是否可持续。
+</div>
+
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Harness Engineering 从概念走向建制化，成为模型公司第二战场</strong><br>
+证据链：DeepSeek 成立独立 Harness 部门并设官方公众号、崔添翼（前 Jane Street）带队全球招募内测用户；arXiv 出现 Harness-IF 基准专门评测 5 个指令表面的规则遵循度；"Agent Skills Can Be Harmful"论文系统归因 skill 引发的失败；Anthropic 将 Claude Code 作为商业化主引擎。<br>
+判断：Harness 正在从"提示词工程的延伸"升级为独立的工程学科。其核心竞争壁垒将集中在三个层面：上下文窗口的高效调度（Sleeping Agent 论文揭示 gist 压缩的代价）、规则/约束在多表面上的可靠放置（Harness-IF）、以及 skill 系统的负向筛选（不是越多越好）。对于从业者，掌握 Harness 工程能力（而非单纯 Prompt 技巧）正在成为与模型能力同等重要的竞争力。DeepSeek 以量化交易背景的人带队做 Harness，暗示他们会把状态管理、风控思维和低延迟调度引入 Agent 基础设施。
+</div>
+
+<div class="trend">
+<strong>趋势二：Agent 评估体系面临可信度危机，任务级可靠性将取代排行榜</strong><br>
+证据链：Deployment Decision Reliability 论文证明 agent 主效应方差 <3%，排行榜排的是"专精"而非"能力"；Self-Consistency 论文显示多数投票在 GPQA Diamond 上对 56.6%-65.7% 的难题反而降低小模型准确率；MobileJudgeBench 发现简单的截图基线 judge 常常超过精心设计的 judge 方法。<br>
+判断：当前 Agent 评估的三大假设——排行榜可排序、多采样投票可提升、LLM-as-judge 可信——同时被经验证据动摇。这意味着：企业内部的 Agent 选型流程需要从"跑公共基准"转向"在自有任务分布上做方差分解"；Agent 产品的质量保障体系需要建立任务级回归测试而非聚合分数。这个缺口本身就是一个创业机会：为企业提供 Agent 可靠性评估的工具链。
+</div>
+
+<div class="trend">
+<strong>趋势三：中国开源模型同日双发布，Post-training 自主化路径成型</strong><br>
+证据链：GLM-5.3（Coding 逼近 Fable 5 + 最强开源安全模型）与 Qwen3.8-27B（家用显卡可跑）同日发布；Nathan Lambert 明确否定"蒸馏故事"；梁文锋投资者会议流出，明确"克制"哲学、以 AGI 而非商业化为首要目标、开源+低成本作为核心策略。<br>
+判断：中国开源生态正在形成"小模型做本地 Agent + 大模型做云端推理"的双轨策略。GLM-5.3 在安全对齐上的领先（不是靠蒸馏获得）意味着中国团队在 RLHF 和 refusal 行为的机制层面已有独立突破。这对全球开源生态的定价权和开发者心智的影响将持续扩大。DeepSeek 的"克制"策略值得特别关注——不以 ARR 为目标意味着他们有空间在 Harness 和 Agent 基础设施上做长期投入，不急于变现。
+</div>
+
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. Deployment Decision Reliability: A Generalizability-Theory Framework for Sizing Long-Horizon Agent Evaluations</strong> (arXiv:2608.11323)<br>
+核心贡献：用四因子 G-theory 方差分解（Henderson Method-I、REML、贝叶斯 GLMM 三种估计器一致到小数点后三位）证明 agent 主效应 <3%。进一步发现最难四分之一任务上聚合信度崩溃。<br>
+为什么值得读：这是第一篇把心理测量学的 G-theory 严格应用于 Agent 评估的论文。它提供的不是"又一个排行榜"，而是一套评估评估本身的方法论。对于需要为团队或公司建立 Agent 准入标准的人，这篇论文给出了"你需要多少任务、多少重复、多少评估者"才能做出可靠决策的数学答案。
+</div>
+
+<div class="deep-read">
+<strong>2. Harness-IF: Evaluating Instruction Following Across Instruction Surfaces in Coding Agents</strong> (arXiv:2608.11727)<br>
+核心贡献：提出 Against-Prior Accuracy 来分离"真正遵守规则"和"碰巧做对"。在 5 个可配置表面上测试 256 条规则，用 9 个 probe builds 建立 baseline。<br>
+为什么值得读：这是目前最接近"Claude Code 工程师实际工作"的评测框架。它回答的问题非常务实：规则写在 system prompt、memory 文件、项目配置、还是工具描述里，对执行结果有什么差异？正在构建 Coding Agent 的团队可以直接借鉴其方法学来优化自己的指令放置策略。
+</div>
+
+<div class="deep-read">
+<strong>3. The Sleeping Agent: What Gist-Based Context Compression Loses and Why</strong> (arXiv:2608.11775)<br>
+核心贡献：用 Salience-Weighted Consolidation（受睡眠记忆巩固启发的压缩框架）作为诊断探针，在 LoCoMo 的 10 个对话上评估 1,935 个匹配问题，发现 gist 压缩对不同记忆类型（语义/情节/程序性）的检索影响截然不同。<br>
+为什么值得读：长上下文 Agent 的上下文管理是 Harness 工程的核心难题。这篇论文不提供又一个压缩算法，而是诊断"压缩什么时候有害"。结论暗示我们对历史对话的压缩策略需要按记忆类型分层，而非一刀切 summarization。对做长时间运行 Agent 的团队有直接指导价值。
+</div>
+
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>推荐：Nathan Lambert — "GLM-5.3: How Chinese labs keep stride with the frontier"</strong> (Interconnects, 2026-08-14)<br>
+<strong>为什么今天推荐：</strong>GLM-5.3 发布是今天最重磅的国内模型动态，而 Nathan Lambert 作为 RLHF/Post-training 领域最权威的独立观察者之一，他的分析能帮助读者穿透"又一个中国模型发布"的表层叙事，理解 GLM-5.3 在训练方法论上到底意味着什么——尤其是在"蒸馏还是自主"这个关键问题上给出了明确判断。<br>
+<strong>3 个核心观点：</strong><br>
+• GLM-5.3 的 Coding 能力和安全对齐表现并非蒸馏自美国闭源模型，而是中国实验室在 RLHF 和 post-training 流程上的独立进展<br>
+• 中国开源实验室正在形成与 OpenAI/Anthropic 不同的技术路径——更强调效率、更重视开源生态的反馈闭环<br>
+• 开源模型的持续进步正在改变前沿模型的经济学：当 GLM-5.3 级别的模型免费可用时，API 定价的溢价空间被持续压缩<br>
+<strong>适合谁读：</strong>关注中国 AI 竞争力、开源 vs 闭源格局、以及 Post-training 技术路线的工程师、研究员和战略决策者。<br>
+<strong>阅读时间：</strong>约 15 分钟。
+</div>
+
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek：</strong>全部门扩招一倍（33 个岗位，覆盖算法/研发/运维/产品/数据），Harness 团队独立运营并全球招募内测用户。梁文锋投资者会议流出，明确"不追求成为字节或腾讯，AGI 是首要目标"，技术路线为 CoT→Agent→持续学习→AI 自我迭代→具身智能。公司首轮融资 70 亿元，估值 3400 亿元。API 定价策略追求"10 个月回本"，不追求利润最大化。
+</div>
+
+<div class="item">
+<strong>智谱：</strong>GLM-5.3 发布，Coding 能力"更接近 Fable 5"，同时成为最强开源安全模型。Nathan Lambert 评价其进步"不是蒸馏故事"。智谱已在港股上市，市值稳定在约 400 亿美元。
+</div>
+
+<div class="item">
+<strong>阿里：</strong>Qwen3.8-27B 开源，家用显卡可跑，免费商用。27B 参数定位精确——消费级 GPU 推理上限，同时具备实用能力。
+</div>
+
+<div class="item">
+<strong>百度：</strong>文库网盘"库库 AI"办公 MAU 超 2500 万，推出办公独立端。校园招聘开放 AI 产品经理、多模态算法工程师、智能体算法工程师等岗位，管培生项目明确强调"大模型、生成式 AI 等前沿技术的应用与创新"。
+</div>
+
+<div class="item">
+<strong>美团：</strong>金融支付部门招聘 AI Agent 产品经理/研发，岗位职责明确包括"任务流编排、Prompt 工程、Tool Use / MCP 接入设计"，目标是构建支付场景下能自主完成需求分析、异常诊断、智能决策的产品级 Agent。
+</div>
+
+<div class="item">
+<strong>月之暗面：</strong>K2.5 发布后 ARR 突破 1 亿美元（AI 六小虎中首个）；杨植麟明确 2026 年"聚焦 Agent，不以绝对用户数量为目标"；海外收入已反超国内，海外 API 收入增长 4 倍。
+</div>
+
+<div class="item">
+<strong>深势科技：</strong>构建 AI4S 数智化研发体系，覆盖"读、算、做"场景：玻尔科研空间站（科学数据多模态解析）、Hermite 平台（Uni-FEP、Uni-QSAR）、Uni-Lab OS（开源干湿闭环）。
+</div>
+
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>Harness/Agent 基础设施工程师成为最热岗位：</strong>DeepSeek Harness 团队"每天面试"，招聘 Agent Harness 工程师、Agent Infra 研发工程师；Qoder（杭州）开放 21 个社招岗位，核心方向集中在 AI Coding 研发、AI Agent 研发、服务端 AI 模型架构；美团支付部门招聘 AI Agent 产品经理要求 MCP 接入经验。<br>
+<strong>技能信号：</strong>岗位描述中"MCP 接入""Tool Use""任务流编排""上下文管理"已成为标准要求，取代了早期"Prompt 工程"的位置。具备 Agent 基础设施实战经验（尤其是 Harness 开源项目经验）的工程师是当前最稀缺资源。
+</div>
+
+<div class="item">
+<strong>顶级人才流动加速，"高薪留人"失效：</strong>余家辉以 7 亿年薪加入 Meta 仅一年即离职创业。结合 Google 重组 DeepMind、梁文锋强调"克制"哲学吸引价值观驱动型人才，AI 人才市场的驱动力正在从薪酬转向自主权和使命感。<br>
+<strong>推断：</strong>DeepSeek 开放"AI 跨界技术人才"岗位（不设专业背景限制，加分项包括"不走寻常路""在某个领域做到极致"），暗示顶尖 AI 组织的招聘策略正在从"技能匹配"转向"特质筛选"。
+</div>
+
+<div class="item">
+<strong>AI 产品经理岗位内涵升级：</strong>百度校园招聘 AI 产品经理要求"具备 AI 产品思维，善用 AI 工具"；美团 AI 支付产品经理要求"深度结合大模型能力，设计多模态交互"；行业分析指出 2026 年 AI PM 必须掌握数据飞轮设计、A/B 测试体系、效果评估指标。<br>
+<strong>信号：</strong>纯文本 AI 产品已饱和，多模态交互 + Agent 协作模式的产品设计能力成为差异化竞争力。AI PM 的核心能力正在从"定义功能"转向"设计模型交互和评估体系"。
+</div>
+
+
+<div class="closing">
+<strong>⚡ 今日信号：</strong>DeepSeek 将 Harness 作为独立产品线并全球招募内测，标志着 Agent 基础设施层的竞争正式从"模型能力"转向"工程可靠性"。如果你的团队还在等下一个模型升级来提升 Agent 表现，方向可能错了——同一模型下，Harness 设计的差异可以带来 6 倍性能差距。<br>
+<strong>行动建议：</strong>关注 DeepSeek Harness 内测开放，准备好你的开源 Agent 项目经验；同时用任务级方差分解重新审视你当前的 Agent 评估流程。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
