@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年08月16日 · 新闻 39 条 · 博客 4 篇 · 搜索 15 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<h4>1. DeepSeek Harness v0.1 开源：Agent 运行时大战正式开打</h4>
+<p><strong>发生了什么：</strong>8月13日，DeepSeek发布首款Agent产品 Harness 开发者预览版，以 MIT 协议开源，基于 Cordis 插件系统，模型、工具、提示词、存储、上下文、界面等均可热插拔。</p>
+<p><strong>为什么重要：</strong>这标志着 Agent 竞争从底层模型能力向 Harness（运行时）工程层迁移；“Everything is a plugin” 让开发者无需改源码即可替换调度循环、存储甚至 UI，大幅降低 Agent 定制门槛。内测已出现长期记忆、UI 修改等插件，验证了架构的可扩展性。</p>
+<p><strong>关联：</strong>与 DeepSeek Harness 团队招聘、@skills 协议、以及国内“消费级显卡跑 Opus 级 Agent”的 Qwen3.8-27B 动态形成同一个信号：Harness 工程正在成为产品差异化的核心。</p>
+</div>
+
+<div class="item">
+<h4>2. SpaceX 完成对 Cursor 的收购：AI 编程工具进入垂直巨头整合</h4>
+<p><strong>发生了什么：</strong>TechCrunch 报道，AI 编程初创公司 Cursor 已正式成为 SpaceX 的一部分。</p>
+<p><strong>为什么重要：</strong>Cursor 作为头部 AI coding 工具被非传统软件巨头收购，说明硬科技/航天领域对 AI 研发工具的需求已到战略级。SpaceX 场景对代码安全、可靠性的苛刻要求，可能推动 Cursor 从通用工具向高置信度代码生成/验证演进。</p>
+<p><strong>关联：</strong>与 Claude Code、Copilot、DeepSeek Harness 并行的编程 Agent 市场，可能从创业公司竞争转向巨头生态整合。</p>
+</div>
+
+<div class="item">
+<h4>3. DeepSeek 启动大规模招聘，Agent Harness 团队持续招人</h4>
+<p><strong>发生了什么：</strong>DeepSeek 发布招聘公告，覆盖全栈开发/算法、AI 核心系统研发、运维、产品、模型数据策略等 33 个岗位，北京/杭州，所有岗位接受实习，称正努力将各部门规模扩大至少一倍。</p>
+<p><strong>为什么重要：</strong>这是 DeepSeek 从研究驱动走向产品化/工程化的组织信号；新设 Agent Harness 团队由 90 后崔添翼负责，资深研究员陈德里公开表示对标 Claude Code，做“DeepSeek Code Harness”。人才市场将出现明确的 Harness/Agent Infra 岗位需求。</p>
+<p><strong>关联：</strong>与其 Harness 产品开源同步，表明 DeepSeek 在 Agent 赛道的产品-组织-研发三线并进。</p>
+</div>
+
+<div class="item">
+<h4>4. arXiv @skills：用路径寻址替代技能“安装驻留”</h4>
+<p><strong>发生了什么：</strong>论文提出 @skills 开放协议：技能安装被拆解为内容、持久化、自动触发三个功能，通过路径寻址按需读取技能，无需常驻系统提示。</p>
+<p><strong>为什么重要：</strong>当前 56,804 个公共 agent skills 的安装模型迫使技能描述挤占系统提示中不足 100 个的可靠触发槽位；@skills 将技能从“常驻提示词”改为“按需读取”，直接缓解上下文竞争。对 Agent 的技能管理、上下文预算设计有直接工程价值。</p>
+<p><strong>关联：</strong>与 DeepSeek Harness 插件系统、SteerBench-Work 边界决策一起，构成 Harness 工程中“上下文经济学”的关键议题。</p>
+</div>
+
+<div class="item">
+<h4>5. arXiv MindMemOS：可移植自进化记忆操作系统</h4>
+<p><strong>发生了什么：</strong>论文提出 MindMemOS，以统一实体-属性-时间结构组织开放世界信息，支持场景自适应记忆建模、高阶模式发现、自主记忆精炼与持续技能进化。</p>
+<p><strong>为什么重要：</strong>现有 Agent 记忆系统开发后固定，难以随使用调整记忆模型与组织策略；MindMemEvolve 采用验证驱动的进化搜索优化记忆 schema。这直接回应长时交互 Agent 的个性化与自适应痛点。</p>
+<p><strong>关联：</strong>与 Governed Persistent Memory、Spatial Memory Agent 等论文密集出现，Agent 记忆正从静态存取走向可治理、可演化。</p>
+</div>
+
+<div class="item">
+<h4>6. arXiv Dual-Flow Transformers：解耦 prefill 与 decode，降低累计推理成本</h4>
+<p><strong>发生了什么：</strong>论文提出 Dual-Flow Transformer，将主 prefill 路径与额外 decode 计算解耦，保持单一持久 KV 缓存，把额外学习计算只分配给 continuation prediction。</p>
+<p><strong>为什么重要：</strong>Prompt prefill 是计算密集，自回归 decode 是内存带宽密集；传统宽度/深度扩展让两者成本同步上升。新架构在不大幅影响延迟/缓存的前提下提升解码质量，对高吞吐 LLM 服务具有现实经济性。</p>
+<p><strong>关联：</strong>与国内“消费级显卡跑大模型”“本地部署 Agent”的趋势呼应，推理成本优化成为 Agent 规模化落地的关键基础设施。</p>
+</div>
+
+<div class="item">
+<h4>7. AstraZeneca 发布 Research Assistant：药企级 Agentic R&D 系统</h4>
+<p><strong>发生了什么：</strong>AstraZeneca 论文披露内部 LLM 系统 Research Assistant，以聊天界面整合科学文献、知识图谱、化学、临床试验、安全性、表达数据及内部实验系统。</p>
+<p><strong>为什么重要：</strong>AI for Science 正从单点模型进入企业级 Agentic 系统：系统支持 fast 模式直接 QA 与 multi-step 复杂科研任务，响应证据接地并链接原始来源，是制药行业落地 Agent R&D 的重要范本。</p>
+<p><strong>关联：</strong>与深势科技“AI 科学家”愿景、AI+药物研发方向一致；反映企业科研场景对可审计、可追溯 Agent 系统的需求。</p>
+</div>
+
+<div class="item">
+<h4>8. 国内厂商双响：Kimi K3 开源 + 面壁智能估值破 200 亿</h4>
+<p><strong>发生了什么：</strong>月之暗面发布 Kimi K3 开源模型，总参数约 2.8 万亿，基于 KDA 混合线性注意力，支持最高 1M 上下文及原生视觉；面壁智能完成新一轮融资，估值突破 200 亿元。</p>
+<p><strong>为什么重要：</strong>Kimi K3 在编程、通用 Agent、视觉 Agent 等评测中展现前沿水平，继续推进国内超大规模开源路线。面壁智能作为端侧大模型独角兽获国资/央企/车企投资，说明端侧模型在汽车等场景的商业化进展受认可。</p>
+<p><strong>关联：</strong>加上阿里云 Qwen-Audio-3.0-Realtime 和 DeepSeek Harness，国内 AI 竞争进入模型-产品-资本三线加速。</p>
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<h4>趋势一：Harness Engineering 成为新战场，插件化/按需加载协议加速标准化</h4>
+<p><strong>证据：</strong>DeepSeek Harness 以“Everything is a plugin”开源，基于 Cordis 实现 Loop、存储、UI 热插拔；arXiv @skills 论文发现 56,804 个公共 skills 安装模式下可靠触发槽位不足 100 个；SteerBench-Work 将 Agent 转向决策作为单独基准。</p>
+<p><strong>预判：</strong>2026 下半年 Agent 性能差异将更多来自运行时/上下文调度而非底层模型权重；技能协议和插件市场可能像 MCP 一样走向标准化。工程师若仍只关注 prompt engineering，将失去竞争优势。</p>
+</div>
+
+<div class="trend">
+<h4>趋势二：Agent 记忆从“选取-存储-检索”升级为可治理、可审计的生命周期管理</h4>
+<p><strong>证据：</strong>MindMemOS 提出自进化记忆操作系统；Governed Persistent Memory 引入源绑定、双时态状态与 fail-closed 释放；Spatial Memory Agent 探索无参数更新的空间经验记忆。</p>
+<p><strong>预判：</strong>企业级长时 Agent 落地必须回答“过时/撤回/矛盾信息如何释放”，记忆合规审计将成为金融、医疗、法律等场景的刚需。Harness 平台需原生支持记忆 schema 治理与来源绑定。</p>
+</div>
+
+<div class="trend">
+<h4>趋势三：国内 AI 厂商进入“产品化 + 组织扩张”双加速期</h4>
+<p><strong>证据：</strong>DeepSeek 团队计划扩编一倍并开源 Harness；月之暗面发布 2.8 万亿 Kimi K3；面壁智能融资后估值突破 200 亿元；阿里云发布 Qwen-Audio-3.0-Realtime 实时语音模型。</p>
+<p><strong>预判：</strong>模型发布节奏仍未放缓，但产品化速度决定商业化结局。Agent Harness、端侧部署、实时多模态等工程岗将出现集中招聘，人才市场可能短期供不应求。</p>
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<h4>1. Governed Persistent Memory: Source-Bound State Semantics and Fail-Closed Release for Long-Horizon Agents (arXiv:2608.12476)</h4>
+<p><strong>核心贡献：</strong>提出 GPM 可审计双时态状态转移模型，实现来源绑定准入、派生生命周期状态、公共屏障与 fail-closed 结构化释放；在 3,600 案例的 GPM-ReleaseBench 上匹配所有完整结果。</p>
+<p><strong>为什么值得读：</strong>大多数 Agent 记忆系统只解决“存取”，不解决“撤回/删除/过时信息是否有权支持后续声明”。该论文给出可落地的记忆治理语义与基准，对生产环境可信 Agent 极有参考价值。</p>
+</div>
+
+<div class="deep-read">
+<h4>2. SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries (arXiv:2608.12654)</h4>
+<p><strong>核心贡献：</strong>事件锚定、双向的 106 场景基准，覆盖开发运维、客服、金融、法律、医疗、HR、安全；每个场景判断“继续执行”或“移交人工/策略审查”，两种错误方向样本接近均衡。</p>
+<p><strong>为什么值得读：</strong>Agent 产品化的核心风险是“一步就能发邮件、合并 PR 或付款”。该基准把预提交转向决策变成可量化问题，适合产品经理、安全工程师和 Agent 平台设计者理解边界控制。</p>
+</div>
+
+<div class="deep-read">
+<h4>3. Beyond the Best Guess: Improving LLM Solution Coverage with Evolution Strategies (arXiv:2608.12679)</h4>
+<p><strong>核心贡献：</strong>发现标准 RL 后训练会收窄模型输出分布，导致 pass@k 解空间覆盖坍缩；改用进化策略（ES）可保持候选解多样性，更适合数学与科学发现等探索型任务。</p>
+<p><strong>为什么值得读：</strong>对 AI4S、算法发现、药物分子设计等场景，探索能力比单次最优解更重要。论文直指当前 post-training 目标与发现任务之间的错配，提供可操作的替代方法。</p>
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<h4>Rich Sutton: The Bitter Lesson</h4>
+<p><strong>为什么今天推荐：</strong>在 Harness 工程、插件化、人工约束设计空前繁荣的今天，Bitter Lesson 提醒我们：通用计算与规模最终会超越手工先验。阅读它有助于在构建复杂 Agent 运行时之际，分清哪些工程约束是必要的安全/审计边界，哪些可能成为阻碍可扩展学习的“人类先验”。</p>
+<p><strong>三个核心观点：</strong></p>
+<ul>
+<li>大规模算力与通用学习方法在长期永远胜于领域知识的手工编码。</li>
+<li>研究者应专注构建可随算力扩展的方法，而不是固化当下的领域洞察。</li>
+<li>搜索与学习是核心机制，手工特征/规则终将被通用模型取代。</li>
+</ul>
+<p><strong>适合谁读：</strong>Agent 工程师、AI 产品决策者、研究员。<strong>大致阅读时间：</strong>15 分钟。</p>
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item"><strong>DeepSeek：</strong>Harness v0.1 开发者预览版以 MIT 协议开源，基于 Cordis 插件系统，支持标准/PTC/极简/创造四种模式；同时启动大规模招聘，计划各部门规模至少翻倍，Agent Harness 团队持续招人，工作地点北京/杭州，接受实习。</div>
+
+<div class="item"><strong>月之暗面：</strong>Kimi K3 开源，总参数约 2.8 万亿，基于 KDA 混合线性注意力，支持 1M 上下文和原生视觉；已接入 Kimi、Kimi Code、Kimi API，权重预计 7 月 27 日前发布。此前 5 月宣布 20 亿美元融资，投后估值超 200 亿美元。</div>
+
+<div class="item"><strong>面壁智能：</strong>完成新一轮融资，估值突破 200 亿元，投资方包括国家级产业基金、央企、汽车制造商；MiniCPM 端侧模型在手机、汽车、PC 等场景推进，汽车是量产较快的方向。</div>
+
+<div class="item"><strong>阿里云：</strong>发布 Qwen-Audio-3.0-Realtime 实时语音交互模型，含 Plus 和 Flash 版本，升级推理、Agent 工具调用、共情对话与双工交互，可无需明确指令自行调用外部工具。</div>
+
+<div class="item"><strong>Qwen3.8-27B（量子位报道）：</strong>一张消费级显卡即可运行“Opus 级”Agent，多项榜单反超 Claude，并支持推理能力自定义，显示端侧/本地 Agent 部署门槛持续下降。</div>
+
+<div class="item"><strong>深势科技：</strong>启明创投访谈中，孙伟杰表示基础设施已基本完成，下一阶段到 2030 年打造“AI 科学家”系统型平台，让智能体调用“读、算、做”能力，成为科研流程协作主体。</div>
+
+<div class="item"><strong>智谱：</strong>背景动态：2026 年 1 月港股上市后 40 天内市值一度突破 7000 亿港币；蚂蚁集团持股约 3.99%，体现资本对国内大模型公司的看好（非本周新动态）。</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<h4>1. 明确信号：DeepSeek 大扩招，Agent Harness/Infra 岗位成焦点</h4>
+<p>DeepSeek 公告 33 个岗位，覆盖全栈开发/算法、AI 核心系统研发、运维、产品、模型数据策略等，所有岗位接受实习，北京/杭州。新设 Agent Harness 团队由崔添翼负责，强调“Model+Harness=Agent”，直接对标 Claude Code。这指向国内头部厂商正将招聘重点从纯模型研究转向 Agent 工程/产品化。</p>
+</div>
+
+<div class="item">
+<h4>2. 岗位技能需求迁移：从 prompt engineering 到 Harness Engineering</h4>
+<p>信息源显示，企业招聘 AI 产品经理“第一道门槛”是能否 AI 落地——Agent 流程、RAG 方案、Demo 原型成为面试硬通货；能独立操盘大模型项目的 AI PM 月薪可达 30k-50k。技能需求正从单一模型调用转向：上下文管理、工具调用编排、插件系统（如 Cordis）、记忆治理、可审计 Agent 设计。</p>
+</div>
+
+<div class="item">
+<h4>3. 端侧与 AI4S 人才需求升温</h4>
+<p>面壁智能融资扩张与 Qwen3.8-27B 消费级显卡运行 Agent 的新闻，指向端侧大模型工程（手机/汽车/PC 部署、模型压缩、推理优化）将持续招人。深势科技“AI 科学家”目标则带来对 AI4S 复合背景人才的需求：既懂 ML/Agent 编排，又懂物理/化学/生物领域问题。</p>
+</div>
+
+<div class="item">
+<h4>4. 行动建议</h4>
+<p>若你正在看机会，建议优先补充 Harness/上下文工程/记忆治理的实战项目经历，特别是能展示多 Agent 调度、插件化、工具调用安全边界的作品集；AI 产品岗需有可演示的 Agent/RAG 落地案例。未来 3-6 个月，国内头部 AI 公司的 Agent 产品团队最可能出现高溢价招聘。</p>
+</div>
+
+<div class="closing">
+<strong>⚡ 今日信号：</strong>Agent 竞争主战场已从模型参数转向 Harness 运行时。DeepSeek 开源+扩招、@skills 协议与记忆治理论文密集出现，意味着懂上下文工程/插件系统的工程师将在未来 3 个月获得高溢价。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
