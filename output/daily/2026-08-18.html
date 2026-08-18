@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年08月18日 · 新闻 128 条 · 博客 4 篇 · 搜索 10 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>DeepSeek 发布开源 Agent Harness（dsh），两天斩获 95k+ GitHub Stars</strong><br>
+发生了什么：DeepSeek 正式推出 TypeScript 编写的开源 agent harness，采用 Cordis 插件化架构，并与 V4-Pro-0813 GA 同步发布。团队由前 Jane Street 量化系统专家崔添翼领导。<br>
+为什么重要：Agent 竞争正从模型能力转向执行层。该 harness 将模型、工具、技能、沙箱、调度全部插件化，直击 Claude Code、Cursor 等闭源产品的架构护城河。其量化交易背景团队更强调执行稳定性、错误恢复与自动重试，这比单纯模型得分更接近生产级 Agent 的本质。<br>
+关联：与 Anthropic 营收暴涨形成“开源执行层 vs 闭源产品化”的直接对冲；也印证了 Harness Engineering 正在成为新一代 Agent 团队的核心壁垒。
+</div>
+
+<div class="item">
+<strong>Qwen 3.8 27B 在 Artificial Analysis 指数拿到 52 分，与 GPT-5.6 Luna 持平</strong><br>
+发生了什么：Simon Willison 指出，Qwen 3.8 27B 在第三方综合指数上取得与 GPT-5.6 Luna 相同的分数，仅落后 GLM-5.2 和 DeepSeek V4 Pro 一分，而后两者参数量分别高达 753B 和 1.6B。<br>
+为什么重要：这是“能力密度”拐点的强烈信号。27B 参数达到超大模型旗舰水平，意味着本地部署、边缘推理和低延迟 Agent 将不再需要巨大 GPU 集群。对开发者而言，企业级 Agent 的成本结构将被彻底改写。<br>
+关联：与 DeepSeek Harness 发布形成共振——小参数高性能开源模型 + 开源执行框架，可能迅速拉低 Agent 产品的部署门槛。
+</div>
+
+<div class="item">
+<strong>Anthropic 年化营收飙升至 $65B，两个月增加 $18B</strong><br>
+发生了什么：TechCrunch 报道，Anthropic 年化营收从两个月前的约 $47B 增至 $65B。<br>
+为什么重要：这是当前 AI 商业化最猛的增长曲线之一。Claude Code 等 Agent 产品正在把“模型 API”变成高粘性的生产力工具，用户付费意愿远超传统 SaaS。这验证了 Agent 产品化的收入弹性，也说明闭源产品在具体工作流中仍有强定价权。<br>
+关联：尽管开源 harness 兴起，Anthropic 营收表明企业市场并不只认开源；两者可能分层：开源用于自建和成本敏感场景，闭源用于合规、安全和开箱即用。
+</div>
+
+<div class="item">
+<strong>Amazon 被曝销毁稀有书籍用于 AI 训练</strong><br>
+发生了什么：404 Media 用 AirTag 追踪到一批稀有书籍最终流向 Amazon AI 训练设施。TechCrunch 与 Simon Willison 均对此进行了报道。<br>
+为什么重要：优质长尾文本正在成为训练数据争夺战的稀缺资源。稀有书籍包含独特的写作风格、专业知识和文化背景，是LLM无法从互联网大规模获得的。这一事件将加剧出版商、作者与 AI 公司的版权冲突，并可能引发新的数据合规审查。<br>
+关联：此前 Anthropic 也有类似扫描争议，说明前沿实验室在数据获取上的伦理边界正在被持续击穿。
+</div>
+
+<div class="item">
+<strong>Groq 融资 $350M 从 AI 芯片转向 Neocloud</strong><br>
+发生了什么：Groq 以 $3.5B 估值完成 $350M 融资，加速从自研 AI 芯片转向基于 Nvidia 的 neocloud 数据中心业务。<br>
+为什么重要：这是推理基础设施市场的关键信号：自研推理芯片的商业化窗口正在关闭，资本更认可基于 Nvidia 生态的云服务。Neocloud 成为新的融资故事，但也意味着同质化竞争加剧。<br>
+关联：Nvidia 同时投资 $1.5B 给 SoftBank 数据中心开发者，进一步巩固其在推理算力供给中的核心地位。
+</div>
+
+<div class="item">
+<strong>arXiv：Second Thought 利用 ReAct 空闲窗口进行并行推理</strong><br>
+发生了什么：该论文提出训练无关的推理框架，在 Agent 等待环境反馈的 Action/Observation 间隙 fork 四个辅助分支并行推理，将额外思考隐藏在主循环之外。<br>
+为什么重要：直接提升现有 ReAct 类 Agent 的推理利用率和任务完成速度，无需重新训练或更换模型。这是 Harness 工程中调度优化的典型思路，能显著改善长 horizon 任务中的资源浪费。<br>
+关联：与同期多篇 Agent 效率论文（Token Inflation 路由、Language Server 检索）共同显示，执行层的优化空间远大于单纯提升模型能力。
+</div>
+
+<div class="item">
+<strong>深势科技与迈威生物达成战略合作，AI4S 加速进入生物药研发闭环</strong><br>
+发生了什么：迈威生物与深势科技宣布合作，推动 AI for Science 大模型驱动的创新药研发，从“实验驱动”迈向“计算驱动”。<br>
+为什么重要：国内 AI4S 正在从工具销售走向与药企的深度管线合作，干湿闭环和真实研发数据成为新壁垒。深势科技的 Uni-Lab OS、Uni-FEP 等模块开始嵌入药企实际研发流程。<br>
+关联：与 arXiv 上 READ、OCOO-T 等 AI4S 论文进展形成共振，说明 AI4S 的竞争正从算法创新转向产业落地的数据闭环与实验验证能力。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Harness Engineering 成为 Agent 竞争主战场</strong><br>
+证据：DeepSeek Harness 两天 95k stars；arXiv 出现大量针对 Agent 调度、token 成本、执行稳定性的论文，如 Second Thought 的并行推理、Token Inflation 路由、MOOSEDev 的本体项目记忆；Claude Code 源码泄漏后，其 512k 行 harness 模式被广泛分析。<br>
+预判：未来 6 个月，开源 harness 将借鉴 Claude Code 的工程经验快速标准化，MCP、Subagent、沙箱隔离成为默认组件。竞争优势不再只来自模型能力，而是来自执行可靠性、上下文管理和可观测性。团队如果仍只关注模型选型而忽视 harness 层，将在生产环境中被迅速拉开差距。
+</div>
+
+<div class="trend">
+<strong>趋势二：能力密度拐点冲击闭源商业模式</strong><br>
+证据：Qwen 3.8 27B 达到与超大模型相当的分数；Nathan Lambert 指出 Nvidia 鼓励开发者自建模型而非购买 Anthropic/OpenAI；Anthropic 营收暴涨但开源 DeepSeek/GLM 正在快速逼近。<br>
+预判：小参数高性能模型将加速企业本地化部署和边缘推理，降低对云 API 的刚性依赖。闭源厂商的应对会转向“产品 + 数据飞轮 + 企业服务”，而非单纯模型 API 价格战。对初创公司而言，基于开源模型的垂直 Agent 产品将具备前所未有的成本优势。
+</div>
+
+<div class="trend">
+<strong>趋势三：AI4S 进入干湿闭环与高质量数据竞争阶段</strong><br>
+证据：深势科技与迈威生物战略合作；HERMES 多智能体框架从超长科学文献中提取结构化知识；READ 等结构药物设计模型强调检索对齐；BCIJelly 构建 BCI 研究生态。<br>
+预判：AI4S 下一阶段的护城河不是模型参数，而是高质量实验数据、湿实验自动化和与产业流程的深度绑定。单纯学术论文产出将不足以支撑商业估值，能否进入药企、材料企业的实际研发决策链是关键。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. Agentao: A Governed Local-First Runtime for Tool-Using LLM Agents</strong>（arXiv:2608.13574）<br>
+核心贡献：提出一个分层治理的本地优先运行时，将模型生成的动作提案与宿主授权执行分离，通过权限中介工具系统、replay、插件、技能、Sub-agent 和协议集成来降低 prompt injection、工具投毒和越权风险。<br>
+为什么值得读：如果你正在构建生产级 Agent，安全治理是绕不过去的坎。这篇论文给出了可落地的架构抽象，尤其适合关注 MCP 和 Subagent 安全边界的工程师。
+</div>
+
+<div class="deep-read">
+<strong>2. Second Thought: Reasoning in Parallel as LLM Agents Act and Observe</strong>（arXiv:2608.13667）<br>
+核心贡献：识别 ReAct 范式中的“推理空闲窗口”，在 Agent 等待环境反馈时并行解码辅助思维分支，再将结果合并回主循环。训练无关，可直接应用于现有 Agent。<br>
+为什么值得读：它为 Harness 层提供了低成本的推理效率优化路径，且实验设计清晰。适合关注 Agent 调度、长任务完成速度的团队快速验证。
+</div>
+
+<div class="deep-read">
+<strong>3. READ: A Retrieval-Alignment Diffusion Framework for Structure-based Drug Design</strong>（arXiv:2506.14488）<br>
+核心贡献：引入检索对齐的扩散框架，利用已知蛋白-配体复合物的共享结合模式来指导新分子生成，缓解高质量实验数据稀缺问题。<br>
+为什么值得读：AI4S 的核心瓶颈是数据，而非模型架构。这篇论文展示了如何通过检索先验提升泛化，对药物设计、蛋白质设计等领域的从业者有直接启发。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>Nathan Lambert: Teaching Everyone to Fish for Tokens</strong><br>
+链接：https://www.interconnects.ai/p/teaching-everyone-to-fish-for-tokens<br>
+为什么今天推荐：在 DeepSeek Harness 开源、Qwen 27B 打平旗舰、Groq 转向 Nvidia neocloud 的背景下，这篇文章直指生态博弈的核心：Nvidia 为什么更希望你自建模型，而不是购买闭源 API。它帮助你理解算力玩家的真实激励，而不仅是模型榜单。<br>
+<strong>三个核心观点：</strong><br>
+• Nvidia 的商业利益在于最大化 GPU 消费，因此其叙事会持续推动自建模型和开源工具链，而非依赖闭源 API。<br>
+• 开源权重模型的崛起正在把 AI 竞争从“模型能力”转向“数据和训练基础设施”，算力平台是最大受益者。<br>
+• 开发者需要警惕平台叙事背后的利益结构，避免在“买 vs 建”的选择上被单一生态锁定。<br>
+适合谁读：AI 产品负责人、Infra 工程师、开源策略关注者、考虑自建模型的企业技术决策者。<br>
+阅读时间：约 8–10 分钟。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek：</strong>发布开源 Harness（dsh），采用 Cordis 插件架构，支持 prefix caching、长上下文、KV-cache 优化、工具调用链、错误恢复与自动重试。同步切换 peak/off-peak API 定价。创始人梁文锋近期强调公司目标是 AGI 而非利润最大化，API 定价原则约 10 个月收回成本。外部融资传闻持续，估值至少 100 亿美元。<br>
+<strong>招聘信号：</strong>Harness 团队由量化交易系统背景专家领导，岗位要求强调长上下文管理、工具链稳定性、错误恢复——这比传统模型训练岗更偏向系统工程师。
+</div>
+
+<div class="item">
+<strong>智谱：</strong>GLM-5.3 首发上线范式 PhanRouter，即日开放调用。表明智谱在模型路由和推理效率上持续迭代，GLM-5.2 在第三方指数中仍居前列。<br>
+<strong>招聘信号：</strong>PhanRouter 相关开放调用可能带动对路由策略、多模型调度和 API 产品化人才的需求。
+</div>
+
+<div class="item">
+<strong>阿里巴巴/Qwen：</strong>Qwen 3.8 27B 在 Artificial Analysis 指数获 52 分，与 GPT-5.6 Luna 持平，参数仅 27B。这是 Qwen 系列在高效能密度上的重要里程碑，也强化了国内模型在开源生态中的竞争力。<br>
+<strong>招聘信号：</strong>Qwen 的高效模型路线需要更多量化、蒸馏、推理优化和端侧部署工程师。
+</div>
+
+<div class="item">
+<strong>月之暗面：</strong>估值达 180 亿美元，领跑国内大模型初创。Kimi K3 的开源权重策略曾被业界视为全球 AI 生态的重要变量。营收体量仍小于智谱和 MiniMax，但估值反映资本对其长期 Agent 产品潜力的高度预期。
+</div>
+
+<div class="item">
+<strong>深势科技：</strong>与迈威生物达成战略合作，推进 AI4S 大模型驱动的生物药研发。此前推出 Uni-Lab OS 开源，试图构建“干湿闭环”实验室研发智能体。团队博士及博士后占比超 35%，核心成员曾获戈登贝尔奖。<br>
+<strong>招聘信号：</strong>AI4S 商业化加速需要既懂 AI 又懂药物研发流程的复合型人才，尤其是能对接药企客户、理解真实实验数据闭环的解决方案工程师。
+</div>
+
+<div class="item">
+<strong>淘天集团：</strong>开放 2026 届日常实习，重点岗位包括 Agent 开发实习生（杭州）和智能算法产品事业部 Agent 研发实习生（北京）。前者要求参与淘宝直播 AI 应用架构，强调跨栈开发能力（前端/移动端/服务端）；后者要求 LLM 及 AI Coding 经验，负责 AI 游戏平台后端。<br>
+<strong>招聘信号：</strong>大厂正在为 Agent 产品化储备跨栈工程人才，纯算法背景不再是唯一入口。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>新增岗位类型：</strong><br>
+• Harness / Agent Infra 工程师：DeepSeek Harness 团队明确要求 prefix caching、长上下文、KV-cache 优化、工具链编排、错误恢复。类似岗位将逐渐从大厂延伸至垂直 AI 初创。<br>
+• 跨栈 Agent 开发：淘天集团 Agent 实习岗位要求前端、移动端、服务端多栈能力，说明 Agent 产品化需要能打通全链路的工程师，而不是单一模型训练或后端。<br>
+• AI4S 解决方案工程师：深势科技等公司商业化提速，需要能对接药企、材料企业，理解“干湿闭环”和真实实验数据流程的复合型人才。
+</div>
+
+<div class="item">
+<strong>薪资与市场信号：</strong><br>
+• Anthropic 年化营收 $65B，闭源 Agent 商业化成功将进一步推高 Agent 产品经理、解决方案架构师和 AI 系统可靠性工程师的薪资。<br>
+• 开源高效模型（Qwen 27B）降低创业门槛，小团队基于开源 harness + 小模型即可服务垂直场景，个人开发者机会增多。<br>
+• Relay 关闭、员工加入 Google Chrome 团队，显示通用 AI 自动化初创面临整合风险，但人才被大厂吸收，说明 Agent 工程能力仍属稀缺资产。
+</div>
+
+<div class="item">
+<strong>技能需求变化：</strong><br>
+• 从“Prompt 工程”转向“Harness 工程”：上下文管理、MCP 集成、Subagent 编排、沙箱安全、可观测性成为核心技能。<br>
+• 量化交易式思维受青睐：DeepSeek Harness 负责人背景显示，生产级 Agent 需要关注执行稳定性、失败回滚、成本控制，而非创新性算法。<br>
+• 评估能力上升：RubricForge、Agentao 等论文反映，无标签场景下的 Agent 评估与治理能力成为团队刚需，相关岗位可能增加。
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+开源 Harness + 小参数高性能模型正在把 AI 竞争从“模型能力”推向“执行可靠性”。立刻投入 Harness 工程与 MCP 工具链建设，这是未来 6 个月 Agent 团队的核心壁垒。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
