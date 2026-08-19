@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年08月19日 · 新闻 145 条 · 博客 7 篇 · 搜索 10 条</div>
+  </div>
+  <div class="body"><div class="container">
+    <div class="header">
+        <h1>AI Radar 日报</h1>
+        <p><strong>日期：</strong>2026-08-19</p>
+        <p><strong>主编：</strong>AI Radar 编辑部</p>
+        <p><strong>核心关注：</strong>Agent Harness 可靠性、AI for Science 工业化、国内大厂扩招、垂直整合</p>
+    </div>
+
+    <!-- 第一部分：今日必读 -->
+    <div class="section-title">🔥 今日必读 (Top 7)</div>
+
+    <div class="item">
+        <h3>1. DeepSeek 大举扩张：团队规模翻倍，新成立“Agent Harness”团队对标 Claude Code</h3>
+        <p><strong>发生了什么：</strong> DeepSeek 发布系统性招聘信息，覆盖 7 大类 33 个岗位，明确要将所有部门规模“扩大至少一倍”。其中最核心的信号是 3 月新成立的“Agent Harness”团队开启大规模招人。</p>
+        <p><strong>为什么重要：</strong> 
+            <ul>
+                <li><strong>Harness 战略确立：</strong> 团队负责人崔添翼（90后浙大系）明确奉行“Model+Harness=Agent”的产品思路，目标是打造类似 Claude Code 的“DeepSeek Code Harness”。这标志着 DeepSeek 正式将竞争重心从模型参数转向工程化落地。</li>
+                <li><strong>扩招信号：</strong> 相比以往零散招募，这是 DeepSeek 首次系统性组织扩容，预示着融资到位（此前估值约 4800 亿人民币）后，其资源瓶颈正被迅速打破。</li>
+            </ul>
+        </p>
+        <p><strong>关联动态：</strong> 结合 Nathan Lambert 分析智谱 GLM-5.3 的推文，国内大模型厂商已集体迈过“纯蒸馏/微调”阶段，进入工程落地与人才囤积的正面搏杀。</p>
+    </div>
+
+    <div class="item">
+        <h3>2. 不仅是写代码：Cursor 推出代码托管平台，直接挑战 GitHub</h3>
+        <p><strong>发生了什么：</strong> 以 AI 代码编辑器闻名的 Cursor 正式推出代码托管服务，入局原本由 GitHub 主导的开发者底层基建市场。</p>
+        <p><strong>为什么重要：</strong> 
+            <ul>
+                <li><strong>垂直整合信号：</strong> AI 编程工具不再满足于只做“副驾驶”或编辑器插件，而是开始试图吞噬 DevOps 全流程。Cursor 此举是通过代码库托管进一步捆绑开发者，获取更深层次的上下文数据以提升 Agent 准确率。</li>
+                <li><strong>商业模式闭环：</strong> 通过控制代码仓库，Cursor 可以构建基于 Agent 的 CI/CD 全自动流水线，这对 GitHub Copilot 构成了生态层面的降维打击。</li>
+            </ul>
+        </p>
+        <p><strong>关联动态：</strong> NVIDIA 同日发布用 AI Coding Agent 解锁材料模拟（ALCHEMI 工具包），证明 AI 编程正渗透进基础科学垂直领域的开发工具链。</p>
+    </div>
+
+    <div class="item">
+        <h3>3. 多智能体系统的“癌症”：幻觉雪球效应被形式化建模</h3>
+        <p><strong>发生了什么：</strong> 最新论文《The Hallucination Snowball》将多智能体流水线中的错误传播形式化为马尔可夫过程，数据极其惊人：原始错误在流转中从“事实错误”演变为“叙述性结论”甚至“不可见错误”，最终的逃逸概率高达 89.3%。</p>
+        <p><strong>为什么重要：</strong> 
+            <ul>
+                <li><strong>工程灾难：</strong> 在多 Agent 协作（如金融分析、代码审查）中，上游 Agent 的微小数差经过下游 Agent 的传递和润色，会变成逻辑自洽但完全错误的结论，且人类极难发现。</li>
+                <li><strong>Harness 设计的核心痛点：</strong> 传统的逐级验证机制代价高昂且容易失效。该论文为 Agent Harness 设计提供了明确的“不可信任区间”参考。</li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="item">
+        <h3>4. 大模型代码生成的自我修正：当“不确定性”真的用上了</h3>
+        <p><strong>发生了什么：</strong> 论文《When Uncertainty Isn't Enough》实证研究了如何在代码生成中利用不确定性信号触发自我修正。研究发现，传统的语义熵作用不大，但多样本一致性 (P(True)) 与代码正确性高度相关。</p>
+        <p><strong>为什么重要：</strong> 
+            <ul>
+                <li><strong>降本提效：</strong> 驱动 Agent 写代码往往需要多次重试（烧钱），该研究提供了一条依据内部不确定性信号精准触发重试的路径，而非盲目重试。</li>
+                <li><strong>架构指导：</strong> 对于开发 Agent 的工具调用评估器，意味着可以引入基于多样本一致性的置信度评分系统来过滤低质量工具调用指令。</li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="item">
+        <h3>5. AI for Science 工业化加速：NVIDIA 推 AI 编码解锁材料模拟，PertMind 利用 RL 激发生物推理</h3>
+        <p><strong>发生了什么：</strong> NVIDIA 发布 ALCHEMI 工具包，允许开发者通过 AI Coding Agents 直接操作原子级材料模拟。同时，PertMind 论文提出用强化学习喂“细胞扰动数据”训练 LLM，使其涌现出复杂的生物推理能力。</p>
+        <p><strong>为什么重要：</strong> 
+            <ul>
+                <li><strong>降门槛：</strong> ALCHEMI 让不懂材料学的软件工程师也能参与新材料研发，AI Agent 连接了科学与工程的断层。</li>
+                <li><strong>数据驱动新范式：</strong> PertMind 证明了在生物学领域，用结构化实验数据（而不仅仅是文献文本）做 RL Post-training，可以让模型超越描述，直接进行预测甚至设计。</li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="item">
+        <h3>6. Agent 可观测性新突破：通过遥测精准定位运行时故障</h3>
+        <p><strong>发生了什么：</strong> 论文《AGENTCHAOSBENCH》构建了新基准，专门用于从执行遥测数据中检测和定位 Agent 系统的运行时故障（如工具不可用、响应超限、防护栏绕过等）。</p>
+        <p><strong>为什么重要：</strong> 
+            <ul>
+                <li><strong>取代“重试”逻辑：</strong> 当前 Agent 失败后主要靠盲目重试，该研究提供了一套 DevOps 式的故障诊断标准，直接提升了生产环境下的 Agent 可靠性。</li>
+                <li><strong>协议层面的思考：</strong> 论文基于 A2A (Agent-to-Agent) 和 MCP (Model Context Protocol) 协议故障注入，对于使用这两种协议架构的开发者是直接的避坑指南。</li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="item">
+        <h3>7. 气象大模型“卷”向超分辨率：数据放缩才是硬道理</h3>
+        <p><strong>发生了什么：</strong> 论文《Pushing the Limits of High-Resolution Weather Forecasting》提出 BaguanHR 框架，证明在气象预测中，通过超分辨率技术（Model Transfer）比直接迁移模型残差更有效，实现了高精度 0.1° 全球预报。</p>
+        <p><strong>为什么重要：</strong> 
+            <ul>
+                <li><strong>物理约束的突破：</strong> 解决了传统 AI 气象模型受限于低分辨率再分析数据的问题，将数据放缩作为提升预测精度的核心杠杆。</li>
+                <li><strong>AI for Science 方法论：</strong> 为其他缺乏高分辨率真实数据的科学领域（如海洋预报、地质勘探）提供了数据增强的新思路。</li>
+            </ul>
+        </p>
+    </div>
+
+    <!-- 第二部分：趋势分析 -->
+    <div class="section-title">📈 趋势分析</div>
+
+    <div class="trend">
+        <h3>趋势一：Agent 工程进入 “DevOps 化” 深水区</h3>
+        <p><strong>现象：</strong> 从 DeepSeek 新立“Agent Harness”责任部门，到滴滴招聘“风控 Agent 产品经理（Harness 方向）”，再到学术界密集研究 Agent 故障定位（遥测）和错误传播（幻觉雪球）。</p>
+        <p><strong>预判：</strong> 
+            单纯的 LangChain/LlamaIndex 编排将被认为是“玩具级”开发。2026 年下半年，具备“可观测性”、“断点续传”、“故障自恢复”能力的 Agent Harness 中间件将成为标配。岗位将大范围从“模型微调”转向“Agent 可靠性工程 (ARE)”。
+        </p>
+    </div>
+
+    <div class="trend">
+        <h3>趋势二：AI 编程工具的“全栈垂直整合”</h3>
+        <p><strong>现象：</strong> Cursor 推出代码托管（挑战 GitHub），Warp 推出软件工厂（Warp Factories），NVIDIA 用 AI Agent 引导特定科学领域的开发流程。</p>
+        <p><strong>预判：</strong> 
+            AI 编程工具将不再局限在 IDE 内部。它们会向下吃掉代码仓库、CI/CD 管线，向上吃掉需求管理和测试生成。Cursor 此举预示着一个“AI 原生开发者体验 (AI-native DX) 云平台”的诞生，GitHub 的护城河正面临最严峻挑战。
+        </p>
+    </div>
+
+    <div class="trend">
+        <h3>趋势三：生物计算从“看图识字”迈向“实验强化学习”</h3>
+        <p><strong>现象：</strong> PertMind 论文不靠文献文字，而是用细胞实验数据做 RL Reward 训练 LLM，使其产生纯粹的生物推理能力。EquiPocket 更新版利用等变图网络做药物靶点预测。</p>
+        <p><strong>预判：</strong> 
+            只靠看论文的“AI 科学家”会被淘汰。下一代 AI for Science 将更依赖“可计算奖励”的实验室湿数据。这不仅是算法升级，更是数据采集管线的革命，自动化湿实验室与 AI 的闭环将是下一个决胜点。
+        </p>
+    </div>
+
+    <!-- 第三部分：值得深挖的论文 -->
+    <div class="section-title">🔬 值得深挖的论文 / 报告</div>
+
+    <div class="deep-read">
+        <h3>1. 《The Hallucination Snowball: Modeling Error Propagation as State Transitions in Multi-Agent LLM Pipelines》</h3>
+        <p><strong>核心贡献：</strong> 首次精确量化了多 Agent 流水线中错误从“原始事实”到“不可见结论”的退化过程。实测数据极具冲击力，直接揭示了纯串联 Agent (无验证交接) 的脆弱性。</p>
+        <p><strong>为什么值得读：</strong> 如果你正在设计 Multi-Agent 协作系统，这篇论文提供了一种量化评估交接风险的方法，帮助确定在哪个环节强制插入人类/代码校验。</p>
+    </div>
+
+    <div class="deep-read">
+        <h3>2. 《When Agentic Executions Fail: Detecting and Localizing Runtime Faults from Telemetry》</h3>
+        <p><strong>核心贡献：</strong> 提供了首个复杂的 Agent 故障诊断基准，涵盖了 A2A/MCP 协议下的 10 种典型故障模式，并证明通过执行日志（遥测）定位故障远比只看最终结果有效。</p>
+        <p><strong>为什么值得读：</strong> 如果你要做 Agent 落地，这篇就是 Agent 开发的“运维手册”初稿。它告诉你 Agent 到底会怎么坏，以及怎么建立一个自动化的故障分类器。</p>
+    </div>
+
+    <div class="deep-read">
+        <h3>3. 《CacheScout: Learning Agent Execution for KV-Cache Management in Agentic Serving》</h3>
+        <p><strong>核心贡献：</strong> 针对 Agent 工作流中大量重复的 System Prompt 和少样本示例，提出了一种 Agent 感知的 KV-Cache 替换算法，大幅降低了多 Agent 场景下的推理计算消耗。</p>
+        <p><strong>为什么值得读：</strong> 这是 Agent 走向大规模低成本部署的关键基础设施研究。如果集群里的 Agent 执行成本降一半，很多纯云端的大模型工程才能跑通。</p>
+    </div>
+
+    <!-- 第四部分：今日推荐深度阅读 -->
+    <div class="section-title">📖 今日推荐深度阅读</div>
+
+    <div class="blog-pick">
+        <h3>Nathan Lambert: 《GLM-5.3: How Chinese labs keep stride with the frontier》</h3>
+        <p><strong>为什么今天推荐这篇：</strong> 在 DeepSeek 大规模招聘 Agent 团队、国内厂商开始全面拥抱 Agent Harness 的今天，外部开源领袖如何拆解中国大模型（以智谱 GLM-5.3 为例）的追赶路径，具有极佳的参照价值。这不仅是技术判断，更是地缘工程学的解读。</p>
+        <p><strong>3 个核心观点：</strong>
+            <ol>
+                <li><strong>非蒸馏路线：</strong> 中国顶尖实验室（如智谱）并非单纯蒸馏 GPT 或 Claude，而是拥有独立的 Post-training 和架构创新能力。</li>
+                <li><strong>开源作为一种策略：</strong> 通过开源顶级模型来构建生态粘性，同时反向推动内部基础设施的迭代标准。</li>
+                <li><strong>算力峰值的应对：</strong> 面对 GPU 约束，中国厂商在稀疏化、激活参数优化和 MoE 设置上有独特的激进策略。</li>
+            </ol>
+        </p>
+        <p><strong>适合人群：</strong> 关注国内 AI 竞争格局的战略决策者、投资人和大模型架构师。</p>
+        <p><strong>预计阅读时间：</strong> 10 分钟。</p>
+    </div>
+
+    <!-- 第五部分：国内厂商动态 -->
+    <div class="section-title">🏢 国内厂商动态</div>
+
+    <div class="item">
+        <h3>DeepSeek：全速扩张，Agent 为王</h3>
+        <ul>
+            <li><strong>人员扩张：</strong> 7 大类 33 岗位开放，承诺新员工直接参与核心任务。</li>
+            <li><strong>Agent Harness 团队：</strong> 由 90 后崔添翼带队，聚焦 “Code Harness” 产品，对标 Claude Code。</li>
+            <li><strong>资本信号：</strong> 梁文峰在泄露的对谈中提到，公司正处在从算力瓶颈向高端人才囤积阶段的战略转型，估值约 4800 亿人民币。</li>
+        </ul>
+    </div>
+
+    <div class="item">
+        <h3>智谱 AI (Zhipu)：前沿地位的保持者</h3>
+        <ul>
+            <li><strong>技术认可：</strong> GLM-5.3 被海外顶尖 AI 观察者 Nathan Lambert 专门发文分析，认为其并非“蒸馏”而是实打实的前沿创新。</li>
+        </ul>
+    </div>
+
+    <div class="item">
+        <h3>阿里巴巴 & 网易：AI 赋能办公与创意</h3>
+        <ul>
+            <li><strong>阿里：</strong> “千问办公”正式接入企业微信，完成国内三大办公平台的全覆盖；发布 AI 音乐模型 HappyShrimp。</li>
+            <li><strong>网易：</strong> 发布“蜜蜂AI”，试图在内容生产链路中定义“更懂人的 AI 伙伴”。</li>
+        </ul>
+    </div>
+
+    <div class="item">
+        <h3>头部大厂招聘特写：滴滴 & 蚂蚁</h3>
+        <ul>
+            <li><strong>滴滴：</strong> 在杭州招聘“风控 AI 产品经理（Agent 与 Harness 工程方向）”，JD 明确包含任务编排、工具调用、沙盒与异常恢复，是典型的 Agent 生产化落地岗位。</li>
+            <li><strong>蚂蚁集团：</strong> 新增 18 个 AI 相关岗位，涵盖“风控策略智能体研发”、“Agent 评测工程师”以及“大模型推理优化”，呈现出体系化的 Agent 基建布局。</li>
+        </ul>
+    </div>
+
+    <!-- 第六部分：求职机会与信号 -->
+    <div class="section-title">💼 求职机会与信号</div>
+
+    <div class="item">
+        <h3>1. 全新职能岗位诞生：“Agent Harness 工程师 / PM”</h3>
+        <p>线索：DeepSeek 和滴滴均开辟了独立的 Agent Harness 职能线，将任务编排、上下文管理、沙盒环境搭建作为独立职位，不再隐藏在传统后端或算法岗位之下。</p>
+    </div>
+
+    <div class="item">
+        <h3>2. Agent 评测与安全成为显学</h3>
+        <p>线索：蚂蚁集团大力招聘“Agent 评测工程师”与“大模型 Benchmark 专家”。随着 Agent 进入生产环境，单纯跑分已经不够，需要能设计针对性攻防（对抗越狱、幻觉测试）和评分体系的专家。</p>
+    </div>
+
+    <div class="item">
+        <h3>3. 核心技能树偏移</h3>
+        <p>当前市场最热技能点不再是 Python 调参，而是：</p>
+        <ul>
+            <li><strong>协议掌握：</strong> 深谙 MCP (Model Context Protocol) 和 A2A (Agent-to-Agent) 协议的设计与局限性。</li>
+            <li><strong>系统编排：</strong> 熟悉 Multi-Agent 编排逻辑，能解决幻觉传播和记忆管理问题。</li>
+            <li><strong>AI 检索与运维：</strong> 掌握 RAG 优化、KV-Cache 管理、Agent 遥测故障定位。</li>
+        </ul>
+    </div>
+
+    <div class="item">
+        <h3>4. 薪资预期</h3>
+        <p>随着 DeepSeek 和蚂蚁集团高调扩招 Agent 方向，具备 3 年以上 Agent 工程落地经验（或对 A2A/MCP 协议有深度贡献）的高级工程师，年薪 Package 已被推高至 150-250 万人民币区间，甚至更高。</p>
+    </div>
+
+    <!-- 第七部分：今日信号 -->
+    <div class="section-title">⚡ 今日信号</div>
+
+    <div class="closing">
+        <p><strong>Agent 可靠性工程 (Are) 已死？不，它才刚变成最难招人的黄金工种。</strong> 如果此刻你的大脑里还只装着 Transformer 结构，而不是 A2A 协议的异常重试机制，你可能会错过 2026 年末最贵的那波人才红利。立刻去跑一遍 AGENTCHAOSBENCH。</p>
+    </div>
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
