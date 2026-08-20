@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年08月20日 · 新闻 135 条 · 博客 14 篇 · 搜索 16 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>LEGO-RL：原生 Harness 强化学习使编码 Agent 摆脱“环境崩溃-奖励黑客”恶性循环</strong><br>
+发生了什么：arXiv 今日发布 LEGO-RL 框架，在不对内部控制流做修改的前提下，将原生编码 Agent harness 与策略梯度优化桥接，核心是通过进程内 LLM 代理捕获原始生成流以保真优化。<br>
+为什么重要：这是 Harness 工程与 Post-training 的交叉点，直接解决当前 Coding Agent 训练中的“train-inference 不一致”与崩溃/奖励黑客问题。长期以来 RL 训练依赖仿真沙箱而非真实 harness，导致滚动态与部署行为脱节，LEGO-RL 的“harness-native”思路可能成为下一代 Claude Code / Copilot 后端训练的标配。<br>
+与其他动态的关联：与 NVIDIA Holoscan 的“CLI+Skills+Agent”开发流、以及 Tavily 检索到的“harness-not-model”行业共识形成呼应，证明执行环境本身正在成为第一公民。
+</div>
+
+<div class="item">
+<strong>Token Optimization and Context Window Management in Multi-Agent AI Workflows：六种生产模式砍掉 3.5-10.5 分钟冷启动延迟</strong><br>
+发生了什么：arXiv 论文给出一个生产系统内多 Agent 工作流的实测框架，包含上下文分层、fetch-once/process-locally、schema 契约、token 感知降级、语义缓存、Agent 间压缩六种模式，冷加载延迟降至 61-116 秒。<br>
+为什么重要：这是少见的“实弹部署”而非演示级的上下文管理论文。对构建企业级 Multi-Agent 产品的工程师来说，token 成本、上下文窗口质量、延迟三者的权衡是核心瓶颈，本文提供了可复用的架构级解法。<br>
+与其他动态的关联：主题与 NVIDIA SkillEvaluator（上下文有效性评估）以及 LEGO-RL（harness-native）直接互补，可组合成一套完整的 Agent 工程基础设施。
+</div>
+
+<div class="item">
+<strong>OpenAI 对前沿模型推出 Zero Data Retention 并预览 Private Safety Processing</strong><br>
+发生了什么：OpenAI 重申对合格 API 客户提供零数据保留，并预览私有安全处理能力，声称在不影响数据隐私前提下做高级 AI 安全。<br>
+为什么重要：企业客户的预算越来越向数据隐私与合规的确定性倾斜，OpenAI 与 Anthropic 的竞争从答案质量卷到了隐私保护机制。Zero Retention 对金融、医疗、法律等受监管行业的 API 采用是实质性门槛。<br>
+与其他动态的关联：与 TechCrunch 同日报导的“OpenAI vs Anthropic 隐私竞赛”、以及 arXiv 中 Aegis 运行时治理、医疗 PHI 检测等论文共同指向一个趋势：可信边界正在成为模型能力之外的第二竞争维度。
+</div>
+
+<div class="item">
+<strong>DeepSeek 启动大规模招聘，所有部门规模至少翻倍</strong><br>
+发生了什么：据证券时报，DeepSeek 宣布将所有部门规模扩大至少一倍，开放 33 个岗位，覆盖算法、研发、运维、产品、数据、职能七大类，北京/杭州均接受实习。<br>
+为什么重要：这是 DeepSeek 从“小而美”转向建制化扩张的强烈信号，补齐从底层模型研发到前端商业化应用的整条产业链。对国内人才市场是重大利好，也折射出其商业化提速的意图。<br>
+与其他动态的关联：与同日量子位报道 MiniMax 核心工程负责人阿岛离职形成人才流动对照；与 Tavily 检索到的智谱/月之暗面性能逼近美国模型、一级市场回暖等信号叠加，说明国内 AI 厂商进入新一阶段人才与资本双重投入周期。
+</div>
+
+<div class="item">
+<strong>NVIDIA 发布 SkillEvaluator：面向 AI Agent 技能的上下文有效性评估器</strong><br>
+发生了什么：NVIDIA 官方博客推出 SkillEvaluator，用于评估 Agent 在不同上下文下执行技能的表现，强调“Agent 的有效性取决于它们接收的上下文”。<br>
+为什么重要：这标志着上游基础设施厂商开始提供 Agent 质量保障工具，上下文管理从工程技巧进入产品化评估阶段。对构建复杂 Holoscan / 边缘 AI 应用的开发者，能将 Agent 的“技能表现”量化为可回归的指标。<br>
+与其他动态的关联：与 arXiv 的 KnowSim（信息校准评估）、Wuying-Browser-Agent（decision-oriented context management）遥相呼应，形成 Agent 上下文评估的完整链路。
+</div>
+
+<div class="item">
+<strong>Stripe 收购 OpenRouter 并非因为“奇点”，而是算力定价权</strong><br>
+发生了什么：TechCrunch 分析 Stripe 收购 AI 提示路由初创 OpenRouter 的真实动机——并非其自称的“奇点”，而是更现实的支付与 AI 计算资源计量/计价协同。<br>
+为什么重要：支付巨头进入模型路由层，说明 AI 推理的“计量计费”即将成为标准金融产品。对开发者工具链与 Agent 经济而言，计费、路由、成本可观测性将像云计算一样成为基础设施要求。<br>
+与其他动态的关联：与 TechCrunch 同日“Wall Street 给 AI compute 定价”的 Startup 报道高度协同，共同预示 AI 计算正从资源采购演化为可对冲的金融资产。
+</div>
+
+<div class="item">
+<strong>Aegis：Agent 运行时治理，将模型输出降级为“行动提案”，由可信决策层做失败关闭执行</strong><br>
+发生了什么：arXiv 论文提出 Aegis 系统，核心思想“模型建议，可信运行时决定”。它评估每个工具调用提案，带服务器端溯源消解、不确定时 fail-closed，并对高风险操作引入 Senate-style 多席授权。<br>
+为什么重要：这是对当前 Agent 安全范式的一次关键纠偏——prompt 级治理永远无法形成执行边界。在编码 Agent、运维 Agent 开始拥有文件修改、消息发送、任务启动权限的今天，Aegis 的“提案-裁决-失败关闭”架构值得立刻引入企业生产环境。<br>
+与其他动态的关联：与 OpenAI Private Safety Processing、以及 Simon Willison 推荐的沙箱执行文章形成安全侧的三道防线：模型侧、运行时侧、沙箱侧。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Harness 工程进入“可训练、可治理、可计量”的新阶段</strong><br>
+证据：LEGO-RL 提出 harness-native 强化学习；Aegis 引入运行时治理；SkillEffect 对内存绑定工具做 checked lowering；NVIDIA 发布 SkillEvaluator；Tavily 检索到多篇行业文章强调“harness-not-model”。<br>
+预判：未来 6-12 个月，Agent 产品差异化的关键将不再是底层模型版本，而是执行环境的质量——崩溃恢复、上下文压缩、权限边界、成本计量的工程深度。建议投入时间掌握基于真实 harness 的 RL 训练与运行时治理框架（如 Aegis 类架构）。
+</div>
+
+<div class="trend">
+<strong>趋势二：AI for Science 从“预测器”向“闭环实验执行者”位移</strong><br>
+证据：量子位报道“AI for Science 开始动手了：机器人正式走进国家级实验室”；arXiv 多篇 q-bio 论文涉及蛋白质序列-结构协同设计（MCTH）、LLM 驱动的科学发现（The Little Scientist）、CAR T 免疫建模；Drug Discovery News 报道生物科技进入“builder 阶段”。<br>
+预判：传统“模型出假设、人工验证”的范式将快速被“模型假设 + 自动化实验 + 模型迭代”的闭环替代。深势科技等以 AI+分子模拟起家的国内厂商可能成为这一轮的受益者/推动者。关注材料与药物发现领域的自动化实验室与 AI 实验规划人才需求。
+</div>
+
+<div class="trend">
+<strong>趋势三：API 服务的信任与隐私属性正成为企业选型的一级参数</strong><br>
+证据：OpenAI 宣布 Zero Data Retention 与 Private Safety Processing；TechCrunch 报道 OpenAI 与 Anthropic 隐私竞争；医疗 PHI 检测、基因组隐私量化等多篇论文强调数据泄漏风险。<br>
+预判：进入受监管行业（金融、医药、政府）的 AI 解决方案，将不再以“模型智能力强”为唯一卖点，而必须以“数据边界可证明、推理可审计、权限可关闭”为前置条件。能够提供本地化/私有化运行时治理的 Agent 工具将获得溢价。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>LEGO-RL: Harness-Native Reinforcement Learning for Coding Agents</strong> (arXiv 2608.17393)<br>
+核心贡献：首次系统性解决真实编码 Agent harness 与策略梯度优化之间的“崩溃-奖励黑客-不一致”三重偏差，提出进程内 LLM 代理与三支柱框架。<br>
+为什么值得读：如果你正在用 RL 调优自研编码 Agent 或复现 Claude Code 类产品，这篇提供了可落地的训练架构设计。它把“harness 是环境还是仿真器”这个隐蔽但致命的问题放在台面上。
+</div>
+
+<div class="deep-read">
+<strong>Token Optimization and Context Window Management in Multi-Agent AI Workflows</strong> (arXiv 2608.17188)<br>
+核心贡献：完全从生产视角出发的六模式上下文管理方案，给出实测冷加载延迟从分钟级降至秒级的数据。<br>
+为什么值得读：这是极少数没停留在“想法”阶段的多 Agent 上下文工程论文。六个模式（分层、fetch-once、schema 契约、降级链、语义缓存、Agent 间压缩）可以直接迁移到大多数内部工作流抽取与路由系统。
+</div>
+
+<div class="deep-read">
+<strong>Aegis: Runtime Governance for Agentic AI — Action-Boundary Control with Trusted Provenance and Fail-Closed Execution</strong> (arXiv 2608.16891)<br>
+核心贡献：提出“模型提议、可信运行时决策”的执行边界模型，包含溯源消解、fail-closed、Senate-style 多席授权，而不依赖 prompt 调优。<br>
+为什么值得读：Agent 一旦被赋予改变工作流状态的能力，提示词层面的安全护栏就形同虚设。此论文为构建企业级 Agent 运行时安全提供了清晰架构范本，适合安全负责人与平台工程师精读。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>Simon Willison: smolvm as a sandbox for untrusted Python & JavaScript</strong><br>
+为什么今天推荐：在 Agent 工具调用与 AI 生成代码执行的安全性日益重要的当下，沙箱技术是 Harness 工程的最后一道物理边界。这篇文章记录了用 Claude Code for web 调研 smolmachines 沙箱的真实过程，包括其限制（Web 版容器无法运行 smol machines）和方案探索，极具实际操作价值。<br>
+核心观点：<br>
+- 现代 Web 沙箱原语（如 WebAssembly、文件系统限制）能大幅降低扩展部署成本，提供良好安全边界，使 LLM 填充缺失功能成为可能。<br>
+- 可扩展软件的新机会：App 作为坚实核心，允许用户通过 LLM 安全地朝多方向扩展。<br>
+- 沙箱需确保对无限循环、网络访问、文件系统范围做出严格限制，才能将 AI 生成的不可信代码用于真实数据转换。<br>
+适合谁读：AI DevOps / Agent 平台工程师、工具链安全负责人、任何需要在生产环境执行 LLM 生成代码的开发者。<br>
+阅读时间：约 15 分钟。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek 全员扩招至少一倍</strong> — 证券时报报道，DeepSeek 开放 33 个岗位，覆盖七大类，北京杭州两地，接受实习。从岗位看，补齐底层研发到商业化应用全链条，模型数据策略 5 个职位、AI 核心系统研发 4 个职位。<br>
+<strong>信号：</strong> DeepSeek 将从高密度少数精英转向建制化扩张，商业化提速，人才吸引力大幅增强。
+</div>
+
+<div class="item">
+<strong>MiniMax 核心工程负责人阿岛离职</strong> — 量子位报道，阿岛长期活跃于开发者沟通一线，从技术研发到开发者关系均有涉及。其离职可能反映大模型创业公司在开发者生态与商业产品之间的张力。<br>
+<strong>信号：</strong> 国内头部创业公司的人才流动开始加速，工程负责人级别变动可能引发团队结构重组。
+</div>
+
+<div class="item">
+<strong>智谱与月之暗面性能差距进一步收窄</strong> — 综合 Tavily 检索：彭博行业研究称中国模型与美国同行 LiveBench 性能差距 6 月缩至 6%，智谱 GLM-5.2 登顶 agentic coding 榜单，月之暗面 Kimi K3 受市场关注。<br>
+<strong>信号：</strong> 国产模型在 Agentic Coding 等垂直任务上已具备国际竞争力，技术路线从“算力堆叠”向“效率优先”固化。
+</div>
+
+<div class="item">
+<strong>360 入选 IDC 2026 中国 AI50 强</strong> — 量子位报道，以“智能体+安全”双轮驱动入选，代表国内安全厂商的 Agent 化布局。<br>
+<strong>信号：</strong> 企业级 Agent 与安全合规的融合是中国特色细分赛道，360 的入选反映该方向获第三方认可。
+</div>
+
+<div class="item">
+<strong>AI for Science 机器人进入国家级实验室</strong> — 量子位报道源络科技推动 AI for Science 走进“实验室 3.0”，机器人开始动手实验。<br>
+<strong>信号：</strong> 国内 AI for Science 赛道从仿真预测走向物理执行，深势科技等主攻科学智能的厂商可能加速向自动化实验闭环延伸。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>DeepSeek 扩招带来窗口期</strong> — 33 个岗位覆盖算法、研发、运维、产品、数据、职能，接受实习。重点方向：模型数据策略、AI 核心系统研发、全栈开发。适合具备底层系统或模型数据工程背景的候选人，北京/杭州均有 HC。<br>
+<strong>薪资信号：</strong> Tavily 检索显示国内大模型厂商平均月薪约 7.8w，实习生日薪可达 4000，具备 Agent/RAG/微调实战能力者溢价明显。
+</div>
+
+<div class="item">
+<strong>Harness 工程与 Agent 安全人才稀缺</strong> — 多篇论文与行业文章强调 harness 是下一阶段竞争核心。拥有以下技能者将走俏：真实 harness 上的 RL 训练（LEGO-RL 类）、运行时治理与权限边界控制（Aegis 类）、token 优化与上下文窗口管理、沙箱执行环境搭建（smolvm 类）。<br>
+<strong>潜在岗位：</strong> Agent Infrastructure Engineer、Runtime Safety Engineer、Context Engineering Specialist，多出现在开源 Agent 平台、金融/医疗 AI 公司、以及国内大模型厂商的中台部门。
+</div>
+
+<div class="item">
+<strong>AI for Science 实验自动化人才缺口</strong> — 量子位报道机器人进入实验室，结合 arXiv 大量 AI+生命科学/材料论文，具备计算生物学、机器人实验设计、或蛋白质工程背景的复合型人才将受青睐。深势科技、晶泰科技及新兴“AI+实验室”创业公司是主要去向。
+</div>
+
+<div class="closing">
+<strong>今日信号：</strong> 模型的智力溢价正在让位于执行环境的可靠性溢价。投入时间掌握真实 harness 上的运行时治理、token 优化与沙箱安全，是未来半年内最高性价比的工程能力投资。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
