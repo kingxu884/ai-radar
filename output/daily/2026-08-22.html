@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年08月22日 · 新闻 128 条 · 博客 9 篇 · 搜索 8 条</div>
+  </div>
+  <div class="body"><div class="header">AI Radar · 2026-08-21 · 主编：AI Radar</div>
+
+<div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<p><strong>1. Nvidia：Harness 替代模型成为 Agent 真正的英雄</strong><br>
+Nvidia 研究显示，即使底层模型不擅长某任务，只要对 Agent 的 Harness/系统进行微调，就能让 Agent 表现良好且不失控。<br>
+<strong>为什么重要：</strong>这确认了 Agent 性能不只是模型权重问题。上下文管理、工具调用、执行策略和验证逻辑是独立可优化的正交维度。对工程团队而言，与其等下一个更强模型，不如先在 Harness 层建立护城河。<br>
+<strong>关联：</strong>与 DeepSeek“model + harness = agent”路线、SkillGate 的技能选择训练问题直接呼应。</p>
+</div>
+
+<div class="item">
+<p><strong>2. Nvidia AVO 在 ARC-AGI-3 达到 100%</strong><br>
+NVIDIA AVO 在 ARC-AGI-3 上达到 100%，展示了一个面向长周期自主 Agent 的前沿级通用架构。<br>
+<strong>为什么重要：</strong>ARC-AGI 家族长期被视为抽象推理的试金石。100% 说明该基准正在被 Harness 架构饱和，评估重点需要转向更难的、有状态、长周期、面向真实世界后果的任务。<br>
+<strong>关联：</strong>与 Thinkingbox、FM-Bench 等“有状态评估”基准形成互补；不要用单点饱和基准误判 Agent 能力。</p>
+</div>
+
+<div class="item">
+<p><strong>3. SkillGate：技能选择器在长程 Agent 中遭遇“信用饿死”</strong><br>
+SkillGate 论文发现，现有 outcome-rewarded RL 无法有效训练 Agent 的技能选择能力。由于序列级优势信号下，选择技能的几个 token 只承担极少的 loss 份额，正确选择常常因为后续执行失败而被错误惩罚。<br>
+<strong>为什么重要：</strong>当技能库/工具库扩大，选择本身成为关键决策。这个问题不解决，工具调用和 Multi-Agent 任务分配会持续不稳定。它指出当前 Agent 训练中一个被忽视的结构性缺陷。<br>
+<strong>关联：</strong>与 RTPO 同天提出，共同指向 Agentic RL 的底层训练困难。</p>
+</div>
+
+<div class="item">
+<p><strong>4. RTPO：多轮 Agentic RL 训练不稳定的三个结构性来源</strong><br>
+RTPO 论文识别出多轮 Agent 工作流训练中的三类不稳定来源：rollout-training context mismatch、弱 turn 级 credit assignment，以及长短轨迹异步策略漂移。<br>
+<strong>为什么重要：</strong>多轮 Agent 训练比单轮难得多，常见现象是轮数增加后性能严重退化。理解这些根因，是把 Agent 从 demo 推向生产的前提。<br>
+<strong>关联：</strong>与 SkillGate 共同构成 Agentic RL 稳定性研究的当日主线。</p>
+</div>
+
+<div class="item">
+<p><strong>5. Thinkingbox：用“后端状态”而不是文本输出评估 Agent</strong><br>
+Thinkingbox 是一个 MCP 兼容沙箱，提供隔离工具会话、完整执行轨迹，并以终端后端状态评估结果，包含 507 个策略条件工作流任务。<br>
+<strong>为什么重要：</strong>Agent 在真实业务中必须产生正确的持久状态转换，而不是“看起来对”。基于状态机的评估会过滤掉大量表面成功但实际破坏系统状态的 Agent。<br>
+<strong>关联：</strong>与 Nvidia AVO 在 ARC 上饱和形成对比，企业应引入此类有状态、可审计的评估栈。</p>
+</div>
+
+<div class="item">
+<p><strong>6. SWE-bench Science：科学软件工程仍是 Coding Agent 的硬骨头</strong><br>
+SWE-bench Science 覆盖 20 个科学领域、98 个 GitHub 仓库、119 个科学软件修复任务。最强 Agent Claude Code with Opus-5 表现仍然有限。<br>
+<strong>为什么重要：</strong>科学代码错误会直接污染科学结论。该基准把 Coding Agent 从通用 SWE 扩展到科研代码修复，揭示失败模式与科学代码特有困难，是 AI4S 落地的关键测量。<br>
+<strong>关联：</strong>与深势科技科研全流程桌面、Eureka 等 AI4S Agent 动态互相对齐。</p>
+</div>
+
+<div class="item">
+<p><strong>7. 深势科技：把科研全流程搬进桌面</strong><br>
+深势科技展示“科学家只管提问题，AI 负责跑实验”的科研全流程桌面方案。<br>
+<strong>为什么重要：</strong>国产 AI4S 正在从单点计算模型走向 Agent 化科研操作系统。竞争维度从“算得准”转向“读文献—做计算—做实验”的闭环能力。这需要 Agent 与实验数据、文献、计算环境深度耦合。<br>
+<strong>关联：</strong>与 Eureka 的科学发现元 Agent 架构、SWE-bench Science 形成 AI4S 全栈化信号。</p>
+</div>
+
+<div class="item">
+<p><strong>8. Eureka：任务条件化 Meta-Agent 架构用于科学发现</strong><br>
+Eureka 将长周期任务编译为动态义务图，并在执行中形成具备局部拓扑、验证器和记忆的 Macro-Agents。它完成 170/170 递归任务，生成 3,948 个证书且无假阳性。<br>
+<strong>为什么重要：</strong>面向科学发现的长期任务需要显式接受语义和可验证证书，而不是自由对话。Eureka 展示了规划、验证与架构提升如何在一个可审计框架中组合，对 AI4S 和长程 Agent 设计有参考价值。<br>
+<strong>关联：</strong>与 Thinkingbox 的“可验证状态”思路相通，也与深势科技的科研闭环需求一致。</p>
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<p><strong>趋势一：Harness 工程从边缘走向中心，成为 Agent 竞争主战场。</strong><br>
+证据：Nvidia 直接宣称 Harness 而非模型是真正的英雄；DeepSeek 被曝组建 Harness 团队；SkillGate、RTPO 等论文聚焦 Agentic RL 和技能选择训练；Thinkingbox 开始标准化 MCP 沙箱评估。预判：未来 6–12 个月，工具调用、技能选择、上下文管理和有状态验证会成为比模型权重更重要的竞争壁垒，“Harness Engineer”可能像 MLOps 一样成为独立职能。</p>
+</div>
+
+<div class="trend">
+<p><strong>趋势二：Agent 评估从“能否一次做对”转向“能否把世界改对”。</strong><br>
+证据：Thinkingbox 以终端后端状态评估结果；FM-Bench 用 20 个游戏年内长期决策做评测；SWE-bench Science 关注科学代码修复的真实后果；NVIDIA AVO 在 ARC-AGI-3 上饱和。预判：MCP 兼容沙箱、确定性执行环境和审计轨迹将成为 Agent 产品测试标配。企业会优先采购那些能证明“持久状态正确性”的评估栈，而不是只看任务成功率。</p>
+</div>
+
+<div class="trend">
+<p><strong>趋势三：AI4S 正在被 Agent 化，而不只是模型化。</strong><br>
+证据：深势科技推出科研全流程桌面；Eureka 提出科学发现元 Agent 架构；SWE-bench Science 专门评估科学代码修复；Brain Researcher 为神经影像分析引入可辩护的 Agent 研究框架。预判：下一轮 AI4S 竞争将从“预测精度”转向“文献—代码—实验—验证”的闭环和证据链责任。能运行在真实实验环境、可追溯、可复现的科研 Agent 会成为关键资产。</p>
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<p><strong>1. SkillGate: Training In-Policy Skill Selection in Long-Horizon Agents</strong>（arXiv 2608.18852）<br>
+核心贡献：识别并命名“selector credit starvation”，证明 outcome-rewarded RL 在长程技能选择上失效，并提出 in-policy 技能选择训练方法。<br>
+为什么值得读：技能库/工具选择是当前 Harness 的核心决策。它解释了为什么 Agent 在工具增多时反而容易出错，对设计 Multi-Agent、Subagent 和工具调用策略非常关键。</p>
+</div>
+
+<div class="deep-read">
+<p><strong>2. RTPO: Reverse-Turn Policy Optimization for Stabilizing Agentic RL Training</strong>（arXiv 2608.18682）<br>
+核心贡献：系统分析多轮 Agentic RL 训练不稳定性的三个结构性来源，提出 Reverse-Turn 策略优化方法。<br>
+为什么值得读：如果你的团队正在训练或微调 Agent pipeline，这篇论文有助于定位训练崩溃和性能退化根因，尤其适合做 Post-training 和 Agentic RL 的研发同学。</p>
+</div>
+
+<div class="deep-read">
+<p><strong>3. SWE-bench Science: Can Coding Agents Resolve Engineering Tasks in Science?</strong>（arXiv 2608.19799）<br>
+核心贡献：构建首个面向科学研究软件工程的大规模仓库级基准，覆盖 20 个领域、119 个任务，并区分 Issue-driven、Expert-exploratory、Engineering-integration 三类范式。<br>
+为什么值得读：如果你关注 AI4S 与开发者工具交叉地带，这篇能告诉你科学代码修复为什么比通用 SWE 更难，以及 Claude Code 等产品的真实边界。</p>
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<p><strong>推荐：Stop Making TUIs</strong>（Simon Willison，2026-08-21）<br>
+为什么今天推荐：今天的核心信号是 Agent/Harness 工程正在把真实工具搬进产品。Simon Willison 指出，Coding Agent 已经把“凑合能用的原生 GUI”开发成本压到几乎为零。对 AI 从业者来说，这是重新思考内部工具、Agent 前端和产品原型的时机。<br>
+三个核心观点：</p>
+<ul>
+<li>编码代理让原生 UI 的成本低到没有理由继续只做 TUI。</li>
+<li>原生界面不仅是外观，它会改变你对工具和使用流程的思考方式。</li>
+<li>把一个一次性 CLI 转成原生 App 是低成本试错，值得动手。</li>
+</ul>
+<p>适合谁读：工程师、独立开发者、AI 产品经理。<br>
+预计阅读时间：约 5 分钟。</p>
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<p><strong>DeepSeek：</strong>据 Tavily 补充信号，梁文锋近期内部交流强调 AGI 为首要长期目标，公司保持克制，不追求成为字节或腾讯；技术路线从 CoT 跨到 Agent，当前瓶颈是赋予 AI 持续学习能力。更实质的是，前 TSY Capital 联创崔添翼已加盟 DeepSeek，组建 Harness 团队，研发对标 Claude Code 的桌面端 Agent。内部将核心产品路径定义为“model + harness = agent”。<br>
+<strong>招聘/扩招信号：</strong>组建 Harness 团队意味着在上下文管理、工具调用、终端执行、测试反馈方向可能有持续招聘需求。</p>
+</div>
+
+<div class="item">
+<p><strong>深势科技：</strong>发布“科学家只管提问题，AI 负责跑实验”的科研全流程桌面方案。这与张林峰此前“AI for Science 需要‘读算做’闭环打通”的判断一致，显示深势正从单点科学模型走向科研 Agent 操作系统。</p>
+</div>
+
+<div class="item">
+<p><strong>明略科技 & 海康机器人：</strong>联合亮相 2026 世界机器人大会，以“Agent+具身”进入商业机器人服务场景。信号：Agent 能力正在从数字工作流向物理世界商业服务延伸。</p>
+</div>
+
+<div class="item">
+<p><strong>字节跳动：</strong>校招中出现“LLM 评估产品经理-AI 创新业务”岗位，负责豆包大模型/应用的评估体系设计、badcase 追踪和评测方案更新。说明评估正在成为独立产品职能。</p>
+</div>
+
+<div class="item">
+<p><strong>蚂蚁集团：</strong>猎聘显示“AI Agent 产品专家”岗位（北京/杭州），要求熟悉 Agent 机制、RAG、Memory、Function Calling 等。</p>
+</div>
+
+<div class="item">
+<p><strong>月之暗面：</strong>仅在延伸阅读中出现“美方指控窃取技术或列入贸易黑名单”的旧闻，本次无新官方动态。智谱、百川、面壁智能本时段无重大公开动态。</p>
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<p><strong>新增岗位类型：</strong>AI Agent 产品专家、Harness 工程师、LLM 评估产品经理正在成为明确岗位。字节、蚂蚁等大厂已出现相关招聘。<br>
+<strong>技能需求变化：</strong>岗位描述开始明确要求 RAG、Memory、Function Calling、MCP、工具调用和 Agent 评测设计。未来的简历关键词会从“Prompt Engineering”进一步转向“Harness Engineering”和“Agentic Evaluation”。<br>
+<strong>潜在高溢价方向：</strong>多轮 Agentic RL 稳定性、技能选择训练、有状态工作流评估、科学软件工程。这些方向刚刚从论文热点进入工程需求，具备相关经验的人才有明显稀缺性。<br>
+<strong>建议关注：</strong>DeepSeek Harness 团队类岗位、AI4S 科研平台 Agent 工程岗、以及大厂评估/产品策略岗。</p>
+</div>
+
+<div class="closing">⚡ 今日信号：Harness 正在复制“数据飞轮”的护城河逻辑。谁先把工具调用、技能选择和有状态评估训稳，谁就能用更弱模型做出更强 Agent。未来 6 个月，这类工程师会供不应求。</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
