@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年08月28日 · 新闻 129 条 · 博客 7 篇 · 搜索 16 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>1. DeepSeek Harness 正式浮出水面：崔添翼带队，Model + Harness = Agent 落定产品路径</strong><br/>
+发生了什么：DeepSeek 今年 3 月成立、由前 TSY Capital 联创崔添翼领衔的 Harness 团队正式进入公众视野，定位"生产级 AI 智能体运行系统"，对标 Anthropic Claude Code，产品理念明确为 "Model + Harness = Agent"。<br/>
+为什么重要：这意味着 DeepSeek 的核心战略从"模型层"延伸到"系统层"。Harness 涵盖上下文管理、工具调用、文件读写、终端执行、测试反馈等模型之外的工程能力——这正是 Agent 产品化的真正壁垒所在。崔添翼的 ACM + 量化背景（Jane Street 九年）指向极高要求的系统稳定性与容错性。DeepSeek 同时启动成立以来最大规模扩招，33 类岗位全开，目标各部门规模翻倍。<br/>
+关联：与 arXiv 今日多篇 Harness 工程论文（Same Model Different Harness、Agents Don't Paginate）形成难得的研究-产业共振。DeepSeek 不再只是模型公司，而是正在构建从模型到产品的完整闭环。
+</div>
+
+<div class="item">
+<strong>2. Claude Code Opus 5 Auto Mode 被攻破：约 80% 成功率，Agent 安全从假设走向实战检验</strong><br/>
+发生了什么：资深 prompt injection 研究者 Johann Rehberger 声称通过诱导 Claude Code 下载解压 zip 归档、执行 base64 导入来触发本地 struct.py 恶意代码，攻击成功率约 80%。Simon Willison 评论称 Anthropic 对 auto mode 寄予了"巨大的信任"，但即便 auto mode 也未能完全阻止执行。<br/>
+为什么重要：这是 Agent 安全的关键转折点——攻击面从"模型是否被说服"扩展到"Harness 是否有足够的护栏"。当 Agent 拥有终端执行、文件系统和网络能力时，prompt injection 不再是理论基础，而是可直接武器化的攻击路径。100 多家公司联合呼吁防御 rogue AI 的背景，与这一实战案例形成了严峻的行业压力测试。<br/>
+关联：对正在构建 Harness 的团队（包括 DeepSeek）来说，权限沙箱、工具调用的信任边界、执行前的二次验证机制，必须被纳入 Harness 的设计内核而非事后修补。
+</div>
+
+<div class="item">
+<strong>3. arXiv 实证：Same Model, Different Harness——同一模型换 Harness 产出不同结果</strong><br/>
+发生了什么：一篇 arXiv 论文对比两种 Harness 配置在三个 Coding Benchmark 上的表现，发现当上下文紧张时，机械性缩短旧工具结果并响应重复/停滞工作的处理方式，在 SWE-bench Verified 和 Pro 上均提升完整解决方案数量。<br/>
+为什么重要：这直接印证了 Harness 工程的核心命题：Agent 的成败在模型能力达到一定阈值后，由 Harness 的工程细节决定。这也与 LangChain 此前通过改 Harness 而非模型将 Terminal Bench 2.0 从 52.8% 提升到 66.5% 的实践吻合。<br/>
+关联：对 Harness 工程方向的读者，这篇论文 + DeepSeek Harness + LangChain 的实践数据，提供了从学术到产业的全栈验证。
+</div>
+
+<div class="item">
+<strong>4. Agent 商业化拐点：港股 AGI 第一股半年 Agent 业务近 5 亿，Token 收入 Q2 暴涨 500%</strong><br/>
+发生了什么：港股 AGI 第一股发布财报，Agent 业务半年进账近 5 亿元，Token 收入 Q2 环比增长 500%，企业智能化服务撑起基本盘，第二增长曲线显形。<br/>
+为什么重要：Agent 产品化终于进入规模化变现阶段。Token 收入的暴涨意味着 Agent 的实际调用量在指数级攀升，5 亿半年营收则表明企业端对 Agent 技术栈的付费意愿已从试点转向规模化部署。<br/>
+关联：Agent 商业化与 Harness 工程化是同一枚硬币的两面——能稳定交付生产级 Agent 的公司才具备持续变现能力。这对 DeepSeek 加速 Harness 产品化提供了重要的市场信号。
+</div>
+
+<div class="item">
+<strong>5. MCP 进入科学仪器操作：Agentic AI 通过 MCP 操控 AFM（原子力显微镜）</strong><br/>
+发生了什么：一篇 arXiv 论文展示了一个 3 个 MCP-based agents 组成的框架，通过 Model Context Protocol 将通用 LLM 连接到 AFM 仪器函数，完成纳米级表征的可执行工作流。<br/>
+为什么重要：这是 MCP 从"软件工具调用"向"物理世界仪器控制"延伸的标志性案例。AI for Science 的关键瓶颈一是仪器操作仍依赖熟练专家，MCP 提供了一条将仪器能力标准化、可组合化的路径，有望实现真正的自主实验闭环。<br/>
+关联：深势科技的 SciMaster 科学智能体同样在推进"读、算、做、智"闭环。当 MCP 打通仪器层，AI for Science 的"做实验"环节将发生质变。
+</div>
+
+<div class="item">
+<strong>6. 深势科技再融 8 亿：AI for Science 的基础设施化加速</strong><br/>
+发生了什么：两位 90 后创立的深势科技完成新一轮 8 亿融资，玻尔·科学导航已服务全球超 1000 所高校的 300 多万科学家，SciMaster 科学智能体构建了从"读文献"到"做实验"的完整产品矩阵。<br/>
+为什么重要：深势科技正在把 AI for Science 从一个概念转化为可规模化的"基础设施服务"。300 万科学家用户意味着其平台已经成为科研工作流的日常入口，8 亿融资将加速从工具提供者升级为科学发现的自主执行者。<br/>
+关联：与今日 arXiv 上 MCP 操作科学仪器的论文、多个 AI4S 基础模型（RegimeFormer、PathoMIC 等）形成技术-产业双轮驱动信号。
+</div>
+
+<div class="item">
+<strong>7. arXiv 揭示 Agent 工具调用的隐性失败模式：工具函数调用可靠性在深度 6 时衰减约 70%</strong><br/>
+发生了什么：一篇论文提出"invocation-level reliability"度量，发现当工具调用链条达到深度 6 时，模型在 clean-context 下约 70% 的能力被自己更早的工具调用错误所消耗。<br/>
+为什么重要：这暴露了当前 Agent 评估体系的盲区——现有基准大多只关注终态结果，而忽略了多步工具调用链条中错误的积累和传播机制。对构建 Multi-Agent 或复杂工作流的团队来说，如何对抗级联失败比提升单步准确率更重要。<br/>
+关联：与 Simon Willison 推荐的 Claude Code 安全攻击侧面对应——攻击者正是利用了工具调用链条中的信任传递漏洞。
+</div>
+
+
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Harness Engineering 从工程实践中独立出来，成为 Agent 竞争的核心学科</strong><br/>
+证据链：DeepSeek 专门组建 Harness 团队并由顶级系统工程师带队；arXiv 今日三篇论文（Same Model Different Harness、Agents Don't Paginate、Invocation-Level Reliability）分别从结果差距、分页策略、级联失败三个维度严格量化了 Harness 的影响；LangChain 的公开数据（改 Harness 提升 13.7 个百分点）进一步佐证。Tavily 搜索结果中甚至出现了专门的 awesome-harness-engineering GitHub 列表。<br/>
+预判：接下来 6-12 个月，"Harness 工程师"将成为热门招聘岗位，Harness 设计模式（上下文压缩策略、工具调用分页、验证钩子、Subagent 隔离）将形成类似 DevOps 的技能体系和最佳实践。掌握 Harness 工程能力的团队将获得超越模型能力差距的竞争优势。
+</div>
+
+<div class="trend">
+<strong>趋势二：Agent 安全从"对齐层"下沉到"系统层"</strong><br/>
+证据链：Claude Code auto mode 被 80% 成功率攻破（Simon Willison 博客）；TechCrunch 报道 100 多家公司联合呼吁防御 rogue AI；arXiv 出现多篇关于 LLM 幻觉、对抗性攻击、安全评测的论文。攻击向量从"说服模型"演变为"利用工具执行链路的信任缺口"。<br/>
+预判：Agent 产品的安全架构将经历一次根本性重构。单纯依赖模型的拒绝能力已经不够，必须引入 Harness 层的权限沙箱、工具调用白名单、执行前静态分析、异常行为检测等系统级防御机制。这将成为企业采购 Agent 产品的关键考察项。
+</div>
+
+<div class="trend">
+<strong>趋势三：MCP 从"连接工具"走向"连接物理世界与科学仪器"</strong><br/>
+证据链：今日 arXiv 有两篇论文分别用 MCP 操作 AFM 科学仪器和硬件设计工具；OpenAI 在泰国加速器支持垂直领域 AI 应用；国内深势科技融资加码科学智能体。MCP 正在从软件开发场景（Claude Code、Cursor）向科学实验、硬件设计等领域外溢。<br/>
+预判：MCP 将转化为"科学即服务"（Science as a Service）的核心基础设施。实验室仪器厂商如果不在未来一年内支持 MCP，将面临被科学智能体生态边缘化的风险。
+</div>
+
+
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. Same Model, Different Harness: Different Coding-Agent Results</strong> (arXiv:2608.26218)<br/>
+核心贡献：首次在固定模型和任务的情况下，系统性地量化 Harness 配置变化对 Coding Agent 结果的影响。通过缩短旧工具结果、响应停滞工作等机械操作，在 SWE-bench Verified 和 Pro 上均观察到完整解决方案数量的提升。论文提出了 F2PF（fail-to-pass fraction）作为更细粒度的衡量指标。<br/>
+为什么值得读：这是目前最直接的 Harness 工程实证研究，为 Agent 产品团队提供了可操作的上下文管理策略，也是理解 Harness 与模型能力边界的关键数据点。适合正在构建或优化 Coding Agent 的工程师和产品经理。
+</div>
+
+<div class="deep-read">
+<strong>2. Agents Don't Paginate: First-Chunk Selection for LLM Tool Responses</strong> (arXiv:2608.26130)<br/>
+核心贡献：基于公开 MCP 中间件的 session logs，发现 Agent 从不主动请求工具结果的第二页，只读取第一块数据。论文将 first-chunk selection 建模为 0/1 knapsack 问题，在 500 个 SWE-bench Verified 任务上比较了 6 种价值函数的 precision-at-1 性能。<br/>
+为什么值得读：如果你正在构建高频工具调用的 Agent 系统，这篇论文揭示了一个被普遍忽视的隐性瓶颈——工具返回的黄金信息是否排在第一块。改变排序策略可能比升级模型带来更直接的性能提升。
+</div>
+
+<div class="deep-read">
+<strong>3. RegimeFormer: A Large Protein Model of Global Perturbation Regimes</strong> (arXiv:2608.26586)<br/>
+核心贡献：构建了包含 202,556,313 个非冗余蛋白质序列的 RegimeAtlas，训练了一个大型蛋白质扰动模型，能在氨基酸残基级别预测突变响应，与深度突变扫描、分子基准和结构置信度均有良好对齐。<br/>
+为什么值得读：这是蛋白质语言模型从"序列理解"走向"扰动预测"的重要一步。对于从事蛋白质设计、药物发现或合成生物学方向的研究者，这个模型提供了突变效应预测的新基线，其 RegimeAtlas 数据集本身也极具复现价值。
+</div>
+
+
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>崔添翼《Harness 的思考：Model + Harness = Agent》</strong>（知乎专栏）<br/>
+为什么今天推荐：DeepSeek Harness 团队今天正式进入公众视野，崔添翼作为负责人，他的产品哲学直接决定了这个团队的方向。在 Agent 竞赛进入 Harness 工程化阶段的当下，这篇来自一线实践者的系统思考是最有价值的第一手资料。<br/>
+3 个核心观点：<br/>
+• Model 能力决定了 Agent 的上限，但 Harness 的工程质量决定了能释放出多少模型潜力——两者是乘法关系而非加法关系。<br/>
+• 上下文管理、工具调用、文件读写、终端执行、测试反馈这五个工程环节，才是 Agent 产品化的真正复杂度所在。<br/>
+• 终端入口的控制权至关重要：谁掌握真实项目中的工程试错轨迹，谁就能将 Harness 数据反哺到模型进化闭环中。<br/>
+适合谁读：Agent 产品负责人、Harness 工程师、AI 基础设施团队、关注 DeepSeek 战略方向的研究者。<br/>
+阅读时间：约 15 分钟。
+</div>
+
+
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek</strong>：启动成立以来最大规模扩招，33 类岗位全开，各部门规模目标翻倍。Harness 团队（崔添翼带队）持续招人，招聘信息强调"新人直接参与大模型预训练、Agent 智能体等核心业务"。核心岗位月薪 8-11 万、14 薪，最高年薪 154W。工作地点北京+杭州。崔添翼在招聘中明确对标 Anthropic Claude Code，要做"DeepSeek Code Harness"。<br/>
+<strong>智谱</strong>：GLM-5.3-Flash 上线，商汤大装置提供国产算力支持，继续推进"前沿智能进入普惠时代"的战略。<br/>
+<strong>深势科技</strong>：完成 8 亿新一轮融资。玻尔·科学导航覆盖 300 万科学家，SciMaster 科学智能体推进科学发现的自主化。两位 90 后创始人继续加码 AI for Science 基础设施。<br/>
+<strong>商汤科技</strong>：大装置助力智象未来完成视频生成业务向国产算力的无感迁移，同时为智谱 GLM-5.3-Flash 提供国产算力支持。国产异构算力在推理性场景中的规模化落地开始提速。<br/>
+<strong>港股 AGI 第一股</strong>：Agent 业务半年营收近 5 亿，Token 收入 Q2 环比暴涨 500%。企业智能化服务构成基本盘，Agent 成为第二增长曲线。<br/>
+<strong>月之暗面 / 百川 / 面壁智能</strong>：今日无直接新闻，但综合一级市场数据显示基础大模型融资进入冷静期，资本向有明确商业化路径的 Agent、垂直领域和 AI for Science 方向集中。
+</div>
+
+
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>招聘规模信号</strong>：DeepSeek 全部门规模至少翻一倍，所有岗位接受实习。重点方向包括：AGI 深度学习研究员、多模态算法研究员、Agent 算法研究员、NLP 预训练研究员。非算法岗位中，全栈开发、AI 核心系统研发、运维、模型数据策略是重点。<br/>
+<strong>薪资信号</strong>：DeepSeek 核心研发岗月薪 8-11 万（14 薪），最高年薪 154W。市场同级别的 AI 评测产品经理岗位（杭州）薪资 30-50k/月，5-10 年经验。Harness 工程相关岗位尚无公开薪资数据，但鉴于其稀缺性和 DeepSeek 的重视程度，预期将处于高位。<br/>
+<strong>技能需求变化</strong>：<br/>
+• <strong>Harness 工程能力</strong>：上下文管理、工具调用可靠性、MCP 集成、Subagent 编排、权限沙箱，将取代纯 prompt engineering 成为 Agent 方向的核心技能。<br/>
+• <strong>Agent 安全</strong>：Prompt injection 防御、工具调用审计、权限边界设计，从"安全岗"边缘领域成为 Agent 产品团队的必备角色。<br/>
+• <strong>AI for Science 交叉背景</strong>：深势科技等公司的持续融资扩大了对"AI+ 科学领域"复合背景人才的需求，特别是能理解仪器操作、实验设计与计算模拟的交叉型人才。<br/>
+• <strong>AI 评测体系设计</strong>：从招聘信息可见，Agent 评测从模型评测中独立出来，成为专门岗位。<br/>
+<strong>机会预判</strong>：DeepSeek Harness 团队的持续招募意味着国内 Agent 基础设施方向的人才争夺战正式开启。有量化系统、高并发后端、DevOps 背景的工程师，特别是具备 ACM 竞赛或系统编程经验者，在 Agent Harness 领域将非常抢手。
+</div>
+
+
+
+<div class="closing">
+<strong>⚡ 今日信号</strong><br/>
+Harness Engineering 正在取代模型能力成为 Agent 产品的核心竞争壁垒。DeepSeek、Anthropic、LangChain 的实践均证明改 Harness 比换模型更有效。投入 Harness 工程能力建设，是当前 AI 团队最优的资源策略。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
