@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年08月29日 · 新闻 6 条 · 博客 11 篇 · 搜索 11 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>DeepSeek Harness 开发者预览版发布，核心理念“Model + Harness = Agent”落地</strong><br>
+发生了什么：DeepSeek Harness 团队负责人崔添翼放出开发者预览版，采用“everything is plugin”架构，底层由 Cordis 支持，合著论文《A Programming Paradigm for Spatiotemporal Composability》同步公开。<br>
+为什么重要：Harness 工程正从模型权重中独立出来，成为 Agent 能力提升的新轴；在模型不变的情况下，仅修改 Harness 就能显著改善任务表现，并可能支持递归自我改进。这标志着 Agent 产品架构进入工程驱动的新阶段。<br>
+关联：与 Anthropic 自我改进 AI 研究、搜狐报道中固定权重修改 Harness 最高提升 132% 的结果呼应；资本将 Harness 视为 DeepSeek 新一轮“战略期权”。
+</div>
+
+<div class="item">
+<strong>Anthropic 研究员展示自我改进 AI 系统</strong><br>
+发生了什么：Anthropic 研究员透露，针对 10 个特定 misaligned behavior benchmarks 的自动化系统，在每个基准上都改善了表现，且未降低整体性能。<br>
+为什么重要：说明自我改进 AI 已从概念走向可验证的定向进化，尤其在 alignment 任务上；这与 Harness 层的可编程改进形成呼应，暗示未来 Agent 能力提升可能从微调权重转向运行时系统优化。<br>
+关联：若结合 DeepSeek Harness 的插件化设计，可预见“Harness-driven self-improvement”将成为 Post-training 之外的新研究热点。
+</div>
+
+<div class="item">
+<strong>A2A vs MCP 报告揭示：MCP-only 多代理架构存在显著缺陷</strong><br>
+发生了什么：Augment Code 指南指出，用 MCP 做多代理协调会破坏子代理工具访问、带来约 10 倍成本惩罚与 schema drift；多代理系统失败中 step repetitions 占 15.7%。<br>
+为什么重要：对正在搭建 Multi-Agent 系统的团队是重要架构警告——MCP 的定位是工具接入，不是代理协调；需要 A2A 协议分层。工程选型错误可能直接拖垮生产系统。<br>
+关联：与 LangGraph 等框架积极结合 MCP 与 A2A 的教程热潮形成对比；DeepSeek Harness 的插件化管理可能提供更统一的上下文与工具环境。
+</div>
+
+<div class="item">
+<strong>Simon Willison 警告：仅凭漏洞传闻，几分钟内即可被编码代理利用</strong><br>
+发生了什么：剑桥教授 Anil Madhavapeddy 报告，OCaml 项目补丁公开讨论后约 10 分钟即收到百分号编码遍历探测，攻击者利用编码代理自动发现漏洞。<br>
+为什么重要：AI coding 大幅压缩了从漏洞披露到利用的时间窗口，软件供应链安全进入“分钟级”时代；安全团队需要将 AI 辅助攻击模拟纳入流程。<br>
+关联：与 Linus Torvalds 用 AI 调试但 AI 多次表示“不可能解决”形成互补——AI 在攻击与调试中均被用于高强度自动化，但需人类判断与坚持。
+</div>
+
+<div class="item">
+<strong>Lambda 获得 10 亿美元债务购买 GPU 租赁给微软</strong><br>
+发生了什么：Neocloud Lambda 借入 10 亿美元购买英伟达 AI 芯片并租赁给微软。<br>
+为什么重要：AI 基础设施资本开支继续膨胀，算力仍是稀缺品；这种债务驱动模式也增加了行业周期性风险。<br>
+关联：与 DeepSeek 低成本路线和国内融资压力形成对照；全球 AI 竞赛资本消耗远未收敛。
+</div>
+
+<div class="item">
+<strong>国内 AI4S 平台化进展：深势科技与百图生科披露药物发现全流程</strong><br>
+发生了什么：AIBC2025 与科学智能峰会上，深势科技展示“读、算、做”药物研发数智化平台，Uni-Fold 加速 AlphaFold2 训练 2.2 倍；百图生科发布基于 2100 亿参数 xTrimo 的生成式发现系统。<br>
+为什么重要：AI for Science 正从单点模型（如蛋白结构预测）转向覆盖信息、计算、实验的全流程平台，直接影响药物发现和材料设计的研发范式。<br>
+关联：与用户关注的 AI4S 方向高度一致，国内厂商在该赛道加速卡位。
+</div>
+
+<div class="item">
+<strong>招聘数据揭示 Agent 工程岗位细分化</strong><br>
+发生了什么：JDWatch 等渠道显示阿里云等公司新增 Agent 评测专家、AI Coding 研发、AI 安全工程、AI Agent 产品经理等岗位。<br>
+为什么重要：人才需求从通用大模型转向 Agent 工程、评测、安全等细分方向；Harness/工具编排技能成为新兴硬技能。<br>
+关联：呼应 Harness 架构趋势与安全攻击面扩大带来的团队配置变化。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Agent 能力提升的重心从模型参数转向 Harness 工程</strong><br>
+证据：DeepSeek Harness 预览版与 Cordis 论文发布；搜狐文章引用《Self-Harness》论文显示固定权重下仅修改 Harness 9 组实验全部改善、最高相对提升 132%；Darwin Gödel Machine 让 Coding Agent 修改自身代码与工作流，SWE-bench 从 20% 升至 50%；Anthropic 自我改进系统展示定向进化。<br>
+预判：未来 6-12 个月，Harness 工程师将成为与 LLM 算法工程师并列的核心岗位，企业会围绕“插件化、可组合、可自我修改”重构 Agent 平台。
+</div>
+
+<div class="trend">
+<strong>趋势二：Multi-Agent 协议栈分化，MCP 不再独大，A2A 补位</strong><br>
+证据：Augment Code 报告显示 MCP-only 协调成本高约 10 倍、子代理工具访问被破坏、schema drift；多代理系统失败中 step repetitions 占 15.7%；LangGraph 等框架推出 MCP + A2A 结合教程。<br>
+预判：生产级多代理系统将形成“MCP 管工具、A2A 管通信”的双协议架构，创业公司可切入协议网关/编排中间件。
+</div>
+
+<div class="trend">
+<strong>趋势三：AI 编码使安全攻击面进入分钟级响应时代</strong><br>
+证据：Simon Willison 报道 OCaml 补丁讨论后 10 分钟即遭探测；Linus Torvalds 调试中 AI 辅助高强度搜索与分析。<br>
+预判：软件供应链安全将出现新的“AI 攻击模拟”赛道，代码托管平台和 DevOps 工具链将集成 AI 漏洞实时监测与</div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
