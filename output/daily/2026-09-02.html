@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年09月02日 · 新闻 133 条 · 博客 9 篇 · 搜索 12 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<b>Anthropic 发布 Fable 5.1：性能全面碾压，加入反蒸馏机制</b><br>
+发生了什么：Anthropic 发布 Claude Fable 5.1，在 Terminal-Bench-Science 0.1 基准上得分从 24.7% 飙升至 52.6%，同时降价最高 45%，并首次引入反蒸馏保护机制。<br>
+为什么重要：这次升级不仅是模型能力的线性提升，更标志着 Anthropic 在科学推理和长周期任务上的代际跨越。反蒸馏机制的加入，说明头部厂商已将模型知识产权保护从法律声明升级为技术对抗，这对依赖蒸馏训练的小模型厂商构成直接的供应链风险。<br>
+关联信号：近期 DeepSeek 组建 Harness 团队、Anthropic 自身发布 Agent 评估体系白皮书，Fable 5.1 的强势表现将加速 Agent 工作流从“实验性接入”转向“生产级部署”，推动 Harness 工程成为行业显学。
+</div>
+
+<div class="item">
+<b>DeepSeek 史上最大规模扩招：所有部门翻倍，Harness 团队成核心</b><br>
+发生了什么：DeepSeek 宣布计划将所有部门规模扩大至少一倍，开放 33 个岗位，重点组建 Harness 团队，对标 Claude Code 做 DeepSeek Code Harness。<br>
+为什么重要：这是 DeepSeek 从“模型公司”向“Agent 基础设施公司”转型的明确信号。Harness 架构被定义为“从提示词工程、上下文工程向构建完整智能体运行环境的重大演进”，说明国内头部厂商已意识到，模型能力趋于同质化后，Agent 运行时（上下文管理、工具调用、记忆系统）才是下一阶段护城河。<br>
+关联信号：美团同期发布 AI Agent 开发工程师、CatPaw SDK 等多个 Agent 相关岗位，Anthropic 万字长文拆解 Agent 评估体系，Agent 工程化已从概念验证进入人才争夺战。
+</div>
+
+<div class="item">
+<b>OpenAI Astra 模型达到“网络安全临界”阈值</b><br>
+发生了什么：OpenAI 在 Preparedness Framework 下确认 Astra 是首个达到 Critical 网络安全能力阈值的模型，并在发布前采取了更强的安全防护措施。<br>
+为什么重要：这不是一个普通的模型发布公告，而是一个风险治理的里程碑事件。当模型具备“入侵计算机系统”的实战能力时，安全防护从“防止模型被滥用”升级为“防止模型本身成为攻击武器”。这将对 Agent 系统的权限管理、沙箱隔离、不可逆操作预算等安全架构提出硬性要求。<br>
+关联信号：本文中 arXiv 论文《The Irreversibility Budget》和《OpenAgentFlow》分别在 Agent 操作风险控制和系统级安全边界上提出了新框架，说明 Agent 安全正从学术讨论进入工程落地阶段。
+</div>
+
+<div class="item">
+<b>Agent 安全治理双响炮：AIR 获 5000 万美元融资，不可逆操作预算框架出现</b><br>
+发生了什么：Agent 安全治理公司 AIR 完成 5000 万美元融资，其平台可发现企业内运行的 Agent 并持续审查其技能和插件行为。同期 arXiv 论文提出“不可逆预算”概念，将 Agent 操作的不可逆风险作为可量化的资源进行管理。<br>
+为什么重要：当 Agent 开始执行转账、删库、部署代码等不可逆操作时，传统的一次性权限检查已失效。“不可逆预算”将风险从二元授权升级为连续累积控制，这是 Agent 从“辅助工具”到“自主执行者”的关键安全基础设施。<br>
+关联信号：OpenAI Astra 的网络安全临界能力、Anthropic 的 Agent 评估体系文章，共同指向一个趋势：Agent 安全正从“模型对齐”扩展到“运行时治理”，这是一个全新的产品赛道。
+</div>
+
+<div class="item">
+<b>深势科技完成超 7 亿元融资：AI for Science 进入规模化应用快车道</b><br>
+发生了什么：深势科技完成新一轮超 7 亿元人民币融资，投资方包括众源资本、和玉资本等，资金将用于深化从算法创新到工业软件的全栈能力，并加速在生物医药、新能源、化工、半导体等场景的产业化落地。<br>
+为什么重要：在资本市场趋于谨慎的周期中，深势科技获得如此规模的融资，说明 AI for Science 的变现逻辑已被验证。其“科学发现智能引擎”全栈能力——从底层算法到工业软件再到行业解决方案——是难以被复制的护城河。这标志着 AI for Science 从“发现新原理”进入“产品化交付”新阶段。<br>
+关联信号：政策层面，国务院已将“人工智能+科学技术”列为重点行动方向；技术层面，arXiv 上多篇论文涉及分子生成、蛋白质设计、材料预测等 AI for Science 方向，学科交叉正在加速。
+</div>
+
+<div class="item">
+<b>Agent 评估体系成为“北极星”：Anthropic 万字长文拆解评估驱动开发</b><br>
+发生了什么：Anthropic 发布关于 Agent 评估体系的深度文章，提出“评估驱动开发”理念，强调从真实失败案例中构建评估集、将人工经验转化为自动化评分器、持续进化评估套件。<br>
+为什么重要：这篇文章将 Agent 评估从“跑分”提升到“产品方法论”层面。对于 AI 产品经理而言，这意味着产品设计、开发迭代、持续优化都需要围绕评估体系展开，而非依赖单一基准测试。这直接呼应了 arXiv 论文《trajectory-judge》的发现：仅靠结果评估会遗漏 Agent 过程中的错误。<br>
+关联信号：Simon Willison 的“鹈鹕基准”测试文章也反映了社区对模型能力评估有效性的反思，评估体系本身正在经历范式转换。
+</div>
+
+<div class="item">
+<b>李飞飞发布全球首个多模态世界模型：一张图补全 3D 世界</b><br>
+发生了什么：李飞飞团队发布全球首个多模态世界模型，可以从单张图像补全 3D 空间，并为机器人训练生成虚拟环境。<br>
+为什么重要：这不仅是视觉生成的技术突破，更对具身智能和 Agent 训练有深远影响。世界模型让 Agent 在行动前可以“想象”环境变化，这将大幅降低真实环境中的试错成本。结合 arXiv 论文《HyperWorld》关于超图结构状态序列化对世界模型影响的研究，世界模型正从“预测下一帧”进化到“理解环境因果结构”。<br>
+关联信号：GUI 世界模型（GUI-CC 基准）和具身智能领域正在解决类似的“环境一致性”问题，多模态世界模型可能成为跨领域的底层技术。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<b>趋势一：Agent 工程化从“黑客精神”走向“基础设施”</b><br>
+证据链：DeepSeek 组建 Harness 团队对标 Claude Code → 美团发布 CatPaw SDK 和 Agent 开发工程师岗位 → Anthropic 发布 Agent 评估体系白皮书 → AIR 获 5000 万美元融资做 Agent 安全治理 → arXiv 论文《The Irreversibility Budget》提出 Agent 操作风险量化框架。<br>
+预判：未来 6-12 个月，Agent 基础设施（Harness/SDK/运行时/安全层）将成为比模型本身更激烈的竞争领域。Harness 工程师将成为最抢手的 AI 人才，其薪资水平可能超过传统算法工程师。
+</div>
+
+<div class="trend">
+<b>趋势二：AI 安全从“模型对齐”扩展到“运行时治理”</b><br>
+证据链：OpenAI Astra 达到网络安全临界能力 → Anthropic Fable 5.1 加入反蒸馏机制 → arXiv 论文《Auditing Harness Tampering》研究自改进 Agent 的篡改问题 → 《The Irreversibility Budget》提出操作风险预算 → 《OpenAgentFlow》提出系统级安全边界。<br>
+预判：Agent 安全将分化为两个新赛道：一是“Agent 防火墙”（AIR 模式），实时监控 Agent 行为；二是“操作风险定价”（不可逆预算模式），将风险量化为可管理的资源。这将是 2026 年 Q4 的 VC 热点。
+</div>
+
+<div class="trend">
+<b>趋势三：AI for Science 从“论文驱动”转向“产品交付”</b><br>
+证据链：深势科技超 7 亿元融资 → 政策端“人工智能+科学技术”列为重点 → arXiv 论文《Scientific Agent Skills》提供 163 种科学领域程序化知识 → 《Life Operators》提出患者状态建模框架 → 材料科学、蛋白质设计、药物发现等领域论文密集出现。<br>
+预判：AI for Science 的下一阶段竞争将围绕“领域知识结构化”展开——谁能将科研流程转化为 Agent 可调用的技能库（如 Scientific Agent Skills），谁就能在药物研发、材料筛选等万亿级市场占据先机。深势科技的“科学发现智能引擎”正在定义这个赛道的产品形态。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<b>1. 《Long-Horizon State Tracking in LLMs: Executing MD5 through a Deep Sequence of Dependent Tool Calls》</b> (arXiv:2609.00012)<br>
+核心贡献：通过让模型执行 MD5 哈希计算，干净地测试了 LLM 在长序列工具调用中维持精确中间状态的能力。发现即使每步准确率看似优秀，错误会随步骤数指数级累积，端到端失败概率急剧上升。<br>
+为什么值得读：直击 Agent 系统的核心弱点——状态跟踪。当前 Agent 基准混淆了指令理解和状态跟踪，这篇论文用密码学任务提供了无可争议的“纯状态跟踪”测试。对于正在设计 Harness 系统的工程师，理解这种级联失败模式是设计可靠 Agent 系统的前提。
+</div>
+
+<div class="deep-read">
+<b>2. 《Gated-Memory Routing for Efficient Collaboration in Multi-Agent LLM Systems》</b> (arXiv:2609.00237)<br>
+核心贡献：解决多 Agent 系统中的“执行历史过载”问题——当多个 Agent 协作时，完整历史记录会膨胀成本。提出门控记忆路由，根据协作状态动态选择需要保留的上下文，而非保留全部历史。<br>
+为什么值得读：这是 Multi-Agent 系统的工程落地关键。当前多 Agent 系统要么牺牲上下文（丢失信息），要么保留全部历史（成本爆炸）。这篇论文提供了第三条路，对于正在构建生产级 Multi-Agent 系统的团队，这是可直接借鉴的架构方案。
+</div>
+
+<div class="deep-read">
+<b>3. 《Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents》</b> (arXiv:2609.00065)<br>
+核心贡献：构建了包含 163 种科学领域程序化知识的开源库，覆盖基因组学、化学信息学、医学影像、研究设计等 16 个领域。Agent 按需加载技能文件，每个技能包含版本化指令和可执行脚本。<br>
+为什么值得读：这是 AI for Science 的“技能基础设施”蓝图。它解决了科学 Agent 的核心困境——模型知道“是什么”但不知道“怎么做”。将领域最佳实践（如“这个领域用哪个统计检验”、“结果需要附带哪些限制条件”）编码为可调用的技能，是让 AI 科学家从“能写代码”到“能做可靠科研”的关键一步。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<b>推荐：《Agency and Agents》—— Ethan Mollick (One Useful Thing)</b><br>
+<br>
+<b>为什么今天推荐这篇：</b>在 Anthropic Fable 5.1 发布、DeepSeek 大举招聘 Harness 团队、Agent 安全治理融资 5000 万美元的今天，Ethan Mollick 这篇关于“代理权与智能体”的深度思考恰逢其时。当 Agent 能力快速提升，我们需要的不仅是技术基础设施，更需要理解“代理权”的本质——人类将多少决策权让渡给 Agent，以及这种让渡的边界在哪里。<br>
+<br>
+<b>3 个核心观点：</b><br>
+· 代理权是连续的，不是二元的——Agent 从“辅助建议”到“自主执行”之间存在大量中间状态，产品设计需要明确每一步的代理权边界<br>
+· 当前 Agent 系统的最大风险不是能力不足，而是能力与代理权不匹配——给低能力 Agent 过多自主权会导致灾难性错误，反之则浪费能力<br>
+· 组织部署 Agent 时，真正需要设计的是“人机协作流程”而非“Agent 替代方案”——就像亚马逊的“暮光工厂”概念，人类和机器在各自擅长的环节发挥作用<br>
+<br>
+<b>适合谁读：</b>AI 产品经理、Agent 系统架构师、正在考虑部署 Agent 的企业技术负责人<br>
+<b>大致阅读时间：</b>15-20 分钟
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<b>DeepSeek 大规模扩招 | 招聘信号：强烈</b><br>
+重点信息：所有部门规模翻倍，33 个岗位开放，工作地点北京/杭州，接受实习。新设 Harness 团队直接对标 Claude Code，Harness 团队负责人崔添翼表示“每天都在面试，人员缺口较大”。特别开放“AI 跨界技术人才”岗位，不设专业背景限制，强调“不走寻常路”、“在某个领域做到极致”。<br>
+解读：这是 DeepSeek 成立以来最大规模招聘，从“模型研发”扩展到“Agent 基础设施”的战略意图明确。Harness 团队成为核心新部门，说明国内 Agent 工程化竞争正式开启。
+</div>
+
+<div class="item">
+<b>深势科技完成超 7 亿元融资 | 商业化加速</b><br>
+重点信息：融资方包括众源资本、和玉资本、正心谷资本等，资金将用于深化全栈能力和产业化落地。已推出面向生物医药、新能源、化工、半导体等场景的研发解决方案。<br>
+解读：AI for Science 赛道的头部效应正在形成，深势科技通过“科学发现智能引擎”构建的全栈能力难以复制，此轮融资将进一步拉大与追赶者的差距。
+</div>
+
+<div class="item">
+<b>面壁智能完成年内第二轮融资，累计超 10 亿元 | 效率路线获得认可</b><br>
+重点信息：2026 年 4 月完成新一轮数亿元融资（深创投、汇川产投联合领投），年初已完成中国电信领投的一轮融资，Q1 累计融资超 10 亿元。8 月发布全球首个支持 Stencil 自动优化的 AI 系统 ForgeStencil。<br>
+解读：面壁智能坚持“密度定律”路线，专注大模型效率，其 MiniCPM 系列和 ForgeStencil 系统在工业场景找到了差异化定位。端侧 AI 和科学计算优化可能是其未来增长点。
+</div>
+
+<div class="item">
+<b>三七互娱成 AI 投资隐形巨头 | 布局智谱、月之暗面、百川智能</b><br>
+重点信息：三七互娱已投资国内大模型“四小龙”中的三家（智谱、月之暗面、百川智能），仅剩 MiniMax 被米哈游抢先。2026 年开年，智谱 AI 登陆港股，市值超 578 亿港元。<br>
+解读：游戏公司正成为 AI 领域的重要资本力量，三七互娱和米哈游的投资布局显示，AI 原生内容和游戏场景的 AI 化是明确的产业方向。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<b>新增岗位类型：Harness 工程师成为最热新岗位</b><br>
+DeepSeek 公开招募 Agent Harness 团队工程师、Agent Infra 研发工程师，美团招募 AI Agent 开发工程师（负责 CatPaw SDK/CLI 能力建设、多智能体运行时、记忆系统），Anthropic 的 Agent 评估体系文章也暗示了对评估工程师的需求。Harness 工程师的要求可能包括：上下文管理、工具调用协议（MCP）、多 Agent 协作、记忆系统设计、沙箱安全等。<br>
+<b>预判：</b>Harness 工程师将成为 2026 年下半年最抢手的 AI 人才，薪资水平可能超过传统算法工程师，具备全栈能力的候选人将获得溢价。
+</div>
+
+<div class="item">
+<b>技能需求变化：从“会调模型”到“会建系统”</b><br>
+DeepSeek 的“AI 跨界技术人才”岗位不设专业限制，强调“在某个领域做到极致”，这暗示了对 T 型人才的需求——在某一领域有深度，同时能理解 Agent 系统全貌。Anthropic 的评估驱动开发文章也要求产品经理具备“将用户需求转化为 Agent 行为评估标准”的能力。<br>
+<b>预判：</b>具备领域知识（如生物、化学、金融）且能设计 Agent 系统的复合型人才将获得最高溢价。
+</div>
+
+<div class="item">
+<b>企业级 Agent 落地加速：百融“硅基员工”批量上岗</b><br>
+量子位报道百融“硅基员工”已批量上岗，AI 客服日扛 1.5 万通电话，按结果计算薪资。这标志着 Agent 从“实验性部署”进入“规模化计费”阶段，对 Agent 运维、效果评估、成本优化等岗位的需求将随之增长。
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+<b>Agent 的“Harness 时刻”已到。</b>DeepSeek 扩招 Harness 团队、Anthropic 发布评估体系、AIR 获 5000 万美元做 Agent 安全——三件事共同指向同一结论：Agent 竞争的下半场不再是模型能力，而是运行环境的工程化水平。如果你在构建 Agent 产品，现在最该投入的不是更好的模型，而是更好的 Harness。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
