@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年09月03日 · 新闻 138 条 · 博客 7 篇 · 搜索 15 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>DeepSeek Harness 团队大规模扩招，负责人崔添翼在线直聘</strong><br>
+发生了什么：DeepSeek Harness 部门负责人崔添翼（前 Jane Street 量化工程师）公开表示"非常缺人"，固定开放研究员、研发工程师、产品经理三类岗位，不设国籍限制，仅要求中文工作能力。母公司深度求索在招职位总数已达 121 个。<br>
+为什么重要：这是全球首个以"Harness"命名的 Agent 工程团队高调扩张，标志着 Model+Harness=Agent 的工程范式正式进入组织化阶段。崔添翼的 Jane Street/OCaml 背景暗示 DeepSeek 对 Harness 的定位是"低延迟、高可靠性的系统工程"，而非传统 prompt engineering。招聘帖子中将 Agent Harness 团队聚焦于"代码智能体产品研发"，意味着 DeepSeek 正将竞争重心从模型层转向 Agent 执行层。<br>
+与动态关联：与 Tavily 检索到的"DeepSeek 启动大规模招聘，各部门人力拟扩充至少一倍"（2026/06/26）相互印证；同时与用户关注的 AI 人才市场方向直接相关——量化背景人才涌入 AI Agent 工程领域已成为显著信号。
+</div>
+
+<div class="item">
+<strong>OpenAI 新推理技术"recurrent depth"引发 AI 安全专家警惕</strong><br>
+发生了什么：TechCrunch 报道 OpenAI 新模型 Astra 将采用"循环深度"（recurrent depth）技术，允许模型跳出多数推理模型特有的顺序思维模式。<br>
+为什么重要：这意味着 LLM 推理不再受限于固定深度的前向传播，模型可以在同一层权重上进行循环计算，本质上是把"思考时间"从 token 数量扩展到了计算循环维度。安全专家的担忧在于：循环推理的可解释性大幅下降，错误可能被放大而难以追踪。这与 arXiv 上 Looped Transformers under the Jacobian Lens 论文（深度循环 Transformer 是否保留全局工作区）形成响应——循环架构带来的不仅是推理能力增益，还有可对齐性、可监控性的根本变化。<br>
+与动态关联：这是继测试时计算扩展（test-time compute scaling）之后，推理架构的又一次范式跃迁信号。
+</div>
+
+<div class="item">
+<strong>阿里更新旗舰模型 Qwen3.8-Max，前端编程能力跃居全球第一</strong><br>
+发生了什么：量子位报道阿里发布 Qwen3.8-Max 更新版本，在前端编程评测中排名全球第一。<br>
+为什么重要：Qwen 系列已将竞争焦点从通用能力转向垂直工程任务（前端编程）。结合 Simon Willison 此前测试的 Qwen3.8-Flash-Next（125B MoE、仅 6B active），阿里在"小激活、大容量"路线上持续加码。前端编程是 Agent 生成 UI 的核心能力，这一领域的领先意味着 Qwen 在"AI 生成完整应用"场景中具备了差异化竞争力。<br>
+与动态关联：与 DeepSeek Harness 聚焦"代码智能体产品研发"形成互补——一个在模型层优化代码生成，一个在系统层构建 Agent 执行框架。
+</div>
+
+<div class="item">
+<strong>月之暗面完成 35 亿美元 F 轮融资，半年完成六轮，估值达 350 亿美元</strong><br>
+发生了什么：证券时报报道月之暗面完成超 35 亿美元 F 轮融资，投后估值 350 亿美元，Pre-IPO G 轮已提前启动，投前估值升至 500 亿美元。<br>
+为什么重要：月之暗面半年内从 100 亿美元估值攀升至 350 亿美元，6 轮融资速度在中国 AI 初创中史无前例。估值加速度远超同期模型能力提升速度，反映出资本市场对中国大模型头部玩家的"稀缺性溢价"已进入非理性阶段。年化收入与估值之间的巨大差距（与投资界报道的 DeepSeek 10 亿美元融资、2000 亿人民币估值形成对比）表明，AI 估值逻辑正在从"收入锚定"转向"AGI 叙事锚定"。<br>
+与动态关联：MiniMax/智谱 IPO 竞赛（南都报道"全球大模型第一股"之争）+ 月之暗面 500 亿美元 Pre-IPO 估值 → 中国 AI 公司正集体冲刺公开市场窗口期。
+</div>
+
+<div class="item">
+<strong>前字节 RL 专家孙鹏加盟星尘智能，Physical AI 全栈布局加速</strong><br>
+发生了什么：前字节跳动强化学习专家、前腾讯 Robotics X 智能体中心负责人孙鹏博士正式加入星尘智能（9月2日）。<br>
+为什么重要：孙鹏的 RL 背景 + 腾讯 Robotics X 的具身智能经验，指向星尘智能正在构建"RL 驱动的 Physical AI"技术栈。这与"预测-行动"世界建模（arXiv WMLLM 论文）方向一致。具身智能公司开始争夺头部 RL 人才，意味着行业正从"控制算法"转向"具身 Agent 学习"。<br>
+与动态关联：量子位报道"一个模型场景通吃"的它石智航 AWE3.7 展示的泛化能力，同样指向 RL + 世界模型在机器人场景的应用。
+</div>
+
+<div class="item">
+<strong>美国政府提交法律意见书支持 OpenAI 使用版权材料训练 LLM</strong><br>
+发生了什么：TechCrunch 报道美国政府正式表态支持 OpenAI 在训练中使用版权材料，称"美国有强烈利益继续发展一个强劲且有竞争力的人工智能产业"。<br>
+为什么重要：这是美国政府在 AI 版权问题上最明确的一次立场表态，实际上为所有 LLM 训练者在合理使用辩护方面提供了政策背书。对中国 AI 公司的影响是双向的：一方面美国市场的训练数据合法性门槛降低，另一方面政策护城河可能加速其他国家（包括中国）在版权豁免问题上的立法竞赛。<br>
+与动态关联：Nathan Lambert 博客讨论的"禁止开源 AI 将是错误"与此形成政策层面的呼应——华盛顿正在从"监管 AI"转向"保障 AI 竞争力优先"。
+</div>
+
+<div class="item">
+<strong>Wonderful 估值 6 个月内翻倍至 50 亿美元，Agent 生产力赛道持续升温</strong><br>
+发生了什么：Wonderful 完成 5.5 亿美元 C 轮融资，估值在不到 6 个月内翻倍至 50 亿美元。<br>
+为什么重要：Wonderful 专注"FDE teams"（可能是 Frontline Developer Experience 或类似概念的团队）和产品开发提速需求。企业正在从"试用 AI Agent"转向"规模化部署 AI Agent"，这直接催生了 Agent 基础设施公司的估值爆发。与 HiddenLayer 获 1 亿美元融资（企业 AI 安全，包括 Agent 和工具监控）相互印证——Agent 生态的安全、可观测性、可靠性正在形成独立赛道。<br>
+与动态关联：Palo Alto Networks 以 5 亿美元收购 Thrive 支持的 Console，进一步证实 Agent 基础设施的并购窗口已经打开。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Agent 记忆系统从"经验积累"转向"信任校准"——一个研究范式的转变</strong><br>
+证据：今日 arXiv 集中出现三篇关于 Agent 记忆的关键论文：(1) The Memory Trust Gap 发现持久记忆 Agent 中，过期存储事实会覆盖当前权威证据而不发出警告，模型在所有尺度上（0.6B-8B）都以 0.92-1.00 的概率回答过时值；(2) CHIME 提出信用感知的分层记忆进化，解决长期 Agent 规划中"最终结果作为反馈会混淆计划质量与执行错误"的信用分配问题；(3) Beyond Context Windows 提出持久发现上下文（Persistent Discovery Context），证明在词汇稀疏领域，记忆检索可以超越元数据检索。<br>
+预判：Agent 记忆的下一个研究爆发点不是"如何存储更多"，而是"何时该信任记忆 vs 当前工具输出"。记忆系统的可信度评分、过期检测、基于上下文的记忆降权机制将成为 Harness 工程的核心模块。DeepSeek Harness 团队若能在记忆信任校准上建立标准，将获得显著的工程壁垒。
+</div>
+
+<div class="trend">
+<strong>趋势二：国内 AI 竞争从模型能力转向 Agent 工程能力，Harness 成为组织化投资重点</strong><br>
+证据：DeepSeek 设立专职 Harness 部门并大规模招聘（研究员/工程师/产品经理）；阿里 Qwen3.8-Max 在前端编程这个 Agent 刚需能力上登顶；前字节 RL 专家孙鹏加盟星尘智能补齐 Physical AI 全栈。三件事指向同一个方向：中国 AI 公司正在将资源从"训练更好的模型"转向"构建让模型真正工作的系统"。<br>
+预判：Harness 工程人才（尤其是具备分布式系统、量化交易系统背景的工程师）将在未来 6-12 个月成为国内 AI 人才市场最稀缺的群体。具备"系统工程 + Agent 认知"的复合型人才将获得溢价。崔添翼的 Jane Street 背景并非个例——量化工程师转 Agent 系统工程师将成为一条被验证的职业迁移路径。
+</div>
+
+<div class="trend">
+<strong>趋势三：推理效率优化从"模型压缩"转向"系统级状态管理"</strong><br>
+证据：HeadWiseKV（混合长上下文模型的每头 KV 缓存预算分配）、CRISP（注意力 prefill 的输入自适应稀疏路由）、NVIDIA 的投机解码共设计、以及 OpenAI 的 recurrent depth 技术，共同指向一个事实——推理成本的瓶颈已从参数规模转向状态管理（KV 缓存、注意力计算、循环状态）。<br>
+预判：下一代推理优化将不再由模型研究者主导，而是由系统工程师主导。KV 缓存的"预算化分配"、基于输入结构的动态稀疏化、投机解码与循环计算的融合，将重塑 LLM 服务架构。这对 Harness 工程的启示是：上下文管理将成为 Agent 系统设计中与模型选择同等重要的决策维度。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. The Memory Trust Gap: Capability-Dependent Failures in Persistent-Memory Agents</strong> (arXiv:2609.01852)<br>
+核心贡献：系统性地揭示了持久记忆 Agent 的一个根本性失败模式——记忆信任缺口（Memory Trust Gap）。作者设计了两个 suite 区分"没有记忆就不可解决"（Benefit suite）和"权威工具始终持有正确值"（Safety suite）两种场景，在 Qwen3 0.6B/1.7/4/8B 全尺度上发现：模型对陈旧记忆的过度信任并非混乱，而是一种系统性行为——在 Benefit suite 中各尺度模型以 0.92-1.00 的概率回答过时值，在 Safety suite 中陷阱条件下的表现低于无记忆基线。<br>
+为什么值得读：这是目前对"Agent 记忆何时有害"最清晰的实证刻画。对于正在构建 Agent 产品的工程师，这篇论文提供了一个可以直接借鉴的评测框架（Benefit/Safety 双 suite 设计）和明确的设计警告：记忆系统必须有独立的"新鲜度校验"机制，不能简单依赖模型自身的判断。对 AI 安全研究者，它揭示了能力提升并不自动解决记忆可靠性问题。
+</div>
+
+<div class="deep-read">
+<strong>2. Belief-Calibrated Optimization: An Explicit World Model for Agentic Optimization</strong> (arXiv:2609.01861)<br>
+核心贡献：指出现有编码 Agent 优化器的核心缺陷——每次编辑依据的"信念"（什么出了问题、哪个改变应该有效）是隐式的，存在于模型当前调用的推理中，而非作为持久状态被记录和复用。BCO 方法将这种信念显式地写下来，作为持久状态供后续调用使用，从而让 Agent 的自我改进真正具有连续性。<br>
+为什么值得读：这篇论文触及了 Harness 工程中最本质的问题：Agent 的"世界模型"应该存储在哪里？如果每次调用的推理都从零开始，那么 Agent 的改进就是有界的。BCO 的持久信念存储思路与 DeepSeek Harness 团队正在构建的系统在理念上高度一致，是理解下一代 Agent 优化器架构的关键文本。
+</div>
+
+<div class="deep-read">
+<strong>3. Beyond Context Windows: Persistent Discovery Context for Data-Centric Agents</strong> (arXiv:2609.02129)<br>
+核心贡献：提出数据 Agent 在规划/执行前反复执行的"发现步骤"（识别相关数据对象）结果应该被持久化复用，而非丢弃。通过三个结构化数据环境验证了持久发现上下文一致地优于仅元数据检索，并暴露了一个可复现的干扰失败模式。在词汇稀疏领域，仅记忆检索甚至超越了元数据检索。<br>
+为什么值得读：这与用户关注的"上下文管理"直接相关。当前 Agent 系统的上下文窗口管理大多聚焦于"如何压缩/裁剪对话历史"，但这篇论文指出了一个被忽视的维度：任务发现过程中的数据上下文化结果本身就是一个宝贵的、可跨会话复用的记忆层。对构建企业数据 Agent 的产品经理来说，这是设计决策的依据——是否应该为每个企业客户维护独立的"发现上下文"记忆库。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>推荐：Simon Willison — Claude's new system prompt really doesn't want to reproduce song lyrics</strong><br>
+链接: https://simonwillison.net/2026/Sep/2/claudes-new-system-prompt/<br>
+为什么今天推荐：当下 Agent 产品化正处于从"能力竞赛"转向"行为边界设计"的关键期。Simon Willison 展示了 Anthropic 如何通过系统提示词管理模型的行为边界（拒绝歌词复现），并且值得关注的是 Anthropic 公开了系统提示词的历史变更记录。在 DeepSeek Harness 团队大幅招聘背景下，这篇内容提供了一个重要的产品视角——Harness 不仅是技术框架，更是产品行为策略的编码层。<br>
+核心观点：<br>
+• 系统提示词是产品行为边界的直接编码，公开其历史变更意味着将"模型行为治理"视为核心产品功能而非内部实现细节；<br>
+• Anthropic 的 platform.claude.com/docs 站点支持 .md 后缀直接返回 Markdown 内容，这种"为 LLM 设计的文档站"本身就体现了 AI-native 产品的设计理念；<br>
+• Consumer 应用（Claude.ai/移动端）与开发者工具（Claude Code/Cowork）的系统提示词公开策略存在差异，反映了产品治理与工程自由度之间的权衡。<br>
+适合谁读：正在设计 Agent 产品行为边界的 PM，关注系统提示词治理的 AI 工程师，以及思考"Harness 应该做什么"的研究者。<br>
+阅读时间：约 15 分钟。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek：Harness 团队扩招 + 全公司规模翻倍</strong> — 崔添翼领导的 Harness 部门开放研究员/工程师/产品经理岗位，全公司 33 个岗位在招，工作地点覆盖北京和杭州。梁文锋在首轮融资中向投资人明确表示将优先前沿研究而非商业化。Harness 定位为"代码智能体产品研发"，团队聚焦"探索 Harness 领域的研究前沿，定义 DeepSeek 对 Harness 的理解"。这是国内首个将 Harness 作为独立研究部门的大模型公司。
+</div>
+
+<div class="item">
+<strong>阿里：Qwen3.8-Max 前端编程登顶</strong> — 阿里更新旗舰模型，在前端编程能力上跃居全球第一。此前 Simon Willison 已测试 Qwen3.8-Flash-Next（125B MoE，仅 6B active），证明阿里在"小激活、大容量"架构路线上的持续投入。
+</div>
+
+<div class="item">
+<strong>月之暗面：F 轮 35 亿美元到账，Pre-IPO G 轮启动</strong> — 投后估值 350 亿美元，Pre-IPO 投前估值 500 亿美元，年内六轮融资。IPO 目标设定在明年下半年。估值增速远超收入增速，资本市场的耐心正在被测试。
+</div>
+
+<div class="item">
+<strong>蚂蚁：OmniTable 获 VLDB 2026 工业最佳论文</strong> — 统一宽表系统处理 35PB 语料，效率提升 5.6 倍。这是中国公司在数据工程基础赛道上的重要技术输出，也是大模型数据管线从"手工洗数据"向"系统化数据工程"转型的标志。
+</div>
+
+<div class="item">
+<strong>星尘智能：孙鹏加盟补足 Physical AI 全栈</strong> — 前字节 RL 专家、前腾讯 Robotics X 智能体中心负责人加入，强化"RL + 具身智能"路线。国内具身智能赛道的人才争夺正在从"机器人控制工程师"转向"RL + Agent 学习"复合背景。
+</div>
+
+<div class="item">
+<strong>昆仑万维：SkyProduction 天工工作台上线</strong> — 从剧本到成片的完整短剧创作工作台，定位"精品短剧创作真正跑起来"，是 Agent 工作流产品化在内容创作领域的最新落地。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>核心信号：Agent 工程人才需求进入爆发期</strong><br>
+DeepSeek Harness 团队明确分为三类岗位：<strong>Harness 研究员</strong>（探索 Harness 研究前沿、定义技术理解）、<strong>Harness 工程师</strong>（全职/实习）、<strong>Harness 产品经理</strong>（限全职）。崔添翼表示"每天都在面试"。这意味着：<br>
+• 研究员角色非传统论文导向，而是"定义理解"，兼具系统设计能力的技术战略型人才更受青睐；<br>
+• 工程师不设经验年限硬性要求，更看重"过硬的技术水平与广阔的技术眼界"——量化系统背景（低延迟、高并发、分布式的工程直觉）是加分项；<br>
+• 产品经理要求全职，暗示 Harness 团队的产品化紧迫性——模型能力已足够支撑 Agent 原型，但产品化转化率才是瓶颈。
+</div>
+
+<div class="item">
+<strong>跨赛道信号</strong><br>
+• 猎聘数据显示"Agent 产品经理（Agent 评测与体验优化方向）"岗位薪资 20-40k·14薪，AI 评测高级产品经理高达 90-110k·16薪，说明 Agent 评测已成为独立高价值岗位；<br>
+• 星尘智能引入 RL 专家，说明 Physical AI 公司在招聘策略上正在从"控制论工程师"转向"具身 Agent 学习"方向；<br>
+• HiddenLayer 1 亿美元融资和 Palo Alto 5 亿美元收购 Console 表明，企业 Agent 安全/可观测性方向正在创造新型工程师岗位（Agent 安全审计、工具链监控）。<br>
+• 推断机会：具备分布式系统/量化系统背景的工程师转向 Agent Harness 工程，是最短路径；具备产品感知的 Agent 评测工程师将供不应求。
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+DeepSeek 设立专职 Harness 部门并高调扩招，是 Agent 工程从"个人手艺"升级为"组织能力"的确认信号——识别、招募乃至自建 Harness 工程师这类复合型人才，将成为未来 6 个月 AI 团队建设的优先级，其稀缺性可能超过算法研究员。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
