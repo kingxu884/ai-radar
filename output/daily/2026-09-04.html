@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年09月04日 · 新闻 126 条 · 博客 2 篇 · 搜索 12 条</div>
+  </div>
+  <div class="body"><div class="daily-briefing">
+
+<div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<h3>1. OpenAI发布GPT-6 Astra：在ARC-AGI 3上达到99.9%，计算机操控能力标志性突破</h3>
+<p><strong>发生了什么：</strong>OpenAI正式发布GPT-6 Astra，宣称在计算机和浏览器操控上实现“新前沿”，并以$10/$50每百万token的定价直接对标Claude Fable 5.1。在3月发布的ARC-AGI 3基准上，Astra以$19K成本取得99.9%的分数。</p>
+<p><strong>为什么重要：</strong>Astra的定价策略表明OpenAI正在放弃单纯依赖模型能力溢价的策略，转向以API经济性争夺Agent工作负载。ARC-AGI 3的99.9%分数意味着模型在抽象推理任务上接近饱和，但$19K的成本暴露出推理类Agent在商业场景中的经济可行性仍有待验证。Legora的41份文档审查案例和Playco的50%手动修复减少，进一步验证了Astra在垂直场景中的实际价值——但前提是组织能承受其推理成本。</p>
+<p><strong>关联动态：</strong>DeepSeek V4 Flash正式版刚刚发布，国内Harness团队独立运作，加上Anthropic Claude Code的先发优势，Agent基础设施的竞争已从模型能力转向“模型能力×Harness效率×成本”的三维博弈。</p>
+</div>
+
+<div class="item">
+<h3>2. DeepSeek Harness独立成军：崔添翼挂帅，全球招募内测开发者</h3>
+<p><strong>发生了什么：</strong>DeepSeek Harness微信公众号完成注册，独立于DeepSeek主公众号运营。该业务线于2026年5月内部立项，由前Jane Street九年资深工程师崔添翼担任负责人，8月面向全球征集内测用户，优先筛选具备Agent Harness开源项目经验的开发者。</p>
+<p><strong>为什么重要：</strong>这是DeepSeek首次为单一业务线设立独立官方阵地，信号意义极强。Harness（工具框架）已被视为“将模型变成智能体的工具”，独立团队建制意味着DeepSeek不再将Agent能力视为模型能力的自然延伸，而是将其定位为与模型平行的核心工程问题。崔添翼的Jane Street背景暗示Harness团队将更注重系统可靠性、状态管理和工具调用的工程严谨性，而非单纯追求模型能力。</p>
+<p><strong>关联动态：</strong>OpenAI Codex和Claude Code已率先验证了Harness的商业可行性，DeepSeek此举意味着国内AI厂商正式进入Agent基础设施的“独立建制”阶段。快手同期招聘AI Agent产品经理，国内Agent人才市场正在快速升温。</p>
+</div>
+
+<div class="item">
+<h3>3. Nvidia以129亿美元收购Hugging Face：AI基础设施的垂直整合</h3>
+<p><strong>发生了什么：</strong>Nvidia确认将以129亿美元收购Hugging Face，后者托管超过300万个模型，拥有1800万开发者用户。</p>
+<p><strong>为什么重要：</strong>这是Nvidia从芯片层向上游软件生态延伸的战略性收购。Hugging Face的模型分发和开发者社区将成为Nvidia推广其推理框架（如PAIR Virtual Inference Router）和Agent编排工具的理想渠道。但这也引发了对模型生态中立性的担忧——当最大的模型托管平台被最大的算力供应商控制，开源模型的发布和分发逻辑可能发生根本性改变。</p>
+<p><strong>关联动态：</strong>Nvidia同期发布PAIR虚拟推理路由器，用于本地网络上的Agent子任务分发。收购Hugging Face后，Nvidia可能将Agent编排工具与模型分发平台深度整合，形成“芯片-模型-Agent”的完整栈。</p>
+</div>
+
+<div class="item">
+<h3>4. Speculative Macro Commit：Agent工具调用加速的架构突破</h3>
+<p><strong>发生了什么：</strong>论文提出Speculative Macro Commit（SMC）机制，使用双层级Agent系统——一个权威的Actor模型生成正式轨迹，一个更快的Drafter模型在隔离的环境快照上持续预测并执行未来动作链，通过预训练轨迹中挖掘的宏动作库实现加速。</p>
+<p><strong>为什么重要：</strong>Agent系统的瓶颈不仅在于模型推理，更在于串行的工具调用-观察循环。SMC通过“推测执行”将工具调用的延迟从串行变为并行，直接命中Agent产品化的核心痛点。宏动作库的引入使得Agent可以从历史轨迹中学习可复用的动作模式，这本质上是一种“Agent经验的结构化存储”。</p>
+<p><strong>关联动态：</strong>与Fresh Memory, Stale Plans论文形成互补——前者解决执行效率，后者解决记忆与规划的一致性。二者共同指向Agent工程的核心挑战：如何在保持系统可靠性的前提下，最大化Agent的决策速度。</p>
+</div>
+
+<div class="item">
+<h3>5. Fresh Memory, Stale Plans：分布式Agent团队中的计划过时问题</h3>
+<p><strong>发生了什么：</strong>论文提出PlanFence协议，解决分布式LLM Agent团队中的“过时计划执行”问题——一个Agent基于过时需求制定计划，而另一个Agent已提交新需求，导致执行者使用旧计划操作新状态。</p>
+<p><strong>为什么重要：</strong>这是Multi-Agent系统从demo走向生产的关键障碍。现有的“先读后执行”模型无法保证计划与状态的原子一致性。PlanFence的依赖性验证机制为分布式Agent系统的可靠性提供了工程化的解决方案，尤其是在金融、医疗等对一致性要求极高的场景中。</p>
+<p><strong>关联动态：</strong>与Dalek论文中提出的Agent自维护、自演化机制，以及DNative-Twin的决策数字孪生概念，共同构成了Agent可靠性的完整技术栈。</p>
+</div>
+
+<div class="item">
+<h3>6. 快手招聘AI Agent产品经理（留用实习），AI Agent岗位正式进入国内大厂招聘体系</h3>
+<p><strong>发生了什么：</strong>快手发布AI Agent产品经理实习岗位，要求候选人具备提示词工程、知识库构建、模型微调等技能，同时需“理解机器学习、深度学习或大模型技术原理”。</p>
+<p><strong>为什么重要：</strong>AI Agent产品经理已从概念岗位变为正式招聘需求，且要求候选人不只是“提需求的产品经理”，而是能理解模型能力边界、能将业务需求转化为算法方案的技术型PM。这标志着国内AI Agent产品化进入规模化落地阶段，人才需求结构正在从“模型研发”向“Agent应用工程”迁移。</p>
+<p><strong>关联动态：</strong>猎聘平台显示，北京AI Agent产品经理薪资在20-25k（5-10年经验），杭州在25-50k（2-5年经验），反映了Agent人才市场的快速升温。DeepSeek Harness团队的全球招募进一步加剧了人才竞争。</p>
+</div>
+
+<div class="item">
+<h3>7. Google WeatherNext 3：AI气象预测进入实时服务阶段</h3>
+<p><strong>发生了什么：</strong>Google发布WeatherNext 3，基于深度学习技术的气象模型将融入Google Search、Maps和Gemini的天气信息服务。</p>
+<p><strong>为什么重要：</strong>AI for Science从论文走向消费者产品的标志性事件。WeatherNext 3不是实验室的“更准一点”的模型，而是直接嵌入数十亿用户日常使用的产品中。这意味着AI气象预测正在从“替代传统NWP”的学术问题，转向“如何在实时服务中大规模部署”的工程问题。</p>
+<p><strong>关联动态：</strong>与深势科技在AI for Science领域的持续深耕，以及arXiv上关于AI药物发现、蛋白质设计、脑科学的多篇论文，共同构成了AI for Science从研究到产业化的加速趋势。</p>
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<h3>趋势一：Harness工程成为独立赛道，Agent基础设施进入“框架战争”阶段</h3>
+<p><strong>证据链：</strong>DeepSeek正式成立Harness独立团队，由Jane Street背景的工程师挂帅；OpenAI的Codex和Anthropic的Claude Code已率先验证Harness的商业可行性；《Speculative Macro Commit》和《Fresh Memory, Stale Plans》等论文从学术层面解决了Agent执行效率与可靠性的核心问题；《HARNESSEVO》论文从实验角度证明，Agent性能的提升更多来自Harness优化而非模型本身。</p>
+<p><strong>预判：</strong>2026年下半年，Agent框架将从“各家自研”的碎片化阶段进入“标准之争”。Nvidia通过收购Hugging Face获取开发者生态，DeepSeek通过开源Harness吸引开发者，OpenAI和Anthropic通过闭源产品绑定用户。Harness框架的标准化将决定Agent应用的分发逻辑——谁控制了Harness，谁就控制了Agent的“操作系统”层。</p>
+</div>
+
+<div class="trend">
+<h3>趋势二：RLVR与推理模型的后训练优化进入精细化阶段</h3>
+<p><strong>证据链：</strong>《FlowBalance》提出基于验证器校准的自我改进方法；《Gradient-Aligned Reward》利用梯度空间的对齐信号生成密集奖励；《DE-Venus》构建了数据高效RLVR的统一框架；《Tail-Likelihood RL》关注奖励分布的尾部优化。这些论文的共同特征是从“RL能提升推理能力”转向“如何让RL更高效、更可靠地提升推理能力”。</p>
+<p><strong>预判：</strong>RLVR将从“能work”的粗放阶段进入“成本-收益”的精细化阶段。推理模型的竞争不再是谁用了RL，而是谁的RL管线更高效——更少的rollout、更可靠的奖励信号、更好的分布覆盖。这对国内厂商（尤其是DeepSeek和智谱）意味着，后训练的基础设施能力将成为模型能力的核心壁垒。</p>
+</div>
+
+<div class="trend">
+<h3>趋势三：AI Agent人才市场结构性变化——从“模型研发”到“Agent应用工程”</h3>
+<p><strong>证据链：</strong>快手招聘AI Agent产品经理（要求技术理解力）；DeepSeek Harness团队全球招募（要求开源Harness项目经验）；猎聘平台显示AI Agent产品经理薪资在20-50k区间；《Proactive Service Agents》综述论文从学术角度定义了Agent服务的新范式；《KC-Bench》和《CONFLICTGUI》等基准测试的出现，标志着Agent评估从“能不能完成任务”转向“能不能在复杂环境中做出正确决策”。</p>
+<p><strong>预判：</strong>Agent产品经理和Agent可靠性工程师将成为2026年下半年最热门的AI岗位。企业对Agent人才的需求不再局限于“会写prompt”，而是要求候选人具备系统设计、状态管理、多Agent协调、工具调用协议等工程能力。这与前端工程师从“切页面”到“前端架构”的演变路径高度相似。</p>
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<h3>1. Speculative Macro Commit for Faster Tool-Using Agents (arXiv:2609.03236)</h3>
+<p><strong>核心贡献：</strong>提出双层级Agent系统，通过Drafter模型的推测执行和宏动作库的复用，将Agent工具调用的串行延迟转化为并行执行，同时保持Actor模型的权威性。这是首个将“推测解码”思想从token生成扩展到Agent动作序列的工作。</p>
+<p><strong>为什么值得精读：</strong>如果Agent产品化的核心瓶颈是“每一步都要等工具返回结果”，那么SMC提供了一个理论上优雅、工程上可行的解决方案。宏动作库的引入也打开了Agent经验积累和共享的新维度——这在现有Agent框架中几乎完全缺失。</p>
+</div>
+
+<div class="deep-read">
+<h3>2. Fresh Memory, Stale Plans: Dependency-Scoped Validation for Distributed LLM-Agent Memory (arXiv:2609.03340)</h3>
+<p><strong>核心贡献：</strong>首次明确定义了分布式Agent系统中的“过时计划执行”问题，并提出PlanFence协议，通过依赖性验证确保Agent执行的动作始终基于最新状态。</p>
+<p><strong>为什么值得精读：</strong>Multi-Agent系统的可靠性问题长期被忽视，大多数研究假设Agent之间的通信是“读最新状态”就足够了。PlanFence揭示了一个更深层的问题：即使状态是最新的，基于旧状态推导的计划仍然可能过时。这对金融、医疗等场景的Agent系统设计具有直接的工程指导意义。</p>
+</div>
+
+<div class="deep-read">
+<h3>3. Dalek: A Constructive Agent Machine (arXiv:2609.03546)</h3>
+<p><strong>核心贡献：</strong>提出一个闭合的Agent机器架构，实现自维护、自演化、自复制和自组织，基于冯·诺依曼的自我复制自动机理论，为Agent系统提供了形式化的结构基础。</p>
+<p><strong>为什么值得精读：</strong>这是少数从第一性原理出发构建Agent系统的工作。与当前大多数“把LLM加上工具调用”的Agent定义不同，Dalek为Agent提供了结构性的边界和身份定义——这在Agent系统日益复杂、需要长期运行的场景中至关重要。</p>
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<h3>GPT-6 Astra (Simon Willison, 2026-09-03)</h3>
+<p><strong>为什么今天推荐这篇：</strong>Simon Willison是AI工程社区最具影响力的独立观察者之一。他关于GPT-6 Astra的点评聚焦于一个被大多数媒体忽略的关键细节：Astra的API定价与Claude Fable 5.1完全相同（$10/$50每百万token），但ARC-AGI 3的99.9%成绩却花费了$19K。这个对比揭示了“推理能力”与“推理成本”之间的巨大鸿沟——在Agent场景中，后者可能比前者更重要。</p>
+<p><strong>3个核心观点：</strong></p>
+<ul>
+<li>Astra的定价策略表明OpenAI已放弃“能力溢价”，转而追求“市场份额”——$10/$50的定价与Fable完全相同，意味着模型能力不再具有定价权。</li>
+<li>ARC-AGI 3的99.9%成绩虽然惊艳，但$19K的成本使它在实际Agent场景中几乎不可用——Agent需要的是“足够好且足够便宜”的推理，而非“完美但昂贵”的推理。</li>
+<li>Willison对Astra的实际体验保持谨慎——他尚未亲自测试，这种“先看再做”的态度在AI媒体的狂热中反而显得稀缺。</li>
+</ul>
+<p><strong>适合谁读：</strong>AI产品经理、Agent系统设计者、关注模型定价策略的决策者</p>
+<p><strong>大致阅读时间：</strong>8分钟</p>
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<h3>DeepSeek：Harness团队独立，人才争夺加剧</h3>
+<p><strong>核心动态：</strong>DeepSeek Harness业务线独立运营，崔添翼（前Jane Street）挂帅，全球招募Harness开源项目贡献者。与此同时，DeepSeek面临核心研究员被字节、小米等大厂以数倍薪资挖角的困境，首轮融资启动或为解决人才激励问题。梁文锋在投资者交流中重申“以AGI为目标，非利润最大化”。</p>
+<p><strong>信号判断：</strong>Harness的独立建制意味着DeepSeek正在从“模型公司”转型为“AI基础设施公司”。但人才流失问题在缺乏股权激励的情况下可能加剧——Harness团队的招聘吸引力将成为观察DeepSeek能否持续保持竞争力的关键指标。</p>
+</div>
+
+<div class="item">
+<h3>快手：AI Agent产品经理岗位正式进入招聘体系</h3>
+<p><strong>核心动态：</strong>快手发布AI Agent产品经理（留用实习）岗位，要求候选人具备提示词工程、知识库构建、模型微调等技术能力，同时需理解大模型技术原理。岗位职责覆盖从需求调研到产品迭代的全生命周期。</p>
+<p><strong>信号判断：</strong>快手将AI Agent产品经理定位为“技术型PM”，而非传统的“业务型PM”，这表明国内大厂对Agent产品的理解正在从“AI赋能业务”转向“AI原生应用”。</p>
+</div>
+
+<div class="item">
+<h3>智谱AI：GLM-5.5蓄势待发，港股上市后商业化加速</h3>
+<p><strong>核心动态：</strong>智谱创始人唐杰确认新一代模型将带来“史诗级plus”提升，业内预期代号GLM-5.5。GLM-5.2已在AI编程能力方面达到国际顶尖水平，调用量达2.58万亿Token。智谱AI于2026年开年登陆港股，成为“全球大模型第一股”。</p>
+<p><strong>信号判断：</strong>智谱的上市和商业化加速，叠加GLM-5.5的预期，可能推动国内大模型进入“资本+技术”的双重竞争阶段。但“史诗级plus”的表述能否兑现，将直接影响其二级市场表现。</p>
+</div>
+
+<div class="item">
+<h3>月之暗面与百川智能：国内大模型“六小虎”的分化加剧</h3>
+<p><strong>核心动态：</strong>月之暗面获得140亿融资，但百川智能放弃通用大模型赛道，裁撤金融、教育等业务线，转向垂直场景。国内“六小虎”中，智谱和MiniMax已上市，阶跃星辰和零一万物也在调整战略。</p>
+<p><strong>信号判断：</strong>通用大模型创业的窗口期正在关闭，资本和人才向头部集中。百川的“断臂求生”和零一万物的转型，反映了国内大模型创业从“讲故事”到“看营收”的残酷转折。对于AI从业者而言，选择“留在牌桌上的公司”将变得愈发重要。</p>
+</div>
+
+<div class="item">
+<h3>深势科技：AI for Science的长期主义</h3>
+<p><strong>核心动态：</strong>深势科技张林峰在访谈中回顾了从2017年开始的AI for Science探索，强调“用笔记本跑过超算”的计算加速，以及大语言模型在科研效率提升中的角色。深势科技持续在科学智能领域深耕。</p>
+<p><strong>信号判断：</strong>深势科技是国内AI for Science领域最坚定的长期主义者，其“6个数量级的计算加速”已经从学术概念转化为实际生产力。随着AI for Science从论文走向产业化，深势科技的先发优势可能转化为竞争壁垒。</p>
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<h3>1. AI Agent产品经理成为新增岗位类型</h3>
+<p><strong>薪资信号：</strong>快手AI Agent产品经理（实习）未公开薪资，但猎聘平台显示北京AI Agent产品经理（5-10年经验）薪资在20-25k，杭州（2-5年经验）在25-50k·13薪。AI Agent产品经理已从“概念岗位”变为“正式招聘需求”。</p>
+<p><strong>技能需求变化：</strong>岗位要求从“能写PRD”转向“能理解模型能力边界、能将业务需求转化为算法方案”。提示词工程、知识库构建、模型微调等技术能力成为标配，Python数据分析能力也被明确要求。</p>
+</div>
+
+<div class="item">
+<h3>2. Harness工程师成为Agent基础设施的核心人才</h3>
+<p><strong>招聘信号：</strong>DeepSeek Harness团队全球招募，优先筛选“具备Agent Harness开源项目经验”的开发者，申请人需提交代码托管平台账号与代表作品。这标志着Harness工程师已从“全栈工程师的子集”变为“独立的技术岗位”。</p>
+<p><strong>技能需求推断：</strong>基于Dalek、PlanFence、SMC等论文的技术方向，Harness工程师需要掌握：工具调用协议设计、状态管理与一致性验证、多Agent协调机制、推测执行与宏动作库、Agent记忆与知识图谱。这些技能在现有课程体系中几乎完全缺失，具备相关经验的候选人将获得显著溢价。</p>
+</div>
+
+<div class="item">
+<h3>3. AI Agent可靠性工程师可能成为下一个热门岗位</h3>
+<p><strong>推断依据：</strong>《Fresh Memory, Stale Plans》揭示的“过时计划执行”问题，《CONFLICTGUI》暴露的Agent过度执行问题，《KC-Bench》检测的知识冲突问题，都指向同一个需求：Agent系统需要专门的可靠性工程师来确保行为一致性。这与传统软件工程中“测试工程师”到“质量保障工程师”再到“SRE”的演变路径高度相似。</p>
+<p><strong>机会方向：</strong>具备形式化验证、分布式系统一致性、或者传统软件可靠性工程背景的AI从业者，可能率先占据这个新兴岗位的生态位。</p>
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+<p><strong>Harness，不是模型，是2026年AI Agent的核心战场。</strong>DeepSeek独立建制、OpenAI和Anthropic的产品化验证、Nvidia的生态整合，三者共同指向一个结论：Agent时代的“操作系统”层正在形成，Harness框架的标准化将决定未来3年的AI应用格局。如果你在AI领域工作，现在就应该开始理解Harness（工具调用、状态管理、多Agent协调），而不是追逐下一个模型。</p>
+</div>
+
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
