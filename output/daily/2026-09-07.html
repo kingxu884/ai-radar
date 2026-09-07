@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年09月07日 · 新闻 114 条 · 博客 4 篇 · 搜索 7 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>OpenAI 抛出 "RSI" 新叙事：内部研究加速与对齐困境并行</strong><br>
+Jakub Pachocki 发布《An Alien Mind》反思对齐挑战，同日官方博客首次公开内部 coding agent 使用数据，展示"每位研究员 AI 支出"在 7 月底出现显著拐点。Simon Willison 推断这与 GPT-6 Astra 内部开放有关。<br>
+<strong>为什么重要：</strong>RSI（Recursive Self-Improvement）正在取代 AGI 成为 OpenAI 的核心叙事框架——不是"是否到达通用智能"，而是"智能体已经参与到加速自身研究的闭环中"。这不仅是技术事件，更是行业叙事转换的信号：从 model capability 转向 agent-driven research velocity。对于做 Agent Harness 的团队，OpenAI 内部数据意味着"Agent 工程效率"正在成为新的 scaling 维度。<br>
+<strong>关联：</strong>与今天 arXiv 上密集出现的 harness RL、训练-部署一致性论文形成呼应——当 AI 开始加速 AI 研究时，训练基础设施（harness）的质量直接决定加速曲线的斜率。
+</div>
+
+<div class="item">
+<strong>DeepSeek Harness 内测引爆开源 Agent 社区：712 个项目报名，三大技术瓶颈浮出</strong><br>
+DeepSeek 新成立的 Harness 部门（由前 Jane Street 量化工程师崔添翼领导）启动内测，社区报名 712 个项目。讨论集中在三大瓶颈：记忆（56 个相关项目获 194k star）、推理-记忆一体化、以及安全问题。<br>
+<strong>为什么重要：</strong>这是国内首次有头部模型厂商将 "Harness" 作为独立一级部门运作，而非依附于模型训练。崔添翼的 Jane Street 背景高度契合 Agent 工程本质——高可靠性、低延迟、多步骤决策、长程策略执行。DeepSeek 正在把 Harness 从 "工具集" 升级为 "基础设施层"，这一定位变化会影响整个 Agent 工具链生态。<br>
+<strong>关联：</strong>与今日 arXiv 论文《What Does Multi-Harness RL Learn?》直接呼应——当 Harness 成为训练环节的一部分而非仅部署层时，credit assignment 和可移植性问题成为核心研究课题。国内 Agent 工程师可以密切关注 DeepSeek Harness 的 API 设计和技术路线选择。
+</div>
+
+<div class="item">
+<strong>arXiv: 更好的模型可能创造更危险的系统——LLM Agent 在金融市场的相关性风险</strong><br>
+论文《Why Better Models Can Create Riskier Systems》通过基于 LLM 交易者的 agent-based simulation 证明：前沿模型的能力提升会导致行为相关性增加，产生不可分散的系统性风险地板。<br>
+<strong>为什么重要：</strong>这对当前 "模型越强→Agent 越好" 的线性假设提出了根本性质疑。当多个 Agent 共享训练数据和架构先验时，它们的"独立性"是幻觉。关联性随能力增长而增强的机制意味着：在金融、风控、内容审核等场景中，部署多个"更强"的模型可能反而增加系统性风险。这是 Agent 生产化部署必须面对的鲁棒性问题。<br>
+<strong>关联：</strong>与《Conformity Breaks Conformal Prediction》形成方法论互补——后者证明多 Agent 系统中的共识会破坏 conformal 校准。两篇论文共同指向一个核心问题：Agent 系统的统计独立性假设在生产环境中不成立。
+</div>
+
+<div class="item">
+<strong>arXiv: 极稀疏监督激励推理能力——0.05% 的 token 即可匹配全量训练效果</strong><br>
+《Extremely Sparse Supervision Incentivizes Reasoning Ability》在 Qwen3 系列上发现：每条推理轨迹仅用 1-2 个 token 的监督信号（占总 token 的 0.05%）就能匹配或超越全 token 训练的效果。<br>
+<strong>为什么重要：</strong>如果这一发现在更广泛模型上可复现，将直接改变 post-training 的经济学。当前 RL/蒸馏流程的大量成本消耗在 token 级监督上，而这个结果暗示：推理能力的激励信号可能高度集中在少数关键决策点（如最终答案前的"信念锚定" token）。对做 reasoning RL 的团队来说，这提供了一个低成本验证路径。<br>
+<strong>关联：</strong>与《ConsensusBench》和《Train What You Deploy》形成一条线：post-training 正从"token 密集"转向"信号密集"，从"环境简化"转向"部署保真"。
+</div>
+
+<div class="item">
+<strong>arXiv: Multi-Harness RL 的信用分配——Cross-Group 优势池化优于 Within-Group</strong><br>
+《What Does Multi-Harness RL Learn?》用 Qwen3-8B 在四个 harness（Aider, OpenHands, Qwen Code, SWE-agent）上做受控实验，对比两种 GRPO 优势分组规则的效果。核心发现：将多个 harness 的奖励池化到同一任务组内（Cross）优于每条 trajectroy 独立分组（Within）。<br>
+<strong>为什么重要：</strong>随着 coding agent RL 规模扩大，训练 harness 的选择和奖励组合方式成为决定性因素。这篇论文首次系统性地隔离了"harness 间奖励池化"这一变量，证明 Cross-group pooling 是提升跨 harness 泛化能力的关键设计。对于正在搭建 Agent RL 基础设施的团队，这是一个可以直接采用的训练策略。<br>
+<strong>关联：</strong>与 DeepSeek Harness 内测的信息直接关联——如果 DeepSeek 的 Harness 部门也在处理类似问题，他们的技术路线选择将影响整个开源生态。
+</div>
+
+<div class="item">
+<strong>arXiv: τ^τ-Bench——让 Agent 构建本身成为被评估的任务</strong><br>
+新基准 τ^τ-Bench 将 "构建生产级 Agent" 作为任务：开发者 Agent 被给予真实业务记录、需求方、生产 API、继承代码库和成本限制，需要交付可运行的 Agent。<br>
+<strong>为什么重要：</strong>现有 Agent 基准测量的是"Agent 执行任务的能力"，但行业正在发生一个转变：Agent 的构建者本身越来越是一个 coding agent。τ^τ-Bench 测量的正是这个元层级的工程能力。这对 Agent 产品化团队意味着：你的评估体系需要开始包含"构建 Agent 的成本与质量"这个维度，而不仅仅是"Agent 运行时的表现"。<br>
+<strong>关联：</strong>与 OpenAI 的 "Research acceleration" 博客形成闭环——当 coding agents 足够强时，它们开始被用来构建更多 coding agents。
+</div>
+
+<div class="item">
+<strong>arXiv: 训练即部署——Token-Faithful Post-Training 修复 Agent 训练的保真度断裂</strong><br>
+《Train What You Deploy》指出现有 coding/terminal agent 的训练管线存在严重的 token 和控制保真度错误：简化训练环境与生产部署不匹配，离线日志重建扭曲原始 prompt 并混淆策略调用与后台操作。提出 C-DPPO 算法解决这一问题。<br>
+<strong>为什么重要：</strong>Agent RL 面临的核心工程问题不是"奖励怎么设计"，而是"训练时的 agent 行为分布与部署时的行为分布是否一致"。这是从模型 post-training 向 agent post-training 迁移时被严重低估的挑战。对正在将 RL 引入生产 Agent 的团队，这篇论文提供了一个可操作的诊断框架和算法改进方向。<br>
+<strong>关联：</strong>与《Multi-Harness RL》形成互补——前者关注 harness 间的奖励池化，后者关注训练-部署环境的保真度。两者合起来构成了 Agent RL 基础设施的两个关键设计维度。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Harness 从工具层升级为训练基础设施层</strong><br>
+证据：DeepSeek 成立独立 Harness 部门；arXiv 上 4 篇以上论文聚焦 harness RL 的信用分配、可移植性、训练-部署保真度；OpenAI 内部 coding agent 数据公开。<br>
+<strong>判断：</strong>2026 下半年的关键在于 "Harness-as-Training-Infrastructure"。过去一年，harness 被视为 Agent 的运行时环境（工具调用、环境交互）；现在，它正在变成 RL 训练管线的一部分。这意味着：harness 的设计质量直接决定模型能力上限，而不仅仅是部署效率。接下来 6 个月，我们会看到更多厂商将 Harness 团队从工程部门剥离为研究部门的一部分，与 post-training 团队合并。<br>
+<strong>启示：</strong>做 Agent 基础设施的团队应该主动接触 RL 训练团队，理解他们的 harness 需求。做模型训练的团队需要开始招聘有生产系统经验的工程师，而不是只找 RL 研究员。
+</div>
+
+<div class="trend">
+<strong>趋势二：Agent 系统的统计独立性假设正在崩塌</strong><br>
+证据：《Why Better Models Can Create Riskier Systems》证明前沿模型行为相关性随能力上升；《Conformity Breaks Conformal Prediction》证明多 Agent 共识下 conformal 校准失效；《HarvestBench》测试 Agent 是否愿意付费避免伤害动物。<br>
+<strong>判断：</strong>当模型越来越强、训练数据越来越重叠时，"部署多个独立 Agent 投票"的鲁棒性策略可能正在失效。这不仅仅是安全问题，更是一个经济学问题：如果你部署 10 个"最强模型"做金融决策，它们可能高度相关地犯同样的错误，而你的风险模型假设它们是独立的。未来 3-6 个月，会有更多关于 Agent 系统级风险度量（而非单个模型能力）的研究和产品需求涌现。<br>
+<strong>启示：</strong>金融、医疗、安全领域的 Agent 部署团队需要重新评估 ensemble 策略。模型多样性（不同训练家族、不同架构）可能比单纯的能力分数更重要。
+</div>
+
+<div class="trend">
+<strong>趋势三：Post-training 从 "token 密集" 转向 "信号密集 + 部署保真"</strong><br>
+证据：《Extremely Sparse Supervision》证明 0.05% token 即可匹配全量监督；《Train What You Deploy》强调训练-部署保真度；《ConsensusBench》提供规则化过程级信号。<br>
+<strong>判断：</strong>RL/蒸馏的成本结构正在经历重构。如果稀疏监督的发现可泛化，意味着 post-training 的计算瓶颈将从"生成和评分数百万 token"转向"精准定位关键决策点"。同时，"训练环境 = 部署环境"的保真度要求将迫使团队在训练管线中引入更多生产级约束。合起来的效果是：post-training 的进入门槛可能下降（更少的 token 需求），但工程复杂度上升（更高的保真度要求）。<br>
+<strong>启示：</strong>中小团队可以更积极地尝试 reasoning RL，但需要把工程重点放在训练-部署环境一致性上，而不是盲目追求更大的训练数据量。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. 《What Does Multi-Harness RL Learn? Credit Assignment and Portability in Coding Agents》</strong><br>
+<strong>核心贡献：</strong>首次在受控条件下隔离了 "harness 间奖励池化" 对 Agent RL 效果的影响。用同一 Qwen3-8B warm start，冻结任务-harness 记录，仅改变 GRPO 的优势分组规则（Within vs Cross），发现 Cross-group pooling 在 held-out harness 上表现更优。<br>
+<strong>为什么值得读：</strong>这是目前关于 Agent RL 基础设施设计最系统的实证研究之一。如果你的团队正在或即将搭建 coding agent 的 RL 训练管线，这篇论文的实验设计可以帮你避免大量试错。特别关注他们对 "sealed SWE-bench Verified oracle" 的使用方式——如何在多 harness 训练下公平评估每个 checkpoint。<br>
+<strong>适合人群：</strong>Agent RL 工程师、post-training 研究员、Harness 基础设施团队。
+</div>
+
+<div class="deep-read">
+<strong>2. 《Extremely Sparse Supervision Incentivizes Reasoning Ability》</strong><br>
+<strong>核心贡献：</strong>在 on-policy distillation 设定下发现：仅对每条推理轨迹中极少数 token（1-2 个，0.05%）施加监督，就能匹配或超越全 token 监督的效果。在 Qwen3 家族上验证。<br>
+<strong>为什么值得读：</strong>如果这个结果在更大模型和更多任务上复现，它可能改变 post-training 的成本结构和数据标注策略。核心问题：哪些 token 携带了最多的推理激励信号？是最终答案前的"临界 token"还是中间推理步骤？这篇论文提供了实验框架和方法来回答这个问题。<br>
+<strong>适合人群：</strong>Post-training 研究员、RL 工程师、训练成本敏感团队。
+</div>
+
+<div class="deep-read">
+<strong>3. 《Train What You Deploy: Token-Faithful Post-Training of a Production Coding Agent》</strong><br>
+<strong>核心贡献：</strong>识别了 agent training 中两类保真度错误（token fidelity 和 control fidelity），提出 training coupling framework 和 C-DPPO 算法，通过协商训练协议和封闭失败保证来保障训练-部署一致性。<br>
+<strong>为什么值得读：</strong>这是 "harness 保真度" 问题的首个系统性解决方案提案。如果你曾经在生产中部署过 RL 训练的 agent，你大概率遇到过"训练时表现优秀、部署后行为异常"的问题。这篇论文提供了诊断这些问题的框架。<br>
+<strong>适合人群：</strong>Agent 产品化团队、MLOps 工程师、RL 基础设施架构师。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>Simon Willison: Research acceleration — The view inside OpenAI</strong><br>
+<strong>为什么今天推荐：</strong>OpenAI 今天同时发布了两篇关于 RSI 的文章，而 Simon Willison 的这篇解读抓住了最关键的可操作信息：AI spend per researcher 的曲线上 7 月底的显著拐点，以及这个拐点与 GPT-6 Astra 内部开放的时间关联。这篇短文帮你快速理解 OpenAI 内部正在发生什么，以及这对你的 Agent 工具链意味着什么。<br>
+<strong>三个核心观点：</strong><br>
+• RSI 正在取代 AGI 成为 OpenAI 的核心叙事——重点不再是"模型多强"，而是"研究加速曲线的斜率"<br>
+• 内部 AI 支出曲线在 7 月底出现明显加速拐点，极可能是新模型内部开放导致 <br>
+• 2026 年已是 Agent 工程全面内部化的年份——coding agents 正深度嵌入 AI 研究流程本身<br>
+<strong>适合谁读：</strong>所有关注 Agent 工程和 AI 研究基础设施的人，尤其是产品经理和技术决策者，帮你在 10 分钟内获得有价值的情境判断。<br>
+<strong>阅读时间：</strong>8-10 分钟。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek：</strong>Harness 部门内测启动，712 个项目报名。崔添翼（前 Jane Street / TSY Capital，ACM-ICPC 六金）领导。部门目标定为基础设施级，而非模型附属工具。Harness 被定位为独立一级部门，这是重大组织信号——暗示 DeepSeek 认为 Agent 基础设施的竞争壁垒不亚于模型本身。<br>
+<strong>招聘信号：</strong>虽然暂无直接招聘信息，但新部门 + 内测规模意味着 Harness 团队将快速扩张。值得关注岗位：Harness 工程师、Agent RL 研究员、工具调用基础设施工程师。
+</div>
+
+<div class="item">
+<strong>中科类脑：</strong>完成数亿元 B+ 轮战略融资，产业龙头领投。类脑计算/神经形态芯片方向持续获得资本关注，但具体资金用途和产品落地节奏需要进一步观察。作为国内类脑 AI 的代表性企业，此轮融资反映了资本对差异化计算架构的兴趣回升。<br>
+</div>
+
+<div class="item">
+<strong>智谱 / 月之暗面 / 百川：</strong>三七互娱在投资布局中覆盖了智谱、月之暗面、百川三家大模型公司。月之暗面 K3 已向港交所递交 A1 文件，估值 500 亿美元。智谱作为"全球大模型第一股"登陆港股。国内大模型厂商的资本化进程正在加速，头部公司之间的资源竞争从模型能力延伸到了资本市场。<br>
+<strong>信号：</strong>融资窗口期配合 Harness/Agent 产品化推进——厂商需要在资本市场叙事中展示"模型能力→产品收入"的转化路径，Agent 产品化是最直接的收入抓手。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>直接信号：</strong><br>
+• 阿里开放 AI 产品评测工程师实习岗位（北京/杭州），面向 2027 届毕业生。这是"AI 产品评测"作为独立岗位出现的信号——大厂开始体系化地建设 AI 产品质量保障能力。<br>
+• DeepSeek Harness 部门扩张：新部门 + 712 项目报名，Harness 工程师、Agent RL 研究员需求即将爆发。<br>
+</div>
+
+<div class="item">
+<strong>推断信号：</strong><br>
+• <strong>Harness 工程师</strong>将成为独立于传统后端/MLOps 的新岗位类别。核心技能组合：工具调用协议（MCP）、上下文管理、memory 系统设计、多 Agent 编排、RL 训练环境搭建。<br>
+• <strong>训练-部署一致性工程师</strong>：随着《Train What You Deploy》等论文将问题显性化，专门负责"确保 RL 训练环境与生产部署行为一致"的角色将出现。要求同时理解 RL 训练管线和生产系统。<br>
+• <strong>Agent 系统风险评估师</strong>：鉴于 Agent 系统级风险研究的快速发展（相关论文今日至少 4 篇），金融和风控领域将需要能评估多 Agent 系统行为相关性的专业人才。<br>
+• <strong>薪资趋势</strong>：前量化工程师（如崔添翼）进入 Agent 基础设施领域的路径正在被验证。具有 low-latency 系统、分布式一致性、金融级可靠性经验的工程师在 Agent Harness 团队中将获得溢价。
+</div>
+
+<div class="closing">
+<strong>⚡ 今日信号：</strong>OpenAI 的 RSI 拐点 + DeepSeek 的 Harness 独立化，指向同一件事：Agent 工程效率本身就是新的模型能力上限。抢人比抢算力更紧迫。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
