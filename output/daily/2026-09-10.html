@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年09月10日 · 新闻 140 条 · 博客 9 篇 · 搜索 8 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>发生了什么：</strong>OpenAI 发布 GPT-6 Astra，定位为企业级最强模型，主打高级推理、计算机使用（computer use）以及更强的写作与设计判断。<br>
+<strong>为什么重要：</strong>这说明 OpenAI 正式把“执行能力”和“审美/设计判断”纳入企业模型核心卖点，而不只是推理分数。计算机使用成为一等能力，意味着模型将直接进入操作浏览器、设计工具和复杂工作流的产品化阶段，对 Claude Code、Cursor 等 Agent 产品形成直接挤压。<br>
+<strong>与其他动态的关联：</strong>Simon Willison 已用 GPT-6 Astra + Blender 在 17 分钟内生成可运行的 3D 模型，工具调用链路开始具备产品级稳定性。
+</div>
+
+<div class="item">
+<strong>发生了什么：</strong>TechCrunch 报道，8 月头部企业的人均 AI 支出明显下滑，尽管 token 成本和模型价格仍在下降。<br>
+<strong>为什么重要：</strong>这是一个值得警惕的商业化信号：更便宜的模型并没有自动带来企业使用量的爆发。企业尚未形成稳定、高频的 AI 消耗场景，而“按席位付费”的定价模式可能面临挑战。对创业者来说，产品价值需要从“模型能力”转向“可量化的任务完成率”。<br>
+<strong>与其他动态的关联：</strong>Nathan Lambert 在博客中讨论“普通人何时真正感受到 AI 的影响”，这一问题与当前企业支出疲软形成呼应。
+</div>
+
+<div class="item">
+<strong>发生了什么：</strong>DeepSeek Harness 团队负责人崔添翼公开表示，团队急缺人才，每天都在面试，固定开放 Harness 研究员、Harness 工程师、Harness 产品经理三类岗位。<br>
+<strong>为什么重要：</strong>这是国内大厂首次将 Harness 明确作为独立工程部门对外释放招聘信号。Harness 是让 Agent 可靠工作的工程外壳，负责约束、验证、纠错和收敛。DeepSeek 正将其视为对标 Claude Code、打造国产代码智能体的核心组织载体。<br>
+<strong>与其他动态的关联：</strong>今日多篇 arXiv 论文（RobustSGPO、Subagents vs Agent Skills）都指向 Harness 设计，使这一岗位从工程技巧升级为系统科学。
+</div>
+
+<div class="item">
+<strong>发生了什么：</strong>Anthropic 研究员 Jacob Coxon 因担心 AI 灭绝风险辞职，并公开呼吁实验室之间达成 pacing agreements；同日，Paul Christiano 加入 OpenAI Foundation Board 及安全委员会。<br>
+<strong>为什么重要：</strong>安全治理正在从“公开发声”进入“机构博弈”阶段。一方面，顶级 alignment 研究者进入 OpenAI 治理层；另一方面，一线研究员因自改进 AI 风险离职，说明前沿实验室内部对发布节奏仍有显著分歧。这会在未来 1-2 个季度影响模型发布速度、API 权限开放度和企业采购风险偏好。<br>
+<strong>与其他动态的关联：</strong>OpenAI 同天发布政策文章《The AI policy window is open. We need to act.》，显示其正在主动寻求更持久的安全与政策框架。
+</div>
+
+<div class="item">
+<strong>发生了什么：</strong>Sequoia 加倍押注 Cymphony，一家为企业统一管理员工、AI Agent 及其他非人类身份权限的安全公司。<br>
+<strong>为什么重要：</strong>AI Agent 进入生产环境后，企业安全边界从“人”扩展到“可调用工具、读取数据库、代表用户行动的非人类身份”。这创造了一个新的企业安全品类：Agentic IAM（智能体身份与访问管理）。<br>
+<strong>与其他动态的关联：</strong>与 arXiv 论文《Black-Box Red Teaming of Agentic AI》和《AgentAudit》形成互补，前者发现攻击面，后者提供评估框架。
+</div>
+
+<div class="item">
+<strong>发生了什么：</strong>arXiv 论文《Subagents vs Agent Skills》提出：在长时程任务中，把“技能包”加载进上下文让 Agent 自行跟随，会因上下文积累而变得脆弱；将技能包作为 Subagent 调用是更可靠的选择。<br>
+<strong>为什么重要：</strong>这是对当前 Agent 工程主流做法的重要纠偏。上下文窗口不是无限的工作记忆，长任务中“信息积累”会降低推理质量。Subagent 化能隔离上下文、保护主 Agent 的决策质量，这对工具调用、记忆管理和 Multi-Agent 架构有直接指导价值。<br>
+<strong>与其他动态的关联：</strong>与 DeepSeek Harness 团队要解决的“约束、验证、纠错、收敛”问题高度一致。
+</div>
+
+<div class="item">
+<strong>发生了什么：</strong>arXiv 论文《ADMET-EvO》提出一个自进化科学智能体，可在 22 个 ADMET 药物任务上持续生成可证伪假设，并跨数据、特征和模型轴测试干预。<br>
+<strong>为什么重要：</strong>这代表 AI for Science 的下一步：不是完成单一预测任务，而是把“假设生成—实验设计—结果裁决—知识更新”串成研究闭环。对药物发现、材料筛选等长周期场景，自主科研 Agent 可能比单点模型提升更具革命性。<br>
+<strong>与其他动态的关联：</strong>《OpenDiscoveryTrace》发布的 558 条完整 AI 科学家轨迹，正为这类科研 Agent 提供可审计的过程数据。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>1. Harness 工程正从“模型外挂”变成独立技术栈。</strong><br>
+证据：DeepSeek 成立专门 Harness 团队；《Subagents vs Agent Skills》研究技能包执行方式；《RobustSGPO》直接研究 Agent Harness 的搜索空间控制；Cymphony 获得 Sequoia 追加投资。<br>
+判断：未来 6-12 个月内，决定 Agent 产品可靠性的不再是单一模型能力，而是 Harness 层面的上下文管理、工具选择、失败恢复和可验证执行。Harness 工程师会成为与模型训练工程师并列的核心岗位。
+</div>
+
+<div class="trend">
+<strong>2. Post-training 的新瓶颈不是算力，而是“可验证奖励”。</strong><br>
+证据：《Proof-Carrying Cognition》指出，RL 在推理上的收益集中在有廉价、可靠验证器的领域；《World-Time Compute with Verified Code World Models》用可执行代码世界生成标注数据；OpenAI 政策文章也要求“更强能力需要更强安全证据”。<br>
+判断：推理能力继续 Scaling 的关键，将转向构建可验证、防作弊的奖励来源。代码执行、形式化验证、模拟环境和现实世界反馈，会比单纯的偏好数据更有战略价值。
+</div>
+
+<div class="trend">
+<strong>3. 企业 AI 商业化进入“单位经济审计期”。</strong><br>
+证据：8 月头部企业人均 AI 支出下滑；token 成本下降；企业端 AI 助手（Instacart、Shipt、Instinct）不断冒出但呈同质化。<br>
+判断：模型厂商和 SaaS 公司将从“卖 token/卖席位”转向“卖可验证任务交付”。如果企业人均支出持续走低，依靠推理收入支撑估值的逻辑会受到挑战，具备真实工作流嵌入能力的 Agent 产品会更有韧性。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. Subagents vs Agent Skills: Executing Reusable Knowledge for Long-Horizon Agentic Tasks</strong><br>
+核心贡献：系统比较了“将技能包加载进主上下文”与“将技能包作为 Subagent 调用”两种方案，发现长时程下上下文积累会显著降低推理质量，Subagent 方式更能保留任务表现。<br>
+为什么值得读：它直接回答了一个工程争论——技能库到底怎么挂载？对正在设计 Multi-Agent、MCP 工具集或企业 Agent 平台的团队，这是一份能省下大量踩坑成本的研究。
+</div>
+
+<div class="deep-read">
+<strong>2. Proof-Carrying Cognition: Closing the Verification Gap with Reality-Settled Reward</strong><br>
+核心贡献：把“验证器与金标准的相关性 rho”作为测试时计算与能力之间的精确汇率，并证明不可靠验证器会付出 N^(1/rho²) 级惩罚。<br>
+为什么值得读：这是对当前 RL/推理 Scaling 瓶颈最清晰的形式化之一，适合想理解为什么代码/数学能力提升快、开放域推理难做的人。
+</div>
+
+<div class="deep-read">
+<strong>3. ADMET-EvO: a self-evolving scientific agent for sustained research across heterogeneous tasks</strong><br>
+核心贡献：提出证据门控的自进化科研 Agent，在 22 个 ADMET 任务上把“假设、实验、结论”跨任务循环利用，并明确区分支持/否定/无结论结果。<br>
+为什么值得读：它是 AI for Science 从“模型”走向“研究者”的一个高质量模板，尤其适合关注药物发现和科学 Agent 产品化的团队。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>推荐：Sebastian Raschka — GPT-6 Astra, Looped Transformers, and Hidden Reasoning</strong><br>
+链接：<a href="https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and">https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and</a><br><br>
+<strong>为什么今天推荐：</strong>GPT-6 Astra 刚刚发布，而其背后可能采用的循环 Transformer 和隐藏推理机制，是理解下一代模型能力与风险的关键。<br><br>
+<strong>3 个核心观点：</strong><br>
+- Looped Transformer 块可以用更多计算换取更强的推理能力，而不必线性增加参数量。<br>
+- “隐藏思维链”可能带来明显能力提升，但也让可解释性和安全审计更困难。<br>
+- GPT-6 Astra 代表模型正从“回答问题”转向“完成任务”，但架构细节仍然封闭，社区研究正在填补空白。<br><br>
+<strong>适合谁读：</strong>大模型研究员、AI 产品经理、关注 Agent 架构的工程师。<br>
+<strong>大致阅读时间：</strong>25-30 分钟。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek：</strong>Harness 团队高调招人，三类核心岗位每天滚动面试，显示其对 Agent 工程化的战略投入。结合近期梁文锋闭门会信息：AGI 路线图为“语言模型 → CoT → Agent → 持续学习 → 自我迭代奇点 → 具身智能”，其中“持续学习”被列为下一关键瓶颈；同时认为国产芯片（如华为 950 超节点）正在缩小与英伟达差距，但仍有生态与产能短板。
+</div>
+
+<div class="item">
+<strong>京东：</strong>JDDiscovery-2026 大会发布 10 万卡国产算力集群，并推出 JoyAI 世界模型，强调物理 AI 建设。这是国内厂商将算力基础设施与世界模型能力绑定的一次重要表态。
+</div>
+
+<div class="item">
+<strong>科大讯飞：</strong>星火 X2.5 实测显示其能处理 61 页财报、粒子月亮生成、代码 Bug 定位等复杂任务，API 促销五折，显示国产模型在长文档与多模态执行场景上继续追赶。
+</div>
+
+<div class="item">
+<strong>外滩大会：</strong>国产 AI4S 计算平台亮相，算力技术与人才布局双向发力，反映 AI for Science 正成为国内算力平台竞争的新焦点。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>Harness 研究员/工程师/产品经理成为新岗位类别。</strong><br>
+DeepSeek 的招聘信号非常明确：Harness 不再只是“会调 API 的工程师”，而是负责约束、验证、纠错和收敛的独立专业。技能需求将集中在：上下文管理、工具调用协议（MCP/Subagent）、记忆系统、执行轨迹评估、失败恢复策略。
+</div>
+
+<div class="item">
+<strong>Agentic Security / 非人类身份治理将快速升温。</strong><br>
+Cymphony 获得 Sequoia 支持表明，企业开始为 AI Agent 的权限、访问和审计付费。相关岗位可能包括：Agent 安全工程师、非人类身份治理架构师、Agentic Red Teaming 专家。黑盒红队测试和全生命周期信任评估会成为强需求技能。
+</div>
+
+<div class="item">
+<strong>AI for Science 工程师稀缺性上升。</strong><br>
+ADMET-EvO、OpenDiscoveryTrace 以及国内 AI4S 平台建设显示，具备“科学假设生成 + 实验闭环 + 模型训练”复合能力的人才会越来越抢手，尤其在药物发现、材料设计和关键材料回收方向。
+</div>
+
+<div class="item">
+<strong>警惕共性岗位降温。</strong><br>
+企业人均 AI 支出下滑是一个风险信号：纯“提示工程师”或通用 LLM 应用岗位可能面临薪资和需求压力，真正有溢价的是能提高 Agent 任务完成率、降低验证成本、把模型变成可靠生产力的工程师。
+</div>
+
+<div class="closing">
+⚡ 今日信号：Agent 的竞争焦点正从模型能力转向 Harness 工程与可验证执行；DeepSeek 已设立专门团队抢人，做 Agent infrastructure 的人现在是稀缺资产。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
