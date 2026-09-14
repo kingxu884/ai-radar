@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年09月14日 · 新闻 112 条 · 博客 2 篇 · 搜索 9 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>Harness与模型的角力：谁才是Agent能力的真正瓶颈？</strong><br>
+一篇重磅arXiv论文首次在私有、无污染基准上对比了同一模型在不同Harness（Claude Agent SDK vs DeepAgents，OpenAI Codex SDK vs DeepAgents）下的表现。<br>
+<strong>为什么重要：</strong> 这项研究直接动摇了“原生配对最优”的行业信念——792/800次运行的配对对比中，无论是Claude Opus 4还是GPT-5.5，<strong>均未发现某种Harness对特定模型有持续优势</strong>。这意味着Agent性能的天平正在从模型能力向Harness工程能力倾斜，厂商锁定的叙事正在被瓦解。<br>
+<strong>关联动态：</strong> 与此呼应，DeepSeek Harness研究员崔添翼力挺翁荔观点“AI自进化先从Harness开始”，并宣布DeepSeek Harness v0.1开发者预览版已开源；Occamy-1.0论文则直接提出“Co-work Agent的实用价值取决于效率而非巅峰推理能力”。
+</div>
+
+<div class="item">
+<strong>语言不是定量推理的充分基底：LLM需要“大定量模型”补充</strong><br>
+一篇根本性反思论文指出，语言描述是定量世界的“有损编码”，且损失不可逆——任何规模的下游模型都无法从描述中恢复未被编码的量化信息。<br>
+<strong>为什么重要：</strong> 这对目前用LLM处理金融风控、资本分配、患者分诊等“后果性定量决策”的做法提出了结构性批评。论文不是在说模型不够大，而是说<strong>训练表征本身就存在不可修复的信息瓶颈</strong>。这对AI Agent在医疗、金融等严肃场景的产品化路径具有直接指导意义——Agent需要接入原始定量数据而非仅仅依赖文本描述。<br>
+<strong>关联动态：</strong> 与今日多篇AI for Science论文（如CCS碰撞截面预测GRACE、多模态心脏表征学习LAMAE）形成理论呼应——这些工作本质上都在绕过“语言中间层”，直接从结构化数据中学习。
+</div>
+
+<div class="item">
+<strong>智谱剧透下一代GLM：完全自训练方法浮出水面</strong><br>
+智谱在财务公告中提前披露了下一代GLM模型的关键技术路线——完全自训练方法。<br>
+<strong>为什么重要：</strong> “模型、论文都还没出，先从财务公告上剧透”这一异常信息披露路径，暗示该方法可能具有重大战略价值或资本叙事意义。自训练方法一旦成熟，将大幅降低对人工标注和外部数据源的依赖，改变大模型Post-training的成本结构和能力天花板。<br>
+<strong>关联动态：</strong> 北京AI“黄金圈”正在加速成形，月之暗面、智谱正围绕人才和资本展开新一轮争夺。
+</div>
+
+<div class="item">
+<strong>PhysBrain 1.5登顶全球开源榜：中国物理AI实现“空间智能”突破</strong><br>
+中国公司亮源新创的PhysBrain 1.5模型在空间智能维度上与GPT-6 Astra并驾齐驱，登顶开源榜单。<br>
+<strong>为什么重要：</strong> 这标志着国内团队在Physical AI（物理世界理解与推理）这条最难跑通的赛道上取得了里程碑式突破。2000+真实场景进仿真的能力意味着模型正在从“看世界”进化到“理解世界怎么运作”。<br>
+<strong>关联动态：</strong> 亮源新创的路线正变得清晰——一个导航模型零样本通吃四种机器人本体，这正是Physical AI产品化的关键信号。
+</div>
+
+<div class="item">
+<strong>Occamy-1.0：35B“协同工作”模型重新定义Agent基础能力</strong><br>
+基于Qwen3.6-35B继续训练的Occamy-1.0，专注于执行信息收集、工具使用、编码和文件操作等复合工作流。<br>
+<strong>为什么重要：</strong> 论文直接提出一个洞察：<strong>日常工作的很多步骤强调的是状态追踪、协调、恢复和后续跟进，而非前沿推理</strong>。这意味着Agent模型存在一条不同于追求参数规模和推理能力天花板的优化路径——以“工作执行效率”为核心指标。<br>
+<strong>关联动态：</strong> 与Occamy同日发布的还有BlueLM-GUI（35B移动端GUI Agent）和Agent as Policy（通用Agent直接驱动物理机器人），共同指向Agent模型正在从“对话能力”向“执行能力”迁移。
+</div>
+
+<div class="item">
+<strong>“行动前验证”成为Agent安全新范式</strong><br>
+论文《Look Before You Leap》系统论证了一个被低估的Agent监督机制：在动作生效前运行廉价的确定性检查。<br>
+<strong>为什么重要：</strong> Agent的一个核心风险不是“报错”而是“静默失败”——产生看似合理但实际错误的效果且不报任何错误。该论文的静态验证器在9930个Shell命令和482个工具上捕获了95.8%的无效命令，假阳性率仅10%。<strong>这种轻量级验证层可能成为Harness工程的标准组件。</strong><br>
+<strong>关联动态：</strong> 与Draft-Verify-Revise流水线中指代歧义研究、EvoRS自进化奖励系统形成呼应——Agent工程的焦点正在从“让模型更强”转向“让系统更可靠”。
+</div>
+
+<div class="item">
+<strong>AI药物发现进入“默认模式”：2026年行业拐点已至</strong><br>
+Drug Discovery News深度分析指出，2026年生命科学研发正在跨越一个关键拐点——AI增强分子设计从“有前途的能力”变为早期发现的默认模式。<br>
+<strong>为什么重要：</strong> 真正的竞争优势不再来自算法，而是训练数据。Federated Learning框架正在成为行业共识——协作模型改进的收益开始超过数据主权的长期担忧。<strong>这意味着AI for Science正在从技术叙事进入商业化落地阶段。</strong><br>
+<strong>关联动态：</strong> 深势科技张林峰、孙伟杰在深度访谈中详述了AI for Science从“开始到现在”的全路径；HypoKG生物医学假设生成论文则揭示了LLM在科学发现中的根本性局限——目前更像是“说得好听”而非“真正推理”。
+</div>
+
+<div class="item">
+<strong>多Agent多用户记忆系统AIM：隐私感知的互通记忆框架</strong><br>
+提出了一个统一框架，使多Agent、多用户LLM系统能持久管理私有和共享记忆，动态分类信息为私密或公共。<br>
+<strong>为什么重要：</strong> 解决了一个此前被忽视的问题：现有Agent记忆系统通常只服务单个用户，无法在保护隐私的前提下共享公共知识。AIM的“私密-范围-不可访问”和“公共-可访问”双层架构，<strong>为多租户Agent系统（如企业协作场景）提供了关键基础设施</strong>。<br>
+<strong>关联动态：</strong> LifeFuse-Mem（生命周期感知的状态融合）、CueMem（线索引导的上下文重建）等同期工作在记忆机制上形成互补，Agent记忆工程正从单点优化走向系统化设计。
+</div>
+
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Harness Engineering正在成为AI Agent的核心战场</strong><br>
+<strong>证据链：</strong><br>
+• arXiv:2609.11987“Harness or Model?”通过配对对比实验证明，<strong>厂商原生Harness对自家模型并无显著优势</strong>，Harness的选择应从“信仰”回归“工程评估”。<br>
+• DeepSeek Harness研究团队明确表态“Harness方向的自进化与模型方向的自进化一样，都是非常有可能出成果的方向”，并正式开源DSH开发者预览版，采用“一切皆插件”的架构哲学。<br>
+• 翁荔博客《Harness Engineering for Self-Improvement》获行业广泛引用，论点被概括为“Agent = Model + Harness，2026年是我们学会控制它们的一年”。<br>
+• Occamy-1.0的定位直接反映出产业正在为Harness场景优化专属模型，而非依赖通用大模型。<br>
+<strong>预判：</strong> 2026下半年，Harness Engineering将独立成为一个工程子领域，出现专门的Harness工程师岗位、开源框架竞争、以及围绕Harness的云服务产品。Harness的“可观测性”“可回复性”“状态管理”将成为SaaS新赛道。
+</div>
+
+<div class="trend">
+<strong>趋势二：从“更大模型”到“更好工程”的Agent产品化范式转移</strong><br>
+<strong>证据链：</strong><br>
+• Occamy-1.0直接挑战“更大的模型解决一切”的假设，强调日常Agent任务的核心需求是状态追踪、协调和恢复，而非前沿推理。<br>
+• “Look Before You Leap”论证了<strong>廉价确定性验证层比更强大的推理能力更能防止Agent静默失败</strong>。<br>
+• VRL-Bench的实证结果揭示了一个反直觉发现：使用反思有时反而降低成功率，暴露出“利用经验”和“保持一致”之间的深层权衡。<br>
+• GAUGE论文指出LLM-as-a-Judge评分体系在评估任务导向Agent时存在“满意度-成功率鸿沟”——对话被评为满意与任务实际成功几乎没有信息关联。<br>
+<strong>预判：</strong> 接下来Agent产品的评估指标将从“模型跑分”转向“端到端任务成功率”和“静默失败率”。研发资源将从追求更大的模型转向构建更可靠的Harness（工具协议、验证层、状态管理、回复机制）。
+</div>
+
+<div class="trend">
+<strong>趋势三：中国AI厂商进入“实体化”能力的窗口期</strong><br>
+<strong>证据链：</strong><br>
+• PhysBrain 1.5在空间智能维度与GPT-6 Astra并驾齐驱，且实现在“四种机器人本体零样本通吃”的产品化验证。<br>
+• 智谱通过财务公告非正式披露完全自训练方法，暗示国内大模型正在核心训练范式上寻求突破而非跟随。<br>
+• DeepSeek Harness以MIT协议开源，并邀请全球开发者共建插件生态，显示出从“模型输出”到“生态构建”的战略升级。<br>
+• 深势科技在AI for Science赛道的持续深耕，从Uni-Mol到SciMaster科研智能体，正在构建科研场景的Agent产品矩阵。<br>
+<strong>预判：</strong> 国内AI竞争正从“大模型跑分”阶段进入“物理世界理解+Agent工程能力”的复合竞争阶段。PhysBrain的Physical AI路线和DeepSeek的Harness生态路线代表了两种不同的“实体化”路径，两者将在机器人、科学发现、生产制造场景形成交汇。
+</div>
+
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. Harness or Model? Isolating the Harness Effect in Agentic Coding (arXiv:2609.11987)</strong><br>
+<strong>核心贡献：</strong> 首次在256个私有无污染仓库和竞赛任务上，对同一模型在不同Harness下的表现进行了严格配对对比。792/800次运行由隔离的评判器评测。<strong>结果颠覆了“原生配对最优”的行业假设</strong>——无论Claude还是OpenAI，原生Harness对自家模型均无显著优势。<br>
+<strong>为什么值得精读：</strong> 如果你在负责评估或选型Coding Agent，这篇论文提供了一套可以直接参考的“干净”评估方法论——它揭示了为什么大多数公开基准对比可能被污染，以及如何构建一个可信的对比框架。它还提供了claude-agent-sdk、deepagents、codex SDK等多个主流Harness的实际性能数据。<br>
+<strong>阅读时间：</strong> 45-60分钟
+</div>
+
+<div class="deep-read">
+<strong>2. Language Is an Insufficient Substrate for Quantitative Reasoning, and Consequential Domains Need Large Quantitative Models (arXiv:2609.12105)</strong><br>
+<strong>核心贡献：</strong> 从理论上证明了语言作为定量世界表征的不可逆信息损失——这不是模型规模问题，而是表征本身的属性缺陷。<strong>论文唯一识别出三个“后果性场景”所需的额外属性（精确性、保序性、不可伪造性），并论证这些属性在纯语言模型中无法被满足。</strong><br>
+<strong>为什么值得精读：</strong> 如果你正在将LLM应用到金融、保险、医疗等“出错就有实际后果”的场景，这篇论文将彻底改变你对技术架构的思考——它不是在说LLM不够好，而是在说该用完全不同的模型架构来处理定量任务。这篇论文可能成为AI应用分层架构的理论基础。<br>
+<strong>阅读时间：</strong> 50-60分钟
+</div>
+
+<div class="deep-read">
+<strong>3. Occamy-1.0: Open Pareto-frontier 35B Intelligence for Co-work (arXiv:2609.11977)</strong><br>
+<strong>核心贡献：</strong> 提出了一个全新模型定位——“协同工作智能”，区别于“前沿推理智能”。通过构建执行接地数据与可回放长程轨迹，并用分阶段后训练优化，实现了在35B参数量级上对Agent工作流效率的Pareto前沿突破。<br>
+<strong>为什么值得精读：</strong> 这篇论文代表了一种Agent模型设计的范式转变：不是追求更高难度的推理基准，而是追求更高效的工具调用、状态追踪和错误恢复。如果你在做Agent产品化，Occamy的设计理念（成本与延迟在整个episode中累积）直接对应生产环境的真实痛点。<br>
+<strong>阅读时间：</strong> 40-50分钟
+</div>
+
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>推荐：Simon Willison - commit-rewriter 0.1</strong><br>
+<strong>链接：</strong> https://simonwillison.net/2026/Sep/14/commit-rewriter/<br>
+<strong>为什么今天推荐这篇：</strong> 今天多条线索共同指向一个主题——<strong>AI Coding Agent正在从“能写代码”进入到“能融入工程实践”的阶段，而工程实践的真实痛点往往藏在细节里</strong>。Simon的这个工具解决了一个几乎所有用Coding Agent的人都遇到过但很少被认真对待的问题：AI生成的commit message充满“残渣”和内部引用，根本无法公开发布。这个只有几十行代码的Python工具，恰好呼应了今天“Harness or Model?”论文的核心洞察——<strong>真正的工程价值往往在模型之外的微小编排中</strong>。<br>
+<strong>三个核心观点：</strong><br>
+• <strong>Agent输出的“社会性适配”是产品化关键：</strong> 代码可以跑，但commit message如果包含私有issue ID和Agent origin痕迹，就无法进入开源工作流——这是一种“功能性正确但社会性错误”的失败模式。<br>
+• <strong>最好的工具解决最窄的问题：</strong> commit-rewriter只做一件事——创建一个时间戳分支，从你开始编辑的那条commit起重写所有历史。这种精确的功能边界正是AI时代小工具的生存法则。<br>
+• <strong>“先污染后清洗”是当前Agent协作的现实模式：</strong> 这个工具的存在本身就是对“Agent输出无需清理”这一幻想的证伪，其背后的工程哲学是：接受Agent不会完美，但建立低摩擦的纠正机制。<br>
+<strong>适合谁读：</strong> 所有在工作中使用Coding Agent的工程师、管理AI辅助开发流程的Tech Lead、正在设计Agent产品化的产品经理。<br>
+<strong>阅读时间：</strong> 8-10分钟（博客极短，但值得上手试用）
+</div>
+
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>智谱 · 下一代GLM剧透：</strong> 从财务公告中提前披露完全自训练方法，模型和论文尚未正式发布。信号意义重大——可能暗示训练方法取得根本性突破，或资本市场需要这一叙事支撑估值。北京AI“黄金圈”成形背景下，智谱正与月之暗面争夺人才和资本。<br>
+<strong>招聘信号：</strong> 财务公告通常伴随扩张计划，关注智谱在自训练基础设施（数据工程、合成数据生成、RLHF替代方案）方向上的岗位释放。
+</div>
+
+<div class="item">
+<strong>DeepSeek · Harness生态战略升级：</strong> DeepSeek Harness v0.1开发者预览版正式开源（MIT协议），采用“一切皆插件”的架构哲学。研究员崔添翼公开力挺Harness自进化方向，并呼吁全球开发者共建DSH插件生态。CLI工具名`dsh`，已提供四种运行模式和追记式会话日志。<br>
+<strong>招聘信号：</strong> 开源Harness生态的构建需要大量DevRel和插件开发社区运营人才，关注DeepSeek在这两个方向上的招聘释放。
+</div>
+
+<div class="item">
+<strong>亮源新创 · PhysBrain 1.5物理AI登顶：</strong> 空间智能能力与GPT-6 Astra并驾齐驱，登顶全球开源榜一。2000+真实场景进仿真，一个导航模型零样本通吃四种机器人本体。Physical AI路线正在从实验室走向产品化验证。<br>
+<strong>招聘信号：</strong> 物理AI、机器人仿真、多本体迁移学习方向将成为新兴招聘热点。
+</div>
+
+<div class="item">
+<strong>深势科技 · AI for Science全栈路线深化：</strong> SciMaster科研智能体持续迭代，Uni-Mol/Uni-RNA等基础模型形成产品矩阵。张林峰、孙伟杰在深度访谈中详述从“开始到现在”的全路径。<br>
+<strong>招聘信号：</strong> AI for Science领域的复合型人才（懂AI的化学/生物/材料背景）需求持续增长，科研智能体产品化方向需要Agent工程师。
+</div>
+
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>新兴岗位：Harness工程师 / Agent基础设施工程师</strong><br>
+多重信号指向这一岗位即将成为独立职位：DeepSeek开源Harness生态、Occamy提出的协同工作模型、翁荔的Harness Engineering论述、Harness or Model?论文揭示的Harness独立价值。这一岗位的核心技能将包括：工具协议设计、上下文窗口管理、状态持久化、多Agent编排、静默失败检测。<br>
+<strong>薪资信号：</strong> 预计此类岗位将在2026年底至2027年初进入高薪区间，与ML工程师相当或更高——因为稀缺性极高。
+</div>
+
+<div class="item">
+<strong>AI for Science复合型人才需求持续升温</strong><br>
+Drug Discovery News确认AI增强分子设计已成为早期发现的“默认模式”，Federated Learning框架正在打破数据主权壁垒。这意味着既懂AI又懂具体科学领域（生物学、化学、材料）的复合型人才将供不应求。深势科技的SciMaster、亮源新创的PhysBrain都在创造此类岗位。<br>
+<strong>建议关注：</strong> 深势科技（AI+材料/药物）、亮源新创（AI+机器人/物理世界）、智谱（AI+自训练基础设施）的招聘动态。
+</div>
+
+<div class="item">
+<strong>Agent产品经理需求爆发</strong><br>
+从BOSS直聘等平台的信号来看，AI产品经理岗位正在快速增长，特别是杭州等国内AI重镇。“Agent产品化”成为一个明确的细分方向——不同于传统的AI产品经理，需要理解Harness工程、工具调用协议、多Agent编排、人机协作循环等新概念。GAUGE论文揭示的“满意度-成功率鸿沟”正是Agent PM需要解决的核心问题。<br>
+<strong>技能需求变化：</strong> 单纯的Prompt Engineering已不足以构成竞争力——Harness Engineering、工作流编排、Agent评估框架设计正在成为新的技能树分支。
+</div>
+
+<div class="item">
+<strong>北京AI“黄金圈”人才争夺白热化</strong><br>
+月之暗面、智谱等国内头部AI公司正围绕北京形成“黄金圈”格局，人才和资本竞争加剧。智谱的财务公告剧透行为本身就是一个信号——公司正在进入需要展示技术储备以吸引人才和资本的阶段。对于求职者，这意味谈判筹码增加，但要警惕过度承诺的公司。
+</div>
+
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+<strong>Harness Engineering正在独立成为一个工程领域。</strong>如果你在做Agent产品，现在就应该组建专门的Harness团队或至少指定Harness负责人——这一职能不再是“模型之外剩下的部分”，而是决定Agent能否从Demo走向Production的核心竞争力。DeepSeek已经行动了。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
