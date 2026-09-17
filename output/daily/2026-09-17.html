@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年09月17日 · 新闻 139 条 · 博客 5 篇 · 搜索 17 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>1. DeepSeek Harness 正式揭开“Agents 的操作系统”面纱</strong><br>
+发生了什么：DeepSeek 开源的 Agent 框架 Harness (dsh) 及其底层论文《A Programming Paradigm for Spatiotemporal Composability》流出，提出“一切皆插件”和时空可组合的编程范式（Cordis）。<br>
+为什么重要：这标志“Harness 工程”正式从大厂的黑盒闭源走向社区定义。它直接解耦了 Agent Loop（循环逻辑）、模型、工具和日志，将 Claude Code 或 Codex 中原本锁死的核心控制权归还给开发者。这是一个更高维度的产品化竞争，不再比谁的模型强，而是比谁的 Agent 运行态更可编程。
+</div>
+
+<div class="item">
+<strong>2. 梁文锋打破沉默：DeepSeek 全力押注 AGI 与算力扩张</strong><br>
+发生了什么：据 Dealroom 和 Reuters 报道，梁文锋在近 4 小时的投资者会议中明确 DeepSeek 将优先实现 AGI 而非追求盈利，并确认完成约 500 亿元人民币融资，用于大规模的算力和人才扩张。<br>
+为什么重要：这解决了 DeepSeek 此前“是否受限于资源”的疑虑。同步传出的核心研发离职潮（郭达雅加入字节 Seed、罗福莉加入小米、王炳宣加入腾讯等）也预示着国内大模型进入了“大厂主导的算法基建化”阶段，人才流动性带来的知识扩散效应开始显现。
+</div>
+
+<div class="item">
+<strong>3. Anthropic 合并 Claude Chat 与 Cowork，定调通用 Agent 产品</strong><br>
+发生了什么：Anthropic 宣布将 Claude 对话与 CoWork 深度整合为一个统一的 Agent 原生界面，开始向 Pro/Max 用户滚动推送。<br>
+为什么重要：这是“模型即产品”到“Agent 即产品”的关键界面重构。此举消除了用户对“聊天还是干活”的认知割裂，预示着 2026 年下半年的竞争焦点将是“谁能在桌面上无感地完成任务闭环”，这对 OpenAI 的 ChatGPT/Codex 构成了直接的产品形态压力。
+</div>
+
+<div class="item">
+<strong>4. Google Home MCP 上线：AI Agent 开始融合物理世界的 API</strong><br>
+发生了什么：谷歌推出 Google Home MCP Server，允许 Claude、ChatGPT 等外部 Agent 通过自然语言直接控制智能家居设备并获取安防摄像头摘要。<br>
+为什么重要：这是 MCP（模型上下文协议）落地 IoT 的标杆案例。它证明了 Harness 层向下兼容设备的可行性，Agent 开始真正成为物理世界的“统一遥控器”和“感知入口”。
+</div>
+
+<div class="item">
+<strong>5. 小米罗福莉官宣极巨化强化学习：模型训练的透明化一次实验</strong><br>
+发生了什么：罗福莉（前 DeepSeek 核心）在加入小米后首次公开直播新模型训练过程，直接展示奖励曲线和显卡集群故障处理，并透露一小时烧 3 万美元的成本细节。<br>
+为什么重要：这是国内顶流研究者首次将极大规模的 Post-training / RL 训练过程完全透明化。此举不仅展示了小米在 AI 算力上的储备，也为强化学习在超大规模模型上的工程黑暗面（如硬件故障下的训练稳定性）提供了难得的一手观察窗口。
+</div>
+
+<div class="item">
+<strong>6. Agent 工具调用“要数不要命”：SFT vs RL 的终局之战有了新证据</strong><br>
+发生了什么：一篇受控实验论文比较了 SFT、RL、SFT+RL 在 6 种不同尺寸模型上的工具调用效果，发现 SFT 在分布内任务上依然全面碾压 RL，RL 仅在跨域泛化中有微弱优势。<br>
+为什么重要：这给当前狂热的“Agent 靠 RL 训练”降温。对于实际生产部署，高质量的 SFT 数据依然是工具调用准确率的基石，盲目增加 RL 环节极可能是过度工程化。
+</div>
+
+<div class="item">
+<strong>7. ERPBench：计算机使用 Agent 的照妖镜</strong><br>
+发生了什么：研究者构造了 ERPBench，专门评估截图型 Agent 在真实 ERP 系统上的操作。<br>
+为什么重要：这纠正了当前 Web Agent 评测中“完成点餐/订票就够了”的天真想法。ERP 系统的复杂界面和不可撤销的业务后果，迅速暴露了现有 Agent 在长链操作和错误恢复上的脆弱性，是 Agent 可靠性的高阶试金石。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Agent 架构从“Model-Centric”彻底转为“Harness-Centric”</strong><br>
+证据链：DeepSeek 开源“全插件”Harness + Anthropic 合并 Agent 界面 + Google 开放 IoT MCP。<br>
+预判：模型正在退化为 Agent 生态中的“算力插件”。未来的产品壁垒将建立在 <strong>Agent Loop 的可编程性、上下文编排的效率和工具插件的原子化能力</strong>上。开发者应立刻将精力从选模型转向设计更健壮的 Agent 编排层。
+</div>
+
+<div class="trend">
+<strong>趋势二：国内 AI 人才进入“分析师/研究员”回归大厂的高潮期</strong><br>
+证据链：DeepSeek 5 名核心研发离职加入字节/腾讯/小米/百度，罗福莉在小米首次公开直播训练，DeepSeek 开启 500 亿融资后的庞大规模招聘。<br>
+预判：基座模型的创业窗口期正在关闭，人才向拥有无限融资和大流量入口的巨头回流。智谱/MiniMax 的上市并未改变“资金密集型”的本质。未来一年，“去大厂 AI Lab 做基础研究”将成为比“在创业公司做应用”更具诱惑的职业路径。
+</div>
+
+<div class="trend">
+<strong>趋势三：推理优化的“内存墙”被重新定义</strong><br>
+证据链：多篇论文（Edge0 用 SSD 跑 35B MoE，Fathom 动态量化 KV Cache，ASPIRE 异步推测解码）都在解决 Agent 长会话带来的 KV-Cache 积压和显存溢出。<br>
+预判：Agent 的长上下文交互导致 KV-Cache 无限膨胀，传统的量化和卸载已药不对症。基于“异步/稀疏化”的内存访问范式将取代单纯的精度压缩，成为推理加速的下一个技术焦点。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. SFT or RL for Tool-Calling Agents? A Controlled Study Across Data, Method, and Scale</strong><br>
+核心贡献：首次在 0.6B 到 32B 参数范围内大规模定量比较了 SFT、GRPO（强化学习）和混合策略对工具调用能力的影响。结论是 SFT 明显优于 RL 泛化假设。<br>
+为什么值得读：它直接反驳了“强化学习是 Agent 灵丹妙药”的业界直觉，对于正在构建工具调用功能的工程团队来说，这篇论文能帮助他们节省大量训练预算，将重点拉回到 SFT 数据的清洗和多样性上。
+</div>
+
+<div class="deep-read">
+<strong>2. Memory Has Geometry: Non-Uniform Geometric Memory for Long-Horizon Personalized AI</strong><br>
+核心贡献：将长程记忆建模为用户特定的动态状态空间。不是把记忆当成静态向量搜索，而是用“几何”来描述记忆的稳定/波动区域、漂移速率和异质邻域。<br>
+为什么值得读：目前 Agent 记忆多为简单的 RAG 拼接，效果极其僵硬。这篇论文提供了一种更贴近人类记忆运转的数学框架，是构建下一代“越用越懂你”的 Agent 的底层理论基础。
+</div>
+
+<div class="deep-read">
+<strong>3. The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction (Edge0)</strong><br>
+核心贡献：通过训练一个“预路由器”提前猜测下一层该激活哪个专家，把 MoE 的 SSD 读取延迟隐藏在计算重叠区，使得消费级硬件也能跑满血 35B MoE。<br>
+为什么值得读：堪称极致的推理工程实践。完美解决了“模型大到装不进显存怎么办”的难题，其“提前预判”的网络架构思路对边缘计算和本地化 Agent 部署极具参考价值。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>博客：Latest open artifacts (#23): Laguna S2.1, Inkling, & Kimi K3 show the utility of open models on the Pareto frontier （Nathan Lambert）</strong><br>
+为什么今天读：在 DeepSeek 坚持开源其最强模型、大厂纷纷挖角构建自家壁垒的背景下，Lambert 关于“训练强模型的能力正在扩散”的观点极具穿透力。这解释了为什么 Harness 层的竞争在今天如此激烈。<br>
+三个核心观点：<br>
+• 开源模型正精准地填补闭源模型的“能力空隙”，甚至在特定长尾任务上构建起帕累托前沿。<br>
+• RLHF / Post-training 的竞争已经不在核心能力上，而在于对齐与产品化环节的差异。<br>
+• 拥有好的基座模型只是门票，如何组装并编排它们（即 Harness 工作）才是定义 2026 年产品的关键。<br>
+适合谁读：AI 架构师、AI 产品经理、关注开源与闭源竞争的投资者。<br>
+阅读时间：约 15 分钟。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek（深度求索）：</strong>完成了史上最大的一笔约 500 亿元人民币融资，估值突破 500 亿美元，明确表态将集中资源向 AGI 冲刺并进行大规模招聘。虽面临核心研究员离职潮，但这反而推动了自家的“Harness”战略开源。
+</div>
+
+<div class="item">
+<strong>小米（MiMo）：</strong>罗福莉首次公开直播极大规模的强化学习模型训练，展示了小米在 AI 基础设施上“不惜烧钱”的算力决心，标志着小米正式入局基础大模型军备，不再仅仅是应用层玩家。
+</div>
+
+<div class="item">
+<strong>智谱 & MiniMax：</strong>已于年初相继成功登陆港股，成为“AI 大模型第一股”。一级市场融资窗口收窄，未上市的私立大模型公司未来必须依赖极强自造血或接受大厂并购整合。
+</div>
+
+<div class="item">
+<strong>月之暗面（Moonshot） & 字节：</strong>月之暗面完成 5 亿美元 C 轮融资，现金储备充裕（超百亿人民币），准备进行持久战。字节跳动则吸收了郭达雅等核心研究员，并联合高通推出豆包手机助手，走端侧智能渗透路线。
+</div>
+
+<div class="item">
+<strong>深势科技 & 无问芯穹：</strong>深势持续输出 AI4S 新材料/生命科学解决方案；无问芯穹与基元律动达成战略合作，聚焦于高质量 Token 的供给与基础设施优化。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>岗位趋势：Harness 开发工程师成为新刚需</strong><br>
+信号：DeepSeek Harness v0.1 的发布意味着插件生态即将爆发。能够编写 Cordis 范式、理解 Agent Loop 和“一切皆插件”的框架层工程师将极为稀缺。技能要求从写 Prompt 转向写 Agent 运行时调度。<br>
+</div>
+
+<div class="item">
+<strong>岗位趋势：具身智能与空间推理异常火爆</strong><br>
+信号：量子位消息 ZDTaichu5.0-9B 在空间具身智能断层领先，以及 NVIDIA 大量基于 Agent 的 3D 场景预处理博客显示，跨模态理解物理世界的人才非常炙手可热。
+</div>
+
+<div class="item">
+<strong>薪资信号：大厂挖角导致基座算法研究员身价飙升</strong><br>
+信号：脉脉数据显示 AI 岗位需求暴涨超 8 倍。DeepSeek 核心人才被大厂高薪吸入，小米直播中展示的一小时 3 万美金训练成本暗示了能驾驭这种烧钱规模的重训人才极度昂贵。
+</div>
+
+<div class="item">
+<strong>产品经理转型：垂直硬核领域为王</strong><br>
+信号：ERPBench 和 AI 流程自动化趋势表明，单纯懂“对话交互”的产品经理已不适合，既懂特定产业知识（如医疗、法律、ERP）又懂 Agent 非确定性交互逻辑的复合型人才，现在是红利期。
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+别再看模型榜单了。立刻把团队的技术选型焦点移到“Agent 编排”上：模型即使是灵魂，<strong>Harness 才是那颗跳动的心脏</strong>。谁先构建起可拆卸、可组合的插件式 Agent Loop，谁就能在下半场吃下最多的应用层红利。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
