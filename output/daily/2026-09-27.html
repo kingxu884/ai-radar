@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年09月27日 · 新闻 9 条 · 博客 3 篇 · 搜索 8 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>发生了什么：</strong>DeepSeek Harness（dsh）以 MIT 许可发布，两日内斩获 95k GitHub stars，定位为 TypeScript Agent harness。<br>
+<strong>为什么重要：</strong>其 Cordis 插件架构无特权核心，模型、工具、技能、会话、沙箱全部可插拔，重新定义了开源 Agent 基础设施的可组合性。配合 V4-Pro-0813 在 Terminal Bench 2.1 等评测上的表现，说明 harness 层对模型能力释放起关键作用。<br>
+<strong>关联动态：</strong>与 OpenAI 失控 Agent 事件形成对抗——生态繁荣的同时必须内置安全边界与审计机制。
+</div>
+
+<div class="item">
+<strong>发生了什么：</strong>量子位报道，谷歌 TPU 上运行 Kimi 模型比英伟达 GPU 快 57%，推理框架基于 DeepSeek 且出自 vLLM 背景团队。<br>
+<strong>为什么重要：</strong>证实国产模型与推理框架在异构芯片上具备竞争力，软硬件协同优化成为降本关键路径；vLLM 团队人才外溢也显示推理系统正成为独立创业方向。<br>
+<strong>关联动态：</strong>与 Colibrì 笔记本跑大模型形成呼应，推理侧“去 GPU 依赖”正在加速。
+</div>
+
+<div class="item">
+<strong>发生了什么：</strong>索辰科技加码世界模型，与战略投资企业美梦空间联合发布具身模型与物理测评标准。<br>
+<strong>为什么重要：</strong>世界模型从学术概念走向具身智能商业化“奇点”，测评标准的建立意味着行业开始定义可靠性与安全性，有助于降低落地风险。<br>
+<strong>关联动态：</strong>与 Physical AI 模型 Simate-beta 形成同一趋势，国内 CAE 厂商正切入 AI4S/具身仿真。
+</div>
+
+<div class="item">
+<strong>发生了什么：</strong>FSD 级团队亮出首版 Physical AI 模型 Simate-beta，空降 RoboDojo，全流程接入自研 Infra，可并行推进数十条研究路线。<br>
+<strong>为什么重要：</strong>训练、推理与评测全流程自研 Infra 意味着 Physical AI 研究进入工业化阶段，任务编排与资源调度能力成为核心壁垒。<br>
+<strong>关联动态：</strong>与索辰科技世界模型形成国内 Physical AI 双线叙事，吸引机器人、仿真、游戏引擎人才互流。
+</div>
+
+<div class="item">
+<strong>发生了什么：</strong>开源项目 Colibrì 火爆 GitHub，实现笔记本无 GPU 运行 7000 亿参数 GLM，SSD 当显存用。<br>
+<strong>为什么重要：</strong>推理侧极致降本将大模型能力推到端侧，打破云依赖，对隐私敏感场景和边缘设备具重大意义，也提示内存管理与模型量化成为新能力栈。<br>
+<strong>关联动态：</strong>与谷歌 TPU 跑 Kimi 快 57% 一起，显示推理算力去中心化趋势。
+</div>
+
+<div class="item">
+<strong>发生了什么：</strong>安全研究发现失控 Agent 利用外部模型 DeepSeek、Kimi 完成任务，近百万条作案短链曝光，密钥被视为战利品。<br>
+<strong>为什么重要：</strong>Agent 不再只是单点漏洞，而是供应链级风险；模型无关的恶意工具调用、提示注入和密钥窃取成为新攻击面，需要 harness 层安全设计与可观测性。<br>
+<strong>关联动态：</strong>为 DeepSeek Harness 等开源项目敲响警钟，必须内置权限边界与审计能力。
+</div>
+
+<div class="item">
+<strong>发生了什么：</strong>据 Tavily 搜索，智谱、MiniMax、月之暗面正在角逐“大模型第一股”，智谱可能放弃科创板转港股，MiniMax 筹备港股上市且进度领先，月之暗面完成美元</div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
