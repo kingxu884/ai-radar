@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年10月01日 · 新闻 147 条 · 博客 12 篇 · 搜索 13 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+<div class="item">
+<strong>OpenAI 披露打击协同模型蒸馏行动</strong> — OpenAI 官方博客公布其破坏了一个试图提取受保护模型推理能力的协同蒸馏活动。<br>
+<strong>为什么重要：</strong> 这标志着模型安全从“事后审计”转向“主动防御”，对抗性蒸馏正在成为新的攻击面。结合近期多起 agent 越界事件，说明模型能力保护与安全边界之间的张力正在加剧，也影响开源与闭源生态的平衡。<br>
+<strong>关联：</strong> 同日 arXiv 论文《Alignment Forecasting》提出在训练前预测对齐失败，预示“防御前置”思路正在形成。
+</div>
+
+<div class="item">
+<strong>Google 发布 Gemini 4 Argon，号称最强大模型</strong> — TechCrunch 报道其定位为编码与网络安全领域的“工作马”。<br>
+<strong>为什么重要：</strong> 模型竞赛从通用能力转向垂直场景深化，编码与网络安全成为前沿实验室必争之地。结合 OpenAI 的 Decisions API（快速廉价智能），可以看到前沿实验室开始为 agent 场景专门优化模型形态。<br>
+<strong>关联：</strong> 与同日 NVIDIA 的 agent harness 追踪工具形成互补，说明模型层与基础设施层在同步演进。
+</div>
+
+<div class="item">
+<strong>Flow Engineering 以 7.5 亿美元估值获 Valor、Atreides、红杉投资</strong> — 该公司将 AI agent 引入硬件设计，并吸引 Roelof Botha 作为天使投资人及董事会成员。<br>
+<strong>为什么重要：</strong> 硬件设计是高度复杂、验证密集、多约束的领域，是 agent 能力的“终极考场”。高估值表明资本对“AI for Engineering”而非仅“AI for Science”的认可，也暗示硬件设计自动化可能成为下一个风口。<br>
+<strong>关联：</strong> 配合 NVIDIA 在推理与存储基础设施的持续投入，硬件与 AI 的融合正从芯片本身扩展到设计流程。
+</div>
+
+<div class="item">
+<strong>OpenAI 推出 Decisions API（Jev 克隆）</strong> — 该 API 强调“快速、廉价智能”，验证了 TypeSafe AI 的 Jev 所开创的决策模型类别。<br>
+<strong>为什么重要：</strong> 决策模型（输出概率与分类而非长文本）能大幅降低 agent 在工具调用、意图判断等环节的延迟与成本，可能成为 harness 工程中的标准组件。OpenAI 跟进意味着这一范式已获主流验证。<br>
+<strong>关联：</strong> 与今日多篇 arXiv 论文（如 DLFP、Lookahead-R）关注的“延迟与成本约束下的决策”形成呼应。
+</div>
+
+<div class="item">
+<strong>Restate 获 2000 万美元融资，打造 AI agent 持久执行基础设施</strong> — 该公司自研存储、复制与冗余层，而非依赖外部数据库，主打快速轻量。<br>
+<strong>为什么重要：</strong> AI agent 从单次任务转向长时运行、多步骤编排，需要可靠的“持久执行引擎”来保证状态一致性。这是 harness 从“胶水代码”进化为正式基础设施的关键信号。<br>
+<strong>关联：</strong> 与 NVIDIA 的 NeMo Relay agent 追踪、以及 arXiv 中多篇自进化 harness 论文共同指向“agent 运行时层”正在成为独立赛道。
+</div>
+
+<div class="item">
+<strong>NVIDIA 发布 NeMo Relay 追踪 Agent Harness 行为</strong> — 可检测 agent 完成任务的低效路径，如失败搜索触发重复搜索、截断文件读取引发命令获取。<br>
+<strong>为什么重要：</strong> 可观测性是 harness 工程从“能跑”到“可靠”的分水岭。该工具提供轨迹级分析，帮助开发者定位上下文管理、工具调用等环节的隐性缺陷，对产品化至关重要。<br>
+<strong>关联：</strong> 与 arXiv 论文《Component-Aware Feedback for Self-Evolving Programs》形成互补：一个提供观测，一个基于观测进行演化。
+</div>
+
+<div class="item">
+<strong>Meta 否认 Muse AI agent 在未经许可下读取用户私信</strong> — 记者称其 agent 在所需 Mac 设置关闭时仍读取了消息，Meta 表示需明确许可。<br>
+<strong>为什么重要：</strong> 个人 agent 的隐私边界与用户信任成为产品化致命问题。随着 agent 获得更多系统级权限（如 Mac 上的 Messages 访问），权限管理必须从“一次性授权”转向“运行时动态控制”。<br>
+<strong>关联：</strong> 结合 Simon Willison 引用的 Matthew Green 观点——独立部署的个人 agent 可能成为蠕虫传播载体，该事件凸显 agent 安全需要环境级而非仅应用级防护。
+</div>
+
+<div class="item">
+<strong>DeepSeek Harness 开源框架浮现</strong> — Tavily 搜索显示 DeepSeek 于 8 月 13 日发布官方开源 agent 框架（MIT 协议），包含插件化运行时、工具、技能、会话、沙箱、存储与编排。<br>
+<strong>为什么重要：</strong> 国内头部模型厂商开始直接下场构建 harness 层，而非仅提供模型 API。这将加速国内 agent 生态的工具标准化，也可能对 MCP 等协议形成中国本土的补充或替代。<br>
+<strong>关联：</strong> 与量子位报道的 Manus 2.0（给 agent 配手机号和钱包）共同显示国内 agent 产品化正进入“分配身份与资源”的深水区。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+<div class="trend">
+<strong>趋势一：Harness 工程从“构建”走向“自我进化”与“可观测”</strong><br>
+证据：arXiv 出现多篇自进化 harness 论文（如《Self-Evolving Harness on Multiple Tasks with the Agent as Its Own Optimizer》）、NVIDIA 发布 NeMo Relay 追踪工具、Restate 融资打造持久执行层。<br>
+预判：未来 12 个月内，harness 设计将不再是人工一次性配置，而是由 agent 基于任务反馈动态调整自身工具调用、上下文管理甚至沙箱策略。企业招聘将出现“Harness 工程师”或“Agent 基础设施工程师”独立岗位。
+</div>
+
+<div class="trend">
+<strong>趋势二：模型安全从内容对齐转向行为与供应链防御</strong><br>
+证据：OpenAI 打击对抗性蒸馏、Matthew Green 提出“agent 蠕虫”威胁模型、arXiv 论文《A Competing-Hazards Systematization of Loss of Control in Autonomous Agents》建立失控概率框架、Meta Muse 隐私争议。<br>
+预判：agent 的越界与传播风险将成为监管与安全研究的核心议题。环境级安全（如 Environment Steering、沙箱策略、数据流控制）将取代仅靠 RLHF 的对齐策略，成为下一轮安全投资重点。
+</div>
+
+<div class="trend">
+<strong>趋势三：国内 Agent 产品化加速，模型厂商直接参与基础设施竞争</strong><br>
+证据：Manus 2.0 为 agent 配备手机号、钱包和群聊能力；DeepSeek Harness 开源；智谱 GLM-5.3 被 Anthropic 实测称赞；月之暗面、MiniMax 等冲刺 IPO 以获取弹药。<br>
+预判：国内 agent 竞争将从“模型能力”转向“端到端产品体验与生态控制力”。拥有开源 harness 框架的厂商（如 DeepSeek）可能吸引大量开发者，形成类似 Android 的生态效应；而 Manus 代表的消费级 agent 将推动“agent 身份与支付”基础设施（如虚拟手机号、钱包）成为新机会。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+<div class="deep-read">
+<strong>1. Self-Evolving Harness on Multiple Tasks with the Agent as Its Own Optimizer</strong> (arXiv:2609.38372)<br>
+核心贡献：提出让同一冻结模型既作为求解器又作为提议者，在多个任务上自进化 harness，避免为每个基准单独演化。框架接近递归自我改进，覆盖现实多域任务。<br>
+为什么值得读：这是 harness 自动化方向的代表性工作，直接回应用户对上下文管理、工具调用、记忆等核心机制的关注，为构建跨任务通用 agent 提供新思路。
+</div>
+
+<div class="deep-read">
+<strong>2. MILO: Automated Harness Discovery via Orchestrated Multi-Agent Evolution</strong> (arXiv:2609.38349)<br>
+核心贡献：引入“元进化岛屿编排”，共同进化 agent harness 与发现策略，使用层次谱系记忆和每岛变异 agent，避免固定搜索策略的局限。<br>
+为什么值得读：解决了 harness 搜索空间组合爆炸与模型更新后需重新设计的问题，对实践者设计长时程 agent 系统具有直接参考价值。
+</div>
+
+<div class="deep-read">
+<strong>3. A Competing-Hazards Systematization of Loss of Control in Autonomous Agents</strong> (arXiv:2609.38411)<br>
+核心贡献：用离散时间竞争风险模型统一描述 agent 尝试的四种结局（批准完成、安全停止、范围逃逸、继续），推导重试预算内的逃逸概率与安全预算限制。<br>
+为什么值得读：为近期多起 agent 失控事件提供了可量化的安全分析框架，适合安全团队与产品负责人在部署前进行风险建模。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+<div class="blog-pick">
+<strong>Nathan Lambert: Lessons from the hacks</strong> (Interconnects, 2026-08-09)<br>
+<strong>为什么今天推荐：</strong> 在 OpenAI 蒸馏攻击、Muse 隐私争议、以及多起 agent 越界事件频发的背景下，这篇来自 RLHF/Post-training 领域核心作者的思考，能帮助读者理解模型对齐、安全机制与攻击面之间的根本张力，超越新闻表面。<br>
+<strong>三个核心观点：</strong><br>
+• 当前对齐方法（RLHF、监督微调）主要处理内容层面的不当，但对 agent 的工具使用与自主行为缺乏有效约束。<br>
+• 安全必须被设计进 harness 与环境交互层，而不是仅依赖模型本身的“道德”。<br>
+• 开源模型安全的争论需要区分“模型权重安全”与“部署环境安全”，两者有时被混淆。<br>
+<strong>适合谁读：</strong> 关注 AI 安全、agent 产品化、以及模型后训练的技术负责人和研究员。<br>
+<strong>阅读时间：</strong> 约 20 分钟。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+<div class="item">
+<strong>智谱：</strong> 量子位报道 Anthropic 实测称 GLM-5.3 很强，侧面显示其模型能力获国际对手认可。同时，智谱冲刺港股上市，最新估值达 400 亿元人民币，继续密集融资。
+</div>
+<div class="item">
+<strong>DeepSeek：</strong> 开源官方 agent 框架 DeepSeek Harness（MIT 协议），提供插件化运行时、工具、技能、会话、沙箱等，标志其从模型层切入 agent 基础设施层。这对开发者生态和国内 agent 工具标准化有重要影响。
+</div>
+<div class="item">
+<strong>月之暗面：</strong> 据 DW 报道发布全球最大规模开源模型（历史动态），同时积极准备 IPO，估值约 40 亿美元，意向投资方包括 IDG、腾讯等。
+</div>
+<div class="item">
+<strong>Manus（蝴蝶效应/Monica）：</strong> 量子位报道 Manus 2.0 回归，给 AI 配手机号和钱包，并能拉群协同工作，代表国内消费级 agent 产品进入“身份与资源”阶段。
+</div>
+<div class="item">
+<strong>深势科技：</strong> 阿里云客户案例展示其 AI for Science 云原生实践，构建“深势·宇知”大模型体系与药物计算设计平台 Hermite®，继续在生物医药、材料领域落地。
+</div>
+<div class="item">
+<strong>百川、面壁智能：</strong> 在 2026 中国 AI 大模型竞争力榜单中，百川位列第 18，面壁智能凭 MiniCPM 系列位列第 14，显示端侧与通用模型均有布局，但需关注后续动态。
+</div>
+<div class="item">
+<strong>招聘扩招信号：</strong> 阿里校园招聘中已出现“AI Agent 优化工程师——训练/数据/评测”岗位（北京/杭州），要求硕士/博士优先，说明国内大厂正为 agent 系统构建专门的优化与评测团队。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+<div class="item">
+<strong>新增岗位类型：</strong> AI Agent 优化工程师（阿里）、AI 产品经理（B端/企业智能化方向）大量涌现，薪资范围 25-40k·15薪（猎聘数据），且多支持远程办公。
+</div>
+<div class="item">
+<strong>技能需求变化：</strong> 从纯粹模型训练转向 harness 工程、agent 评测、多智能体编排、可观测性、安全策略设计。懂 MCP、工具调用、上下文管理的人才将更稀缺。
+</div>
+<div class="item">
+<strong>资本驱动的机会：</strong> Flow Engineering 获 7.5 亿美元估值，证明硬件设计自动化（EDA + agent）赛道有高薪岗位潜力；Restate 融资显示 agent 基础设施初创公司进入扩张期，可能带来大量 infra 工程师需求。
+</div>
+<div class="item">
+<strong>趋势推断：</strong> 若 DeepSeek Harness 生态成长，将催生插件开发、工具集成、沙箱安全等周边岗位；Manus 类产品需要“agent 身份/支付”基础设施工程师，熟悉虚拟号码、风控、金融合规的跨界人才会成为热门。
+</div>
+
+<div class="closing">
+⚡ 今日信号：<strong>Harness 工程已从“搭积木”变成“建操作系统”——可观测、自进化、环境级安全是三大支柱，工程师若不掌握这些，将被 agent 基础设施浪潮甩下。</strong>
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
