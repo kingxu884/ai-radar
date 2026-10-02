@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年10月02日 · 新闻 137 条 · 博客 9 篇 · 搜索 16 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>OpenAI：Advanced AI may matter most for routine work behind breakthrough ideas</strong><br>
+发生了什么：OpenAI 发布观点文章，认为高级 AI 的最大价值在于“突破性想法背后的日常执行工作”，执行将塑造下一轮经济与进步速度。<br>
+为什么重要：这等于把焦点从“模型多聪明”转向“执行链条多可靠”。对 Agent 与 Harness 工程而言，这是一个强烈信号：价值正从单点推理能力迁移到围绕模型构建的工程系统、流程与约束。<br>
+关联：与 Ethan Mollick 的《The Dot and the Swarm》及本轮 arXiv 中大量“可审计执行、预算守恒、证据边界”研究形成呼应。
+</div>
+
+<div class="item">
+<strong>Amazon 发布 Jev 类决策模型 Strands Decider 2B，决策模型开始泛滥</strong><br>
+发生了什么：AWS Strand Labs 发布最新 Jev 类决策模型，TechCrunch 指出“decision models flood the web”。<br>
+为什么重要：非生成式、返回结构化概率的决策模型正在成为 Agent 微任务的新底座。它们比生成式模型更便宜、更确定、更易于审计，特别适合工具选择、意图分类、风险审批等 Harness 环节。<br>
+关联：与 arXiv 中《Benchmarking System One decision models》《Measuring the Microtask Eligibility Gap》以及 Simon Willison 的 llm-typesafe 插件直接相关。
+</div>
+
+<div class="item">
+<strong>arXiv: Worse Together — 多用户多智能体团队中的性能塌陷</strong><br>
+发生了什么：论文在 5 个前沿模型、77 个场景中证明，当多个 Agent 分别代表不同用户并共享预算/日历/代码库等资源时，团队整体结果往往比单个全局 Agent 更差。<br>
+为什么重要：Multi-Agent 部署的真实风险不是模型不够聪明，而是缺乏协调与激励机制。共享资源上的利益冲突会导致系统性失效，必须引入经济学、配额、仲裁等外部机制。<br>
+关联：与《Fault-Tolerant Budget Conservation in Distributed Multi-Agent Delegation》共同指向 Agent 资源治理问题。
+</div>
+
+<div class="item">
+<strong>arXiv: Praxa — 面向“受治理执行”的 Evidence-Bound Harness</strong><br>
+发生了什么：Praxa 将 Agent 的 proposal、authority、dispatch、verified external effect、serving promotion 显式分离，并通过确定性 admission、brokered execution、external read-back、reconciliation 实现可审计执行。<br>
+为什么重要：它回应了一个关键工程问题：模型“提出动作”与“动作已产生可验证外部效果”是不同命题。对金融、医疗、企业批处理等高合规场景，这种 harness 设计可能成为事实标准。<br>
+关联：与“When Harnesses Lose the Signal”“Causal World Models”等论文一起，标志 Harness 工程从 demo 进入治理阶段。
+</div>
+
+<div class="item">
+<strong>深势科技与迈威生物达成战略合作，AI for Science 大模型驱动创新药研发</strong><br>
+发生了什么：迈威生物宣布与深势科技合作，推动生物药研发从“实验驱动”迈向“计算驱动”，聚焦创新药研发新范式。<br>
+为什么重要：国内 AI4S 正从科研叙事走向工业落地。深势科技代表“AI for Science 大模型体系”进入真实药物管线，意味着计算与实验的闭环能力开始被药企买单。<br>
+关联：与 Tavily 中 insitro CEO 强调“biology is the bottleneck”及 arXiv 大量蛋白质稳定性/突变效应生成论文一致。
+</div>
+
+<div class="item">
+<strong>Brian Chesky 访谈：AI agents need their own operating system</strong><br>
+发生了什么：Airbnb CEO Brian Chesky 认为 AI Agent 需要一个原生的操作系统，并讨论如何让 Airbnb 更 agent-friendly。<br>
+为什么重要：平台层开始意识到，Agent 不是聊天窗口里的功能，而是需要身份、权限、支付、调度、跨服务协议的系统性基础设施。<br>
+关联：与 Photon 为“取代移动应用”的 Agent 平台融资、Shopify 用 Sidekick 生成店面等产品化信号同频。
+</div>
+
+<div class="item">
+<strong>OpenAI 与 3 名安全研究人员分道扬镳</strong><br>
+发生了什么：据 WSJ 报道，OpenAI 在内部调查后与三名安全研究人员解除关系，原因涉及对敏感公司信息的处理不当。<br>
+为什么重要：安全团队连续动荡会削弱外部对前沿实验室治理能力的信任，也提示敏感信息边界、内部合规在 AGI 组织中的张力正在加剧。<br>
+关联：与今日多篇“受治理执行、证据边界”论文形成现实对照：不是 only 模型安全，还有组织与信息治理安全。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：决策模型/System One 模型成为 Agent 基础设施的新组件</strong><br>
+证据：Amazon Strands Decider 2B 发布；TechCrunch 称 decision models flood the web；arXiv 发布《Benchmarking System One decision models against trained classifiers and language models for automated decision gates》；Simon Willison 的 llm-typesafe 插件让 Jev 模型进入日常命令行工作流。<br>
+预判：未来 6-12 个月内，Harness 中的“分类、路由、审批、一致性检查”等微任务会加速从大模型生成转移到专用决策模型或小型 SLM。对开发者工具来说，新的集成模块会围绕“结构化概率输出 + 阈值决策”出现，而不是继续用大模型生成 JSON。
+</div>
+
+<div class="trend">
+<strong>趋势二：Harness 工程从“成功率导向”转向“可审计性与因果性”</strong><br>
+证据：Praxa 提出 Evidence-Bound Harness；《When Harnesses Lose the Signal》用因果视角区分救援与干扰；《What Should an Agent Remember?》揭示记忆系统评估中保留与检索的混淆可夸大 68.7 个百分点；《When Do Causal World Models Help Modular LLM Agents》批评观测性世界模型在干预决策中的缺陷。<br>
+预判：生产级 Agent 的核心竞争力不再是“跑通任务”，而是能否回答“为什么失败、哪一步越权、谁负责、如何回滚”。可观测性、审计日志、执行回放、预算守恒会成为 Harness 标准件。
+</div>
+
+<div class="trend">
+<strong>趋势三：AI for Science 进入“可解释、可迁移、数据就绪”阶段，生物实验仍是瓶颈</strong><br>
+证据：StabilityArc 用共享解码器实现跨蛋白质稳定性预测；Fold’EM 直接从 cryo-EM particles 推断原子结构；《Can LLMs Reliably Annotate Bioassay Metadata?》发现 PubChem 约 36% 的 bioassay 缺失关键注释；insitro CEO 称 biology 才是药物发现真正的瓶颈；深势科技与迈威生物落地工业合作。<br>
+预判：下一轮 AI4S 价值将从“生成候选分子”转向“可信性质预测、实验验证闭环、数据治理”。能建立高质量生物学数据管线与可审计预测体系的团队，会比单纯生成模型团队更具商业壁垒。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. Measuring the Microtask Eligibility Gap: When Is an Off-the-Shelf SLM Enough for an Agent Harness?</strong>（arXiv:2610.00025）<br>
+核心贡献：构建 4 类 Harness 微任务（自动审批 shell 命令、写记忆、选择工具、排序历史），并预设实践者阈值；扫描 Qwen3 0.6/1.7/4/8B，发现现成 SLM 存在“eligibility gap”，并评估量化对结论的影响。<br>
+为什么值得读：它提供了一套可直接复用的方法论，帮助团队判断哪些微任务能安全下放到小模型，而不是盲目用 frontier LLM。对控制成本、降低延迟、提高可审计性极具实操价值。
+</div>
+
+<div class="deep-read">
+<strong>2. What Should an Agent Remember? Disentangling Retention from Retrieval in Bounded-Memory Evaluation</strong>（arXiv:2610.00366）<br>
+核心贡献：流式回忆基准，分离“保留什么”与“查询时检索什么”。固定访问条件下，query-aware selection 提升 15.5 个百分点；而混合比较可产生 68.7 点的优势，其中 53.2 点来自历史访问差异而非策略本身。<br>
+为什么值得读：它纠正了记忆系统评估中的常见混淆。如果你正在设计长期 Agent 记忆，这篇论文能帮你避免把“更多上下文”误判为“更好的记忆策略”。
+</div>
+
+<div class="deep-read">
+<strong>3. StabilityArc: Decoding Protein Sequence Embeddings into Generalizable Stability Landscapes</strong>（arXiv:2610.00742）<br>
+核心贡献：将冻结 ESMC-600M 残基表示通过共享 RoPE Transformer 映射为 L×20 突变效应矩阵；在 66 个严格留一蛋白、134,794 个 ProteinGym 变体上达到 0.7134 Spearman，支持跨蛋白迁移预筛。<br>
+为什么值得读：它代表 AI4S 从“序列到结构”走向“可迁移性质景观”。对蛋白质设计、酶工程和药物发现中的早期突变筛选有直接指导价值。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>推荐：Simon Willison —— llm-typesafe 0.1a0</strong><br>
+为什么今天推荐：今天 TechCrunch 报道 Amazon 发布 Jev 类决策模型、decision models flood the web。Simon Willison 这篇短文展示了如何用命令行插件快速接入 TypeSafe AI 的 Jev 模型，执行结构化 yes/no “noul”判断与 choice 分类。它是最具可操作性的入口，帮助你立刻理解“决策模型进入 Agent 工具链”意味着什么。<br>
+三个核心观点：<br>
+1）专用决策模型可以返回结构化概率（如 {"type":"noul","noul":0.99}），非常适合 Harness 中的分类、路由、审批类微任务；<br>
+2）通过 llm install llm-typesafe 即可集成，决策模型不需要生成 token，成本低、输出稳定；<br>
+3）这代表一种新分工：大模型负责规划与生成，决策模型负责确定性与可阈值化判断。<br>
+适合谁读：AI 工程师、Agent 开发者、产品经理、任何正在设计工具调用与审批流程的人。<br>
+预计阅读时间：5 分钟。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek 大规模扩编：所有部门至少扩大一倍</strong><br>
+据报道，DeepSeek 于 6 月 25 日发布招聘信息，覆盖 7 大类 33 个（类）岗位，工作地点为北京和杭州。公司获得 A 轮融资约 510 亿元，估值约 4000 亿元。<br>
+这可能是国内基础大模型领域最强烈的扩招信号之一，意味着模型训练、推理优化、多模态、Agent 等岗位将集中放量。
+</div>
+
+<div class="item">
+<strong>国内头部大模型公司体量对比浮现</strong><br>
+Tavily 深度搜索结果：月之暗面估值约 180 亿美元领跑；DeepSeek 在融资推进中估值快速上升；智谱与 MiniMax 已上市，市值相对稳定。营收端智谱2025年约 7.24 亿元，高于 MiniMax 和月之暗面。<br>
+估值与营收的不匹配仍在继续，说明一级市场更多押注长期模型能力与 Agent 入口，而非短期商业化。
+</div>
+
+<div class="item">
+<strong>深势科技与迈威生物达成战略合作</strong><br>
+合作聚焦 AI for Science 大模型驱动的创新药研发，推动生物药研发从“实验驱动”迈向“计算驱动”。深势科技团队博士/博后占比超 35%，由院士领衔。<br>
+这显示国内 AI4S 企业开始进入真实药物管线和工业合作，而不只是平台建设。
+</div>
+
+<div class="item">
+<strong>其他厂商信号</strong><br>
+阿里、同花顺等公司已开始招聘 Agent 算法工程师、AI 产品评测工程师、AI 产品经理（金融智能 Agent 方向）。<br>
+面壁智能、百川智能暂无新的重大公开动态，建议持续观察其 Agent/Harness 相关人才与产品发布。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>岗位类型正在从“模型训练”向“Agent 系统与评测”扩散</strong><br>
+同花顺 2027 届校招新增“Agent 算法工程师（多方向）”和“AI 产品经理（AIME 金融智能 Agent 方向）”；阿里招聘“AI 产品评测工程师”，地点北京/杭州。<br>
+这意味着市场开始为 Agent 的可靠性、评测、质量保障设置专门岗位，而不仅仅是算法研究。
+</div>
+
+<div class="item">
+<strong>Harness 工程相关技能正在升温</strong><br>
+本轮 arXiv 论文暴露出“可审计执行、因果恢复、预算守恒、记忆去混淆”等能力缺口。掌握这些技能、能设计 admission/read-back/reconciliation 流程的工程师将越来越稀缺。<br>
+技能关键词：可观测性、确定性执行、SLM 微任务部署、工具调用 schema 修复、多智能体预算治理。
+</div>
+
+<div class="item">
+<strong>AI4S 需要“计算 + 实验”双栖人才</strong><br>
+深势科技与迈威生物的合作为典型信号：能理解湿实验约束、能构建高质量数据管线、能对预测进行严格验证的 AI4S 人才将受到药企和 AI 公司双重争夺。<br>
+建议关注蛋白质稳定性预测、cryo-EM 原子结构推断、生物实验数据标注与管理等交叉方向。
+</div>
+
+<div class="item">
+<strong>薪资与市场信号</strong><br>
+DeepSeek 大规模融资后扩编，月之暗面估值领跑，智谱/MiniMax 完成上市。一级市场资本重新向头部集中，顶尖模型与 Harness 系统人才价格可能被进一步推高。<br>
+北京、杭州仍是国内 AI 岗位密度最高的城市，上海在 AI4S 和生物医药交叉领域可能成为新的增长点。
+</div>
+
+<div class="closing">
+⚡ 今日信号：Jev 类结构化决策模型正在快速进入 Agent 工具链。立刻评估你的 Harness 微任务：哪些分类、路由、审批可以切换为确定性概率输出，以降低成本并提高可审计性。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
