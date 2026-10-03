@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年10月03日 · 新闻 19 条 · 博客 3 篇 · 搜索 11 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<p><strong>OpenAI 发布 GPT-6 家族模型指南</strong>：指导初创公司如何选择 GPT-6 模型、调节推理强度、改进提示与技能、协调工具并准备生产工作流。</p>
+<p>为什么重要：这是 GPT-6 系列首次面向生产环境的系统化指南，意味着新一代模型已进入应用落地阶段。指南中“推理努力调节”和“工具协调”的官方方法论，将直接影响 Agent 架构设计。与 DeepSeek Harness 的开源策略形成对照：OpenAI 仍以封闭模型+官方指南方式掌控生态，而 DeepSeek 试图用开源 Harness 降低 Agent 构建门槛。</p>
+</div>
+
+<div class="item">
+<p><strong>DeepSeek Harness 内测引爆开源 Agent 社群</strong>：712 个项目报名，三大技术瓶颈浮现——记忆（56 个相关项目）、安全（研究评测与安全治理各 24 个）、工具调用的可靠性。</p>
+<p>为什么重要：DeepSeek Harness 定位为“成本足够低的 Agent 运行时”，配套 V4-Flash 模型直接攻击 Agent 经济性。开发者讨论中“记忆与推理是否一体两面”的哲学问题，暴露出当前 Harness 在长程任务中的根本短板。与苹果收紧 Full Disk Access 的安全举措互为印证：Agent 一旦进入生产环境，安全与记忆是绕不开的坎。</p>
+</div>
+
+<div class="item">
+<p><strong>苹果因 AI Agent 风险收紧 macOS “完全磁盘访问” 控制</strong>。</p>
+<p>为什么重要：这是操作系统层面对 AI Agent 权限的首次显性收紧，说明 Agent 的工具调用能力已触及系统安全边界。未来 Agent 在 macOS 上读取文件、消息、邮件的权限将被更细粒度管理，直接影响依赖本机文件系统上下文的开发者工具（如 Claude Code、Cursor）。与 DeepSeek Harness 安全瓶颈、Circuit Breaker Labs 的儿童安全“碰撞测试”形成趋势共振。</p>
+</div>
+
+<div class="item">
+<p><strong>MIT Tech Review 观点：别被骗了——LLM 不会推理</strong>。</p>
+<p>为什么重要：文章以 AlphaGo 的“第 37 手”为例，区分了统计模式匹配与真正的推理。这对当前“LLM 已具备推理能力”的主流叙事是重要挑战，尤其影响 Agent 在复杂决策中的可靠性判断。与 OpenAI GPT-6 指南中的“推理努力调节”形成张力：如果推理只是输出阶段的表象，那么调节推理努力可能只是改变输出风格，而非提升真实推理能力。</p>
+</div>
+
+<div class="item">
+<p><strong>openJiuwen X-Router 自演进模型路由技术首发</strong>：昇腾亲和，Agent 越跑越省，实测减少 50%+ Token 消耗。</p>
+<p>为什么重要：模型路由是 Agent 成本控制的直接手段。X-Router 宣称“让每一次请求选对模型”，说明国内团队正在从模型路由层优化 Agent 运行经济性。这与 DeepSeek Harness 的“便宜到能规模化运行”目标完全一致，也意味着国产 AI 基础设施正在从底层算力到上层路由全面适配降本。</p>
+</div>
+
+<div class="item">
+<p><strong>丘成桐新论文致谢了 GPT 和 Claude</strong>。</p>
+<p>为什么重要：顶级数学家公开致谢大模型辅助研究，是 AI for Science 进入数学理论深水区的信号。这说明 LLM 在数学推理、证明辅助中的作用已得到严肃学者的认可，虽然 MIT Tech Review 对推理持怀疑态度，但实际研究场景中的人机协作模式已经跑通。对 AI4S 从业者是重要佐证：大模型不是替代科学家，而是成为研究工具链的一部分。</p>
+</div>
+
+<div class="item">
+<p><strong>DeepSeek 大规模招聘：所有部门至少扩大一倍</strong>。</p>
+<p>为什么重要：这是 DeepSeek 获 A 轮融资（估值约 4000 亿元）后的直接扩张动作，涵盖 7 大类 33 个岗位，工作地点北京和杭州。此前 DeepSeek 一直以“不融资、不商业化、极简运营”著称，此次大规模招聘标志着其从研究型团队向产品化和生态化转型，将加剧国内 AI 人才争夺。与 DeepSeek Harness 内测的社群热度相互印证：扩张需要人来维护开源生态和构建产品。</p>
+</div>
+
+<div class="item">
+<p><strong>MIT Tech Review：企业智能投资将达 2.5 万亿美元，但消费者采用率仅 2%</strong>。</p>
+<p>为什么重要：企业端 AI 投资同比增长 44%，但消费者付费意愿极低，形成强烈反差。这意味着 Agent 产品化短期内应聚焦 B 端提效，而非 C 端变现。与 GPT-6 指南面向初创公司、DeepSeek Harness 面向开发者的策略一致：当前真正的付费方是企业和开发者，消费级 AI 产品的商业模型仍需探索。</p>
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<p><strong>趋势一：Agent Harness 成为新战场，安全与成本是关键瓶颈</strong></p>
+<p>证据：DeepSeek Harness 内测 712 个项目报名，三大技术瓶颈中“安全”和“记忆”分别有专门项目；苹果因 AI Agent 风险收紧 macOS 权限；openJiuwen X-Router 实测减少 50%+ Token 消耗。</p>
+<p>预判：未来 6 个月，Harness 工程将分化为两个子方向：一是安全中间层（权限管理、沙箱隔离、审计日志），二是成本优化层（动态模型路由、上下文压缩、Token 预算控制）。能同时解决安全和经济性的框架将获得开发者社区主导权。</p>
+</div>
+
+<div class="trend">
+<p><strong>趋势二：LLM 推理能力争议升温，影响企业部署信心</strong></p>
+<p>证据：MIT Tech Review 明确表示“LLM 不会推理”，而 OpenAI GPT-6 指南却在强调“推理努力调节”；企业投资 2.5 万亿美元但消费者采用率仅 2%。</p>
+<p>预判：推理可靠性将成为模型评测的新维度，企业会要求可验证的推理链而不是黑箱输出。具有可解释推理或可追溯决策的模型/框架将获得溢价。Agent 产品需要内置推理验证机制，否则难以通过企业安全审计。</p>
+</div>
+
+<div class="trend">
+<p><strong>趋势三：国内 AI 厂商进入扩张期，人才竞争加剧</strong></p>
+<p>证据：DeepSeek 大规模招聘扩招一倍；Jev 估值 100 亿美元（据量子位）；京东、滴滴等大厂出现 Agent 产品经理新岗位；深势科技持续推进 AI4S 产品化。</p>
+<p>预判：国内 AI 人才市场将出现结构性机会：Agent 评测、模型安全、Harness 工程、AI4S 应用等新兴岗位薪资溢价明显。具备量化背景或系统可靠性经验的工程师（如崔添翼加入 DeepSeek）将成为争抢对象。</p>
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<p><strong>1. MIT Tech Review: Don't be fooled—LLMs don't reason</strong></p>
+<p>核心贡献：以 AlphaGo 为例，区分了“统计模式匹配”与“真实推理”，质疑 LLM 在开放域问题中的推理能力。文章指出 LLM 的“推理”更多是模式补全而非逻辑推导。</p>
+<p>为什么值得读：这是对当前“LLM 已具备推理能力”主流叙事的严肃挑战。如果你正在构建依赖复杂推理的 Agent，这篇文章能帮你重新评估任务边界和失败模式。与 GPT-6 的“推理努力调节”机制对比阅读，能更清晰地理解模型厂商的叙事策略。</p>
+</div>
+
+<div class="deep-read">
+<p><strong>2. openJiuwen X-Router 技术报告（来自量子位报道）</strong></p>
+<p>核心贡献：自演进模型路由技术，能在每次请求时动态选择最合适的模型，实测减少 50%+ Token 消耗。宣称“让每一次反馈都成为下一次更优、更省的选择”。</p>
+<p>为什么值得读：模型路由是 Agent 成本控制的关键技术，但多数路由方案基于规则或静态分类。X-Router 的“自演进”机制若能实现，意味着路由策略可以通过反馈闭环持续优化。值得深挖其技术细节，尤其是如何在昇腾硬件上实现高效推理。对 Harness 工程中的工具调用和上下文管理也有参考价值。</p>
+</div>
+
+<div class="deep-read">
+<p><strong>3. DeepSeek Harness 架构分析（来自 Tavily 搜索的 Eigent 博客及 Medium 文章）</strong></p>
+<p>核心贡献：DeepSeek Harness 采用 MIT 许可，基于 Cordis 架构的“时空可组合性”，所有组件（模型、工具、沙箱、UI）均为可替换插件。定位为“让 Agent 足够便宜以运行在规模上”。</p>
+<p>为什么值得读：这是国产开源 Agent 框架的重要设计样本，其“一切皆插件”的哲学与 LangGraph 的图式编排形成对比。理解其架构有助于判断未来 Agent 框架的演化方向，以及是否适合作为生产系统的基础。目前仍处于开发者预览，但有潜力改变 Agent 开发范式。</p>
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<p><strong>推荐：Simon Willison — 2026 in LLMs (so far)</strong></p>
+<p>为什么今天推荐：今天是 2026 年 10 月 3 日，Simon Willison 的这篇闭门演讲（9 月 27 日）是对 2026 年至今 LLM 领域最系统的闪电回顾。当前 Agent Harness、模型路由、安全收紧等热点都在其中有所串联，能帮你快速建立全局视野。结合今天 DeepSeek Harness 内测、OpenAI GPT-6 指南、苹果权限收紧等新闻，这篇文章提供了理解这些动态的历史脉络。</p>
+<p>核心观点：<br>
+1. 模型发布节奏持续，但多为增量改进，真正的突破在于 Agent 和 Harness 层的工程化。<br>
+2. 2026 年的关键主题是“成本下降”与“Agent 生产化”，模型能力本身不再是唯一瓶颈。<br>
+3. 开发者工具正在从单模型调用转向多模型路由、插件化运行时，Harness 成为新的基础设施层。</p>
+<p>适合谁读：需要快速把握 2026 年上半年 LLM 趋势的 AI 工程师、产品经理、研究员。想要了解 Simon Willison 对 Agent 和工具链观察的人。</p>
+<p>阅读时间：约 20 分钟（含注释幻灯片）。</p>
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<p><strong>DeepSeek</strong>：</p>
+<ul>
+<li>大规模招聘：所有部门至少扩大一倍，涵盖 7 大类 33 个岗位，工作地点北京和杭州。此前已获 A 轮融资约 510 亿元，估值约 4000 亿元。</li>
+<li>Harness 内测引爆开源 Agent 社群：712 个项目报名，三大技术瓶颈浮出水面（记忆、安全、工具调用）。崔添翼（前 Jane Street、TSY Capital）加入并领导 Harness 团队，量化背景带来高可靠性系统思维。</li>
+<li>Harness 为 MIT 许可开源，基于 Cordis 架构，一切皆插件，配合超廉价模型 V4-Flash 攻击 Agent 经济性。</li>
+</ul>
+
+<p><strong>openJiuwen</strong>：发布 X-Router 自演进模型路由技术，昇腾亲和，实测减少 50%+ Token 消耗，主打 Agent 运行成本优化。</p>
+
+<p><strong>深势科技</strong>：作为 AI for Science 代表，持续迭代药物计算设计平台 Hermite、多模态科学大模型 Uni-SMART、大原子模型计划。公司拥有博士后科研工作站，在 AI4S 领域保持产品化领先。</p>
+
+<p><strong>其他信号</strong>：量子位报道 Jev 估值 100 亿美元，虽细节未披露，但显示国内 AI Agent 赛道估值高涨。京东、滴滴等大厂出现明确的 Agent 产品经理岗位，表明 AI 应用正从研究走向产品化运营。</p>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<p><strong>招聘趋势</strong>：</p>
+<ul>
+<li><strong>DeepSeek 扩招</strong>：所有部门规模翻倍，岗位涵盖研究和产品，尤其需要 Harness 工程、Agent 系统、模型评测相关人才。这是国内 AI 行业最直接的扩招信号。</li>
+<li><strong>新岗位出现</strong>：滴滴招聘“AI 评测产品经理”，负责构建大模型与 Agent 评测体系，薪资 2.5–4.5 万/月；京东招聘“Agent 产品经理”，要求理解 RAG、Prompt 设计、多模态交互，薪资类似。这些岗位在一年前几乎不存在，是 Agent 产品化的直接结果。</li>
+<li><strong>薪资信号</strong>：北京地区 Agent 相关产品岗位集中在 2.5–4.5 万/月，技术专家岗可能更高。量化背景（如 DeepSeek 崔添翼）进入 Agent 领域后，可能带动对系统可靠性、低延迟多步骤决策人才的需求。</li>
+<li><strong>技能需求变化</strong>：除了传统的 LLM 知识，现在更看重：工具调用安全、权限管理、记忆/上下文设计、模型路由策略、评测体系搭建。具备 MCP、Subagent、Harness 工程经验的工程师将更具竞争力。</li>
+</ul>
+
+<p><strong>推断机会方向</strong>：</p>
+<ul>
+<li>Agent 安全工程师：苹果收紧权限、Harness 安全瓶颈表明，懂沙箱隔离、权限控制、审计日志的工程师将成抢手货。</li>
+<li>模型路由/成本优化工程师：openJiuwen X-Router 和 DeepSeek Harness 都强调降本，能设计动态路由和 Token 预算策略的人才稀缺。</li>
+<li>AI 评测产品经理：滴滴招聘岗位显示，企业需要能搭建 Agent 评测体系的产品经理，这一岗位将快速增多。</li>
+<li>AI4S 应用工程师：深势科技等公司持续发展，结合丘成桐使用 LLM 辅助研究，AI for Science 的工程化需求正在上升。</li>
+</ul>
+
+<div class="closing">
+<p><strong>⚡ 今日信号</strong></p>
+<p>DeepSeek Harness 开源 + 大规模招聘，标志着 Agent 领域的竞争已从模型层转向 Harness 层。建议立即上手 DeepSeek Harness 并关注其安全与成本优化插件，这可能是下半年最具杠杆的工程方向。</p>
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
