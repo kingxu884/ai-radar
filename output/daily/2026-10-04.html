@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年10月04日 · 新闻 7 条 · 博客 6 篇 · 搜索 8 条</div>
+  </div>
+  <div class="body"><h1>AI Radar 每日深度情报简报 · 2026年10月4日</h1>
+
+<div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>微软 ThinkingBox 揭示 Agent “假完成”问题</strong><br>
+发生了什么：Hugging Face 发布微软博客，指出 Agent 声称任务完成，但外部数据库状态并未同步更新，出现“模型说做完、系统不同意”的分歧。<br>
+为什么重要：这暴露出当前 LLM Agent 在长链路工具调用中缺少事务边界、幂等写入与状态校验机制。仅依赖模型自我报告完成度，在生产级 Harness 中不可接受。Agent 从 Demo 走向关键业务，必须补上确定性验证与回滚能力。<br>
+关联：与 Simon Willison 呼吁默认硬预算上限、MCP v2 对多 Agent 通信的规范化形成呼应——三者共同指向 Agent 工程栈的下一层：可控性基础设施。
+</div>
+
+<div class="item">
+<strong>DeepSeek 扩招弹性计算团队，JD 附技术报告</strong><br>
+发生了什么：量子位报道 DeepSeek 弹性计算团队大量 HC，尤其需要资深工程师，招聘 JD 中直接附上技术报告作为能力要求。<br>
+为什么重要：说明 DeepSeek 在模型 scaling 之外，正重兵投入底层弹性计算与分布式调度。这通常意味着训练/推理基础设施的复杂度已经超过通用后端能力，团队在补充专门人才以支撑下一代模型和对外服务。<br>
+关联：与 FDE 岗位月薪 5 万、字节/美团 MaaS 相关招聘共同显示出 AI 基础设施与交付人才的双重缺口。
+</div>
+
+<div class="item">
+<strong>最火 AI 岗位 FDE 月薪 5 万</strong><br>
+发生了什么：量子位报道 FDE（Forward Deployed Engineer，现场交付工程师）成为当前最热 AI 岗位之一，月薪可达 5 万。<br>
+为什么重要：这表明 AI 产品已经进入“最后一公里”的客户现场集成阶段。FDE 需要同时具备模型理解、业务集成与工程排障能力，是连接产品与客户的关键角色。该岗位的兴起说明 AI 公司正在从“卖模型”转向“卖解决方案”。<br>
+关联：与 DeepSeek 扩招、国内云厂商 MaaS 岗位增加形成结构互补，交付层人才需求正在快速膨胀。
+</div>
+
+<div class="item">
+<strong>OpenAI 安全员工辞职，称公司文化已破碎</strong><br>
+发生了什么：TechCrunch 报道 OpenAI 安全相关员工 David Robinson 在辞职时公开警告，称公司文化已经 broken。<br>
+为什么重要：前沿实验室内部安全与商业化之间的张力持续升级。当模型能力跳跃速度超过安全文化沉淀速度时，关键安全人才外流会成为行业性风险，而非孤立事件。<br>
+关联：与 Simon Willison 引述 @joedaroo 的“能力突增让安全准备滞后”观点相互印证，也与近期国内大模型团队人才流动报道形成对照。
+</div>
+
+<div class="item">
+<strong>MCP v2 Beta 发布，多 Agent 通信迎来调整</strong><br>
+发生了什么：Context Studios 博客披露 MCP v2 Beta 版本，针对多 Agent 通信机制做出调整。<br>
+为什么重要：MCP 已成为 Agent 工具调用的事实标准，v2 的演进将直接影响 Subagent 编排、服务发现与权限隔离。对 Harness 工程开发者来说，这是必须关注的协议信号。<br>
+关联：与微软 ThinkingBox 的工具调用一致性问题、Simon Willison 的成本控制主张共同定义了下一代 Agent 工程栈的关键组件。
+</div>
+
+<div class="item">
+<strong>GPT-6 要“吃掉”3D 公司？专业 3D 模型反而更稀缺</strong><br>
+发生了什么：量子位报道 GPT-6 多模态/3D 生成能力对垂直 3D 公司形成冲击，但一家 3D 公司在不到 2 年内 ARR 翻百倍、突破 1 亿美元，专业 3D 模型需求反而更加稀缺。<br>
+为什么重要：通用大模型的生成能力并非直接替代垂直专业资产，反而可能抬高高精度、可控、可商业授权的专业模型价值。对 AI 产品定位有重要参考：通用生成与可控生产是两条不同的护城河。<br>
+关联：与国内大模型多模态进展、面壁智能端侧路线讨论存在交集，共同反映“通用 vs 垂直”的路线分化。
+</div>
+
+<div class="item">
+<strong>月之暗面、面壁智能估值叙事分化</strong><br>
+发生了什么：Tavily 实时信息显示，月之暗面就市场不实融资信息发布声明，面壁智能 200 亿估值引发争议；智谱、月暗、面壁分别代表政企、C端 API、端侧三条截然不同的估值路线。<br>
+为什么重要：国内大模型一级市场的估值逻辑正在快速分化。面壁智能的 200 亿估值在纯财务视角下缺少营收支撑，但产业资本可能将其视为端侧 AI 技术供给的前置锁定。这种估值分歧提示泡沫与机会并存。<br>
+关联：与 DeepSeek 扩招、Kimi 2.8 万亿参数开源传闻共同显示国内厂商在算力、人才、融资三线同时竞争。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Agent 工程从“可生成”转向“可控制”</strong><br>
+证据：Simon Willison 提出需要默认硬预算上限；微软 ThinkingBox 揭示 Agent 完成状态与数据库不一致；MCP v2 Beta 调整多 Agent 通信。<br>
+预判：未来 6 个月会出现专门面向 Agent 的成本治理、状态校验、回滚与审计中间件，类似 API 网关之于微服务。预算硬帽、事务一致性与协议规范将成为 Agent 生产化的三件套。
+</div>
+
+<div class="trend">
+<strong>趋势二：AI 基础设施与现场交付人才需求同时爆发</strong><br>
+证据：DeepSeek 弹性计算团队大量 HC 招资深工程师；FDE 岗位月薪 5 万；字节/美团新增 MaaS 与评测 PM 岗位。<br>
+预判：具备分布式训练/推理优化、弹性调度能力的资深工程师薪资继续上行；FDE 将成为 AI 独角兽的标准团队配置。人才竞争从模型算法导师级人物扩散到 Infra 与交付执行层。
+</div>
+
+<div class="trend">
+<strong>趋势三：安全能力追赶模型能力跳跃的压力加剧</strong><br>
+证据：OpenAI 安全员工辞职并公开批评公司文化；Simon Willison 引述 @joedaroo 称模型能力突增让安全文化来不及演化。<br>
+预判：更多安全研究人员可能从大型实验室流向独立非营利机构、安全评估创业公司或转向内部安全工具创业，形成新的安全人才市场。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+<p>今日信息源中未出现新增 arXiv 论文，以下为值得精读的工程报告/协议文档。</p>
+
+<div class="deep-read">
+<strong>1. Microsoft ThinkingBox: The Agent Said It Was Done. The Database Disagreed.</strong><br>
+核心贡献：揭示 LLM Agent 在长任务中“自我报告完成”与外部系统真实状态不一致的典型失败模式，并探讨工程化校验与状态同步思路。<br>
+为什么值得读：所有从事 Agent 工具调用、数据库写入、任务编排的工程师都会遇到类似问题。它直接切入 Harness 工程中容易被忽视的一致性层，是今天最值得补的一课。
+</div>
+
+<div class="deep-read">
+<strong>2. MCP v2 Beta: What Changes in Multi-Agent Communication</strong><br>
+核心贡献：阐述 MCP v2 在多 Agent 通信中的关键变更，涉及服务发现、权限隔离与消息流的重新设计。<br>
+为什么值得读：MCP 是当前 Agent 工具调用的主流协议，v2 的改动会影响大量 Subagent、工具服务器与 IDE 集成。提前理解变更能避免未来集成返工。
+</div>
+
+<div class="deep-read">
+<strong>3. Simon Willison: We're going to need default hard budget caps on pretty much everything</strong><br>
+核心贡献：提出 API 与按量计费服务应默认提供硬预算上限，超限即切断并返回错误，而非仅发告警邮件。<br>
+为什么值得读：这是非常可操作的产品设计建议。随着 Coding Agent 和个人 Agent 自动化调用付费 API 的成本风险上升，预算硬帽可能成为平台与工具默认安全机制。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>Nathan Lambert: The current balance of power in open models</strong><br>
+为什么今天推荐：今天国内厂商动态密集涉及开源模型竞争与估值分化，Nathan 作为 Post-training/RLHF 领域专家，其对开放模型权力平衡的分析能帮助从业者理解 DeepSeek、Kimi 等开源动作背后的战略逻辑。<br>
+3 个核心观点：<br>
+• 开放模型生态中的权力分布正在从单一头部实验室向多个区域性/垂直型参与者扩散。<br>
+• 开源与闭源在不同能力维度上的差距并非线性缩小，而是在特定任务上反复拉锯。<br>
+• 政策制定者和企业采用者需要重新评估对开放模型的依赖风险与收益。<br>
+适合谁读：关注开放模型战略、预训练/后训练技术格局、AI 治理与竞争的从业者。<br>
+大致阅读时间：15-20 分钟。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek</strong>：弹性计算团队大规模扩招，重点招聘资深工程师，JD 附带技术报告，显示其对底层分布式计算与弹性调度能力的高度重视。<br>
+<strong>月之暗面</strong>：就市场上不实的融资、股权交易及创始人虚假信息发布声明，并已向公安机关报案；网络信息称 Kimi 开源大模型参数达 2.8 万亿，若属实将再次推高开源模型尺寸纪录。<br>
+<strong>面壁智能</strong>：200 亿估值引发市场争议，端侧路线被部分产业资本视为提前锁定技术供给，但缺乏营收数据支撑，估值逻辑高度依赖产业协同期权。<br>
+<strong>深势科技</strong>：清流资本文章回顾其投资逻辑，深势已完成 Hermite、Bohrium、Lebesgue 等微尺度工业设计平台矩阵，持续深耕 AI for Science。<br>
+<strong>字节跳动</strong>：新增 LLM 大模型评测产品经理实习生岗位，要求熟悉 LLM/多模态/Agent，面向 2027 届；同时 AI 平台产品实习生岗位开放。<br>
+<strong>美团</strong>：社招 AI 产品经理（MaaS）岗位，覆盖北京、上海、深圳，反映本地生活巨头对 MaaS 层产品化的投入。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>FDE 成为高薪热门岗位</strong>：月薪 5 万，核心能力包括现场部署、客户集成、模型排障与业务反馈。预计该岗位会长期存在并继续升温。<br>
+<strong>DeepSeek 弹性计算团队扩招</strong>：对资深工程师需求大，要求具备分布式计算、调度与弹性训练/推理优化能力，JD 附技术报告说明门槛极高。<br>
+<strong>字节跳动招募 LLM 评测产品经理实习生</strong>：需要熟悉 LLM/多模态/Agent 评测、策略与数据产品，说明大厂在模型评测与质量保障上投入增加。<br>
+<strong>美团招聘 AI 产品经理（MaaS）</strong>：社招岗位覆盖多个城市，显示 MaaS 产品化需要既懂平台又懂行业场景的复合型产品人才。<br>
+<strong>技能需求变化</strong>：从单纯模型微调转向系统交付、成本控制、评测体系与现场工程集成。Agent 可靠性、预算硬帽、MCP 集成等能力正在成为新的竞争力标签。
+</div>
+
+<div class="closing">
+⚡ 今日信号：Agent 生产化的胜负手已从模型能力转向工程控制力——预算硬帽、状态一致性、弹性算力构成新三件套。优先补强控制层的团队将在下一阶段竞争中占据优势。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
