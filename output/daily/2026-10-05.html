@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年10月05日 · 新闻 112 条 · 博客 0 篇 · 搜索 7 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>1. 《Trained Agentic Context Management》：8K上下文的35B模型靠两个工具追平GPT-5.4的1M长上下文</strong><br>
+<b>发生了什么：</b>研究者不训练原生长上下文，而是给Qwen3.6-35B-A3B两个原语工具——"用任意prompt调用自己"和"按token范围读输入"——在合成数据上微调，使其在OOLONG-synth上文档超过40K token时表现追平GPT-5.4 1M上下文。<br>
+<b>为什么重要：</b>这把"长上下文"从模型架构问题重新定性为工具使用问题。如果小模型能通过自调用+范围读取模拟任意长度上下文，原生长上下文的算力/显存成本优势将大幅缩水。这同时挑战了"Scaling上下文窗口"的主流路线，也重新划定了Harness与模型能力的边界——上下文管理可以完全训练化，而非人工设计。<br>
+<b>关联：</b>与APDMem的渐进式记忆分层、WakeKV的反应式KV驻留、Looped Transformers共享记忆形成同一趋势：上下文/记忆系统正在从被动压缩走向主动、可训练的工具调用。
+</div>
+
+<div class="item">
+<strong>2. 《When Terminal-Agent Training Stalls》：元智能体生成训练任务的"难度带宽"是模型特定的</strong><br>
+<b>发生了什么：</b>研究者系统诊断了用Claude Opus做元智能体生成终端任务和验证器时的三类失败——基准无效性、Harness脆弱性、奖励不对齐。9B模型在Opus生成的任务上20步内饱和于81.3% mean pass@2；加入困难任务后跌至20.6%，训练配置未变。<br>
+<b>为什么重要：</b>这是对当前RL for Agent训练方法论的一次关键警告：前沿模型生成的任务并不能形成有效课程。弱模型在强模型生成的"简单"任务上虚假饱和，遇到真正困难的任务时能力崩塌。对正在用强模型合成Agent训练数据的团队，这意味着一套昂贵的自欺机制——Pass@2曲线好看，但可迁移能力没有建立。<br>
+<b>关联：</b>与ArrivalBench"跑一次正确、按时序就错"、XiangqiBench"找到好棋不等于赢棋"共同揭示：训练/评测任务的分布匹配是Agent工程中最被低估的问题。
+</div>
+
+<div class="item">
+<strong>3. 《DeReAct》：把Agent的"提案-执行-完成"拆成三个模块，外部化Critic与Context Manager</strong><br>
+<b>发生了什么：</b>DeReAct将ReAct的单一策略外部化为两条门控策略——Critic验证动作后才允许执行，Context Manager重建环境支持的State并认证任务完成。在GAIA和SWE-bench Verified上，Qwen3-Coder-480B Pass@1提升6.5-7.0分，弱模型获益最大。<br>
+<b>为什么重要：</b>这验证了一个工程直觉：Agent的控制流不该由单一LLM end-to-end承担。把"该不该执行"和"算不算完成"拆成可审计的独立模块，不仅提升表现，更重要的是提供了生产环境最需要的动作授权与完成控制机制。弱模型提升最大的事实说明，Harness结构是最便宜的可靠性投资。<br>
+<b>关联：</b>与VERSE自进化优化器、Inherit-MAS的test-time演化共同确认：Agent能力提升的主战场正在从模型权重转移到Harness架构。
+</div>
+
+<div class="item">
+<strong>4. 《What Does a Token Cost?》：首次测量单个token的"充分计算量"</strong><br>
+<b>发生了什么：</b>用15个规模递增的模型组成专家团，逐token复现参考序列，定义最小成功模型的推理成本为该token的sufficient compute，给出了per-token计算需求的上界测量。<br>
+<b>为什么重要：</b>这是对"每个token消耗相同计算"假设的第一次直接测量。如果token间难度差异可量化，speculative decoding、动态路由、自适应推理预算的优化空间可以被重新计算——当前所有模型的推理成本都建立在均匀分配计算的前提下，这是一个可能被大幅低估的效率缺口。<br>
+<b>关联：</b>与FlashSinkhorn 2的块稀疏EOT、Sigma连续扩散LLM的轨迹引导同属同一浪潮：把计算从均匀化中解放出来。
+</div>
+
+<div class="item">
+<strong>5. DeepSeek V4技术报告披露核心人才流动名单，同时大规模招聘Agent研究人才</strong><br>
+<b>发生了什么：</b>DeepSeek-V4技术报告近300人作者名单中10人已离职：郭达雅→字节（2026年3月）、王炳宣→腾讯姚顺雨团队（2025年底）、罗福莉→小米MiMo负责人（2025年11月）、阮翀→元戎启行（2026年1月），魏浩然（OCR系列核心作者）去向未公开。同时DeepSeek 4月24日发布多岗位Agent研究招聘。<br>
+<b>为什么重要：</b>人才流失名单几乎覆盖各条线核心作者，表明国内大模型人才争夺已进入"掐尖"阶段。但近300人阵容依然庞大，且招聘重心明确转向Agent研究，说明DeepSeek的后训练焦点正从基础模型向Agent能力迁移。这是一次战略重心的可见漂移。<br>
+<b>关联：</b>结合DeepSeek Harness（dsh）v0.1开源、"一切皆插件"架构公布，DeepSeek的策略是从模型层和工程层同时向Agent基础设施发力，而非仅守住基础模型阵地。
+</div>
+
+<div class="item">
+<strong>6. Google冻结开源漏洞赏金项目：AI生成提交暴增导致信噪比崩塌</strong><br>
+<b>发生了什么：</b>Google因"AI生成提交显著上升"冻结了其开源bug bounty项目。<br>
+<b>为什么重要：</b>这是AI slop倒灌安全生态的第一个制度性后果——当LLM生成的漏洞报告淹没人工审查通道，赏金项目的运营成本超过其安全价值。对依赖众包安全的企业是一个明确警告：AI输出的验证成本将成为安全工具链的隐性税。这也预示着"AI生成内容的机器验证"会成为一个新的工具品类。<br>
+<b>关联：</b>与O*NET-BENCH审计LLM法官、Prompted to Discriminate的探针泛化研究形成同一主题：AI的输出正在污染AI的评测与治理体系，且目前没有廉价的防御手段。
+</div>
+
+<div class="item">
+<strong>7. 《Multimodal reasoning for broadly neutralizing antibody discovery》：闭环AI系统在bnAb筛选上达到55%中和率</strong><br>
+<b>发生了什么：</b>ImmuneAgent从疫苗接种/感染人群的天然B细胞库筛选中和抗体，110个克隆中60个（~55%）有中和活性，12个（~11%）为广谱中和抗体（bnAb），大幅超越传统方法，并声称可跨病毒家族泛化。<br>
+<b>为什么重要：</b>这标志着AI for Science从"预测"走向"闭环发现"——通过多模态推理+持续元学习+湿实验反馈，系统自主决定下一步筛选什么。55%的中和率若可复现，将直接把抗体发现周期从年级压缩到月级。对快速响应新兴传染病有直接战略价值。<br>
+<b>关联：</b>与"Toward Controlling Biology with Language"（离线学习prompt条件的生物干预）、scEGFlow扰动预测共同勾画出一条路径：语言模型正在成为生物实验的规划层，而不仅仅是预测层。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Agent评测从"结果分数"转向"过程验证与重放测试"</strong><br>
+证据：ArrivalBench重新执行pipeline并在对抗性时序扰动下验证最终状态（单次执行认证86-100%，重新执行后7-79%静默出错）；OEB只读执行记录、不看outcome score评估认知过程；XiangqiBench用closed-loop对弈胜率揭示Conversion Gap；TPBench检测对话压缩中的"转折点驱逐"。<br>
+预判：单次运行通过率将在2026 Q4失去Agent产品核心指标的地位，CI/CD式重放测试和执行轨迹审计工具会成为Agent开发栈的标配。不能证明"为什么成功"的Agent，其可靠性声明将不再被严肃对待。
+</div>
+
+<div class="trend">
+<strong>趋势二：上下文/记忆管理从"人工设计Harness"走向"训练模型使用Harness"</strong><br>
+证据：Trained Agentic Context Management用两个原语工具让8K上下文追平1M；APDMem让controller自主决定按需下钻记忆层级；WakeKV让KV驻留策略随attention行为反应式调整；Looped Transformers共享KV cache反而提升质量。<br>
+预判：人工设计的记忆系统（向量库+摘要+固定规则的组合）将被"训练模型学会何时读什么"逐步取代。RAG架构师的角色会从规则设计转向合成数据构造与记忆决策的策略训练。下一波产品差异化不在于谁的向量库更快，而在于谁的记忆策略更可训练。
+</div>
+
+<div class="trend">
+<strong>趋势三：国内大模型独立厂商进入"上市冲刺+人才保卫战"双线作战</strong><br>
+证据：智谱2026年1月港交所上市（全球大模型第一股）；Mini</div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
