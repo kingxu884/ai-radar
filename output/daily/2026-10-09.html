@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年10月09日 · 新闻 139 条 · 博客 7 篇 · 搜索 16 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>OpenAI安全研究员被解雇事件升级</strong> — 三名被解雇的OpenAI安全研究员公开发信，反驳"处理敏感信息不当"的指控，警告公司安全文化正面临寒蝉效应。<br>
+<strong>为什么重要：</strong>在OpenAI收入比预期少200亿美元、数学证明遭学界抵制的同一周，安全团队的外部声音被压制，进一步削弱了外界对其对齐承诺的信任。安全研究员的公开信可能加速关键人才向Anthropic、独立非营利组织流动。<br>
+<strong>关联动态：</strong>与陶哲轩带头抵制OpenAI的新闻形成共振——当内部安全声音被清除、外部学术信任崩塌，OpenAI在数学证明和基础科学领域的可信度正遭受双重打击。
+</div>
+
+<div class="item">
+<strong>Google Gemini全面转向Agentic AI，面向企业开放</strong> — Gemini现在可以规划、执行任务，跨企业应用和系统工作，委派子代理，调用多个AI模型，并拥有自己的工作身份（含邮箱地址）。<br>
+<strong>为什么重要：</strong>这是Google对Claude Code和OpenAI Codex在企业Agent市场的正面回应。给Agent一个"工作身份"意味着企业系统需要为AI分配权限、审计日志和合规边界，这实际上是把Harness工程从技术层推向了组织治理层。Google同时发布了本地优先的会议笔记应用，说明其Agent策略是"云端复杂Agent + 端侧轻量工具"双轨并行。<br>
+<strong>关联动态：</strong>谷歌办公Agent支持调用Claude，说明即使在自家生态内，多模型路由已成为默认架构。这与LegalOn将Astra、Sol、Luna匹配到不同任务的策略一致。
+</div>
+
+<div class="item">
+<strong>Manus完成超5亿美元融资，首轮独立融资</strong> — 由博裕资本和IDG资本领投，腾讯、红杉中国（HSG）、真格基金等参与。<br>
+<strong>为什么重要：</strong>在与Meta拆分后的首轮融资中拿到5亿美元，说明中国Agent创业公司依然能吸引顶级资本。Manus的核心竞争力在于"通用Agent执行"而非模型本身——这验证了Harness层作为独立价值载体的判断。当下中国AI投资逻辑正从"模型层"向"执行层/应用层"迁移。<br>
+<strong>关联动态：</strong>与DeepSeek Harness部门大规模招聘、openJiuwen开源AgentOS形成国内Agent基础设施的"资本+人才+开源"三位一体信号。
+</div>
+
+<div class="item">
+<strong>陶哲轩带头抵制OpenAI，数学家联合行动</strong> — OpenAI大量数学证明偏离了其咨询的数学研究团队设定的指导标准。<br>
+<strong>为什么重要：</strong>这不是普通的质量争议，而是AI for Science的范式冲突。数学家拒绝的不是AI参与研究，而是OpenAI以"证明洪流"替代同行评议的做法。这提醒所有AI4S团队：科学贡献的核心不是生成结果的量，而是可验证性、可追溯性和对科学共同体的尊重。<br>
+<strong>关联动态：</strong>arXiv今天出现多篇AI4S论文（OpenProblemBench、LLM-IDEA、Possibilistic Reasoning），都在强调验证和可辨识性——学界正在主动构建自己的标准，而不是等待AI公司定义规则。
+</div>
+
+<div class="item">
+<strong>5000万Token上下文窗口实现，比重新计算更快更便宜</strong> — 一篇arXiv论文（2610.10845）测试了galahad-kv，将KV状态保存到本地NVMe磁盘，实现50M token的字节级精确加载，比重新计算快2.8-4.3倍，能耗降低8.8-12.3倍。<br>
+<strong>为什么重要：</strong>如果KV缓存持久化成为标准做法，"上下文窗口"的概念将从"模型能处理多少token"转变为"存储和检索策略如何设计"。这直接改变Agent的记忆架构——不再需要激进的摘要压缩，可以选择性保留完整历史并在需要时恢复。<br>
+<strong>关联动态：</strong>与今天arxiv上多篇Agent记忆论文（Agent-Controlled Forgetting、Gated Memory、REMORY、Curating Always-Loaded Context）构成了一条清晰的上下文工程脉络。
+</div>
+
+<div class="item">
+<strong>openJiuwen发布开源企业级AgentOS</strong> — 多Agent协同且能自我进化，面向企业场景。<br>
+<strong>为什么重要：</strong>国内开源Agent基础设施开始成型。AgentOS的定位不是又一个框架，而是"操作系统级"的抽象——包含多Agent编排、执行环境、自我进化能力。这与DeepSeek Harness、Manus的定位形成差异化竞争。<br>
+<strong>关联动态：</strong>DeepSeek Harness负责人崔添翼正在社交媒体上直接招聘Harness研究员，国内Agent工程人才争夺战已经白热化。
+</div>
+
+<div class="item">
+<strong>Goodfire发布"由内向外"的Agent监控方案</strong> — 不靠第二个AI读取Agent的全部行为，而是从模型内部监控，仅在异常时介入，成本大幅降低。<br>
+<strong>为什么重要：</strong>Agent的可观测性和安全监控正从"事后审计"走向"过程介入"。Goodfire的方法本质上是利用模型内部激活状态来判断Agent是否偏离预期——这比外部评分更及时，也比全量日志分析更便宜。对于部署生产级Agent的团队，这是Harness工程的重要补全。<br>
+<strong>关联动态：</strong>与Anthropic更新使用政策（禁止模型滥用、选举干预）形成呼应：政策是底线，但实时监控是执行手段。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Harness工程从"编码惯例"升级为"合规与治理基础设施"</strong><br>
+<strong>证据：</strong>arXiv今天密集出现了多篇以Harness为核心研究对象的论文：<br>
+- "The Harness as the Only Mutable Surface"（2610.10629）提出自我进化必须被限制在runtime harness内，模型权重冻结，每次变更都必须有diff、测试和审批记录。<br>
+- "Agent-Controlled Forgetting"（2610.10590）让Agent自主选择压缩哪些工具返回结果，保留可恢复的原始存档，在调试场景中将prompt token从912K降至232K。<br>
+- "Curating Always-Loaded Context"（2610.11007）用容量约束的配置模型分析AGENTS.md等固定上下文文件的最优大小。<br>
+- Google给Agent分配"工作身份"（含邮箱），意味着企业需要为Agent配置权限、审计和合规边界。<br>
+- Goodfire从模型内部监控Agent状态。<br><br>
+<strong>判断：</strong>Harness不再只是技术实现层，而正在成为AI治理的核心界面。它同时承载着三个责任：上下文经济性（降低token成本）、行为可审计性（每次变更可追溯）、安全可执行性（监控与干预）。未来6-12个月，我们可能看到企业级的"Harness治理平台"出现，将配置管理、版本控制、合规审计、成本监控统一到一个界面。团队中"Harness Engineer"将从一个非正式称谓转向正式岗位。
+</div>
+
+<div class="trend">
+<strong>趋势二：AI for Science进入"验证危机"与"方法论重建"并行期</strong><br>
+<strong>证据：</strong><br>
+- 数学家抵制OpenAI的证明洪流，核心矛盾是"生成速度 vs. 同行评议标准"。<br>
+- OpenProblemBench（2610.11118）构建了82个未解决的科学问题，四个评估模型独立判断正确性——GPT-6 Astra仍有大量问题无法推进。<br>
+- LLM-IDEA（2610.11253）引入"可辨识性引擎"，回答"是模型不够强，还是问题本身从数据中不可辨识"。<br>
+- ARGUS（2610.12281）严格分离确定性生物计算与LLM推理，以对抗基因组学中的幻觉。<br>
+- MD-LLM-2（2610.10879）在分子动力学中引入显式路径概率和物理条件约束。<br><br>
+<strong>判断：</strong>AI4S正在经历从"展示惊人案例"到"建立可验证方法论"的转折。单纯的生成能力不再被视为科学贡献——可重复性、可辨识性、与实验的可对接性成为核心标准。对于AI4S从业者，未来竞争力在于"验证工程"而非"生成工程"。那些能设计出严格验证流程、并让领域科学家信任的团队，将比单纯追求模型性能的团队走得更远。
+</div>
+
+<div class="trend">
+<strong>趋势三：上下文窗口的"存储-计算分离"架构正在成熟</strong><br>
+<strong>证据：</strong><br>
+- 50M token的KV缓存持久化方案（2610.10845）证明了KV状态可以像普通数据一样存储、加密、按需加载。<br>
+- REMORY（2610.11287）用神经记忆网络补充文本摘要，仅用5.2%的输入位置逼近全量上下文的性能。<br>
+- "Sparse Attention Is Matrix Approximation"（2610.10871）指出了当前稀疏注意力方法的数学误区，提示更结构化的注意力近似方法即将出现。<br>
+- Simon Willison发布ttok 1.0，GPT-5到GPT-6系列tokenizer可能一致。<br><br>
+<strong>判断：</strong>上下文管理正在从"模型能力"（注意力窗口大小）转向"系统设计"（存储、检索、压缩策略）。这意味着：1）Agent的记忆架构可以更长期化，不必受限于单次会话的窗口；2）成本优化空间巨大——按需加载而非全量重算；3）新的竞争壁垒在存储层和检索层，而非纯粹的模型层。开发者应该开始试验KV持久化和分层记忆方案，而不是等待更大的上下文窗口。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. "The Harness as the Only Mutable Surface: Compliance-Bounded Self-Evolution of LLM Agents" (arXiv:2610.10629)</strong><br>
+<strong>核心贡献：</strong>提出了一个根本性的设计原则：Agent的自我进化只应发生在runtime harness（指令文本、工具调用逻辑、原语组合），模型权重保持不变。这样每次进化都是一个有因可查、有测试附着的diff，可审计、可回滚。论文给出了双循环引擎和一个写入哈希链记录的准入闸门。<br>
+<strong>为什么值得读：</strong>这是"Harness工程"理论化的标志性论文。它回答了一个核心问题：在没有人类监督者逐次审查的情况下，如何让Agent进化既灵活又可控？对于在金融、医疗等强合规行业部署Agent的团队，这篇论文提供了一套可借鉴的架构。读它不只学技术，更是在看AI治理的未来形态。<br>
+<strong>适合谁：</strong>Agent架构师、AI安全工程师、金融科技从业者。
+</div>
+
+<div class="deep-read">
+<strong>2. "Real Long-Term Memory for AI: A 50-Million-Token Window That Is Faster and Cheaper Than Recompute" (arXiv:2610.10845)</strong><br>
+<strong>核心贡献：</strong>将Transformer的KV状态保存到本地NVMe磁盘（加密），在不重新计算的情况下按需加载。实验覆盖真实的5000万token公共文本，使用vLLM和Gemma 4 12B/31B，100/100次加载精确成功，速度提升2.8-4.3倍，能耗降低8.8-12.3倍。<br>
+<strong>为什么值得读：</strong>这是"存储-计算分离"在LLM推理中的落地验证。它挑战了一个隐含假设：长上下文必须付出重算成本。如果KV持久化成为标配，Agent的"记忆"概念将从"当前窗口内的内容"扩展为"可寻址检索的历史状态"。对于构建长期运行Agent的工程师，这篇论文提供了直接的工程路线图。<br>
+<strong>适合谁：</strong>LLM推理工程师、Agent基础设施开发者、云成本优化者。
+</div>
+
+<div class="deep-read">
+<strong>3. "MD-LLM-2: A Transferable Language Model of Molecular Dynamics with Physical Conditioning and Explicit Path Probabilities" (arXiv:2610.10879)</strong><br>
+<strong>核心贡献：</strong>在蛋白质构象轨迹生成中引入了序列、温度和分子历史的条件，每一步定义归一化分布，模型为每条生成/模拟轨迹分配显式似然。相比MD-LLM-1需要为每个蛋白质单独训练模型，MD-LLM-2实现了跨蛋白质的迁移。<br>
+<strong>为什么值得读：</strong>分子动力学模拟是计算生物学的核心瓶颈——跨越自由能壁垒和采样多个热力学条件极其昂贵。语言模型生成轨迹的路线正在快速成熟，而MD-LLM-2通过显式的似然估计，让生成轨迹可以被评估（哪些路径是物理上合理的，哪些不是）。这代表了AI加速科学计算的一个关键趋势：不是替代物理模拟，而是在物理约束下生成可验证的候选。<br>
+<strong>适合谁：</strong>AI4S研究者、计算生物学工程师、药物发现团队。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>推荐：Ethan Mollick — "The Dot and the Swarm"（One Useful Thing, 2026-10-01）</strong><br><br>
+<strong>为什么今天推荐：</strong>Mollick的核心论点与今天arXiv上的Harness论文形成直接对话。他讨论的是"个体Agent（Dot）"与"群体Agent（Swarm）"之间的张力：单个Agent需要多少自主性？多个Agent之间如何分工？当Google给Agent分配工作身份、Manus融资5亿美元、DeepSeek Harness扩招，这些信号都指向同一个问题——Agent正从"单个工具"变成"组织形态"。Mollick用Bitter Lesson（苦涩的教训）提醒我们：历史告诉我们，简单的、可扩展的方法往往胜过精心设计的复杂方案。这对当前Harness工程过度设计的倾向是一剂清醒剂。<br><br>
+<strong>3个核心观点：</strong><br>
+• 单个Agent（Dot）的能力上限由模型决定，但真正的生产力来自多Agent（Swarm）的涌现协作——不要让Dot做超出其能力边界的事。<br>
+• Bitter Lesson暗示：投入在"管理Agent"上的心智可能最终被更简单的计算扩展所淘汰——在设计Harness时要警惕过度工程。<br>
+• 组织的真正挑战不是"Agent能做什么"，而是"人类如何信任和审计Agent群体的集体行为"。<br><br>
+<strong>适合谁读：</strong>Agent产品经理、AI团队负责人、正在构建多Agent系统的工程师。<br>
+<strong>阅读时间：</strong>约12分钟。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek — Harness部门大规模招聘，负责人亲自站台</strong><br>
+据知乎/社交媒体信息，DeepSeek Harness部门负责人崔添翼正在直接在线招募，一口气放出三个岗位：Harness研究员（实习/全职均可）。这释放了一个明确信号：DeepSeek在模型层建立优势后，正将重点转向Agent执行层的工程化。对于有Harness工程经验的人才，这是进入国内顶尖AI实验室的窗口期。结合梁文锋在投资者会议中强调"克制"和生态建设，DeepSeek的Harness开源策略值得关注。<br>
+<strong>信号：</strong>Harness工程师岗位需求正在从海外传导至国内头部AI公司，待遇和话语权预期较高。
+</div>
+
+<div class="item">
+<strong>月之暗面（Moonshot AI） — 商业化与上市冲刺并行</strong><br>
+根据行业新闻聚合，月之暗面在开源许可证中嵌入2000万美元营收门槛及分成条款，同时估值半年暴涨七倍，正在冲刺IPO。其核心产品Kimi在Agent场景下的Token消耗激增，但免费分发无法转化为收入的矛盾日益突出。月之暗面的策略选择——许可证商业化——反映了国内开源模型公司面临的共同困境。<br>
+<strong>信号：</strong>国内AI公司的商业化压力全面上升，从"烧钱换市场份额"转向"强制收入模式"。Kimi的Agent产品化进展值得持续跟踪。
+</div>
+
+<div class="item">
+<strong>openJiuwen — 发布开源企业级AgentOS</strong><br>
+openJiuwen开源的企业级AgentOS主打多Agent协同和自我进化，旨在加速Agent在企业场景的规模化落地。与DeepSeek Harness的底层定位、Manus的通用执行定位不同，openJiuwen选择了"OS级"的平台定位，试图成为企业Agent部署的基础设施层。国内Agent赛道的格局正在从"一两家独大"走向"多层竞争"。<br>
+<strong>信号：</strong>企业级Agent基础设施是当前国内AI创业最活跃的方向之一，开源路线可能成为打破头部垄断的关键策略。
+</div>
+
+<div class="item">
+<strong>清华系具身智能 — 星动纪元登顶全球排行榜</strong><br>
+量子位报道，清华系具身智能公司星动纪元的具身模型在视频预测与动作学习的分阶段训练上取得突破，击败GPT-6和英伟达方案登顶全球第一。其核心思路不是"视频动作一锅炖"，而是将两者解耦并重新排序——这实际上是在模仿学习框架内的一种"Harness式"设计：让视频预测成为可复用的世界模型，动作学习在其上建立。<br>
+<strong>信号：</strong>国内在具身智能的算法层面出现独立创新路径，不再依赖海外模型能力。
+</div>
+
+<div class="item">
+<strong>人才市场全景：Agent岗位密集出现</strong><br>
+美团、京东、小米等大厂均在招聘Agent相关产品经理和评测岗位：<br>
+• <strong>美团</strong> — Agent评测平台产品经理（北京，3年以上经验，需熟悉Claude Code/OpenClaw等工具链），薪资估算2.5-4万/月。<br>
+• <strong>京东</strong> — AI Agent产品经理（北京，3-5年经验，需深刻理解LLM、RAG、Function Calling），薪资估算2.5-4.5万/月。<br>
+• <strong>小米</strong> — Agent评测产品经理（北京，主导Benchmark设计与评测体系），薪资估算3-5万/月。<br>
+共同点：所有岗位都要求"高频使用AI/Agent工具完成真实工作任务"，说明招聘方不再满足于理论理解，而是要求候选人本身就是Agent的原生用户。评测（Benchmark/Eval）正从附属于算法的角色，变成一个独立的产品方向。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>Harness Engineer成为独立岗位类别</strong><br>
+DeepSeek Harness部门的招聘标题直接使用"Harness研究员"这一称谓。在海外，Harness Engineering已被Atlan、NxCode等公司定义为独立学科。国内正在跟进。如果你有上下文管理、工具调用协议（MCP）、子代理编排的实际项目经验，现在是最好的入场时机。<br>
+<strong>技能要求：</strong>Python（Harness层事实上的标准语言）、MCP协议、token级成本优化、可观测性设计、Git风格的工作流管理。
+</div>
+
+<div class="item">
+<strong>Agent评测（Eval/Benchmark）成为独立产品方向</strong><br>
+美团、小米、京东三大厂同时招聘Agent评测产品经理，这不是巧合。当Agent从Demo走向生产环境，企业对"如何衡量Agent好不好"的恐慌正在变成具体的岗位需求。这个方向的核心技能不是写prompt，而是设计科学的评测方法论、理解可靠性统计、并构建可复用评测管道。<br>
+<strong>机会点：</strong>懂Agent技术栈 + 有评测方法学背景（熟悉GAIA、AgentBench等基准的设计逻辑）的候选人极其稀缺。
+</div>
+
+<div class="item">
+<strong>AI for Science人才需求升温但要求升级</strong><br>
+从arXiv论文趋势看，AI4S岗位正在从"机器学习工程师"向"ML+领域验证复合型人才"转变。工具层面在快速迭代（MD-LLM-2、ARGUS、PXtal等），但核心瓶颈是"验证"：能不能设计出领域科学家认可的验证流程。如果你有计算生物学、材料科学等领域背景，同时掌握LLM/扩散模型的工程能力，在深势科技、百川等国内AI4S公司将有很强竞争力。<br>
+<strong>薪资信号：</strong>AI4S方向的薪酬在追赶传统ML岗位，但更看重领域交叉背景。
+</div>
+
+<div class="item">
+<strong>国内Agent产品化的商业化人才缺口</strong><br>
+Manus融资5亿美元、Kimi的商业化压力、AgentOS的开源浪潮，都指向同一个缺口：能把Agent能力转化为付费产品的产品经理和解决方案架构师。能力不再是瓶颈，定价、场景定义、企业集成才是。<br>
+<strong>机会点：</strong>拥有B端企业服务经验 + 理解Agent技术边界的人，比纯算法背景更容易在这一波行情中拿到高级职位。
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+Harness工程正在成为Agent时代的"操作系统层"——谁掌握上下文管理、工具编排和可审计性，谁就掌握Agent的控制权。现在是掌握这些技能的最佳窗口期，因为12个月后，这门学科将被教科书化，先发优势将消失。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
