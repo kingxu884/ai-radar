@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年10月13日 · 新闻 9 条 · 博客 11 篇 · 搜索 13 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>Meta 发布其首个前沿模型 Muse Wonder</strong><br>
+发生了什么：Meta 推出 Muse Wonder，定位为比 Muse Spark 规模更大、能力更强的前沿模型。<br>
+为什么重要：这意味着 Meta 不再仅押注轻量低延迟模型，开始以更大参数、更高 benchmark 直接切入复杂编码与推理任务，前沿模型竞争进一步加剧；若延续开放策略，将影响基座模型供给格局。<br>
+关联：与国内 Qwen3.5-3.8、Kimi-K3、GLM-5.3-Flash 等混合模型密集发布形成共振，算力与推理成本成为竞争核心。
+</div>
+
+<div class="item">
+<strong>NVIDIA 发布 ReplaySSM，重思混合模型状态存储以加速解码</strong><br>
+发生了什么：NVIDIA 公布 ReplaySSM，针对 SSM 层与少量 attention 层交错的新一代混合模型，改进状态存储以提升解码速度。<br>
+为什么重要：Nemotron 3、Qwen3.5-3.8、Kimi-K3、GLM-5.3-Flash 等旗舰模型均采用混合架构，长上下文和 Agent 多轮工具调用会放大解码瓶颈；状态存储优化直接决定推理成本与响应延迟。<br>
+关联：与 Meta Muse Wonder 发布、DeepSeek 组建 Harness 团队形成同一天“模型能力+推理基础设施+Agent”三重信号。
+</div>
+
+<div class="item">
+<strong>DeepSeek 组建 Harness 团队，吸引顶级工程人才</strong><br>
+发生了什么：根据招聘信息与 LinkedIn 动态，DeepSeek 已组建 Harness 团队进军 Agent 赛道，前 Jane Street 工程师崔天一加入。<br>
+为什么重要：这标志着国内头部大模型厂商正式把 Agent 基础设施当成下一阶段工程重点，而不仅是模型能力；Harness 工程将从实验性方向变为组织化投入。<br>
+关联：与 NVIDIA ReplaySSM 长上下文解码优化形成互补，说明 Agent 执行环境的成本与稳定性正成为竞争高地。
+</div>
+
+<div class="item">
+<strong>WindBorne 拿下近 5000 万美元美国空军气象数据合同</strong><br>
+发生了什么：硅谷气象创业公司 WindBorne 利用气象气球和 AI 进行天气预测，获得美国空军近 5000 万美元合同。<br>
+为什么重要：AI for Science 中最具可预测性、可测量的气象方向，正在率先进入政府/国防大规模采购周期；这为同类科学预测公司提供可复制商业样本。<br>
+关联：与深势科技 2030 年打造 AI 科学家目标形成中外 AI4S 战略共振。
+</div>
+
+<div class="item">
+<strong>前 Plaud 高管融资 2600 万美元做后台持续监听类 AI 应用</strong><br>
+发生了什么：一家由前 Plaud 高管创立的公司融资 2600 万美元，开发在后台持续监听用户活动以收集上下文的 AI 应用。<br>
+为什么重要：Agent 的主动性依赖对用户环境的持续感知，但后台监听会快速触碰隐私边界；这类产品将迫使企业重新设计上下文获取、授权与遗忘机制。<br>
+关联：微软总裁 Brad Smith 同日呼吁 AI 监管，称牛奶和洗衣机受到的监管比对 AI 公司更多。
+</div>
+
+<div class="item">
+<strong>深势科技提出 2030 年打造“AI 科学家”</strong><br>
+发生了什么：深势科技在近期战略表述中提出，下一阶段要把“读文献、做计算、做实验”等能力交给智能体编排，目标是 2030 年打造 AI 科学家。<br>
+为什么重要：这代表国内 AI4S 公司从单点工具走向科研全流程智能体平台的明确信号；科研流程的主角可能从“人调用 AI”转向“AI 协作主体”。<br>
+关联：与 WindBorne 气象 AI 军用合同、微软 StudentSim 教育模拟系统共同显示，AI for Science 正从演示进入可采购、可评估的闭环。
+</div>
+
+<div class="item">
+<strong>微软发布 StudentSim：模拟学生学习以改进 AI tutoring</strong><br>
+发生了什么：微软研究院推出 StudentSim，用模拟学生与 AI tutor 互动的方式来评估和改进 AI 教学系统。<br>
+为什么重要：它提供了一种“先模拟、后真人”的评估范式，可降低教育 AI 迭代成本和风险；其方法对 Agent 离线评估、奖励建模和 RLVR 环境设计也有借鉴意义。<br>
+关联：与阿里、百度正在招聘的 Agent 训练/数据/评测岗位形成技能需求上的呼应。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：混合模型（SSM + Attention）长上下文解码优化进入工程落地窗口</strong><br>
+证据：NVIDIA ReplaySSM 明确面向 Nemotron 3、Qwen3.5-3.8、Kimi-K3、GLM-5.3-Flash 等混合模型，重思状态存储以加速解码。<br>
+判断：混合架构已成为旗舰模型标配，但长上下文和 Agent 多轮工具调用会放大解码内存/延迟瓶颈；推理框架的状态管理将决定成本与体验。预判：未来 1-2 个季度，Agent 平台会围绕长会话状态缓存、KV/SSM 状态重放和单请求延迟推出更多优化方案。
+</div>
+
+<div class="trend">
+<strong>趋势二：Agent 上下文管理从“显式工具调用”走向后台持续感知与沙箱隔离</strong><br>
+证据：前 Plaud 高管以 2600 万美元融资做后台持续监听类 AI app；Simon Willison 引用的 Felix Rieseberg 材料显示 Cowork 从本地 VM 转向云端沙箱，桌面端仅负责文件访问工具调用；微软总裁 Brad Smith 同日呼吁 AI 监管。<br>
+判断：更多产品试图通过持续采集用户环境上下文提升 Agent 主动性，但隐私与安全风险同步上升；执行环境从本地向云端沙箱迁移，说明 Harness 的安全边界正在重划。预判：后台感知会带来新的隐私监管与产品信任问题，云端隔离执行可能成为企业级 Agent 产品的默认架构。
+</div>
+
+<div class="trend">
+<strong>趋势三：AI for Science 进入政府/国防采购与“AI 科学家”长周期竞赛</strong><br>
+证据：WindBorne 以气象气球+AI 天气预测获得近 5000 万美元美国空军合同；深势科技提出 2030 年打造 AI 科学家；微软发布 StudentSim 模拟学生学习以改进 AI tutoring。<br>
+判断：AI4S 的商业化不仅发生在药企和材料厂，政府与国防订单正在成为气象、材料等方向的真实收入来源；科研流程的“智能体化”开始从单点工具走向全流程编排。预判：可预测科学任务会率先获得可复制合同收入，平台型 AI4S 公司比单点模型公司更具采购价值。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. NVIDIA · ReplaySSM: Rethinking State Storage for Faster Hybrid-Model Decoding</strong><br>
+核心贡献：提出重思状态存储的方法，以加速 SSM 层与少量 attention 层交错的新一代混合模型解码，覆盖 Nemotron 3、Qwen3.5-3.8、Kimi-K3、GLM-5.3-Flash 等主力模型。<br>
+为什么值得花时间读：长上下文和高并发 Agent 负载下，解码阶段的状态切换与存储是推理成本与延迟的关键；该报告提供了从底层状态管理视角理解混合模型性能瓶颈的具体路径，适合推理部署和模型架构团队。
+</div>
+
+<div class="deep-read">
+<strong>2. Microsoft Research · StudentSim: Simulating Student Learning for Better AI Tutoring</strong><br>
+核心贡献：构建 StudentSim 研究系统，模拟个体如何与 AI tutor 互动，在无真人学习者参与前评估并改进 tutor 表现，覆盖象棋、写作、数学等科目。<br>
+为什么值得花时间读：这是“用模拟替代昂贵人类评估”的典型范式，与 Agent 评测、奖励建模、RLVR 中的环境模拟有直接联系；对教育 AI 和通用 Agent 的离线评估方法都有启发。
+</div>
+
+<div class="deep-read">
+<strong>3. Sebastian Raschka · Building an AI Text Detector From Scratch</strong><br>
+核心贡献：端到端构建 AI 文本检测器，覆盖数据集构建、模型训练、本地部署与 RLVR 环节。<br>
+为什么值得花时间读：虽然主题是检测器，但它把 post-training 中 RLVR 的工程细节、数据管线和本地部署串成完整流程，适合需要从训练到部署落地闭环的工程师；可作为理解 RLVR 实操的补充材料。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+推荐：Simon Willison · web-edit 0.1a0（2026-10-12）<br>
+为什么今天推荐：今天信号集中在 Agent 基础设施与 Harness 工程，该文恰好展示一位 AI 工程师如何用 Codex 和 GPT-6 Astra 辅助构建一个小型 Web 工具，并且明确处理了 Agent 工作流中的凭证/敏感文件隔离问题，极具现场感。<br>
+3 个核心观点：
+<ul>
+<li>把凭证文件编辑移到本地 Web UI/Tailscale 网络内，避免敏感内容往返 LLM，降低泄露风险。</li>
+<li>该工具本身由多个模型辅助生成，体现“用 Agent 构建 Harness 工具”的新开发范式。</li>
+<li>移动端实际体验优先于技术偏好：选择 CodeMirror 6 而非 Monaco，说明工具链必须适配真实交互场景。</li>
+</ul>
+适合谁读：AI Engineer、Agent 基础设施/工具开发者、安全与产品经理。<br>
+大致阅读时间：8 分钟。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek</strong>：已组建 Harness 团队进军 Agent 赛道，前 Jane Street 工程师崔天一加入；流传的投资者会议实录显示梁文锋坚持 AGI、开源与低价策略，组织愿景驱动。<br>
+<strong>智谱 / 月之暗面</strong>：智谱通过自研与国产算力芯片降低单位 Token 推理成本约 80%；月之暗面 K3 发布后因请求量接近集群承载极限暂停 C 端订阅，并冲刺 IPO 以锁定算力投入。<br>
+<strong>深势科技</strong>：高调提出 2030 年打造 AI 科学家，从“读文献、做计算、做实验”工具矩阵转向由智能体编排科研全流程。<br>
+<strong>面壁智能</strong>：继续押注端侧 AI 全链能力，与澳门国际科技产业中心签约开拓海外市场，并参与政法展与移动通信峰会拓展场景。<br>
+<strong>阿里 / 百度 / 飞书</strong>：出现多个 Agent 相关新增岗位，包括阿里“AI Agent 优化工程师—训练/数据/评测”、百度“AI 产品经理（Agent 产品设计 & 增长运营）”、飞书“AI 类产品营销”。<br>
+<strong>扩招信号</strong>：DeepSeek 的 Harness 团队与阿里、百度岗位表明，Agent 基础设施、训练/评测、产品 GTM 正在成为国内厂商扩招方向。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<ul>
+<li><strong>岗位趋势</strong>：Agent/Harness 工程、Agent 产品设计、AI4S 平台成为新增招聘关键词。阿里招聘“AI Agent 优化工程师—训练/数据/评测”面向 2027 届实习，说明企业提前锁定 Agent 评估与数据闭环人才。</li>
+<li><strong>技能需求</strong>：多步自主任务、错误处理/回退机制、PLG 增长与 Agent 交互范式，成为 Agent 产品岗重点；底层岗位则更强调混合模型优化、上下文管理、状态存储、端侧部署与 RLVR/post-training 经验。</li>
+<li><strong>薪资信号</strong>：虽然没有统一数字，但 DeepSeek 从 Jane Street 引入顶尖工程师，显示顶级 Agent 基础设施人才可能对标量化/头部 AI lab 薪资；具备高性能系统和模型优化交叉背景的人才溢价上升。</li>
+<li><strong>可能机会</strong>：Agent Harness/Infra 工程师、长上下文推理优化、AI4S 平台工程师、端侧模型部署与产品增长运营是未来 6 个月值得切入的方向。</li>
+</ul>
+</div>
+
+<div class="closing">
+<strong>⚡ 今日信号：</strong>Agent 竞争已从模型能力转向基础设施：DeepSeek 组建 Harness 团队、NVIDIA 优化混合模型解码；下一胜负手是长上下文、低延迟、高隔离度的执行环境成本。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
