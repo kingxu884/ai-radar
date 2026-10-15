@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年10月15日 · 新闻 138 条 · 博客 7 篇 · 搜索 8 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>ClawLoop：Harness 原生的自改进训练循环</strong>（arXiv 2610.14118）<br>
+发生了什么：一篇重磅论文提出 ClawLoop，让 Agent 在自身 Harness 环境中通过“训练循环”实现自我改进，不再依赖更强外部模型合成任务和收集轨迹。<br>
+为什么重要：当前 Harness 型 Agent 的 post-training 管线几乎全部是 one-shot 且 teacher-dependent——外部模型出题、收集轨迹、训练一次、人工评估，能力上限被外部模型和人类先验锁死。ClawLoop 把 Harness 本身变成训练基础设施，让 Agent 在沙箱文件系统与 Shell 交互中持续产生训练信号，是 Harness 工程从“执行容器”升级为“学习系统”的关键信号。<br>
+关联：与 Harness^2（递归 Harness）、Reels-RSI（程序级自改进）、HERO（Harness 证据优化）形成今天 arXiv 上罕见的“Harness 自改进集群”，同时呼应崔添翼“Model + Harness = Agent”的产品哲学。
+</div>
+
+<div class="item">
+<strong>Harness²：面向开放世界的递归 Agent Harnessing</strong>（arXiv 2610.14224）<br>
+发生了什么：该工作提出 Harness²，通过两层递归（任务级递归 + 元级递归）解决开放世界中 Harness 自改进的两大难题：缺少 ground-truth verifier 和任务特异性过强。<br>
+为什么重要：RSI（递归自改进）在封闭任务中有效但难以泛化到新场景，这是 Agent 落地真实生产环境的核心瓶颈。Harness² 的 plug-and-play 设计让 Harness 本身可以随任务演化，标志着 Agent 工程的重心从“模型 pre-training / post-training”转向“Harness 的 online adaptation”。<br>
+关联：与 ClawLoop 形成互补——ClawLoop 解决“谁提供训练信号”，Harness² 解决“如何在开放世界泛化”。两者合起来勾勒出下一代 Agent 栈的完整图景。
+</div>
+
+<div class="item">
+<strong>MCP 元数据研究：367,174 个工具的大规模干预实验</strong>（arXiv 2610.14334）<br>
+发生了什么：论文分析 367,174 个 MCP 工具的元数据，发现功能相似的工具共享名称和描述却暴露不同参数 schema，并通过受控因子级干预实验证明参数 schema 差异可以在调用前就影响 LLM 的工具选择。<br>
+为什么重要：MCP 生态正爆发式增长，但工具选择完全依赖元数据——名称、描述、参数 schema。如果 schema 的细微差异就能改变选择行为，意味着 MCP server 的元数据设计本身就是一种隐式的 prompt engineering，直接影响 Agent 的工具调用可靠性。这对所有在做 MCP 集成的团队是直接可操作的信号。<br>
+关联：与 NVIDIA NeMo Gym 的芯片设计 Agent 工具调用优化、以及“Silent Failures in Agentic Data Science”中对方法论失败的诊断形成呼应——工具层和执行层的可靠性已成为 Agent 工程的核心风险面。
+</div>
+
+<div class="item">
+<strong>OpenAI 密集发布生产级 Agent 案例：Amp、SentinelOne、Third Moment、Block</strong>（OpenAI Blog × 4）<br>
+发生了什么：OpenAI 一日四篇案例——Amp 用 GPT-6 Astra/Ultrafast/Live-1 将 Agent 推到代码之外；SentinelOne 用 Daybreak 把恶意软件分析从数周压缩到数小时；Third Moment Research 运行 10,000 个 Agent 持续 36+ 小时；Block 用 AI 做安全威胁调查和补丁生成。<br>
+为什么重要：这不是 demo，是生产负载。10,000 Agent 持续 36 小时是 Agent 编排基础设施的极限压力测试，SentinelOne 的“数周→数小时”是 ROI 可量化的规模效应证明。OpenAI 正在用“客户案例矩阵”替代“benchmark 矩阵”来证明 Agent 时代的商业价值。<br>
+关联：Third Moment 的 36 小时运行直接对应 Long-Horizon-Terminal-Bench 2.0 的“持续进展测量”问题；SentinelOne 的安全用例与 arXiv 上 CTI-REALM 的开放权重安全 Agent 研究形成互补视角。
+</div>
+
+<div class="item">
+<strong>HiRO-ACEv2：3 km 分辨率极端天气模拟，成本大幅降低</strong>（Hugging Face / AllenAI）<br>
+发生了什么：AllenAI 发布 HiRO-ACEv2，以 3 km 分辨率模拟极端天气，成本仅为传统方案的一小部分。<br>
+为什么重要：3 km 分辨率意味着可以解析对流级别的天气系统（雷暴、飓风内核），这是气象预测从“气候尺度”跨入“灾害响应尺度”的关键门槛。成本下降使得区域级实时极端天气模拟成为可能，对保险、农业、应急管理有直接商业价值。<br>
+关联：与 FireGraphNet（12 小时野火蔓延预测，1.7-1.9× 精度提升）一起构成今天 AI for Earth System Science 的双信号——高分辨率物理模拟 + 图神经网络实时预测正在融合。
+</div>
+
+<div class="item">
+<strong>DeepSeek Harness 曝光：崔添翼的“Model + Harness = Agent”</strong>（Tavily / 知乎）<br>
+发生了什么：DeepSeek Harness 由崔添翼（前 Jane Street / ACM-ICPC 金牌）领导，2026 年 3 月加入 DeepSeek，5 月立项，7 月内测，采用“一切皆插件”设计，内置 Session Log 可复盘错误。<br>
+为什么重要：这是国内最受关注的 Harness 产品之一。崔添翼的量化系统背景使其对执行确定性和可复盘性有极致追求，这与今天 arXiv 上 ClawLoop / Harness² 的学术方向形成罕见的“工业界 + 学术界”同步共振。DeepSeek 正在把 Agent 的竞争从模型层带到基础设施层。<br>
+关联：文章提及京东 AI Agent 产品经理岗位（2.5-4万/月）要求深刻理解 Function Calling、RAG、编排引擎——Harness 概念正在进入招聘 JD，岗位定义正在形成。
+</div>
+
+<div class="item">
+<strong>Long-Horizon-Terminal-Bench 2.0：测量 Agent 的“持续进展”</strong>（arXiv 2610.14146）<br>
+发生了什么：LHTB 2.0 将任务从 46 个扩展到 77 个，覆盖 13 个领域，核心创新是用“过程奖励”而非二值检查来测量 Agent 在长时域工作流中的持续推进能力。<br>
+为什么重要：现有 Agent 评估几乎只问“最终状态对不对”，但真实生产环境中 Agent 的价值在于“能否稳定持续推进”。LHTB 2.0 的 process reward 评估框架与 OpenAI Third Moment 的 36 小时案例形成互证，为 Agent 可靠性的量化提供了缺失已久的工具。<br>
+关联：与“Silent Failures in Agentic Data Science”形成方法论文献对——后者揭示只看最终预测性能会掩盖数据泄露和方法论错误，前者则给出过程级评估的可行方案。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Harness 自改进（Harness Self-Improvement）成为 Agent 工程的新前沿</strong><br>
+证据：今天 arXiv 同时出现 ClawLoop（harness-native training loop）、Harness²（recursive agent harnessing）、Reels-RSI（program-level self-improvement）、HERO（harness evidence for refinement），加上 ScienceBuddy-PV 的“verifier-governed recursive improvement”和 ANASSA 的空间 Agent 编排框架，密度罕见。<br>
+预判：未来 6-12 个月，Harness 将从“静态执行容器”演化为“具备自我修正能力的 active infrastructure”。竞争焦点将从“谁有更聪明的模型”转向“谁的 Harness 能更高效地从执行反馈中学习和泛化”。这意味着 Harness 内部需要引入 verifier、credit assignment、过程奖励等 RL 概念，产品形态上会出现更多像 DeepSeek Harness 一样内建 Session Log 和可复盘机制的设计。对工程师的直接含义：Harness 的“可训练性”将成为架构评审的核心指标。
+</div>
+
+<div class="trend">
+<strong>趋势二：Agent 生产化的衡量标准从“任务成功率”转向“持续运行可靠性”与“成本-能耗效率”</strong><br>
+证据：Third Moment 的 10,000 Agent × 36 小时、SentinelOne 的“数周→数小时”、arXiv 上 LHTB 2.0 的过程奖励框架、以及“Measuring the Inference Energy Efficiency of Open-Weight LLMs”（86 个模型 × 7 个 benchmark × 6 种硬件，发现中位数浪费 2.6-4.8× 能量）共同指向同一方向。<br>
+预判：Agent 的“uptime”“mean time between failures”“energy per successful task”将成为新的 SLA 指标。OpenAI 用客户案例而非 benchmark 来叙事，说明市场已进入“show me the production workload”阶段。能提供可量化 ROI 和可靠性指标的公司将获得融资和客户的双重溢价。
+</div>
+
+<div class="trend">
+<strong>趋势三：AI for Science 从“单点预测”走向“科学工作流治理”</strong><br>
+证据：Structure Before Intelligence（用 DAG 控制 Agentic 科学工作流的输出释放决策）、ScienceBuddy-PV（verifier-governed 递归改进协议）、ACED-Bench（让 Agent 主动设计实验、解读证据、做因果决策）、以及 FDE-Bench（从不完全明确的真实业务需求做端到端交付）。<br>
+预判：AI for Science 的瓶颈不再是模型精度，而是“信任和治理”——如何确保一个自动运行的科学工作流不会静默地输出错误结果。Structure Before Intelligence 的“release decision”概念将成为 AI4S 产品化的核心模块：科学计算平台需要内置失败隔离、版本追踪、风险建模。深势科技等国内 AI4S 厂商如果在 Harness 层的科学工作流治理上发力，将获得差异化优势。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>论文一：ClawLoop: Self-Improving Agents via Harness-Native Training Loop</strong>（arXiv 2610.14118）<br>
+核心贡献：识别出当前 Harness 型 Agent 训练管线的结构性缺陷（one-shot、teacher-dependent、无反馈闭环），提出让 Harness 本身成为训练环境，使 Agent 的自我改进不再受限于外部模型能力和人类先验。<br>
+为什么值得读：这是“Harness 工程”从工程实践升维为研究方向的标志性工作。如果你在构建 Agent 框架、设计 post-training 管线、或思考如何让 Agent 在生产中持续变好，这篇论文提供了一个可操作的范式转变——从“训练 Agent”到“训练 Harness 中的 Agent”。<br>
+阅读时间：45-60 分钟。
+</div>
+
+<div class="deep-read">
+<strong>论文二：Harness²: Recursive Agent Harnessing for an Open World</strong>（arXiv 2610.14224）<br>
+核心贡献：直面开放世界中 RSI 的两大挑战（无 ground-truth verifier、任务特异性过强），用双层递归设计让 Harness 在任务级和元级都能演化。<br>
+为什么值得读：ClawLoop 解决“信号从哪来”，Harness² 解决“如何泛化”。两者合读可以对 Harness 自改进的完整技术版图形成清晰认知。特别关注其对“无 verifier 场景下如何引导在线编辑”的处理方案。<br>
+阅读时间：40-50 分钟。
+</div>
+
+<div class="deep-read">
+<strong>论文三：Which Metadata Matters for LLM Tool Selection in MCP?</strong>（arXiv 2610.14334）<br>
+核心贡献：首次对 367,174 个 MCP 工具的元数据做因子级干预实验，证明参数 schema 差异可以独立影响工具选择行为。<br>
+为什么值得读：MCP 生态的元数据规范混乱是肉眼可见的，但缺乏实证。这篇论文给出了可复现的实验方法和结论——如果你在维护 MCP server 或设计工具注册中心，这里的数据直接说明哪些元数据字段值得优化。<br>
+阅读时间：30-40 分钟。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>崔添翼：《Harness 的思考：Model + Harness = Agent》</strong>（知乎专栏）<br>
+为什么今天推荐：今天 arXiv 上 ClawLoop、Harness² 等论文集中爆发“Harness 自改进”主题，而崔添翼作为 DeepSeek Harness 的负责人，从产品视角给出了同样核心的判断——Harness 不是附属品，而是 Agent 能力的另一半。这是学术界和工业界在同一时刻对同一命题的独立确认，值得放在一起读。<br>
+三个核心观点：<br>
+• Harness 与 Model 是同等重要的 Agent 组件，真正的 Agent 能力 = Model × Harness 的乘积关系，而非加和关系<br>
+• “一切皆插件”的设计将执行能力正交化，Session Log 的可复盘性是对确定性执行和错误溯源的工程承诺<br>
+• 来自 Jane Street 的量化系统经验让 Harness 的设计重心放在“确定性、可验证、可回放”而非灵活性优先<br>
+适合谁读：Agent 框架工程师、Harness 产品设计者、对 DeepSeek 技术栈感兴趣的从业者、正在做 MCP 或工具调用集成的团队。<br>
+阅读时间：15-20 分钟。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek</strong>：Harness 项目持续引起关注，崔添翼领导，3 月入职→5 月立项→7 月内测，速度极快。V4.1 Flash（9 月）和 V4 预览版（4 月）显示其在 MoE 和上下文效率上的持续投入。Harness 若正式发布，将成为国内 Agent 基础设施赛道的标志性产品。关注其开源节奏和插件生态建设。
+</div>
+
+<div class="item">
+<strong>阿里 / 千问</strong>：量子位报道“千问办公电商版”实现 7 天几百元开一家店，号称“立省启动资金 5 万元”。这是阿里在 Agent 产品化上的重要动作，将大模型能力打包为可量化的商业 ROI 叙事，主打小微企业场景。千问团队在企业 Agent 方向的场景化能力正在加速。
+</div>
+
+<div class="item">
+<strong>阶跃终端（STEPX）</strong>：首款“大模型原生智能体手机”STEPX Neo 正式发布，定位“创客先行”。这是继 AI 眼镜之后，国内对“AI 原生硬件”的又一次尝试。物理版 Agent 手机的核心风险在于硬件形态是否真的是 Agent 的最佳载体，但其“创客”定位暗示了先做开发者生态的策略。
+</div>
+
+<div class="item">
+<strong>MemSilicon</strong>：完成国际首款高密度 1T4R 1Gb RRAM 芯片流片，CMOS 标准工艺兼容。这是国内存算一体芯片方向的重要里程碑，对边缘 AI 和端侧 Agent 推理的能效提升有战略意义。值得关注其量产时间表和客户导入进展。
+</div>
+
+<div class="item">
+<strong>深势科技</strong>：Tavily 搜索显示其“深势宇知”科学大模型体系和玻尔®科研空间站仍在持续推广中，Hermite® 药物计算设计平台和 Piloteye® 电池设计平台是核心产品。在今天的“科学工作流治理”趋势下，深势科技若在 AI4S 工作的可靠性验证和失败隔离上加强投入，将直接响应市场对“可信科学 Agent”的需求。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>Agent 产品经理岗位显性化</strong>：京东“AI Agent 产品经理”岗位（北京，2.5-4万/月）明确要求：3-5 年互联网产品经验 + 至少 1 年 LLM/AI 实战经验，硬核能力包括 LLM 原理、Prompt Engineering、RAG 架构、Function Calling，需设计编排引擎、记忆系统、插件中心、Agent Marketplace。这说明 Harness 的核心组件正在变成 JD 中的标准能力项。<br>
+<strong>信号解读</strong>：Agent 产品化正在从“会调 API 就行”过渡到“理解 Harness 架构 + 编排引擎 + 记忆系统”的复合型能力要求。具备“系统设计 + LLM 能力边界”双重背景的产品经理将获得显著溢价。
+</div>
+
+<div class="item">
+<strong>推断性信号：Harness 工程师将成为独立岗位类别</strong>：基于 ClawLoop、Harness² 等论文方向 + DeepSeek Harness 的产品化推进 + OpenAI 生产级 Agent 案例的密集发布，可以推断：未来 6-12 个月将出现明确的“Agent Infrastructure / Harness Engineer”岗位细分。核心技能组合：分布式执行、沙箱安全、工具调用协议（MCP/Function Calling）、过程奖励与信用分配、可观测性。<br>
+<strong>当前可操作的技能投资</strong>：深入理解 MCP 元数据规范的工具选择影响（今天论文的直接应用）、掌握 process reward 评估框架、积累 Session Log 和可复盘机制的设计经验。
+</div>
+
+<div class="item">
+<strong>AI for Science 的交叉人才需求上升</strong>：PMO-Dock 论文指出 docking 评估标准化缺失、Structure Before Intelligence 提出科学工作流的 release governance、ACED-Bench 要求 Agent 能做因果实验设计。这预示着 AI4S 团队需要“懂科学方法论的工程师”——不只是会跑模型，更要理解实验验证逻辑、失败隔离、和结果可信度的量化。深势科技等国内 AI4S 厂商的招聘方向值得关注。
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+Agent 的竞争正从“模型聪明与否”转向“Harness 能否自我改进”。今天 ClawLoop 和 Harness² 的同时出现，加上 DeepSeek Harness 的产品化推进，标志着一个新战场已经打开：谁能构建一个能从执行反馈中持续学习的执行环境，谁就掌握了下一代 Agent 的制高点。现在应该把 Harness 的可训练性纳入架构评审，而不是继续在模型层做增量优化。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
