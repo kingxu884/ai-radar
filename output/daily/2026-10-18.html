@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年10月18日 · 新闻 8 条 · 博客 5 篇 · 搜索 6 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+  <p><strong>发生了什么：</strong>DeepSeek 发布新模型 V4.1-Flash-1017，并开放自研搜索 API。</p>
+  <p><strong>为什么重要：</strong>再次以“超级性价比”姿态进入市场，可能进一步压低 API 调用成本，尤其在搜索增强与 RAG 场景。开放搜索 API 意味着 DeepSeek 从模型层向工具/检索层延伸，直接挑战传统搜索接口与向量数据库管线的经济性。</p>
+  <p><strong>与其他动态的关联：</strong>与 Replit 切换默认模型至 OpenAI 形成对比——高性价比国产模型可能加速海外开发者采用；Simon Willison 已在实际工作流中使用该模型，说明扩散速度比预期更快。</p>
+</div>
+
+<div class="item">
+  <p><strong>发生了什么：</strong>清华开源智能体操作系统，任务成本降低 83%，AI 记忆可查可改，整套系统原生支持 MCP。</p>
+  <p><strong>为什么重要：</strong>直接击中 Agent Harness 工程最棘手的三个问题：上下文管理、记忆一致性、多步任务执行成本。83% 成本下降足以改变多步 Agent 部署的 ROI 假设；记忆可查可改提供细粒度治理，有望成为可落地的记忆层设计范式。</p>
+  <p><strong>与其他动态的关联：</strong>与 Tavily 中 Multi-Agent 通信协议报告形成呼应——协议标准化与操作系统级整合正在并行成熟；也可能影响 Anthropic 等厂商的会议协调与工程复杂度。</p>
+</div>
+
+<div class="item">
+  <p><strong>发生了什么：</strong>Replit 宣布 OpenAI 取代 Anthropic 成为默认模型提供商，Claude 仍会作为可选模型保留。</p>
+  <p><strong>为什么重要：</strong>开发者平台的默认模型决定大量日常调用与用户心智。OpenAI 赢得默认位置，可能反映其在价格、性能、生态上的综合优势；Anthropic 失去默认位置，则可能影响其在开发者社区的增长曲线。</p>
+  <p><strong>与其他动态的关联：</strong>与 DeepSeek 发布新模型、智谱垂直突破共同显示模型竞争正从基准分数转向集成渠道与平台绑定；Anthropic 内部会议增多、组织变化可能也与产品策略调整有关。</p>
+</div>
+
+<div class="item">
+  <p><strong>发生了什么：</strong>智谱发布新模型，在懂法方面全球第一。</p>
+  <p><strong>为什么重要：</strong>垂直领域出现“全球第一”的明确声明，表明国内厂商在特定评测上开始占据领先。法律场景对事实一致性、逻辑推理、合规边界要求极高，是推理能力的强验证，也直接对应高价值 ToB 市场。</p>
+  <p><strong>与其他动态的关联：</strong>与 Claude 半小时破解密码学悬案共同构成“长程推理+专业领域”的突破案例；预示着国内大模型厂商将更多以垂直领域评测结果作为拿单武器。</p>
+</div>
+
+<div class="item">
+  <p><strong>发生了什么：</strong>Meta 更新条款，删除了引发抓取和 AI 训练担忧的语言，但发言人坚称实际爬取行为未变。</p>
+  <p><strong>为什么重要：</strong>数据抓取与训练版权问题持续升温，措辞调整虽是法律姿态，但可能为后续更宽松的训练数据使用做准备。对内容网站与 AI 公司之间的平衡影响深远。</p>
+  <p><strong>与其他动态的关联：</strong>与 Nathan Lambert 博客“Meta shakes up the frontiers, open and closed”中开放权重战略相关；也和 DeepSeek 开放搜索 API 一起，反映出数据获取能力的战略价值。</p>
+</div>
+
+<div class="item">
+  <p><strong>发生了什么：</strong>Claude 在半小时内解开一个密码学悬案，学界集体走偏 20 年，谜底指向时间。</p>
+  <p><strong>为什么重要：</strong>展示大模型跳出既定学术范式、重构问题的能力。这类跨学科、长程推理案例比刷基准更能证明模型在真实科研问题上的价值，尤其对 AI for Science 有启发性。</p>
+  <p><strong>与其他动态的关联：</strong>与智谱法律模型、AlphaFold 药物发现共同构成专业领域突破案例集，强化“领域验证”作为新落地范式的判断。</p>
+</div>
+
+<div class="item">
+  <p><strong>发生了什么：</strong>Anthropic 表示其员工组成在过去一年显著变化，初级员工占比下降，工作时间更多用于会议。</p>
+  <p><strong>为什么重要：</strong>组织成熟信号：从研究型团队向产品协作、企业交付、客户管理转型。会议增多可能降低研究速度，但也反映商业化和交付复杂度上升；初级岗位占比下降可能意味着招聘门槛提高，更多依赖高级人才。</p>
+  <p><strong>与其他动态的关联：</strong>与 Replit 默认模型切换带来的竞争压力互为背景；与国内 AI 公司招聘 Agent 产品经理、数据产品经理的趋势形成镜像。</p>
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+  <p><strong>趋势一：模型厂商的竞争从 API 延伸到开发者平台前端集成。</strong></p>
+  <p>证据：Replit 从 Anthropic 切换至 OpenAI；DeepSeek 发布 V4.1-Flash-1017 并开放搜索 API；Simon Willison 在个人工具中测试 DeepSeek。</p>
+  <p>预判：未来 6-12 个月，开发者工具、IDE、低代码平台、云服务商将成为模型厂商最重要的默认分发渠道。国内模型厂商可能加速与主流开发平台深度绑定，争夺默认模型位置。</p>
+</div>
+
+<div class="trend">
+  <p><strong>趋势二：Agent 基础设施进入“操作系统化”与标准化整合期。</strong></p>
+  <p>证据：清华开源智能体操作系统，成本降 83%，原生支持 MCP，记忆可查可改；Zylos Research 报告显示 A2A、MCP、ACP、ANP、AG-UI 五大协议主导，AAIF 已在 Linux Foundation 下成立。</p>
+  <p>预判：2026 年底至 2027 年，Agent 框架将出现类似 LAMP 栈的事实标准。胜负手不在模型本身，而在记忆管理、工具调用执行器和协议互操作性。</p>
+</div>
+
+<div class="trend">
+  <p><strong>趋势三：“垂直领域超强单体模型 + 领域验证”成为新的落地范式。</strong></p>
+  <p>证据：智谱法律模型宣称全球第一；Claude 破解 20 年密码学悬案；Tavily 中 AlphaFold 药物发现突破。</p>
+  <p>预判：通用模型在特定领域的深度评测结果将直接推动 ToB 销售。AI for Science 将从结构预测走向可实验验证的候选药物、材料设计与生态建模，带来新一批科学智能公司。</p>
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+  <p><strong>1. 清华智能体操作系统（技术报告/论文，待公开）</strong></p>
+  <p>核心贡献：任务成本降低 83%，记忆可查可改，原生支持 MCP；可能包含 Agent 运行时、调度、记忆层的原创设计。</p>
+  <p>为什么值得读：直接对应 Agent Harness 工程中成本与状态管理的核心痛点，开源实现可复现、可迁移到生产系统。对需要构建多步 Agent 产品的团队具有极高参考价值。</p>
+</div>
+
+<div class="deep-read">
+  <p><strong>2. Zylos Research《Multi-Agent Communication Protocols 2026》</strong></p>
+  <p>核心贡献：系统梳理 A2A、MCP、ACP、ANP、AG-UI 五大协议，并给出企业采用数据：86% 企业 Copilot 支出流向 Agent 系统，超过 80% 企业工作负载预计 2026 年使用 AI。</p>
+  <p>为什么值得读：协议选择决定系统互操作性与长期技术债。对架构师、平台产品经理有直接决策价值，尤其当 Multi-Agent 系统开始进入生产环境时。</p>
+</div>
+
+<div class="deep-read">
+  <p><strong>3. AlphaFold: How AI is Revolutionizing Drug Discovery (2026 Breakthroughs &amp; Reality Check)</strong></p>
+  <p>核心贡献：综述 AlphaFold 在药物发现中的真实进展，包括基因组挖掘、神经映射、de novo 分子生成以及现实限制，呈现 AI 从预测结构到设计候选药物的全过程。</p>
+  <p>为什么值得读：避免被 PR 噪音误导，建立 AI for Science 从结构预测到药物候选的认知框架，尤其适合跨界进入生物学、药物发现领域的从业者。</p>
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+  <p><strong>推荐：Nathan Lambert《Meta shakes up the frontiers, open and closed》</strong></p>
+  <p><strong>为什么今天推荐：</strong>今天 DeepSeek 发布新模型并开放搜索 API、Replit 切换默认模型、Meta 调整抓取条款——开放与闭源、模型分发、数据获取竞争同时加剧。Nathan Lambert 是 RLHF/Post-training 前沿观察者，该文对“美国开放权重回归”的判断与当下格局高度相关。</p>
+  <p><strong>3 个核心观点：</strong></p>
+  <ul>
+    <li>美国开放权重模型正在重新对闭源前沿形成压力，Meta 是核心变量。</li>
+    <li>开放模型的价值从权重本身转向训练数据、基础设施和生态整合能力。</li>
+    <li>Post-training 与产品化速度成为开放模型能否真正匹敌闭源的关键。</li>
+  </ul>
+  <p><strong>适合谁读：</strong>关注模型格局、开源战略和训练策略的工程师、研究员与决策者。</p>
+  <p><strong>大致阅读时间：</strong>12-15 分钟。</p>
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+  <p><strong>DeepSeek：</strong>今日发布 V4.1-Flash-1017，继续强调“超级性价比”，并开放自研搜索 API。这不仅是模型升级，更是从模型层向工具/检索层延伸，可能对传统搜索 API 和 RAG 供应商构成压力。Simon Willison 已在实际工作流中启用该模型，说明海外开发者社区已开始关注。</p>
+  <p><strong>智谱：</strong>发布法律专项新模型，声称懂法方面全球第一。结合其 ToB 战略，可能加速在司法、律所、企业法务等场景落地，成为垂直领域销售的有力背书。</p>
+  <p><strong>清华：</strong>开源智能体操作系统，原生支持 MCP。代表国内在 Agent 基础设施层不再只做应用，而是向底层框架/标准层发力。需关注后续是否有商业公司承接或二次开发。</p>
+  <p><strong>出海信号：</strong>量子位文章“科技企业出海，为啥我推荐你去迪拜？”暗示国内 AI 企业加速拓展中东市场，可能涉及云计算、Agent 产品和数据合规。</p>
+  <p><strong>招聘扩招信号：</strong>美团社招更新显示“Agent 产品经理（B端）”岗位；向界智能（杭州）招聘 AI 数据产品经理，方向涵盖 LLM/VLM/Agent 训练数据、复杂任务执行环境和奖励建模；杭州 AI 创业公司指南提到 Agent</div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
