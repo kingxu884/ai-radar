@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年10月22日 · 新闻 132 条 · 博客 8 篇 · 搜索 12 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>沃尔玛向AI Agent敞开购物大门，亚马逊则选择封锁</strong><br>
+发生了什么：沃尔玛推出新技术允许AI代理在客户授权下代为购物，并设置支出与交易审批控制；同日科技媒体报道亚马逊仍屏蔽AI代理在其网站购物。<br>
+为什么重要：这是Agent从“信息处理”走向“交易执行”的关键分水岭。沃尔玛的做法展示了Agent化电商的可控边界设计——通过预授权、限额和审批机制解决信任问题，为Agent的支付与工具调用提供了现实范本。<br>
+关联：与NVIDIA的Agent运行时安全、arXiv中“Behavior Beyond Text”工具调用安全研究形成呼应；也预示Agent产品化必须解决“可执行动作的安全护栏”这一Harness工程核心。
+</div>
+
+<div class="item">
+<strong>Recursive发布Flint：一款声称主要由AI构建的笔记本级编码模型</strong><br>
+发生了什么：初创公司Recursive推出免费的开源笔记本编码模型Flint，据称由自研AI研究系统大部分构建完成，作为“AI自我改进”的早期测试。<br>
+为什么重要：这是“AI造AI”从概念走向可运行产物的重要信号。如果Flint在笔记本规模上具备可用编码能力，将极大降低个人开发者使用本地强模型的成本，并验证递归自我改进管线在真实模型训练中的可行性。<br>
+关联：与arXiv中“Recursive Self-Improvement on a Budget”“Scaling in Games”等论文主题一致，也与DeepSeek Harness团队的招聘方向（低成本、强工程能力）形成竞争参考。
+</div>
+
+<div class="item">
+<strong>NVIDIA推出Sentry与OpenShell：聚焦AI Agent运行时安全与规模化治理</strong><br>
+发生了什么：NVIDIA发布Sentry（运行时保护AI Agent安全）与OpenShell参考架构（大规模安全治理AI Agent工作负载）。<br>
+为什么重要：Agent已从实验室进入生产，安全边界从模型层下探到工具调用、文件访问和子Agent协作的运行时。NVIDIA将Agent安全作为基础设施级产品，说明“Harness安全”正成为独立赛道，需要专门的权限、审计与治理机制。<br>
+关联：呼应arXiv多篇Agent安全论文（PerMIT的持久内存完整性、AgentPolicyForge的策略守卫）；也直接关系到企业采用Agent的障碍——没有安全治理，Agent无法进入核心业务流程。
+</div>
+
+<div class="item">
+<strong>DeepSeek Harness团队大规模扩招，崔添翼整合产品部并全面负责产品研发</strong><br>
+发生了什么：据Tavily搜索，DeepSeek Harness负责人崔添翼在X、小红书等多平台亲自招聘Harness研究员/工程师/产品经理，实习全职皆可；10月16日DeepSeek将Agent Harness、Web、App、Platform团队整合为产品部，崔添翼任负责人，团队开发的DeepSeek Harness已于8月开源，9月推出桌面预览版。<br>
+为什么重要：这是国内AI厂商在Agent产品化上最激进的信号。前Jane Street量化背景的崔添翼将“Model + Harness = Agent”作为核心公式，并把Harness团队与用户产品团队合并，意味着DeepSeek不再将底层Agent能力与产品体验分离，而是以Harness为中心统一产品与研发。<br>
+关联：直接对标Anthropic Claude Code；与学术上“Harness进化”研究（arXiv: Forging More Tasks into Better Harnesses）形成产业-学术共振；对人才市场产生巨大拉动。
+</div>
+
+<div class="item">
+<strong>OpenAI模型进入Google Cloud，Codex工作流上架Gemini Model Garden</strong><br>
+发生了什么：OpenAI与Google Cloud合作，将前沿模型和Codex工作流引入Gemini Model Garden，并通过Google Cloud Marketplace提供。<br>
+为什么重要：这是AI模型分发渠道的重要变化——竞争模型开始在同一云平台上交叉部署，开发者可通过Google Cloud Marketplace直接使用OpenAI模型。对于Agent开发者而言，模型选择与云服务解耦，降低了多模型编排成本。<br>
+关联：与OpenAI“Broad access through consistent standards”的发布呼应，强调与分发伙伴保持统一安全标准；也意味着云厂商的中立性在Agent时代变得关键。
+</div>
+
+<div class="item">
+<strong>PHP Armageddon：AI发现古老漏洞引发互联网恐慌，但也暴露AI自身风险</strong><br>
+发生了什么：OpenAI、Google（Wiz）等利用AI发现PHP 8.x系列两个远程代码执行漏洞（CVSS 9.2），由于协调披露泄漏，漏洞信息提前在论坛传播，PHP被迫提前发布安全更新。<br>
+为什么重要：这是AI在漏洞发现中从“辅助”到“主导”的典型案例，同时展示了AI发现漏洞与AI自身被恶意利用的双刃剑效应。对于Agent Harness工程，提示工具调用、外部代码执行和依赖库必须包含实时安全审计。<br>
+关联：与OpenAI的“Patch the Planet”漏洞协调披露项目直接相关；与Simon Willison今日博客（PHP安全发布）形成互文，安全在AI工程中的优先级持续上升。
+</div>
+
+<div class="item">
+<strong>arXiv: Agentic Harness Evolution via Successive Scale Racing 揭示Harness进化中的任务规模悖论</strong><br>
+发生了什么：论文初步研究发现，当任务池扩大时，现有Agentic Harness演化方法性能不升反降，原因是证据选择次优；作者提出SSR框架在每个进化轮次自适应搜索最优证据组合。<br>
+为什么重要：这为“Harness工程”提供了第一手学术证据——不是任务越多越好，而是如何筛选、利用失败与成功证据。此研究对DeepSeek、Claude Code等产品中的提示词、工具配置、控制流优化有直接指导价值。<br>
+关联：与DeepSeek Harness团队和崔添翼“Model + Harness = Agent”的产品理念高度相关；也是今日必读中唯一一篇从学术端切入Harness演化的文章，值得认真跟踪。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：AI Agent进入“运行时安全与治理”新阶段，Harness成为安全主战场</strong><br>
+证据：NVIDIA同时发布Sentry（运行时安全）和OpenShell（规模化治理）；arXiv出现多篇Agent安全研究——PerMIT（持久内存完整性定理与机器验证）、AgentPolicyForge（从可执行环境训练策略守卫）、Behavior Beyond Text（文本拒绝在工具调用中失效，5个模型10-52%不安全工具调用）；TechCrunch报道PHP Armageddon显示AI在安全中的双重角色。<br>
+预判：未来6-12个月，Agent安全将从“提示词约束”转向“系统性架构”。企业采购Agent产品时，运行时权限、审计日志、策略守卫将成为硬性要求；Harness工程师需要掌握安全边界设计、工具权限模型与策略验证。这将催生一批专门的“Agent安全工程师”或“Harness安全架构师”岗位。
+</div>
+
+<div class="trend">
+<strong>趋势二：Harness工程从边缘工程能力升级为Agent产品核心，且出现产业化与学术化同步加速</strong><br>
+证据：DeepSeek将Harness团队与Web/App/Platform合并为产品部，崔添翼全权负责，且大规模招聘Harness研究员/工程师/产品经理；arXiv论文“Forging More Tasks into Better Harnesses: Agentic Harness Evolution via Successive Scale Racing”指出证据选择影响Harness进化；DeepSeek Harness已开源，对标Claude Code。<br>
+预判：Harness不再只是上下文管理、工具调用的“胶水层”，而是决定Agent产品成败的“操作系统层”。未来6个月，国内将出现更多“Harness工程师/产品经理”职位，且跨学科背景（量化、系统工程、PL）将更受青睐。学术上，针对Harness进化的自动化框架、证据择优算法会成为热点，推动Agent从“模型能力驱动”转向“框架与模型协同驱动”。
+</div>
+
+<div class="trend">
+<strong>趋势三：AI for Science从“辅助模型”演进到“自主科研Agent”，但实际提升仍不稳定</strong><br>
+证据：arXiv论文“Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild?”（Agent4Sci）显示，当前前沿Agent在20个科学ML基准上能平均相对提升10.4%（Claude Opus），但无运行达到稳定；NVIDIA发布RFD4-Proteina利用推理时搜索进行蛋白质设计；微软研究院宣布解决31年KLS猜想（AI辅助推理）；SpecEvo用多LLM协调降低科学发现成本。<br>
+预判：AI for Science正从“预测模型”转向“闭环科研Agent”，但可靠性仍是主要瓶颈。值得注意的是，Agent4Sci等研究表明Agent可以在多个领域小步提升SOTA，但缺乏稳定性和可复现性。产业上，深势科技、英伟达等正在构建“干湿闭环”平台，将Agent与实验系统连接。预计未来一年，AI4S领域的工程重心将落在“Agent可靠性、结果验证与实验协同”上，而不是单纯追求模型精度。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. Forging More Tasks into Better Harnesses: Agentic Harness Evolution via Successive Scale Racing (arXiv:2610.28815)</strong><br>
+核心贡献：首次揭示了Harness进化中的“任务池扩大悖论”——更多任务反而导致性能下降，根因是进化过程中证据选择不当。作者提出SSR框架，在每个进化轮次自适应搜索最优证据组合，解决次优选择问题。<br>
+为什么值得读：这是目前极少数从“Harness工程”角度提出可复现方法论的论文。对正在构建或优化Agent产品（尤其是提示词、工具集、控制流）的工程师有直接借鉴意义；同时提供了“证据选择”这个新的分析视角，可以迁移到其他Agentic系统的调试与调优。
+</div>
+
+<div class="deep-read">
+<strong>2. Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild? (arXiv:2610.28763)</strong><br>
+核心贡献：提出Agent4Sci，一个长周期、跨11个领域20个科学ML基准的测试床，评估前沿编码Agent能否改进发表的最佳模型。结果显示Claude Opus平均相对提升10.4%，所有前沿Agent均能取得进展，但无运行达到稳定；作者更关注“在真实条件下Agent能做什么、在哪里失败”，而非简单排名。<br>
+为什么值得读：这是衡量“AI科研自动化”成熟度的关键试金石。它不只报告成绩，而是系统分析Agent在科学ML任务中的能力边界与失败模式，对AI4S团队选择Agent策略、评估自动化潜力有重要参考。同时，它以“改进SOTA”而非“解决合成任务”为指标，更贴近真实研发场景。
+</div>
+
+<div class="deep-read">
+<strong>3. Hidden Messages Between Diffusion Language Model Agents: Causal Evidence for Latent Communication (arXiv:2610.28905)</strong><br>
+核心贡献：研究两个独立扩散语言模型轨迹是否能通过压缩的隐状态传递信息，并通过消融实验（移除消息、替换消息）证明接收者确实使用了消息内容。在Ti...任务上，移除消息导致+63.6点优势消失，证明存在隐式通信。<br>
+为什么值得读：扩散语言模型是近期推理效率的热点，且多Agent系统通常只使用显式文本通信。这篇论文揭示了一种更高效、隐式的Agent间信息传递潜力，可能改变未来Multi-Agent架构的设计。对关注大模型架构演进、多Agent通信和推理加速的研究者有启发性。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>《Harness 的思考：Model + Harness = Agent》（崔添翼，DeepSeek Harness负责人）</strong><br>
+为什么今天推荐：崔添翼是DeepSeek Harness团队负责人，其提出的“Model + Harness = Agent”公式正成为国内Agent产品化的核心方法论。在DeepSeek Harness开源、团队大规模扩招、组织架构调整的当下，这篇知乎文章是理解DeepSeek Agent战略和Harness工程理念的第一手材料。无论你是Agent工程师、产品经理还是研究者，都能从中看到如何将模型能力转化为可落地的产品。<br>
+<strong>3个核心观点：</strong><br>
+• <strong>模型是发动机，Harness是方向盘、变速箱与刹车</strong>——没有Harness，模型只是裸API，无法成为能干活的产品。Harness负责上下文管理、工具调用、记忆、子Agent协调等全部产品化能力。<br>
+• <strong>Harness是Agent产品成败的关键变量</strong>——模型同质化趋势下，竞争焦点从模型参数转向Harness工程效率、安全性与用户体验。<br>
+• <strong>Agent产品团队需要复合型人才</strong>——崔添翼自身从量化转向Harness，反映Agent产品需要系统工程、产品思维与AI理解的深度融合。<br>
+适合谁读：Agent产品经理、Harness工程师、AI基础设施负责人、希望理解DeepSeek Agent战略的从业者。<br>
+大致阅读时间：8-12分钟。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek：Harness团队大规模扩招，产品部整合，全力对标Claude Code</strong><br>
+· 招聘：崔添翼在X、小红书等平台亲自招聘Harness研究员、工程师、产品经理，实习全职皆可，自称“每天都在面试，各种地方贴小广告”。6月25日DeepSeek发布33个岗位，计划所有部门规模扩大至少一倍，工作地点北京、杭州，所有岗位接受实习。全栈开发和算法相关职位8个，Agent Harness团队是重点。<br>
+· 组织：10月16日将Agent Harness、Web、App、Platform团队整合为产品部，崔添翼任负责人，统一负责产品、设计和相关研发。此前3月崔添翼加入DeepSeek组建Harness团队，8月开源DeepSeek Harness，9月推出Windows/macOS桌面预览版。<br>
+· 策略：明确定位“对标Anthropic Claude Code”，梁文锋亦在5月投资者会议中讨论Coding Agent、持续学习、开源哲学等，显示DeepSeek在Agent产品化上长期投入。
+</div>
+
+<div class="item">
+<strong>深势科技：AI for Science药物研发平台持续演进，Uni-Lab OS推动“干湿闭环”</strong><br>
+· 在近期AIBC2025会议上，深势科技展示其AI4S数智化研发体系：玻尔科研空间站（科学数据多模态解析与检索）、Hermite药物科学计算平台（Uni-FEP、Uni-QSAR等算法模块），以及近期推出的Uni-Lab OS，以开源方式助力实验室构建“干湿闭环”，加速研发智能体落地。<br>
+· 方向：深势科技强调以AI4S技术增强“科学生产力”，打造人机协同智能研发模式。这与全球AI for Science向自主科研Agent演进的趋势一致。
+</div>
+
+<div class="item">
+<strong>字节跳动：开放LLM大模型评测产品经理实习生等AI岗位</strong><br>
+· Tavily搜索显示字节跳动在招“LLM大模型评测产品经理实习生-AI创新业务”，要求2027届本科以上，有模型策略/评测/数据产品经验，熟悉LLM/多模态/Agent。说明字节跳动正在加强AI评测与Agent产品线，对人才需求持续。
+</div>
+
+<div class="item">
+<strong>其他厂商（智谱、月之暗面、百川、面壁智能）</strong><br>
+· 本次信息源未直接涉及上述厂商的最新公告，但从DeepSeek扩招与行业趋势看，国内头部AI厂商普遍在Agent产品化、AI for Science、推理优化等方向加大招聘。建议关注各厂商在Harness/Agent框架、科学计算平台上的新岗位释放。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>新岗位类型：Harness研究员/工程师/产品经理 成为独立序列</strong><br>
+DeepSeek一口气放出三个Harness岗位，且崔添翼亲自招聘，说明Harness不再是嵌入式角色，而是独立的工程与产品职能。预计其他厂商（尤其对标Claude Code的产品团队）将跟进设立类似岗位。技能需求：上下文管理、工具调用设计、记忆系统、子Agent编排、MCP协议、安全边界、产品化能力。
+</div>
+
+<div class="item">
+<strong>招聘规模扩大，实习与全职并重，跨背景人才吃香</strong><br>
+DeepSeek计划所有部门规模扩至两倍，33个岗位全部接受实习，且明确“AI跨界技术人才特殊岗位不设专业背景限制”。崔添翼的量化背景（Jane Street）表明，拥有系统工程、金融工程、编程语言理论等复合背景的候选人更具竞争力。求职者可突出自己在大规模系统、形式化方法、工具链构建方面的经验。
+</div>
+
+<div class="item">
+<strong>Agent安全与治理岗位需求上升</strong><br>
+随着NVIDIA推出Agent运行时安全产品，arXiv多篇Agent安全论文，以及企业采用Agent时的安全顾虑（如PHP Armageddon暴露的依赖风险），未来6个月内“Agent安全工程师”“Harness安全架构师”将成为热门岗位。技能包括：权限模型设计、策略形式化、审计日志、运行时监控、对抗性测试。
+</div>
+
+<div class="item">
+<strong>AI产品与评测类岗位增多</strong><br>
+字节跳动LLM评测产品经理实习生、DeepSeek Harness产品经理，以及ChatGPT Ads扩展带来的AI广告产品需求，都指向AI产品经理、评测工程师、数据产品经理的岗位增长。尤其具备“模型能力理解 + 产品场景定义”的复合型人才将供不应求。
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+Harness工程正从“胶水层”跃升为Agent产品的操作系统核心，DeepSeek以“Model + Harness = Agent”重仓押注并大规模招兵；工程师应立刻补强Agent框架、工具调用安全与治理能力，抢占下一波产品化红利。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
