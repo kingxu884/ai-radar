@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年10月23日 · 新闻 136 条 · 博客 10 篇 · 搜索 14 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>MIT Tech Review：企业AI的竞争焦点正从模型选择转向Harness工程</strong><br>
+发生了什么：MIT TR 刊文指出，企业AI的下一个竞争优势不再是选哪家模型，而是围绕模型构建的serving harness。<br>
+为什么重要：这与用户重点关注方向高度吻合——Harness工程（上下文管理、工具调用、记忆、多Agent编排）正在从"胶水代码"升级为战略资产。文中特别提到Agent = Model + Harness的范式：模型能力趋于同质化，差异化的护城河在harness层。<br>
+关联动态：同日DeepSeek被曝将Harness团队整合进产品部，Anthropic捐赠Agent Skills给AAIF基金会，三者共同指向Harness/Agent基础设施的制度化。
+</div>
+
+<div class="item">
+<strong>DeepSeek 被曝融资150亿美元 + Harness团队整合成立产品部</strong><br>
+发生了什么：TechCrunch报道DeepSeek近期完成150亿美元融资（中国最大融资轮之一），就在美国下令联邦机构移除其技术几天后。同时国内消息确认DeepSeek将Harness、Web、App、Platform团队整合为"产品部"，由崔添翼（前Jane Street、ACM金牌）负责。<br>
+为什么重要：这是DeepSeek从纯研究机构向产品化组织转型的关键信号。150亿融资规模远超此前500亿人民币（约74亿美元）的报道，表明梁文锋在外部资本压力下仍坚持AGI优先，但产品落地被提升到组织架构层面。Harness团队与产品团队合并，说明DeepSeek视Harness为产品核心而非内部工具。<br>
+关联动态：DeepSeek Harness（dsh）于2026年8月开源，9月发布桌面端v0.2预览版，如今将Harness并入产品部，战略上对标Claude Code的Agent运行时生态。
+</div>
+
+<div class="item">
+<strong>OpenAI 发布 Decisions API：快速、聚焦、低成本的决策模型</strong><br>
+发生了什么：OpenAI正式将决策模型（decision model）产品化，定位为"任何应用的快速、聚焦、低成本决策"，与Jev展开竞争。<br>
+为什么重要：这是继推理模型、生成模型之后，决策模型成为独立产品线的标志。决策模型解决的是Agent在工具调用、路由选择、安全护栏等场景下的高频率、低延迟判断需求——正是Harness工程的核心瓶颈之一。这类模型的小巧性（相比前沿大模型）意味着单位决策成本可能降低一到两个数量级。<br>
+关联动态：arXiv同日出现Protegrity-PII（PII决策模型，0.49秒/百万字符，$0.0005/百万字符），以及Route-and-Generate（推理路由策略），说明决策模型市场正在快速成型。
+</div>
+
+<div class="item">
+<strong>Anthropic 将 Agent Skills 捐赠给 Linux Foundation 旗下 AAIF</strong><br>
+发生了什么：Anthropic 宣布将 Agent Skills 标准捐赠给 Agentic AI Foundation（AAIF），此前 MCP 已捐赠给该基金会。<br>
+为什么重要：这是Agent技能可移植性从厂商私有走向社区治理的关键一步。Agent Skills标准化意味着"技能"可以跨harness复用，降低企业切换Agent框架的锁定成本。Simon Willison 精准预言了这一步——去年12月Anthropic首次称Skills为"开放标准"时，他就预测会进入AAIF。<br>
+关联动态：这与DeepSeek Harness生态、Claude Code的实践共同构成Agent基础设施标准化的"三足"局面：MCP（工具调用）、Agent Skills（技能包）、A2A/ACP（Agent通信）。
+</div>
+
+<div class="item">
+<strong>arXiv首测AI Agent通信协议握手开销：MCP、A2A、ACP对比</strong><br>
+发生了什么：论文首次对三大Agent协议（MCP 2025/2026、A2A、ACP）的握手阶段进行阶段分解基准测试，测量冷启动、热重复、能力不匹配、元数据退化场景下的往返次数、延迟、字节数和token成本。<br>
+为什么重要：Agent间通信的"握手税"此前从未被系统测量。这篇工作对Harness工程有直接参考价值——如果Agent每次启动工具会话都要支付高昂的握手开销，那多Agent系统的扩展性天花板就不仅仅受限于模型上下文窗口。该研究提供了可操作的优化依据。<br>
+关联动态：同批arXiv论文还包括"MCP vs CLI"的14维度对比分析，结论是CLI在单用户本地场景更高效，而MCP在细粒度访问控制、凭证隔离等方面是CLI无法替代的。这两篇论文共同构建了Agent工具集成的工程决策框架。
+</div>
+
+<div class="item">
+<strong>arXiv：LLM 能否自我改进 Harness？ARC-AGI-3 受控研究</strong><br>
+发生了什么：研究询问前沿模型能否自主构建和优化自身的harness（感知、记忆、工具使用、恢复、推理分配的符号程序），而非依赖人类为每个新任务重新设计软件脚手架。<br>
+为什么重要：这触及了Harness工程的根本问题——真正的通用智能系统应该能自主获取新技能而不需要人类重新设计软件脚手架。该项研究在ARC-AGI-3上的探索，直接测试了"Harness自进化"的可能性边界。如果模型能改进自身harness，那么Harness工程的工作重心将从"编写框架"转移到"设计元框架"。<br>
+关联动态：与Anthropic捐赠Agent Skills、DeepSeek Harness产品化形成呼应——前者是在外部标准化harness组件，后者是让模型内化harness改进能力。
+</div>
+
+<div class="item">
+<strong>1Password 推出 AI Agent 无密码登录方案</strong><br>
+发生了什么：1Password发布新功能，允许AI Agent在用户账户上登录，同时不暴露私有凭证。<br>
+为什么重要：这解决了Agent工具调用中一个被低估的工程难题——身份验证与凭证隔离。当Agent需要替用户操作银行、邮箱、SaaS服务时，密码管理成为安全与效率的关键瓶颈。1Password的方案意味着Agent可以安全地执行"代表用户"的登录操作，而凭证本身对Agent不可见。这是Agent从"内容生成"走向"行动执行"的关键基础设施补位。<br>
+关联动态：结合ConnectWise被中国黑客利用AI Agent大规模入侵的事件（TechCrunch），Agent身份安全正从便利性需求升级为合规和安全刚需。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Harness 工程从内部实践走向标准化、产品化与科研学科化</strong><br>
+证据：MIT Tech Review 将 Harness 工程定位为企业AI竞争新焦点；DeepSeek 将 Harness 团队整合进产品部；Anthropic 将 Agent Skills 捐赠给 AAIF；arXiv 出现多篇专门研究 Harness 的论文（握手开销、MCP vs CLI、LLM自我改进Harness、Agent评估检测器审计）。<br>
+预判：未来6个月内，Harness 工程将出现以下变化：(1) 专门的 Harness 工程师岗位成为企业招聘标配，不再只是"Research Engineer"的兼职工作；(2) Harness 组件的可组合性（composability）成为开源社区的核心竞争维度；(3) 会出现类似"前端框架之争"的 Harness 框架生态分化——重量级企业框架 vs 轻量级开发者友好框架。
+</div>
+
+<div class="trend">
+<strong>趋势二：决策模型（Decision Models）成为继推理模型后的新战场</strong><br>
+证据：OpenAI 发布 Decisions API 并与 Jev 直接竞争；arXiv 出现 Protegrity-PII（PII决策模型，速度0.49秒/百万字符，成本$0.0005/百万字符）；Route-and-Generate 框架专门优化推理路由决策；Canva 也发布图像生成模型，说明"小而专"的决策/生成模型在涌现。<br>
+预判：决策模型将分流原先由大模型承担的高频、低复杂度判断任务（路由、护栏、工具选择、安全过滤）。企业Agent系统的成本结构中，"决策层"将成为独立优化的重点。这类模型的核心指标不是benchmark分数，而是单位决策成本、延迟和准确率的帕累托前沿。
+</div>
+
+<div class="trend">
+<strong>趋势三：Agent 身份与权限管理成为企业部署的隐形瓶颈</strong><br>
+证据：1Password 推出 Agent 无密码登录；ConnectWise 被中国黑客利用 AI Agent 大规模入侵数千家客户；Uber 将 3万名员工全部迁至 ChatGPT Work（企业级Agent部署的规模化验证）。<br>
+预判：随着Agent从"个人助手"走向"企业员工"，身份验证、权限隔离、审计追踪会成为比模型能力更紧迫的部署障碍。预计将出现专门的"Agent IAM（身份与访问管理）"产品类别，融合OAuth、临时凭证、细粒度权限控制和审计日志。这也是安全人才在Agent时代的新机会窗口。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. "Can LLMs Improve Their Own Harness? A Controlled Study on ARC-AGI-3" (arXiv:2610.30499)</strong><br>
+核心贡献：首次系统检验前沿模型能否自主构建和改进harness——即模型能否自己编写感知、记忆、工具使用、恢复和推理分配的符号程序。ARC-AGI-3上人类操控系统已达天花板分数，所以问题的核心不再是"能否解决"而是"模型能否自己设计解决方案的脚手架"。<br>
+为什么值得读：这篇论文对Harness工程从业者提出了一个存在性问题——我们编写harness的工作，最终会被模型自己替代吗？理解其中的能力边界和失败模式，能帮助工程师重新定位工作重心，从"手写框架"转向"设计可被模型理解和修改的元框架"。
+</div>
+
+<div class="deep-read">
+<strong>2. "The Cost of Saying Hello: An Empirical Study of Handshake Overhead in AI Agent Communication Protocols" (arXiv:2610.30151)</strong><br>
+核心贡献：第一次对MCP（2025 initialize和2026 discover两个版本）、A2A、ACP三大Agent协议的握手阶段进行分解基准测试，测量冷启动、热重复、能力不匹配、元数据退化等场景下的真实开销。<br>
+为什么值得读：如果你正在设计多Agent系统，这篇论文提供了选择通信协议的经验依据。特别是"能力不匹配"和"元数据退化"场景的测量，能帮助预测生产环境中的真实性能。握手开销是Agent扩展性的隐藏天花板，有必要精确掌握。
+</div>
+
+<div class="deep-read">
+<strong>3. "RiboBridge: protein-conditioned de novo RNA binder structure design" (arXiv:2610.30668)</strong><br>
+核心贡献：提出structure-first框架，将RNA构象生成与蛋白质-RNA组装分离，通过跨帧交互几何预测。不假设预定义的结合位点，从蛋白质表面生成候选结合界面，在RNA结构潜在空间中生成构象。<br>
+为什么值得读：这是AI for Science在RNA设计领域的前沿工作。传统的protein-RNA设计方法往往将两个过程耦合，导致模型复杂度高、成功率低。RiboBridge的解耦思路（先蛋白质界面、再RNA构象、后组装）对药物设计、蛋白质-RNA相互作用研究有直接的方法论启示。如果你关注蛋白质设计或RNA治疗，这篇不可错过。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>Nathan Lambert: "I expect rapid progress but not towards general superintelligence"</strong><br>
+为什么今天推荐：今天OpenAI被曝寻求300亿美元融资、估值1.25万亿美元，DeepSeek融资150亿美元，两家头部实验室都在以惊人速度融资扩张。与此同时，业界高层普遍声称"AI将在几年内超越人类研究员"。Nathan Lambert这篇博客恰好对这些狂热时间表提出了冷静的质疑，以RLHF/Post-training一线研究者的视角，剖析了"快速进步"与"通用超智能"之间的关键区分。在资本热潮裹挟行业的当下，这种基于技术现实的独立判断尤为可贵。<br>
+3个核心观点：
+<ul>
+<li>AI进步速度确实很快，但进步方向更可能是"做得更快"而非"做得更深"——工具性能力突飞猛进，但元认知和自主目标设定能力仍然有限。</li>
+<li>业界高层对AGI时间表的乐观，可能混淆了"系统能力提升"与"泛化能力质变"两件不同的事。</li>
+<li>Post-training技术（RLHF、偏好优化）的进展解释了近期能力暴涨，但这不等于我们已经有了通往通用超智能的路径。</li>
+</ul>
+适合谁读：希望保持独立判断力的研究员、产品经理、投资人，以及被资本叙事裹挟需要校准预期的一线从业者。<br>
+大致阅读时间：10-12分钟。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek：融资、组织架构调整与招聘扩招三重信号</strong><br>
+TechCrunch报道DeepSeek融资150亿美元（中国最大融资轮之一），在美国联邦机构被要求移除其技术的几天后完成。国内消息确认Harness、Web、App、Platform团队整合为"产品部"，崔添翼任负责人——他毕业于浙大计算机专业，拥有6枚ACM亚洲区域赛金牌，在Jane Street任职九年，2026年3月加入DeepSeek。DeepSeek Harness（dsh）2026年8月开源，9月发布桌面端v0.2预览版。<br>
+招聘信号：DeepSeek已发布33个岗位招聘，覆盖7大类（算法、研发、运维、产品、数据工程师及职能），工作地点北京和杭州，所有岗位接受实习。最高薪资为法务经理（月薪50k-80k，20薪），整体趋势是所有部门规模扩大至少一倍。梁文锋在5月投资者交流会上明确表示"AGI而非利润是目标，AGI将带来巨大商业价值"。
+</div>
+
+<div class="item">
+<strong>深势科技：完成总额超8亿人民币C轮融资</strong><br>
+深势科技以"玻尔·科研空间站"为核心枢纽，构建了"读、算、做、智"的Science as a Service体系。旗下产品包括玻尔·科学导航、玻尔·勒贝格智算、Hermite®、Piloteye®微尺度研发软件、玻尔·赛博实验室、SciMaster科学智能体。玻尔·科学导航已服务全球超1000所高校、300多万科学家，累计节省超20亿分钟科研时间。企业端服务超150家先进企业，深度赋能超70家生命科学企业的百条以上研发管线。其"深势·宇知"基座已升级为智能体驱动的科学发现核心引擎，集成海量文献、专利、逾千个垂直AI模型和百余款实验仪器。
+</div>
+
+<div class="item">
+<strong>中电信人工智能：星辰意图理解模型 Xing4.0-29B-Intent 开源</strong><br>
+中电信人工智能科技有限公司星辰通用人工智能实验室发布并开源意图理解专用模型Xing4.0-29B-Intent，支持"做选择题"（分类）和"做填空题"（生成）两类意图理解任务。这是国内运营商系AI在意图理解垂直方向的布局。
+</div>
+
+<div class="item">
+<strong>其他国内动态（Tavily汇总）</strong><br>
+六家独立大模型厂商（DeepSeek、智谱、MiniMax、月之暗面、阶跃星辰、面壁智能）的竞争已从"拼参数"转向"拼落地"：智谱2026年1月登陆港交所成为"全球大模型第一股"；MiniMax启动科创板上市辅导；月之暗面启动港股IPO筹备，目标估值300亿美元；阶跃星辰秘密递表港交所；面壁智能专注端侧（MiniCPM累计下载超3800万次）。国产大模型2026-2027年进入"上市大年"。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>Harness 工程师成为Agent时代的新核心岗位</strong><br>
+信号来源：DeepSeek 2026年3月组建Agent Harness团队（体现该细分方向的战略优先级），随后整合进产品部；MIT Tech Review将Harness工程定位为企业AI竞争新焦点；Anthropic内部已有专门的Harness设计团队（针对长时运行代理的三Agent Planner/Generator/Evaluator架构）。<br>
+技能需求变化：从"会调API"升级为"设计Agent运行时系统"——需要掌握上下文管理策略、工具调用协议（MCP）、记忆架构（短期/长期/情景）、多Agent编排、恢复与重试机制、推理资源分配。招聘市场将越来越看重"你是否从零构建过一个生产级Agent系统"，而非"你是否用过LangChain"。
+</div>
+
+<div class="item">
+<strong>Agent 安全与身份管理岗位需求上升</strong><br>
+信号来源：1Password推出Agent无密码登录方案，ConnectWise被AI Agent黑客入侵事件，以及arXiv出现的多篇Agent安全/治理论文。随着Uber将3万员工迁至ChatGPT Work，企业级Agent的安全审计、权限控制、合规追踪成为必须配套的岗位。<br>
+岗位方向：Agent IAM工程师、AI安全审计师、Agent行为监控/护栏系统设计者。这类岗位需要同时具备传统安全工程和LLM/Agent系统的双重背景，当前人才供给极度稀缺。
+</div>
+
+<div class="item">
+<strong>Decision Model 相关岗位正在形成</strong><br>
+信号来源：OpenAI发布Decisions API，arXiv出现Protegrity-PII、Route-and-Generate等决策模型工作。这类模型需要专门的训练、评估和部署技能——训练数据生成、决策质量评估框架、与主Agent系统的集成。<br>
+技能需求：强化学习/GRPO/DPO等post-training技术，决策理论，以及将决策模型嵌入生产系统的工程能力。这是兼具post-training和Agent工程技能的复合型岗位。
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+<strong>Harness 工程已从"模型的外部工具"演变为"AI产品的核心竞争壁垒"。谁能设计出可组合、可观测、可自进化的Agent运行时，谁就掌握了下一阶段的企业AI话语权——相关工程岗位需求将迎来爆发。</strong>
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
