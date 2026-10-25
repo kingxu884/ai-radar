@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年10月25日 · 新闻 4 条 · 博客 3 篇 · 搜索 9 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>DeepSeek Harness 团队持续扩招，9月再释放150个岗位，重点转向Agent基础设施</strong><br>
+发生了什么：DeepSeek Harness 团队负责人崔添翼在社交平台发布招聘，称公司有“很多新方向新系统新需求需要搞”，岗位集中在服务端开发工程师与 Agent 弹性计算研发工程师两大方向，合计约150人。<br>
+为什么重要：这是继6月“所有部门扩招一倍”之后，DeepSeek 首次以 Harness 团队为核心的大规模定向扩招，明确对标 Claude Code，做 DeepSeek Code Harness。扩招范围从应届生放宽至2-10年资深工程师，说明其 Agent 基础设施从研究验证进入工程化落地阶段，急需即招即用人才。<br>
+与其他动态的关联：与今日 Tavily 抓取的“六家独立大模型六力横评”中 Coding 成为必争之地的结论一致，也与 MindStudio 梳理的六大 Agent 协议（MCP/A2A等）形成呼应——Harness 工程正在成为国内头部大模型厂商的新主战场。
+</div>
+
+<div class="item">
+<strong>TechCrunch 发布 AI 项目“墓地”清单：苹果 Siri AI 与 OpenAI 超级应用等未达预期</strong><br>
+发生了什么：TechCrunch 整理了一份失败或大幅低于预期的 AI 项目与创业公司清单，涵盖苹果多次跳票的 Siri AI、OpenAI 混乱的超级应用发布等。<br>
+为什么重要：这提醒行业不能只看融资与发布热度，Agent 与 AI 产品的工程复杂度、可靠性、分发渠道正在成为生死线。尤其在文本消息 Agent、语音助手、超级应用等赛道，演示效果与可持续产品之间存在巨大鸿沟。<br>
+与其他动态的关联：与同日 TechCrunch 报道的“文本消息 AI Agent 列表”形成对照：一批轻量 Agent 正在寻找真实用户场景，另一批高调项目却已进入墓地，说明产品化路径选择比模型能力更关键。
+</div>
+
+<div class="item">
+<strong>TechCrunch 盘点可驻留短信的 AI Agent：从通用助手到家庭、旅行、工作</strong><br>
+发生了什么：TechCrunch 发布了一份当前最值得关注的短信 AI Agent 清单，覆盖通用助手、家庭协作、旅行规划和办公场景。<br>
+为什么重要：短信是高频、低门槛、无需安装的入口，成为 Agent 产品化的重要试验田。这类 Agent 的核心挑战不是生成能力，而是上下文持久化、主动触达与多轮工具调用，恰好落在 Harness 工程的核心范围。<br>
+与其他动态的关联：与 DeepSeek 扩招 Harness 团队、六大 Agent 协议（尤其 A2A 与 AG-UI）形成互补：短信 Agent 的规模化需要标准化的工具调用与状态同步协议。
+</div>
+
+<div class="item">
+<strong>Block 发布可本地运行的新语音模型，M4 Max 即可部署，声音“惊人地像人”</strong><br>
+发生了什么：Block 宣布其新语音模型可在 MacBook M4 Max 上本地运行，并具备高度拟人的语音表现。<br>
+为什么重要：端侧高质量语音模型降低了对云 API 的依赖，为隐私敏感场景和低延迟语音 Agent 提供可能。若此类模型与短信/语音 Agent 结合，可能催生新的本地优先 AI 产品形态。<br>
+与其他动态的关联：与文本消息 Agent 清单及 AI 项目墓地中语音助手频繁失败形成技术对照：端侧低延迟与自然度可能是语音 Agent 突破可用性阈值的关键。
+</div>
+
+<div class="item">
+<strong>MindStudio：2026 年 AI Builder 必备的六大 Agent 协议——MCP、A2A、AG-UI、A2UI、AP2、X42</strong><br>
+发生了什么：MindStudio 发布行业综述，将当前 Agent 协议栈按层整理为工具访问（MCP）、Agent 协调（A2A）、界面流式输出（AG-UI）、界面状态同步（A2UI）、Agent 管理（AP2）、信任与治理（X42）。<br>
+为什么重要：协议标准化是 Multi-Agent 和 Harness 工程从各自造轮子走向可组合生态的标志。大多数团队目前只使用 MCP 和 A2A，但界面层与治理层协议正在快速补齐，未来 Harness 工程师将需要同时理解这六层。<br>
+与其他动态的关联：DeepSeek Harness 团队的岗位描述中“Agent 弹性计算研发”“服务端开发”等方向，暗示其内部可能正在构建类似协议栈的基础设施，招聘信号与行业协议成熟度同步。
+</div>
+
+<div class="item">
+<strong>六家独立大模型横评：Coding 成必争之地，开源成标准配置，智谱品牌领跑</strong><br>
+发生了什么：一份对 DeepSeek、智谱、MiniMax、月之暗面、阶跃星辰、面壁智能的六力横评显示，Coding 与 Agentic 能力成为全球头部模型新竞争焦点，六家全部拥抱开源，智谱以“全球大模型第一股”身份在品牌力上领先。<br>
+为什么重要：独立厂商的竞争已从参数规模转向代码能力、产品体验与商业化。月之暗面 K3 在前端代码竞技场登顶，智谱 GLM Coding Plan 和 Claw Plan 商业化表现突出，说明代码能力已是衡量基座模型硬通货。<br>
+与其他动态的关联：DeepSeek 将 Harness 团队作为扩招重点，正是 Coding 与 Agent 竞争白热化的直接体现；开源成为独立厂商唯一出路，也对闭源商业模式的长期可持续性提出挑战。
+</div>
+
+<div class="item">
+<strong>Drug Discovery News：2026 年 AI 药物发现进入“builder”阶段，从工具试点到 AI-native 平台</strong><br>
+发生了什么：Benchling 发布的 2026 Biotech AI Report 指出，生物技术行业正从孤立的 AI 数字工具转向全面集成、AI 原生的发现系统，成功组织正在重塑数据环境和研发运营模式。<br>
+为什么重要：AI for Science 的关键瓶颈不是模型精度，而是数据环境与组织流程。进入“builder”阶段意味着竞争重点从算法演示转向工程能力、数据治理与平台化集成，这对具备 AI 工程与科学交叉背景的人才需求将显著上升。<br>
+与其他动态的关联：与 DeepSeek 在 Agent 基础设施上的投入逻辑相同：真正难的不是模型本身，而是让模型在复杂真实工作流中可靠运行的支持系统。
+</div>
+
+<div class="item">
+<strong>DeepSeek V4 瞄准编码主导地位，条件记忆论文揭示新稀疏性轴</strong><br>
+发生了什么：DeepSeek 被曝目标 2 月中旬发布 V4，重点强化编码能力。此前的论文《Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models》由北大与 DeepSeek 合作，梁文锋再次出现在作者列表中。<br>
+为什么重要：该论文提出可扩展查找的条件记忆，可能成为 V4 架构的关键线索。若条件记忆能有效提升长上下文利用率和推理效率，将对 Agent 记忆管理产生直接影响，是 Harness 工程底层模型能力的重要变量。<br>
+与其他动态的关联：与 DeepSeek Harness 团队扩招形成呼应：更强记忆与编码模型需要更扎实的服务端与弹性计算基础设施来支撑产品化。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Harness / Agent 基础设施成为国内大模型竞争的战略高地</strong><br>
+证据：DeepSeek 6月宣布所有部门扩招一倍并组建 Harness 团队，9月再为该团队释放约150个岗位；六家独立大模型横评显示 Coding 与 Agentic 能力成为核心胜负手；MindStudio 推出六大 Agent 协议综述，覆盖从工具调用到治理的完整栈。<br>
+预判：未来6-12个月，围绕 Harness 工程的人才争夺将加剧，Agent 弹性计算、上下文管理、工具调用标准化、Multi-Agent 编排等岗位会成为头部厂商和创业公司共同争抢的方向。对工程师而言，精通 MCP/A2A/AG-UI 协议栈并具备从模型到服务端的贯通能力，将比单纯 Prompt Engineering 更具溢价。
+</div>
+
+<div class="trend">
+<strong>趋势二：AI Agent 产品化出现两极分化：轻量入口崛起与高调项目失败并存</strong><br>
+证据：TechCrunch 同日发布“AI 项目墓地”清单（Siri AI、OpenAI 超级应用等未达预期）与“短信 AI Agent 清单”（多类轻量 Agent 进入真实场景）；Block 发布本地可跑的高自然度语音模型。<br>
+预判：Agent 产品化正从“大而全的超级助手”转向“小切口、高频、低门槛”的入口级形态。短信、语音、本地端侧等轻量交互可能成为新的增长点，而复杂通用 Agent 项目若缺乏可靠 Harness 支持，将更快被淘汰。创业团队应优先选择单一高价值场景，而非追求全能型 Agent。
+</div>
+
+<div class="trend">
+<strong>趋势三：AI for Science 从“试点炒作”进入“工程化落地”阶段</strong><br>
+证据：Benchling 2026 Biotech AI Report 将行业定义为“builder”阶段，强调从孤立工具到 AI-native 发现系统的转型；Drug Discovery News 指出投资正跟随运营转变，AI 从 pilot 走向 platform。<br>
+预判：药物发现、材料科学等领域的竞争重心将从模型性能转向数据基础设施与研发流程重构。具备 AI 工程能力、理解科学数据管线和自动化实验闭环的复合型人才将成为稀缺资源。国内深势科技、晶泰科技等 AI for Science 公司可能加大此类岗位招聘。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. DeepSeek / 北大《Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models》</strong><br>
+核心贡献：提出可扩展查找的条件记忆机制，作为 LLM 稀疏性的新维度，可能提升长上下文信息利用效率与推理经济性。梁文锋再次参与署名，被广泛视为 DeepSeek V4 架构的前置研究。<br>
+为什么值得读：如果你是关注大模型前沿或 Harness 工程的从业者，这篇论文可能在架构层面回答“Agent 记忆如何更高效”的问题。理解条件记忆与可扩展查找的机制，有助于预判 V4 及后续模型的记忆与编码能力边界，并为 Agent 上下文管理策略提供底层依据。
+</div>
+
+<div class="deep-read">
+<strong>2. Benchling 2026 Biotech AI Report</strong><br>
+核心贡献：提出生物技术行业进入“builder”阶段，成功组织不再满足于 AI 试点，而是重构数据环境与组织架构，使 AI 成为 R&D 默认操作系统的一部分。<br>
+为什么值得读：该报告从数据和流程视角解释了 AI for Science 落地的真实瓶颈，适合做科学 AI 产品与平台的人理解客户组织内部的变革阻力与工程需求。相比单纯算法论文，它能帮助产品经理和工程负责人制定更可行的落地路线图。
+</div>
+
+<div class="deep-read">
+<strong>3. MindStudio《Six Agent Protocols Every AI Builder Needs to Know in 2026》</strong><br>
+核心贡献：以层次化方式梳理了 2026 年 Agent 协议栈：MCP（工具访问）、A2A（协调）、AG-UI（流式界面）、A2UI（状态同步）、AP2（管理）、X42（治理）。明确各协议解决的问题及适用阶段。<br>
+为什么值得读：这是目前对 Harness 工程协议层较为清晰的入门综述。如果你想系统理解 Multi-Agent 和 Subagent 架构的工程基础，而不是碎片化学习单个协议，这篇能在较短时间内建立全局视图，尤其适合准备进入 Agent 基础设施团队的工程师。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>Sebastian Raschka《Building Reasoning Models from the Ground Up: A Full Video Course》</strong><br>
+为什么今天推荐这篇：在 DeepSeek V4 瞄准推理与编码、国内厂商竞逐 Post-training 与 Agent 能力的背景下，从零构建推理模型的能力正从学术前沿变为工程刚需。本课程覆盖评估、推理时缩放、强化学习和蒸馏，系统补齐推理模型训练的实践缺口。<br>
+三个核心观点：<br>
+<ul>
+<li>评估是推理模型开发的第一步，没有可靠的评测基准就无法判断推理时缩放或 RL 的效果。</li>
+<li>推理时缩放（如 best-of-N、树搜索、反思机制）必须与训练策略（SFT、RL、蒸馏）协同设计，单独调优推理参数收益有限。</li>
+<li>RL 与蒸馏是构建推理模型的关键杠杆，但实现稳定训练需要细致的 reward 设计与数据过滤。</li>
+</ul>
+适合谁读：LLM 工程师、研究员、对 Post-training 与 Agent 推理能力感兴趣的开发者，尤其适合希望从源码层面理解推理模型训练的人。<br>
+大致阅读时间：11小时视频，建议按模块拆分，2-3天精读+动手实践。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek：</strong>Harness 团队持续扩招，9月释放约150个岗位，方向集中在服务端开发工程师与 Agent 弹性计算研发工程师。招聘要求从应届生放宽至2-10年资深工程师，强调即招即用与高质量产出。6月已宣布所有部门扩招至少一倍，并开放不设专业限制的“AI跨界技术人才”岗位。DeepSeek V4 目标 2 月中旬发布，主打编码主导地位，条件记忆论文被视作架构前兆。同时，DeepSeek 正在进行首轮外部融资，估值至少100亿美元，创始人梁文锋以约200亿元人民币成为最大单一投资者。
+</div>
+
+<div class="item">
+<strong>智谱：</strong>作为“全球大模型第一股”，2026年1月登陆港交所，市值一度突破1.33万亿港元。GLM-5.2 支持 1M 无损上下文，在 Coding 与长程任务评测达到开源 SOTA。3月推出 Claw Plan，上线两天订阅用户即破纪录，并推出 GLM Coding Plan 团队版，商业化产品体系最成熟。
+</div>
+
+<div class="item">
+<strong>月之暗面：</strong>最新估值达180亿美元，在六家独立大模型中估值领先。K3 模型在前端代码竞技场以1679分登顶，完整权重已开放。虽营收规模相对较小，但2026年初20天收入超1.2亿元，增速显著。
+</div>
+
+<div class="item">
+<strong>MiniMax：</strong>已上市，市值约115亿美元。M3 模型重点提升编程与 Agent 能力，定位企业级与开发者场景。营收约5-6亿元，商业化稳中有升。
+</div>
+
+<div class="item">
+<strong>面壁智能：</strong>MiniCPM 系列累计下载量突破3800万次，选择“上车”作为核心落地场景，用场景定义技术。在开源社区保持较强存在感，尤其适合端侧与资源受限场景。
+</div>
+
+<div class="item">
+<strong>阶跃星辰：</strong>选择造手机作为差异化路径，强调用场景而非参数定义价值。独立厂商中品牌力稍弱，但硬件入口策略值得关注。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>招聘趋势：Agent 基础设施与 Harness 工程人才需求激增</strong><br>
+DeepSeek Harness 团队负责人崔添翼“每天都在面试”，人员缺口大。岗位类型包括服务端开发工程师（大模型研究平台、Agent 框架组件、研发效率基建、API、线上服务、数据工程）和 Agent 弹性计算研发工程师，这是较新的岗位类型。招聘范围从应届生到2-10年资深工程师，说明团队处于快速搭建阶段，既需要执行层，也需要能即插即用的技术骨干。
+</div>
+
+<div class="item">
+<strong>技能需求变化：从 Prompt Engineering 到协议栈与工程贯通</strong><br>
+DeepSeek 岗位要求候选人熟悉垂直技术领域，理解上下游团队的技术栈和工程架构，并强调“不只是使用 AI 产品，更要亲力亲为提供高质量产出”。结合 MindStudio 六大 Agent 协议趋势，MCP、A2A、AG-UI/A2UI 的实践经验正在成为 Harness 工程师的加分项。代码能力已是模型竞争硬通货，求职者若同时具备模型推理与后端工程能力，将更受青睐。
+</div>
+
+<div class="item">
+<strong>薪资信号：头部厂商对资深工程师松口，人才争夺加剧</strong><br>
+DeepSeek 过去偏好应届与年轻研究人员，此次扩宽至10年经验资深工程师，且“特别期待”2-10年经验者，暗示其愿为成熟工程能力支付更高薪酬。Agent 弹性计算、服务端开发等方向在国内头部厂商中供给有限，资深候选人具备较强议价权。
+</div>
+
+<div class="item">
+<strong>潜在机会方向：AI for Science 与端侧 AI 的交叉岗位</strong><br>
+Benchling 报告显示生物技术行业进入 builder 阶段，AI-native R&D 平台需要数据工程、科学数据管线与自动化实验集成人才。Block 发布本地语音模型则提示端侧多模态与语音 Agent 可能成为新增长点。建议关注深势科技、晶泰科技等 AI for Science 公司及智能硬件、语音交互团队的招聘动态。
+</div>
+
+<div class="closing">
+<strong>⚡ 今日信号</strong><br>
+DeepSeek Harness 团队扩招是 Agent 基础设施人才需求爆发的风向标。工程师若能在未来3个月内补上 MCP/A2A 协议栈与上下文工程实战能力，将获得进入头部厂商 Harness 团队的最佳窗口期。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
