@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年10月26日 · 新闻 110 条 · 博客 2 篇 · 搜索 10 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>DeepSeek Harness v0.1 开放开发者预览</strong><br>
+<strong>发生了什么：</strong>DeepSeek 发布开源 Agent Harness v0.1，MIT 协议，基于 Cordis 元框架，明确指向“AGENT = MODEL + HARNESS”。<br>
+<strong>为什么重要：</strong>这不是模型发布，而是 agent runtime/工具生态之争。DeepSeek 从模型层向下切入 harness 层，可能直接冲击 Claude Code、Cursor、Copilot 等产品背后的编排与控制层。对工程师而言，未来可移植的 agent 能力可能更多沉淀在 harness、MCP 插件和记忆策略，而非模型 API 本身。<br>
+<strong>关联：</strong>与 Phronix、SpecMem 等论文呼应，说明 harness 层正成为记忆、工具调用、失败恢复的主战场。
+</div>
+
+<div class="item">
+<strong>Phronix：面向 Agent 的“能力中心”学习范式</strong><br>
+<strong>发生了什么：</strong>论文提出 Phronix，让 agentic harness 从自身执行中获取、验证并精炼可复用能力，采用 predictor-validator-corrector 循环，结合 MCP tools 和 skills。<br>
+<strong>为什么重要：</strong>它解决了一个真实痛点：当前 agent 经常“重复发现解决方案”，记忆与技能多为手工编写。把能力获取下放到 harness，而不是每次依赖模型临时推理，是 agent 工程化的重要一步。<br>
+<strong>关联：</strong>与 Self-Direction、SpecMem 共同构成 agent 长时记忆、技能复用和持续改进的三条技术路线。
+</div>
+
+<div class="item">
+<strong>Self-Direction：把 Agent 错误变成长期经验</strong><br>
+<strong>发生了什么：</strong>Agent 失败后反思轨迹，提取教训并立即蒸馏成轻量 LoRA adapter，冻结原始权重，避免灾难性遗忘。<br>
+<strong>为什么重要：</strong>它弥补了“上下文内反思容易丢失、全参微调成本高”之间的空白。对生产环境中的 agent 持续学习、从错误中改进非常关键。<br>
+<strong>关联：</strong>可视为模型侧长期记忆机制；与测试时记忆进化（TTME）在思路上形成呼应。
+</div>
+
+<div class="item">
+<strong>Benchmarks Are Surprisingly Compaction-Friendly</strong><br>
+<strong>发生了什么：</strong>研究用 OpenCode 作为固定 scaffold，在真实长周期 agentic benchmark 上评估五种上下文压缩策略，覆盖多个前沿模型。<br>
+<strong>为什么重要：</strong>长程 agent 任务正在快速逼近上下文窗口极限，上下文压缩不可避免。这项研究提供了更贴近生产的实证判断：哪些约束容易丢、哪些推理需要保留。<br>
+<strong>关联：</strong>与 SpecMem 的跨会话工具调用记忆一起，决定 agent 在长任务中的状态保留与性能边界。
+</div>
+
+<div class="item">
+<strong>Multi-Agent 通信失败分类法</strong><br>
+<strong>发生了什么：</strong>研究者分析 3,211 个多轮失败轨迹，构建多智能体通信失败分类法，覆盖医疗 QA、代码、金融、多跳推理、伦理与具身文本任务。<br>
+<strong>为什么重要：</strong>多智能体系统失败不能只看最终准确率。过早收敛、抑制少数正确意见、错误框架跨轮传播等问题，需要专门的诊断维度。<br>
+<strong>关联：</strong>与 Helpful Agent Problem、BARC-Bench 共同提示：多智能体行为安全不能只防恶意，还要防良性意图下的流程绕过。
+</div>
+
+<div class="item">
+<strong>测试时记忆进化（TTME）挑战测试时训练（TTT）</strong><br>
+<strong>发生了什么：</strong>论文提出 TTME，不更新权重，通过蒸馏经验持续更新外部记忆，用于科学发现任务。<br>
+<strong>为什么重要：</strong>已有研究表明 TTT 能让开放权重模型在科学发现上超过前沿推理框架，但在线权重更新成本高。TTME 若能在更少算力下达到类似效果，将显著降低 AI4S agent 的规模化门槛。<br>
+<strong>关联：</strong>需与 AI4S agent 安全问题一起看，效率提升不能牺牲高风险科学任务的 safety。
+</div>
+
+<div class="item">
+<strong>AI4S Agent 是否仍然安全？</strong><br>
+<strong>发生了什么：</strong>研究者在 50 个有害化学请求上评估 5 个 AI-for-Science agent harness，覆盖直接提示、两种对抗提示与自适应攻击。<br>
+<strong>为什么重要：</strong>模型被接入科学工具链后，能力增强可能同时带来安全控制弱化。药物发现、材料合成、化学实验等领域一旦出现错误或滥用，后果会非常直接。<br>
+<strong>关联：</strong>与 TTME、TACS-RF 等 AI4S agent 进展形成双约束：既要高效、可适应，也要领域级安全与验证。
+</div>
+
+<div class="item">
+<strong>Who Verifies the Tools？工具输出格式器在误导 Agent</strong><br>
+<strong>发生了什么：</strong>论文发现，工具输出 formatter 可以误导 agent 和 verifier，即使工具计算本身正确；案例来自 Pilsudski Institute 的生产 RAG 系统。<br>
+<strong>为什么重要：</strong>许多 agent 故障会被误判为模型问题，实际上可能是工具输出省略了搜索限制、结果上限或命名空间。Verifier 本身也可能被带偏。<br>
+<strong>关联：</strong>对 MCP 工具注册、工具输出 schema、评估 harness 设计是直接提醒：需要验证“工具说了什么”，而不只是“模型说了什么”。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Agent 的重心正从“单次推理”转向“可恢复、可记忆的 harness 层”</strong><br>
+<strong>证据：</strong>Phronix 的能力获取、Self-Direction 的错误蒸馏、SpecMem 的跨会话工具调用记忆、Benchmarks 的上下文压缩评估，几乎同时出现在过去 24 小时。<br>
+<strong>判断：</strong>模型能力趋同后，上下文预算、记忆策略、失败恢复和工具验证将决定生产 agent 的护城河。预计下一阶段会出现更多“Agent Memory Router”“Context Budget Optimizer”类中间件，以及围绕 MCP 的工具输出可信度检测。
+</div>
+
+<div class="trend">
+<strong>趋势二：Multi-Agent 安全从“防恶意”扩展到“防混乱与防好心办坏事”</strong><br>
+<strong>证据：</strong>Multi-Agent 通信失败分类法、Helpful Agent Problem、BARC-Bench、Permission to Retry 等研究，都指向非对抗性故障：权限变化、共享资源、审查缺失、过早共识。<br>
+<strong>判断：</strong>生产系统需要新的可观测性与控制平面，追踪 agent 间的隐性协调、权限切换与外部副作用。仅靠最终答案评估会漏掉大量风险。
+</div>
+
+<div class="trend">
+<strong>趋势三：AI4S 进入“测试时适应 + 安全约束”的双轨竞争</strong><br>
+<strong>证据：</strong>TTME 提出更便宜的测试时记忆进化；Do AI-for-Science Agents Preserve Model Safety? 暴露 harness 级安全风险；TACS-RF 展示 EDA tools 被 agent 驱动；IL-23 微型蛋白设计进一步推进计算药物设计。<br>
+<strong>判断：</strong>AI4S 的下一个壁垒不是“能否用 LLM 做科学”，而是“能否在领域验证、预算约束和安全边界内持续优化”。科学 agent 产品化需要把实验可复现性、失败成本、合规责任纳入 harness 设计。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. Phronix: The Capability-Centric Learning Paradigm for Agents</strong><br>
+<strong>核心贡献：</strong>让 harness 通过 predictor-validator-corrector 循环获取、验证和修订可复用能力，并与 MCP tools/skills 结合。<br>
+<strong>为什么值得读：</strong>它是“agent 如何从经验中积累能力”的框架级工作，对正在设计 harness、subagent、MCP 工具层的人有直接借鉴价值。<br>
+<strong>阅读重点：</strong>能力表示、验证机制、MCP 集成方式、与人工编写 skills 的差异。
+</div>
+
+<div class="deep-read">
+<strong>2. Don't Forget What You Just Learned: Self-Directed Repair Turns Agent Mistakes Into Lasting Lessons</strong><br>
+<strong>核心贡献：</strong>失败后反思并蒸馏 LoRA adapter，冻结原权重，兼顾短期重试与长期策略更新。<br>
+<strong>为什么值得读：</strong>工程可用性高，且直击 agent 持续学习中的成本与遗忘矛盾。适合关注 post-training、agent memory、轻量微调的团队。<br>
+<strong>阅读重点：</strong>故障触发条件、adapter 训练方式、对原有能力的干扰控制。
+</div>
+
+<div class="deep-read">
+<strong>3. Benchmarks Are Surprisingly Compaction-Friendly</strong><br>
+<strong>核心贡献：</strong>在 OpenCode 中实现 5 种上下文压缩策略，用真实前沿模型和长程 benchmark 系统性评估压缩影响。<br>
+<strong>为什么值得读：</strong>上下文压缩是 coding agent 最常做却最少被严格评估的操作。该研究能帮你判断何时压缩、哪种信息最容易丢、哪些约束必须保留。<br>
+<strong>阅读重点：</strong>五种策略的实现差异、任务约束丢失模式、不同模型的压缩敏感度。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>推荐：Simon Willison - Seam Cutter</strong><br>
+<strong>为什么今天推荐：</strong>AI 工程师越来越多地处理长</div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
