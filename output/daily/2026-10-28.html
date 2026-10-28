@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年10月28日 · 新闻 152 条 · 博客 9 篇 · 搜索 12 条</div>
+  </div>
+  <div class="body"><div class="section-title">第一部分：🔥 今日必读</div>
+
+<div class="item">
+<strong>kw-bench 发布：专攻调查式知识工作的 Agent Harness 基准。</strong><br>
+发生了什么：arXiv 新论文 kw-bench 提出一个面向审计、税务、尽职调查等场景的基准，答案已存在但隐藏在不完整、互相矛盾的证据中，测试 Agent 的调查取证能力。<br>
+为什么重要：现有 Agent 基准大多是“生成式”——根据 brief 写财务模型或备忘录；但知识工作中最昂贵、最容易出错的是“查证式”任务。该基准直接挑战当前 Harness 作为“写代码工具”的定位，要求 Agent 具备证据召回、冲突消解和可审计推理。它很可能成为下一轮企业级 Agent 产品验收的参照系。<br>
+与其它动态的关联：与今天同时出现的 HSC-Bench（任务接管）和《When Retrieval Is Not Enough》（过期事实干扰）形成互补，共同指向一个被低估的问题：Agent 不只是要会生成，还要会“接管状态”和“处理证据污染”。
+</div>
+
+<div class="item">
+<strong>《When Retrieval Is Not Enough: Obsolete Facts in Agent Memory》指出记忆失败的真正原因。</strong><br>
+发生了什么：论文在 MemoryAgentBench 的单跳 FactConsolidation 任务中发现，即使检索结果中已包含最新事实，模型准确率仍从 45% 下降到 32%，原因是陈旧版本的事实与最新事实同时存在并形成竞争。<br>
+为什么重要：这打破了“检索到了就能用”的惯性假设。失败不是发生在检索环节，而是发生在记忆融合环节。对于正在构建长期记忆 Agent 的团队来说，必须把“过期事实淘汰”和“冲突消解”作为一等公民，而不是依赖更加庞大的上下文窗口。<br>
+与其它动态的关联：该结论与 WAKMan 的 KV Cache 逐出策略研究、CohortFlow 的局部语义修正机制互相印证，说明记忆一致性问题已经从前沿研究进入工程落地阶段。
+</div>
+
+<div class="item">
+<strong>WAKMan：面向混合流量的 Workload Aware KVCache Manager。</strong><br>
+发生了什么：论文测量了生产流量中单轮、多轮和 Agentic 请求对 Prefix Caching 的不同偏好，发现 Agentic 步骤更偏向 recency，而热门 prompt 和长对话更偏向 frequency，没有单一逐出策略能通吃 20 种混合流量。<br>
+为什么重要：KV Cache 是推理成本和延迟的核心变量。Agent 工作负载的突发性、多步依赖和频繁前缀复用，使传统 LRU 策略不再适用。这直接影响 vLLM 等推理框架在生产环境中的配置方式。<br>
+与其它动态的关联：DeepSeek 正在扩招 Agent 弹性计算研发工程师，说明国内厂商已经把 Agentic 负载的算力调度和缓存策略视为基础设施级问题。
+</div>
+
+<div class="item">
+<strong>HSC-Bench：首次系统评估 Agent 交接时的状态连续性。</strong><br>
+发生了什么：HSC-Bench 用 1,039 个任务评估“任务接管”：接收模型能否恢复仓库证据、延续会话/工具/文件状态，而不只是看最终任务成功率或记忆保留分数。<br>
+为什么重要：Multi-Agent 和 Subagent 架构正在普及，但交接失败往往不会在单 Agent 评测中暴露。HSC-Bench 直接把“把活儿交给下一个模型”这件事变成了可测量的工程指标，对编排器设计和上下文打包策略有直接指导意义。<br>
+与其它动态的关联：与用户重点关注的 Subagent、Multi-Agent 直接相关，也呼应了《When Retrieval Is Not Enough》中的状态一致性问题。
+</div>
+
+<div class="item">
+<strong>Google Genie 4 世界模型加入音频、实时操控和更长一致性。</strong><br>
+发生了什么：Genie 4 能维持场景一致性最长 2 分钟（是 Genie 3 的两倍），物理更真实、角色更像人，并支持实时转向。<br>
+为什么重要：世界模型正从“视频生成玩具”过渡到可交互环境。实时操控能力的加入，可能改变具身智能训练、游戏开发和 Agent 环境模拟的方式。如果语音和视觉状态可以稳定维持，虚拟世界将可以作为低成本的 Agent 测试场。<br>
+与其它动态的关联：与国内物理 AI、人形机器人开源和便利店无人在环测试等动态共振，但 Genie 4 仍偏生成，离闭环物理交互还有距离。
+</div>
+
+<div class="item">
+<strong>GlycoWeave：蛋白-聚糖识别的专用扩散模型。</strong><br>
+发生了什么：GlycoWeave 在内部坐标空间中建模糖链，集成化学约束构象采样、多尺度表征和多源学习，用于预测蛋白质-聚糖复合物结构。<br>
+为什么重要：聚糖是免疫识别、病毒入侵和糖蛋白药物中的关键但长期“不可见”的分子类型；现有蛋白-配体模型对糖覆盖严重不足。GlycoWeave 填补了 AI for Science 的一个空白，且无需依赖稀疏实验结构。<br>
+与其它动态的关联：与 EVA-Flow（环境感知分子构象）、AMARO v2.0（粗粒度生物分子力场）、HGPRGDel（生长耦合基因敲除设计）等共同构成从静态结构预测走向动态交互和可干预设计的趋势。
+</div>
+
+<div class="item">
+<strong>蚂蚁百灵开源 Ling-3.1-flash-1019，主打 Personal Agent 真实任务。</strong><br>
+发生了什么：10 月 28 日，蚂蚁集团百灵大模型开源 Ling-3.1-flash-1019，强调 Personal Agent 走向真实任务场景。<br>
+为什么重要：国内头部厂商持续以中小参数高性能模型降低 Agent 落地门槛。Personal Agent 的提法意味着竞争从“聊天/问答”转向个人任务执行，对上下文管理、工具调用和记忆能力提出更高要求。<br>
+与其它动态的关联：招聘</div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
