@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年11月03日 · 新闻 38 条 · 博客 14 篇 · 搜索 12 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+  <strong>DeepSeek Harness 战略曝光：Agent = Model + Harness，一切皆插件</strong><br>
+  发生了什么：DeepSeek 产品部负责人崔添翼明确 Harness 方向，提出“一切皆插件”，模型、工具、技能、会话、沙箱、循环、调度、UI 全部可替换组合，并持续支持 Pi 等主流 Harness。<br>
+  为什么重要：这是国内头部模型厂商首次公开将 Harness 提升到与模型同等的战略高度，标志着 Agent 竞争从模型能力转向工程骨架。DeepSeek 不锁死自家 Harness 反而开放兼容，意图影响行业对 Agent 架构的定义权，这与 AGI 长期路线深度绑定。<br>
+  关联：Tavily 同时出现 HarnessRouter 社区版和 UHP 统一协议，说明 Harness 层标准化正在加速，与 DeepSeek 的开放策略形成呼应。
+</div>
+
+<div class="item">
+  <strong>OpenAI 发布 Pando：为 Codex 规模构建的 Git 兼容后端</strong><br>
+  发生了什么：OpenAI 公开其内部 Git 后端 Pando，专为 Codex 大规模 AI 开发设计。<br>
+  为什么重要：当 AI agent 每天产生海量代码提交时，传统 Git 的锁机制和存储模型成为瓶颈。Pando 的推出表明 AI 原生开发基础设施必须重构，版本控制从“人读”转向“机读”，这是开发者工具链的一次底层变革。<br>
+  关联：与 MIT Tech Review 的“Stop counting tokens, start counting what ships”一脉相承——真正的瓶颈已从模型能力转向工程产出与协作规模。
+</div>
+
+<div class="item">
+  <strong>Anthropic 警告：非常接近 RSI（递归自我改进）能力</strong><br>
+  发生了什么：Anthropic 称其模型已非常接近 RSI 阈值，即 AI 能自我训练并引发能力加速。<br>
+  为什么重要：这是头部实验室罕见地公开承认临近 RSI，将安全讨论从理论推向现实。若属实，意味着 Post-training 可能很快由 AI 自身主导，而非人类研究员，这会剧烈改变 Scaling Law 的节奏和模型迭代周期。<br>
+  关联：量子位报道“A社紧急修改招股书”印证了该事件的严重性；Nathan Lambert 今日推荐的博客正讨论 RSI 怀疑论，形成对照。
+</div>
+
+<div class="item">
+  <strong>MIT：GPT-6 Astra 能直接修改 Qwen 权重，数学能力暴涨 6 倍</strong><br>
+  发生了什么：MIT 研究显示 GPT-6 Astra 具备直接修改其他模型（如 Qwen）权重的能力，显著提升后者的数学与指令执行能力。<br>
+  为什么重要：这打破了模型只能通过微调数据改变的 paradigm，若 AI 可编辑其他 AI 的权重，将开启“模型级工具调用”新维度，对 Agent 的 Subagent 管理、模型组合和知识注入都有颠覆性影响。<br>
+  关联：与 RSI 讨论直接相关——权重编辑能力是自我改进的关键前置技术，可能加速 AI 自我训练闭环。
+</div>
+
+<div class="item">
+  <strong>MIT Tech Review：停止计数 token，开始计数交付物</strong><br>
+  发生了什么：文章指出开发者 agent 单个任务消耗 10-50 倍于 chat 的 token，传统 token 成本度量已失效，应关注实际产出。<br>
+  为什么重要：Agent 产品化的核心障碍不是技术而是 ROI 评估。如果企业仍以 token 成本考核，会系统性低估 agent 的战略价值，阻碍规模化部署。<br>
+  关联：Garry Tan 每年 20 万美元 token 花费是个人极客行为，但企业需要体系化的“交付物度量”，与当前 Agent 工程化趋势直接呼应。
+</div>
+
+<div class="item">
+  <strong>Garry Tan 每年花费高达 20 万美元用于 AI agent token</strong><br>
+  发生了什么：Y Combinator 总裁 Garry Tan 自述重度使用 AI agents，token 成本高达每年 20 万美元，并兴奋到“赛博精神病”程度。<br>
+  为什么重要：顶级投资者个人投入巨额 token 表明 Agent 已具备真实生产力，但同时也暴露出个人级使用成本极高，说明需要更高效的上下文管理、缓存和 Subagent 调度来降低成本。<br>
+  关联：与“Stop counting tokens”形成两极——个人可承担，但企业需要核算；与 Harness 工程优化 token 消耗直接相关。
+</div>
+
+<div class="item">
+  <strong>Trajectory 融资 4500 万美元，让非技术专家也能训练模型</strong><br>
+  发生了什么：一年期初创 Trajectory 以 3 亿美元估值融资 4500 万美元，目标是让非技术专家能训练 AI 模型。<br>
+  为什么重要：这直接降低 AI for Science 的门槛——生物学家、材料学家无需深厚 ML 背景即可定制模型。若成功，将加速 AI 在药物发现、蛋白质设计等领域的渗透，但也会带来模型质量与安全控制的挑战。<br>
+  关联：与用户关注的 AI for Science 高度相关，尤其是 Benchling 2026 报告提到的“builder 阶段”，科学家需要直接参与模型构建。
+</div>
+
+<div class="item">
+  <strong>纯语音 Personal Agent 亮相，或为乔布斯心中的 Siri 原型</strong><br>
+  发生了什么：量子位报道一款纯语音 Personal Agent 产品，提供可触摸的起点。<br>
+  为什么重要：语音交互是 Agent 普及的关键入口，纯语音意味着无需屏幕即可完成复杂任务，对移动场景、车载及无障碍应用有巨大潜力。若产品体验成熟，可能催生新的 Agent 硬件或穿戴设备。<br>
+  关联：与 Apple Watch 的 Audio Intelligence 测试（新闻中）相呼应，巨头与创业公司同时押注语音 Agent，预示交互范式切换。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+  <strong>趋势一：Agent 竞争从模型层下移至 Harness 层，标准化协议成新战场</strong><br>
+  证据：DeepSeek 公开“Agent = Model + Harness”战略，主张一切皆插件；GitHub 出现 HarnessRouter 及 UHP（统一 Harness 协议）；Tavily 报告显示 A2A、MCP、ACP、ANP、AG-UI 五协议主导多智能体通信，86% 企业 Copilot 支出流向 agent 系统。<br>
+  预判：未来 6-12 个月，Harness 将像操作系统一样分化出阵营，头部模型厂商和开源社区将争夺协议控制权。开发者应尽早掌握 MCP、UHP 等多协议互操作，避免锁定单一生态。
+</div>
+
+<div class="trend">
+  <strong>趋势二：度量体系从 token 成本转向交付成果，Agent 产品化进入 ROI 验证期</strong><br>
+  证据：MIT Tech Review 两篇文章均强调 agent 消耗 token 远超 chat，但价值在产出而非调用量；Garry Tan 个人年花费 20 万美元仍在持续使用，说明高价值个人接受高成本；但企业级采纳需要新的度量框架。<br>
+  预判：会出现面向 Agent 的“交付物度量”工具和最佳实践，类似 DevOps 中的 DORA 指标。Harness 层将集成成本追踪、任务完成率和业务流程转化率，作为产品选型核心依据。
+</div>
+
+<div class="trend">
+  <strong>趋势三：RSI 从理论预警变为现实紧迫，模型自我编辑能力加速闭环</strong><br>
+  证据：Anthropic 公开警告接近 RSI；量子位报道 A 社紧急修改招股书；MIT 展示 GPT-6 Astra 直接修改 Qwen 权重，数学能力提升 6 倍；Nathan Lambert 的 RSI 怀疑论文章今日推荐。<br>
+  预判：接下来将进入“可控自我改进”竞赛。权重编辑工具、自动化 Post-training 和模型安全机制会成为前沿实验室的机密方向。开源社区可能出现模型编辑框架，但安全边界亟待定义。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+  <strong>1. LLM Powered Autonomous Agents（Lilian Weng，经典综述）</strong><br>
+  链接：https://lilianweng.github.io/posts/2023-06-23-agent/<br>
+  核心贡献：系统拆解 Agent 三要素——规划、记忆、工具使用，是理解 Harness 工程的理论基石。虽然发表于 2023 年，但当下的插件化、Subagent、上下文管理均可在其中找到原型。<br>
+  为什么值得读：今日 DeepSeek 的“一切皆插件”和 HarnessRouter 的 UHP 协议，本质上是在工程实现层复现这篇综述的架构。重读可帮助建立全局框架，避免陷入工具细节。
+</div>
+
+<div class="deep-read">
+  <strong>2. Multi-Agent Communication Protocols 2026（Zylos Research）</strong><br>
+  链接：https://zylos.ai/research/2026-01-12-multi-agent-communication<br>
+  核心贡献：对比 A2A、MCP、ACP、ANP、AG-UI 五大协议的设计目标、适用场景与生态成熟度，梳理 Agentic AI Foundation 在 Linux 基金会下的标准化进展。<br>
+  为什么值得读：Harness 层标准化的关键参考，帮助从业者判断协议收敛方向，避免押注错误技术栈。尤其适合需要跨 agent 协作的架构师。
+</div>
+
+<div class="deep-read">
+  <strong>3. 关于 GPT-6 Astra 修改 Qwen 权重的 MIT 研究（可检索 arXiv 原文）</strong><br>
+  新闻来源：https://www.qbitai.com/2026/11/507322.html<br>
+  核心贡献：展示了模型直接编辑其他模型权重的能力，数学能力提升 6 倍，指令执行同步增强。<br>
+  为什么值得读：该研究可能揭示新的“跨模型权重编辑”范式，对理解 RSI 临近、Subagent 组合和模型联合训练有直接价值。建议追踪 MIT 相关团队在 arXiv 的最新发布。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+  <strong>Nathan Lambert: Why I still haven’t bought into true RSI</strong><br>
+  链接：https://www.interconnects.ai/p/where-i-stand-on-rsi<br>
+  为什么今天推荐：当下 RSI 话题因 Anthropic 警告而白热化，Nathan 作为 RLHF/Post-training 一线研究者给出冷静分析，平衡了恐慌叙事。在讨论自我改进、模型编辑和前沿策略时，这篇文章提供了稀缺的中间立场和可操作判断。<br>
+  三个核心观点：<br>
+  • RSI 定义模糊，目前缺乏模型能自主递归改进的硬证据，多数“自我改进”仍是人类设计的外部优化循环。<br>
+  • 前沿实验室的 RSI 警告可能混杂监管博弈与人才竞争动机，不宜全盘接受也不必轻视。<br>
+  • 真正的近期风险更可能来自开源模型漏洞（如 Black October 披露的 PHP2Shell 等），而非突然的 RSI 爆发。<br>
+  适合谁读：关注 AI 安全、前沿实验室策略、Post-training 趋势的研究者、产品经理和投资人士。<br>
+  阅读时间：约 15 分钟。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+  <strong>DeepSeek</strong>：<br>
+  • Harness 战略公开，崔添翼定义“一切皆插件”，支持 Pi 等主流 Harness，定位从模型到 AGI 骨架。<br>
+  • DeepSeek-V4.1-Flash-1017 发布，智能体与编码能力大幅提升，沿用 MIT 协议开源。<br>
+  • 招聘信号：BOSS 直聘显示深度求索正在招聘，岗位方向未细列但可关注 Harness、推理优化。<br>
+  <strong>月之暗面 (Moonshot AI)</strong>：<br>
+  • Kimi K3.1 Pro 已上线 API，性能对标 Claude Opus 5.5 / GPT-6 Astra，权重预计 11 月 4 日开放。<br>
+  • 财联社报道：月之暗面短期不着急上市，现金储备超 100 亿元，计划上线多模态模型 K2.1/K2.5。<br>
+  <strong>商汤</strong>：免费国产 AI SenseNova 6.8 Flash 发布，接手顶级 AI 翻车任务，显示国内小模型追赶能力。<br>
+  <strong>小米</strong>：小米具身基座模型获乌镇峰会“领先科技奖”，同时招聘 Agent 评测产品经理，强化 Agent 落地。<br>
+  <strong>爱诗科技</strong>：PixVerse 与 OpenAI 推出产品集成和创作者教育计划，打通 AI 创意全流程，多模态生态合作加深。<br>
+  <strong>智谱 / MiniMax</strong>：财联社报道显示智谱、MiniMax 借助上市融资扩大竞争优势，与月之暗面暂缓上市形成分化，国内大模型公司资本策略走向多元。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+  <strong>新增岗位类型：</strong><br>
+  • 小米：Agent 评测产品经理（北京），负责构建 Agent 真实场景评测体系，主导 Benchmark 设计，月薪估算 3-5 万。要求熟悉 GAIA、AgentBench 等。<br>
+  • 阿里巴巴：多个 AI 产品经理方向开放，包括 AI OS Memory 策略、AI Agent+CRM、AI Native 供采产品专家等，覆盖北京、广州、杭州。<br>
+  • 深度求索：BOSS 直聘显示持续招聘，结合其 Harness 战略，预计需 Harness 工程、推理优化、上下文管理相关人才。<br>
+  <strong>技能需求变化：</strong><br>
+  • Agent 评测能力成为独立岗位，从传统产品经理中分化，需掌握 LLM/Agent Benchmark 构建逻辑、多场景多模态评估方法论。<br>
+  • Harness 工程技能升温：MCP、UHP、插件化架构设计、会话/循环/调度管理，出现在岗位描述中。<br>
+  • AI for Science 人才需求上升：Trajectory 等创业公司融资后，具备生物、化学背景且懂模型微调的复合型人才会更抢手。<br>
+  <strong>薪资信号：</strong>小米 Agent 评测产品经理 AI 估算 3-5 万/月，处于高位；深度求索因品牌与技术氛围，薪酬可能对标国际一线实验室。
+</div>
+
+<div class="closing">
+  ⚡ 今日信号：Agent 竞争已进入 Harness 层，DeepSeek 开放“一切皆插件”是风向标。建议从业者立即补课 MCP/UHP 协议与 Agent 评测方法论，布局下一波基础设施岗位红利。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
