@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年11月05日 · 新闻 146 条 · 博客 15 篇 · 搜索 14 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>OpenAI 收购 Pierre Computer Company，扩展 Codex 代码构建与审查工具链</strong><br>
+发生了什么：OpenAI 宣布收购 Pierre Computer Company，将增强 Codex 在代码构建、理解与审查方面的能力。<br>
+为什么重要：这是 OpenAI 在 Coding Agent 赛道上的又一次基础设施级补强。Pierre 的能力大概率会直接注入 Codex 的 harness 层——不是模型能力升级，而是让 Agent 在真实代码仓库中"更会干活"。这与 DeepSeek Harness 开源、Meta 收购 Conductor 形成同一天的密集信号：巨头都在抢 Agent 执行层的控制权。<br>
+关联动态：与 Meta 收购 Conductor（多 Agent 并行）、NVIDIA NeMo 失败转测试形成"Agent 工程基建军备竞赛"。
+</div>
+
+<div class="item">
+<strong>NVIDIA NeMo 推出：将 Agent 失败自动转化为测试与 Harness 修复</strong><br>
+发生了什么：NVIDIA 发布 NeMo 新能力，把生产环境中的 Agent 失败证据转成优先级问题、自定义评估，用于改进提示词、工具、模型、记忆、技能和 harness 代码。<br>
+为什么重要：这是 Harness Engineering 从"个人手工习惯"变成"自动化闭环"的标志性事件。Mitchell Hashimoto 提出的"工程化 harness"理念，现在有了厂商级的工具支撑。对于正在部署生产级 Agent 的团队，这意味着失败不再是一次性的 debug，而是持续改进系统的数据资产。<br>
+关联动态：arXiv 上同日出现多篇 Harness 相关论文（Agent Harness Awareness、Assurance-Conditioned Continuous Authorization），学术与工程正在同频共振。
+</div>
+
+<div class="item">
+<strong>Meta 收购 AI 编码初创公司 Conductor（多 Agent 并行开发）</strong><br>
+发生了什么：Meta 收购了 Conductor，一家让软件工程师部署多组 Agent 同时推进项目不同方面的初创公司。<br>
+为什么重要：Meta 在 Coding Agent 上的战略逐渐清晰——不是单一 Agent 做全部，而是"Team of Agents"并行协作。这代表了 Agent 产品化的一个方向：从"一个全能助手"转向"可编排的 Agent 团队"。对工程组织的影响可能比模型升级更深远。<br>
+关联动态：与 OpenAI 收购 Pierre、DeepSeek 开源 Harness 形成 Coding Agent 三大路线竞争：OpenAI 做垂直整合工具链，Meta 做多 Agent 编排，DeepSeek 走开放插件生态。
+</div>
+
+<div class="item">
+<strong>arXiv 重磅论文：Agent Harness Awareness——填补工具调用中的"操作性盲区"</strong><br>
+发生了什么：论文提出 Agent Harness Awareness 概念，指出 Agent 选择工具时看不到监控、追踪、近期失败等操作信息，引入 trust-separated 设计，在执行关键动作前由 host 提供小型可验证状态快照。<br>
+为什么重要：这是对当前工具调用范式的直接挑战。Tool descriptions 告诉 Agent 工具"能做什么"，却不告诉它"现在是否健康可用"。在长时运行的生产 Agent 中，这个盲区会导致 Agent 在工具已失效时持续做出错误决策。该研究用 ToolRoute 基准验证了方案有效性，对 Harness 工程实践有直接指导意义。<br>
+关联动态：与 NVIDIA NeMo 的失败转化理念互补——NeMo 做事后改进，Harness Awareness 做事前预防。
+</div>
+
+<div class="item">
+<strong>arXiv 论文：Agents, Think Only When it Helps——蒸馏中"思考"的价值被系统性质疑</strong><br>
+发生了什么：研究者通过独立扰动教师模型的思考与动作，发现在 Agent 蒸馏中，改动或丢弃思考几乎不影响学生模型的最终动作表现。只有当动作本身不包含思考信息时，思考监督才变得重要。<br>
+为什么重要：这直接挑战了当前 Agent 蒸馏的主流做法——记录完整思考-动作轨迹用于训练。如果思考在大多数情况下不必要，训练数据构建策略可以大幅简化，成本显著降低。这是 Post-training 领域一个可能改变工程实践的基础发现。<br>
+关联动态：与大模型前沿中"推理 token 是否总是必要"的讨论一脉相承，也与国内厂商追求算力效率的路线相呼应。
+</div>
+
+<div class="item">
+<strong>Uber 披露：几乎没人用 AI Agent 叫车——最繁忙一周仅 4 人通过 Agent 下单</strong><br>
+发生了什么：Uber 在财报中披露，上一季度最繁忙的一周里，只有 4 个人通过 AI Agent 预订了行程。<br>
+为什么重要：这是 Agent 产品化的一个冷峻现实信号。技术成熟度不等于用户采纳度。Agent 在"帮你订外卖/叫车"这类场景中的价值主张（省几秒钟）远不足以抵消用户对授权、隐私和出错成本的顾虑。当前 Agent 行业的高估值与真实使用数据之间存在巨大鸿沟。<br>
+关联动态：与 Apple 削减内部 AI 预算形成呼应——即使是最顶尖的科技公司也在收缩 AI 的实际投入而非扩张。
+</div>
+
+<div class="item">
+<strong>OpenAI 自动流水线发现并修复 Linux 内核 948 个本地提权漏洞</strong><br>
+发生了什么：OpenAI 建立了一条自主流水线，在 Linux 内核中发现、验证并生成了 948 个本地权限提升漏洞的补丁。<br>
+为什么重要：这是 AI Agent 在真实复杂系统安全审计中的大规模验证。948 个漏洞不是玩具场景，意味着 Agent 已经能在人类最核心的软件基础设施中完成"发现-验证-修复"全流程。但同时必须警惕：这条流水线本身也可能被用于攻击性目的。<br>
+关联动态：与"Verified but Vacuous"论文形成对照——验证代码生成还有严重的语义保真问题，OpenAI 这条流水线的验证质量需要独立审查。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Harness Engineering 正在从"个人方法论"升级为"工程学科"</strong><br>
+证据链：① NVIDIA 将 Agent 失败自动转化为测试与 Harness 修复（产品级工具）；② arXiv 上 Agent Harness Awareness（2611.05391）提出了操作性盲区的概念和 trust-separated 设计；③ DeepSeek 于 2026 年 8 月开源自研 Harness（dsh），采用"一切皆插件"架构；④ 同日还有 Assurance-Conditioned Continuous Authorization（2611.05632）、Attributing Agent Failures to Their History（2611.05650）等多篇 Harness 相关论文。<br>
+预判：未来 6-12 个月，Harness 工程师将成为一个明确的岗位方向，招聘 JD 中会明确要求"上下文工程、工具健康度监控、失败回放与测试化"等技能。Harness 层会成为 Agent 产品差异化的核心，而不只是模型能力的附属品。
+</div>
+
+<div class="trend">
+<strong>趋势二：Agent 训练范式中"思考轨迹"的地位面临根本性重构</strong><br>
+证据链：① Agents, Think Only When it Helps 实验证明蒸馏时丢弃思考几乎不影响动作表现；② Hybrid Spark 在推测解码中让"内容选择 drafter"，暗示推理开销的分配需要更精细的内容感知；③ Computer-Use Agents Gain Little Benefit from a World Model When Conditioned on Tutorials（2611.04073）发现教程条件下世界模型贡献有限。<br>
+预判：Post-training 中"思考监督"的必要性将被更严格地审计。关注点会从"思考是否被记录"转向"思考是否被动作揭示"。如果这一发现被验证可泛化，Agent 训练数据构建成本可以大幅下降，这对算力受限的国内厂商尤其有利。
+</div>
+
+<div class="trend">
+<strong>趋势三：Agent 信任与授权机制成为学术界集中攻坚的焦点</strong><br>
+证据链：① Who May Overrule the Agent?（2611.05390）研究审查者权限的证据门控；② Assurance-Conditioned Continuous Authorization（2611.05632）提出持续授权框架；③ The Harness Is the Model（2611.06116）发现 harness 变化导致同一模型在银行合规规则上的表现不均；④ Uber 仅 4 人通过 Agent 叫车的冷数据；⑤ MIT Tech Review 报道 Agent 企业数据 lineage 安全问题。<br>
+预判：Agent 部署的核心瓶颈正从"能不能做"转向"凭什么信任它做"。证据门控、持续授权、合规 harness 等机制将成为 Agent 产品进入金融、医疗等受监管行业的入场券。对 Agent 工程师来说，理解和实现授权机制将比调优提示词更有职业价值。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. Agent Harness Awareness: Turning Verified Telemetry into Operational Control for Tool-Using Agents (arXiv:2611.05391)</strong><br>
+核心贡献：定义"操作性盲区"——工具描述告诉 Agent 能力，但不告诉它当前健康状态。提出 trust-separated 设计：host 在执行关键动作前提供小型、新鲜、可验证的状态快照，同时保留测量、执行、评估和最终派发权限。用 ToolRoute 基准验证。<br>
+为什么值得深读：这是 Harness Engineering 最重要的理论贡献之一，直接回答了一个令人困惑的生产问题："Agent 明明有工具却用不好"。对于正在构建 Multi-Agent 系统或 MCP 工具编排的团队，这篇论文提供了可落地的架构模式。工具健康度快照这个想法可以直接在你的 harness 中实现。
+</div>
+
+<div class="deep-read">
+<strong>2. Who May Overrule the Agent? Evidence-Gated Authority in LLM Review Institutions (arXiv:2611.05390)</strong><br>
+核心贡献：研究多 Agent 系统中审查者的权限边界。发现宽泛的覆盖权限会让审查者既修复错误也破坏正确决策。提出"证据门控"：只有在审查者产出机制上有效的约束违反记录和合规修复后，才被允许用建议替换原决策。在 96 个空间策略任务和 96 个组合迁移基准上验证。<br>
+为什么值得深读：Multi-Agent 系统中"审查者 Agent"是常见模式，但很少有人认真想过审查权限应该在什么条件下生效。这篇论文用制度管辖权理论给出了一个可操作的答案。对于设计有安全审查环节的 Agent 系统的团队，这是必读。
+</div>
+
+<div class="deep-read">
+<strong>3. Morpheus.AI: agents autonomously generate, execute and refine virtual tissue models (arXiv:2611.05413)</strong><br>
+核心贡献：将 LLM Agent 与 Morpheus 模拟器配对，让 Agent 自主构建虚拟组织模型。在 15 个基准研究中，前沿 LLM Agent 在 2 小时内以低于 4 美元/模型的成本满足了 83-86% 的研究标准，其中 5 个研究没有已发布模型。<br>
+为什么值得深读：这是 AI for Science 中"Agent 驱动科研"的典型范式展示。不是用 LLM 做预测，而是用 LLM Agent 作为科学工作流的编排者，自动生成假设、运行模拟、分析结果、迭代优化。对于关注 AI4S 和 Agent 交叉领域的读者，这篇论文展示了 Agent 在科研自动化中最有说服力的场景之一。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>Nathan Lambert: How big is the open model economy today?</strong><br>
+链接：https://www.interconnects.ai/p/how-well-can-we-measure-open-model<br>
+为什么今天推荐这篇：DeepSeek Harness 开源、智谱 GLM-5.2 登顶 agentic coding、月之暗面 Kimi K3 引发美股震动、彭博行业研究称中美 AI 差距缩小至 6%——所有这些动态都指向同一个根本问题：开放模型的生态到底有多大？Nathan Lambert 作为前 Hugging Face 研究员和开源模型训练者，对这个问题的量化尝试恰好提供了理解今天新闻的坐标系。<br>
+三个核心观点：<br>
+• 开放模型经济不能用简单的"模型数量"或"下载量"度量，需要区分研究型开放和商业化开放两种截然不同的价值逻辑。<br>
+• 中国开源模型在全球 token 量中的占比正在快速上升，DeepSeek 的低价 API 策略改变了开放模型的商业可持续性讨论。<br>
+• 开放模型的真正价值衡量标准正在从"性能榜单"转向"生态采纳"——有多少应用、工具链和 Agent 基于它运行。<br>
+适合谁读：关注开源模型生态、国内厂商全球化战略、以及模型商业模式的 AI 从业者。尤其是正在评估是否基于开源模型构建产品的工程团队。<br>
+阅读时间：约 15 分钟（含图表）。
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek：Harness 开源与产品化加速</strong><br>
+DeepSeek Harness（dsh）于 8 月 13 日开源，采用"一切皆插件"架构，覆盖模型、工具、技能、会话、沙箱、存储、循环、调度和 UI，session log 支持恢复、分叉、搜索和回放。崔添翼（前量化基金创始人）出任 DeepSeek 产品部负责人，8 月 1 日发布 Harness 内测招募。DeepSeek-V4-Pro GA 同日发布。据 LinkedIn 分析，DeepSeek 携带 Vercel AI Gateway 22.6% 的 token 量，低价 API 正在创造生产需求。<br>
+信号判断：DeepSeek 正在从"模型公司"向"Agent 基础设施公司"转型。Harness 开源是对 OpenAI Codex 生态的直接竞争。
+</div>
+
+<div class="item">
+<strong>智谱：GLM-5.2 登顶 agentic coding，冲刺港交所</strong><br>
+智谱已放弃科创板上市计划，转冲港交所，最新估值约 400 亿元人民币。GLM-5.2 模型登顶 LiveBench 全球 agentic coding 榜单，中美模型性能差距缩小至 6%。智谱累计完成超过 15 轮融资，仅 2024 年 12 月以来半年内就完成了超 50 亿元融资。<br>
+信号判断：智谱在 Agent 编程赛道上的技术突破是其 IPO 故事的核心叙事。但"第一股"的估值合理性仍需观察其商业化收入能否匹配。
+</div>
+
+<div class="item">
+<strong>月之暗面：Kimi K3 引发市场关注，40 亿美元估值融资中</strong><br>
+月之暗面即将完成一轮美元融资，估值可能提升至约 40 亿美元，意向投资方包括 IDG 资本、腾讯等，金额可能达数亿美元。或于明年下半年启动 IPO。Kimi K3 在市场上引起广泛关注，彭博报道白宫官员质疑其使用对华禁售芯片。<br>
+信号判断：月之暗面的融资节奏和 IPO 时间表显示其资金压力依然存在。Kimi K3 的技术争议（训练方式遭美质疑）可能成为地缘政治下的新变量。
+</div>
+
+<div class="item">
+<strong>深势科技：Hermite 药物计算平台与 AI4S 大模型持续迭代</strong><br>
+深势科技 Hermite 平台覆盖药物计算全流程。此前已发布"深势·宇知"AI for Science 大模型，Uni-RNA 模型覆盖结构-性质-功能-表达，并推出材料与工艺智能优化工具 SimpFine。DeePMD 方法助力中国科学家在 Science 发表"无疲劳铁电材料"成果。<br>
+信号判断：深势科技在 AI4S 领域形成了"平台+模型+应用"的完整闭环，是国内 AI4S 赛道中商业化路径最清晰的厂商之一。其投资布局（深度原理、催化剂加等）显示正在构建 AI4S 开放生态。
+</div>
+
+<div class="item">
+<strong>其他动态：招商局狮子山实验室发布具身推理模型，太初元碁入选世界互联网大会</strong><br>
+招商局狮子山实验室发布「驭物」Lion-ER-35B-A3B 具身推理模型，仅激活 3B 参数，十项基准全线提升，主打"不靠堆砌数据让机器人看懂真实物理世界"。太初元碁入选 2026 年世界互联网大会领先科技奖成果集。百度无人车展示世界模型实时推演全局。<br>
+信号判断：国内 AI 研发正从纯语言模型向多模态、具身智能和世界模型方向扩展。机器人/具身推理成为继 LLM 之后的新技术高地。
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>招聘趋势：Agent 工程能力成为 AI 产品岗位的硬性要求</strong><br>
+杭州地区 AI 产品经理招聘 JD 明确要求："有 AI Agent 或大模型应用的真实项目经验，熟悉上下文工程、RAG、任务编排、工具/函数调用等机制"。海康威视招聘 AI Agent 工程师，要求机器学习、大模型、智能体相关经验。杭州/北京一家 AI 公司招募 2027 届 AI 产品经理，聚焦"智能体 GUI 系统、开发者沙盒、视觉推理"。<br>
+信号强度：高。上下文工程、RAG、工具调用这些 Harness 层技能已经从"加分项"变成"必备项"。不会 Harness 的产品经理将难以在 Agent 赛道立足。
+</div>
+
+<div class="item">
+<strong>新增岗位类型：Harness 工程师正在隐现</strong><br>
+虽然没有直接以"Harness Engineer"命名的岗位，但海康威视的 AI Agent 工程师 JD 已经要求"智能体、上下文工程、任务编排"等 Harness 核心技能。结合 NVIDIA NeMo 将 Harness 修复产品化、DeepSeek Harness 开源的背景，预计 2026 年 Q4 至 2027 年 Q1 会出现明确的"Agent Harness Engineer"或"Agent Infrastructure Engineer"岗位。<br>
+可行动建议：当前在职的 AI 工程师应有意识地积累工具编排、失败诊断、上下文管理、回放测试化等 Harness 层经验，这些在当前招聘中已经是差异化优势。
+</div>
+
+<div class="item">
+<strong>实习与初级岗位信号：算力机会向年轻人开放</strong><br>
+太初元碁招聘信息显示"薪资+期权不限，实习生也能训核心模型"，表明算力芯片和 AI 基础设施类公司正在用激进的人才策略争夺年轻工程师。量子位报道的 3D 生成/世界模型创业公司同样强调实习生的核心参与。<br>
+信号判断：AI 人才市场的竞争从"高级研究员"向下延伸到"可塑性强、能长期绑定的年轻工程师"。对于在读学生，进入能直接接触核心模型训练的团队比加入大厂的边缘 AI 部门更有成长价值。
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+Harness 层正在取代模型层成为 Agent 竞争的主战场。今天 OpenAI、Meta、DeepSeek、NVIDIA 同日布局执行层基建，意味着未来 6 个月的胜负手不在模型参数，而在谁能把 Agent 的失败率降到生产可容忍。工程师的护城河正在从"会调模型"转向"会建 harness"。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
