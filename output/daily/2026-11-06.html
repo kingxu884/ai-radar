@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年11月06日 · 新闻 115 条 · 博客 13 篇 · 搜索 24 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<strong>OpenAI 发布 GPT-6 Cyber：网络安全专用模型</strong><br>
+发生了什么：OpenAI 推出 GPT-6 Cyber，专门用于发现可利用漏洞并生成修复方案，训练目标限定在授权范围内操作。<br>
+为什么重要：这是 OpenAI 首次为垂直安全领域发布专用模型，标志着大模型从通用能力向高壁垒专业领域的实质性渗透。安全自动化不再只是辅助工具，而是开始具备独立攻防能力——这对 AI Agent 的安全边界定义提出了全新挑战。<br>
+关联动态：Palo Alto Networks 正以 5 亿美元收购 AI Agent 安全初创公司 Clutch，安全 Agent 赛道正在同时从模型层和产品层双向加速。
+</div>
+
+<div class="item">
+<strong>DeepSeek 大规模招聘，正式组建 Harness 团队</strong><br>
+发生了什么：DeepSeek 启动成立以来最大规模扩招，目标全员规模翻倍，33 类岗位全开。其中明确设立 Agent Harness 团队，由资深研究员陈德里和崔添翼领衔，方向直指“对标 Claude Code，做 DeepSeek Code Harness”。<br>
+为什么重要：这是国内首个明确以 Harness Engineering 为独立团队建制的大厂信号。Harness 不再是 Agent 的附属品，而是被提升为与模型研发并列的一级工程学科。DeepSeek 开源 Harness v0.1（基于 Cordis 框架，MIT 许可）进一步表明其希望定义 Agent 运行时标准。<br>
+关联动态：多篇 arXiv 论文（如“The Harness Is the Model”）证实，同一模型在不同 Harness 下合规性表现差异巨大——Harness 正在成为 Agent 能力的核心变量。
+</div>
+
+<div class="item">
+<strong>Airbnb 宣布 2027 年上半年推出 AI 旅行 Agent</strong><br>
+发生了什么：Airbnb 官方确认将在 2027 年上半年推出 AI 旅行代理，帮助用户规划行程、比较选项、管理预订并提供全程协助。<br>
+为什么重要：这是 OTA 巨头首次给出 Agent 产品化的明确时间表。旅行场景是 Multi-Agent 和工具调用的天然试验场（比价、预订、客服、实时调整），Airbnb 的入场将加速 Agent 在消费级场景的落地验证。<br>
+关联动态：Claude 同日推出 Personal Finance 工具，Agent 正在从开发者工具向个人消费决策领域快速扩展。
+</div>
+
+<div class="item">
+<strong>Palo Alto Networks 拟 5 亿美元收购 AI Agent 安全初创 Clutch</strong><br>
+发生了什么：网络安全巨头 Palo Alto Networks 正在谈判收购 AI Agent 安全公司 Clutch，后者此前估值仅 8500 万美元，收购溢价近 6 倍。<br>
+为什么重要：Agent 安全正在从概念验证进入并购整合阶段。当 Agent 开始自主执行支付、访问数据库、调用 API 时，安全不再是附加层而是核心基础设施。这笔交易标志着安全厂商对 Agent 原生安全需求的战略押注。<br>
+关联动态：arXiv 论文“Trust Responsive Runtime Authorization for Agentic AI”提出动态授权框架，Agent 安全研究正在从静态规则走向运行时信任评估。
+</div>
+
+<div class="item">
+<strong>Box 采用 NVIDIA Nemotron 构建 Agent 优先的内容检索系统</strong><br>
+发生了什么：Box 基于 NVIDIA Nemotron 模型构建了新的 Agent 优先检索系统，查询速度提升 4 倍，错误率降低 20%，Token 消耗减少 90%。<br>
+为什么重要：企业级 Agent 的瓶颈往往不在模型能力，而在内容检索的效率与精度。Box 的数据表明，通过模型与检索架构的联合优化，可以在不牺牲质量的前提下大幅降低成本——这对 Agent 产品化的经济模型有直接参考价值。<br>
+关联动态：Dropbox 以 3.5 亿美元收购 Tigris Data，同样指向 AI Agent 基础设施层的军备竞赛。
+</div>
+
+<div class="item">
+<strong>arXiv 重磅论文：MCPHallu——MCP Agent 的推理、执行与记忆幻觉基准</strong><br>
+发生了什么：研究者发布 MCPHallu 基准，包含 358 个任务，在 36 个生产 MCP 服务器上系统诊断 Agent 在推理、执行和记忆三个维度的幻觉风险。<br>
+为什么重要：MCP 生态快速扩张，但 Agent 在动态工具调用中的幻觉问题尚未被系统评估。该基准直接针对 MCP 协议的核心脆弱点——Agent 可能调用错误的工具、误解工具返回结果、或遗忘已获取的信息。这是 MCP 从“能用”走向“可靠”必须跨越的门槛。<br>
+关联动态：Skillware 论文提出用模块化、可审计的能力包替代 Prompt 工程，与 MCPHallu 形成互补——前者解决架构可靠性，后者解决评估可靠性。
+</div>
+
+<div class="item">
+<strong>OpenAI 总裁 Greg Brockman：公司可能在 2027 年 IPO 准备就绪</strong><br>
+发生了什么：Brockman 在 WSJ 技术会议上表示 OpenAI 可能在 2027 年达到 IPO 条件，同时强调公司在企业市场的进展。<br>
+为什么重要：OpenAI 从非营利研究机构到潜在上市公司的转变，将深刻影响其产品策略和开源态度。IPO 压力可能加速其 Agent 产品（如 Codex、GPT-6 Cyber）的商业化节奏，同时也可能收紧对竞争对手的 API 策略。<br>
+关联动态：Anthropic 已在企业市场建立先发优势，OpenAI 的 IPO 叙事需要强有力的企业级产品矩阵支撑。
+</div>
+
+<div class="section-title">📈 趋势分析</div>
+
+<div class="trend">
+<strong>趋势一：Harness Engineering 从边缘实践升级为独立工程学科</strong><br>
+证据链：DeepSeek 正式组建 Harness 团队并开源 Harness v0.1；arXiv 论文“The Harness Is the Model”通过银行合规场景实验证明，同一模型在不同 Harness 下合规表现差异显著；Atlan 和 Factualminds 等工程博客开始系统化总结 Harness Engineering 的最佳实践。<br>
+预判：2027 年 Q1 之前，Harness Engineer 将成为独立职位出现在主流招聘市场。Agent 产品的竞争将从“谁有更好的模型”转向“谁有更可靠的 Harness 架构”。Harness 层的标准化（类似 Kubernetes 对容器编排的意义）将成为下一个开源争夺焦点。
+</div>
+
+<div class="trend">
+<strong>趋势二：Agent 安全从附加功能升级为独立赛道</strong><br>
+证据链：Palo Alto Networks 以近 6 倍溢价收购 Clutch；OpenAI 发布 GPT-6 Cyber 专用安全模型；arXiv 多篇论文聚焦 Agent 运行时授权、MCP 幻觉诊断、Agent 行为审计。<br>
+预判：Agent 安全将复制云安全的发展路径——从“用现有安全工具覆盖”到“原生 Agent 安全平台”的范式转换。MCP 协议的安全层标准化（认证、授权、审计）将在 2027 年上半年成为行业焦点。
+</div>
+
+<div class="trend">
+<strong>趋势三：Agent 产品化从开发者工具向个人消费决策延伸</strong><br>
+证据链：Claude 推出 Personal Finance 工具，用户可通过 Plaid 连接银行账户进行财务分析；Airbnb 宣布 2027 年推出 AI 旅行 Agent；Meta 的 Muse AI 头像支持视频通话。<br>
+预判：Agent 的产品形态正在从“帮开发者写代码”扩展到“帮用户做决策”。个人财务、旅行规划、健康管理等高频决策场景将成为 Agent 产品化的下一个爆发点。这一趋势对 Agent 的记忆能力、上下文管理和安全授权提出了更高要求。
+</div>
+
+<div class="section-title">🔬 值得深挖的论文/报告</div>
+
+<div class="deep-read">
+<strong>1. MCPHallu: Benchmarking Reasoning, Execution, and Memory Hallucinations in MCP Agents</strong> (arXiv:2611.07689)<br>
+核心贡献：首个系统诊断 MCP Agent 在推理、执行和记忆三个维度幻觉风险的基准，覆盖 358 个任务和 36 个生产 MCP 服务器。每个任务设计有结构性触发器，可精确定位四类失败模式。<br>
+为什么值得读：MCP 生态快速扩张但缺乏系统评估，该基准直接针对生产环境中最棘手的 Agent 可靠性问题。如果你正在构建或评估 MCP Agent，这篇论文提供了可操作的诊断框架。
+</div>
+
+<div class="deep-read">
+<strong>2. The Harness Is the Model: Agent Scaffolding Changes a Fixed LLM's Compliance with Banking Conduct Rules</strong> (arXiv:2611.06116)<br>
+核心贡献：通过 156 个预注册案例实验证明，同一模型在 5 种不同 Harness 架构下对银行合规规则的表现差异显著。Harness 设计选择（工具循环、记忆结构、合规审查者角色）对最终行为的影响不亚于模型选择。<br>
+为什么值得读：为“Harness Engineering 是独立学科”提供了实证基础。金融、医疗等强监管行业的 Agent 构建者必读。
+</div>
+
+<div class="deep-read">
+<strong>3. Don't Prompt Your Agents. Equip Them: Skillware as a Modular Standard for Sovereign, Auditable, and Deterministic Capability Execution</strong> (arXiv:2611.07652)<br>
+核心贡献：提出 Skillware 框架，将 Agent 能力封装为模块化、版本化、可审计的软件包，替代脆弱的 Prompt 工程。类比游戏中的技能热键——Agent 调用的是经过验证的确定性能力，而非动态生成的代码。<br>
+为什么值得读：直接挑战当前 Agent 架构的主流范式。如果你对 Agent 的可靠性、可审计性和成本控制有要求，这篇论文提供了全新的架构思路。
+</div>
+
+<div class="section-title">📖 今日推荐深度阅读</div>
+
+<div class="blog-pick">
+<strong>Nathan Lambert: Latest open artifacts (#25): DeepSeek V4.1 Flash 1017, American-made models, and new regulatory controls</strong><br>
+链接: https://www.interconnects.ai/p/latest-open-artifacts-25-deepseek<br>
+为什么今天推荐这篇：DeepSeek 今日宣布大规模招聘并组建 Harness 团队，而 Lambert 的文章提供了 DeepSeek 最新模型能力的深度分析，以及中美 AI 监管的最新动态。结合阅读可以更完整地理解 DeepSeek 的战略布局——模型能力 + Harness 工程 + 开源生态的三位一体。<br>
+三个核心观点：<br>
+• DeepSeek V4.1 Flash 1017 在性能上持续逼近前沿，西方开源模型的“反击”并未拉开差距<br>
+• 中美 AI 监管框架的差异正在塑造不同的产品路径——中国厂商更倾向于开源 + Harness 的生态策略<br>
+• 开源模型的竞争正在从“权重开放”转向“工程体系开放”——Harness 和工具链成为新的护城河<br>
+适合谁读：关注国内大厂动态的工程师、AI 产品经理、投资人<br>
+阅读时间：约 15 分钟
+</div>
+
+<div class="section-title">🏢 国内厂商动态</div>
+
+<div class="item">
+<strong>DeepSeek：史上最大规模扩招，Harness 团队成独立部门</strong><br>
+• 全员规模目标翻倍，33 类岗位全开，覆盖北京、杭州<br>
+• Agent Harness 团队由陈德里、崔添翼领衔，方向对标 Claude Code<br>
+• 开源 Harness v0.1（基于 Cordis 框架，MIT 许可），所有组件均为插件化架构<br>
+• 薪资：深度学习研究员月薪 8-11K（14 薪），最高年薪 154W<br>
+• 特殊岗位“AI 跨界技术人才”不设专业限制，看重独特专长和创业经历
+</div>
+
+<div class="item">
+<strong>面壁智能：完成 D++ 轮融资，端侧 AI 赛道持续加码</strong><br>
+• 2026 年 7 月完成 D++ 轮数亿元融资，投资方包括国家级基金、央企、汽车制造商<br>
+• 2026 年已连续完成 D 轮、D+ 轮、D++ 轮三轮融资，端侧大模型赛道领先地位稳固<br>
+• 战略方向：深化端侧 AI 在多场景的落地，特别是与汽车制造商的协同
+</div>
+
+<div class="item">
+<strong>深势科技：AI for Science 获国资持续认可</strong><br>
+• 此前完成数亿元融资，投资方为北京市人工智能产业投资基金和中关村科学城公司<br>
+• 构建“深势·宇知®”AI for Science 大模型体系，覆盖生物医药、电池材料、化工半导体<br>
+• 产品矩阵：Bohrium® 玻尔科研空间站、Hermite® 药物计算设计平台、Piloteye® 电池设计自动化平台
+</div>
+
+<div class="item">
+<strong>智谱 AI / 月之暗面 / 百川智能</strong><br>
+• 今日无直接新闻，但 Tavily 搜索显示智谱和月之暗面已进入“200 亿人民币俱乐部”估值区间<br>
+• 百川智能估值约 18 亿美元，商业化落地仍在探索中<br>
+• 国内大模型“四小龙”格局（智谱、月之暗面、MiniMax、百川）基本稳定，但 Harness 和 Agent 产品化可能成为下一阶段分化的关键变量
+</div>
+
+<div class="section-title">💼 求职机会与信号</div>
+
+<div class="item">
+<strong>Agent Harness 工程师成为新兴高薪岗位</strong><br>
+• DeepSeek 明确招聘 Agent Harness 团队工程师和 Infra 研发工程师，这是国内首个将 Harness 作为独立岗位的大厂<br>
+• 美团招聘“Agent 评测平台产品经理”，要求熟悉 Claude Code / OpenClaw 等 Agent 工具链演进<br>
+• 信号：Harness Engineering 正在从“高级 Prompt Engineering”分化为独立职位，预计 2027 年 Q1 将有更多厂商跟进
+</div>
+
+<div class="item">
+<strong>AI + 垂直行业复合型人才需求上升</strong><br>
+• DeepSeek 开放“AI 跨界技术人才”岗位，不设专业限制，看重“在某个领域做到极致”<br>
+• 金融、医疗、材料等行业的 AI 落地需要同时理解领域知识和 Agent 架构的复合型人才<br>
+• 建议：如果你有垂直行业背景，现在是将 AI 技能叠加到原有领域的最佳窗口期
+</div>
+
+<div class="item">
+<strong>Agent 安全与评测岗位将快速增长</strong><br>
+• Palo Alto Networks 收购 Clutch 的信号表明 Agent 安全赛道正在升温<br>
+• 美团招聘 Agent 评测平台产品经理，说明大厂已开始系统化建设 Agent 评估基础设施<br>
+• 预判：Agent 安全工程师、Agent 评测工程师将成为 2027 年的热门岗位
+</div>
+
+<div class="section-title">⚡ 今日信号</div>
+
+<div class="closing">
+<strong>Harness Engineering 是新的 Prompt Engineering。</strong>DeepSeek 组建独立 Harness 团队、多篇 arXiv 论文证实 Harness 对 Agent 行为的决定性影响、企业级 Agent 产品化加速——三重信号叠加表明：Agent 的竞争已从模型层转移到工程层。现在学习 Harness 架构设计，相当于 2015 年学习 Kubernetes。
+</div></div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
