@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+       'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+       background: #f0f0f5; margin: 0; padding: 20px; color: #222; }
+.wrapper { max-width: 720px; margin: auto; background: #fff;
+           border-radius: 12px; overflow: hidden;
+           box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+.header { background: linear-gradient(135deg, #0f0f1a 0%, #1a1a3e 100%);
+          color: #fff; padding: 32px 40px; }
+.header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; font-weight: 700; }
+.header .subtitle { font-size: 13px; opacity: .65; margin-top: 6px; }
+.body { padding: 28px 40px; }
+h2 { color: #0f0f1a; margin-top: 0; font-size: 20px; }
+.intro { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section-title { font-weight: 700; font-size: 12px; text-transform: uppercase;
+                 letter-spacing: .08em; color: #999; margin: 36px 0 16px;
+                 padding-bottom: 8px; border-bottom: 2px solid #eee; }
+.item { border-left: 3px solid #4f46e5; padding: 14px 20px;
+        margin-bottom: 16px; background: #fafafa; border-radius: 0 10px 10px 0; }
+.item h3 { margin: 0 0 6px; font-size: 15px; line-height: 1.5; }
+.item h3 a { color: #1a1a2e; text-decoration: none; font-weight: 600; }
+.item h3 a:hover { text-decoration: underline; color: #4f46e5; }
+.meta { font-size: 11px; color: #aaa; display: block; margin-bottom: 8px; }
+.item p { margin: 6px 0 0; font-size: 14px; line-height: 1.75; color: #444; }
+.item p.tag { font-size: 12px; color: #7c6fcd; margin-top: 8px; }
+.trend { border-left: 3px solid #059669; padding: 14px 20px;
+         margin-bottom: 16px; background: #f0fdf4; border-radius: 0 10px 10px 0; }
+.trend h3 { margin: 0 0 10px; font-size: 15px; color: #065f46; }
+.trend p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.deep-read { border-left: 3px solid #d97706; padding: 14px 20px;
+             margin-bottom: 16px; background: #fffbeb; border-radius: 0 10px 10px 0; }
+.deep-read h3 { margin: 0 0 10px; font-size: 15px; }
+.deep-read h3 a { color: #92400e; text-decoration: none; font-weight: 600; }
+.deep-read h3 a:hover { text-decoration: underline; }
+.deep-read p { margin: 0; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick { border-left: 3px solid #db2777; padding: 14px 20px;
+             margin-bottom: 16px; background: #fdf2f8; border-radius: 0 10px 10px 0; }
+.blog-pick h3 { margin: 0 0 6px; font-size: 15px; }
+.blog-pick h3 a { color: #831843; text-decoration: none; font-weight: 600; }
+.blog-pick h3 a:hover { text-decoration: underline; }
+.blog-why { margin: 10px 0 8px; font-size: 14px; line-height: 1.75; color: #444; }
+.blog-pick ul { margin: 8px 0; padding-left: 20px; font-size: 14px;
+                line-height: 1.8; color: #444; }
+.blog-audience { font-size: 12px; color: #9d174d; margin: 8px 0 0; }
+.closing { background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+           color: #e0e0ff; border-radius: 10px;
+           padding: 18px 24px; margin-top: 32px; font-size: 14px; line-height: 1.7; }
+.closing strong { color: #fff; }
+.footer { padding: 18px 40px; font-size: 12px; color: #bbb;
+          border-top: 1px solid #eee; text-align: center; }
+a { color: #4f46e5; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>🧠 AI Radar</h1>
+    <div class="subtitle">2026年11月07日 · 新闻 17 条 · 博客 9 篇 · 搜索 15 条</div>
+  </div>
+  <div class="body"><div class="section-title">🔥 今日必读</div>
+
+<div class="item">
+<p><strong>发生了什么：</strong>DeepSeek 的 Agent Harness 团队负责人崔添翼将其从 Cordis 微内核改造的 Harness 推向开发者预览，核心是 2000-3000 行的轻量微内核与“可逆插件”机制。</p>
+<p><strong>为什么重要：</strong>这标志着 Agent 竞争从模型能力转向运行时工程治理。Claude Code 打包事故、工具调用 Payload 吃掉超 60% 上下文等行业问题，正在倒逼“模型之外皆属工程”的范式。Harness 的可审计、可打补丁、可锁定、热插拔能力，可能成为企业评估代码智能体的新标准。</p>
+<p><strong>与其他动态的关联：</strong>与 Meta Spaces、亚马逊 Alexa 购物等 Agent 产品化动作形成对照，DeepSeek 选择以微内核插件路线切入治理层，而非单纯叠加交互入口。</p>
+</div>
+
+<div class="item">
+<p><strong>发生了什么：</strong>DeepSeek 宣布计划将所有部门规模扩大至少一倍，开放 33 个岗位，覆盖算法、研发、产品、数据等，并设置不设专业背景限制的“AI跨界技术人才”特别岗位。</p>
+<p><strong>为什么重要：</strong>这不是零散补人，而是从核心研究团队向工程交付、产品化、Harness 团队的系统性扩容。人才市场信号极强：Agent 工程、代码智能体产品研发成为重点，且更看重跨栈能力而非传统学历背景。</p>
+<p><strong>与其他动态的关联：</strong>直接呼应崔添翼到任后的 Harness 产品化需求，也折射出国内大厂对 Agent 型工程人才的争夺。</p>
+</div>
+
+<div class="item">
+<p><strong>发生了什么：</strong>月之暗面发布 Kimi K3，2.8 万亿参数开源模型，100 万 token 上下文，采用混合注意力与部分激活，完整权重将于 7 月 27 日前发布。</p>
+<p><strong>为什么重要：</strong>这是全球最大规模的开源模型之一，编程、推理和智能体任务表现对标前沿闭源系统。开源超大参数+稀疏激活路线进一步压低推理成本，对港股上市的智谱 AI 直接造成估值冲击，股价暴跌 22%。</p>
+<p><strong>与其他动态的关联：</strong>与 DeepSeek 带火稀疏计算、国产芯片公司融资近 10 亿形成共振，说明稀疏 MoE 正在重塑国内模型与芯片格局。</p>
+</div>
+
+<div class="item">
+<p><strong>发生了什么：</strong>OpenAI 被曝追加融资 110 亿美元，投后估值达 1.25 万亿美元，本轮融资预计未来几周内完成。</p>
+<p><strong>为什么重要：</strong>资本仍愿给闭源头部极高溢价，但这类估值已与当前产品化收入、企业 AI 支出轨迹严重脱节。后续商业化压力会进一步转移到模型层之外的产品、Agent 和企业服务上。</p>
+<p><strong>与其他动态的关联：</strong>同日 Ramp 数据显示 AI 支出增长停滞，Anthropic 临近 IPO，两者共同构成对“AI hypergrowth”叙事的压力测试。</p>
+</div>
+
+<div class="item">
+<p><strong>发生了什么：</strong>Ramp 数据指出，企业 AI 使用量仍在攀升，但 AI 支出已现停滞，价格下降和大客户成本控制是主要因素。</p>
+<p><strong>为什么重要：</strong>用量与支出脱节，意味着推理价格战正在侵蚀供应商利润率。对于习惯以收入高增长支撑估值的 AI 公司，这比技术落后更危险。</p>
+<p><strong>与其他动态的关联：</strong>与美国中期选举后数据中心限投、Crusoe 怀俄明项目出售给 Google、OpenAI 高估值融资共同指向：基础设施成本和政治阻力正在压制 AI 商业扩张速度。</p>
+</div>
+
+<div class="item">
+<p><strong>发生了什么：</strong>Meta 推出 Spaces，为 Muse Agent 提供新的协作交互入口。</p>
+<p><strong>为什么重要：</strong>巨头将 Agent 嵌入协作空间，争取用户工作流中的默认入口，Agent 产品形态开始从“对话”转向“协作环境”。</p>
+<p><strong>与其他动态的关联：</strong>亚马逊在屏蔽 Muse 后转推 Alexa 文本购物，显示消费端 Agent 平台的入口争夺同样激烈。</p>
+</div>
+
+<div class="item">
+<p><strong>发生了什么：</strong>Underdog 展示了一款仅 32MB 的小型语音模型，可同时生成语音和音乐。</p>
+<p><strong>为什么重要：</strong>端侧超小模型进入多模态生成阶段，对智能硬件、实时交互、隐私敏感场景具备直接落地价值。模型规模不再限制生成类任务。</p>
+<p><strong>与其他动态的关联：</strong>与面壁智能端侧 AI 布局、国产芯片稀疏计算方向互相印证，边缘端多模态门槛正在快速下移。</p>
+</div>
+
+<div class="item">
+<p><strong>发生了什么：</strong>NVIDIA 提出 Reshard Collective，用于加速强化学习 post-training 中的权重再拟合过程。</p>
+<p><strong>为什么重要：</strong>RL post-training 是推理模型能力提升的关键路径，其通信与重分片瓶颈直接制约训练吞吐和成本。该优化可降低高质量推理模型的训练基础设施门槛。</p>
+<p><strong>与其他动态的关联：</strong>与 Sebastian Raschka</div>
+  <div class="footer">
+    AI Radar · Powered by DeepSeek + Tavily + GitHub Actions<br>
+    每日自动生成 · 聚焦 AI 前沿、Agent 工程、AI for Science
+  </div>
+</div>
+</body></html>
